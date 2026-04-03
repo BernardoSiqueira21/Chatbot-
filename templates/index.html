@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento Virtual · Defesa do Consumidor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L13.8 8.2H20.4L15 11.8L16.8 18L12 14.4L7.2 18L9 11.8L3.6 8.2H10.2L12 2Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">ConsumidorBot</span>
+                    <span class="brand-tag">CDC · Orientação gratuita</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="sidebar-label">Sobre este atendimento</p>
+                <p class="sidebar-desc">
+                    Atendente virtual especializada em orientações sobre o
+                    <strong>Código de Defesa do Consumidor</strong>. Tire dúvidas sobre
+                    garantia, trocas, entregas, cobranças indevidas e muito mais.
+                </p>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="sidebar-label">Temas disponíveis</p>
+                <div class="topic-grid">
+                    <button class="topic-pill" onclick="usarExemplo('Produto com defeito')">Produto com defeito</button>
+                    <button class="topic-pill" onclick="usarExemplo('Entrega atrasada')">Entrega atrasada</button>
+                    <button class="topic-pill" onclick="usarExemplo('Cobrança indevida')">Cobrança indevida</button>
+                    <button class="topic-pill" onclick="usarExemplo('Quero cancelar uma compra online')">Arrependimento</button>
+                    <button class="topic-pill" onclick="usarExemplo('A loja recusou a troca')">Troca negada</button>
+                    <button class="topic-pill" onclick="usarExemplo('Meus direitos como consumidor')">Direitos básicos</button>
+                    <button class="topic-pill" onclick="usarExemplo('Como ir ao Procon')">Procon</button>
+                    <button class="topic-pill" onclick="usarExemplo('Propaganda enganosa')">Propaganda enganosa</button>
+                </div>
+            </div>
+
+            <div class="sidebar-notice">
+                <div class="notice-icon">⚖️</div>
+                <p>Este atendimento é <strong>educativo</strong>. Não substitui orientação jurídica profissional.</p>
+            </div>
+
+            <div class="sidebar-footer">
+                <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()" title="Alternar modo escuro">
+                    <span class="theme-icon-light">☀️</span>
+                    <span class="theme-icon-dark">🌙</span>
+                    <span class="theme-label-light">Modo escuro</span>
+                    <span class="theme-label-dark">Modo claro</span>
+                </button>
+            </div>
+        </aside>
+

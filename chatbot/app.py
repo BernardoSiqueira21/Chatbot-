@@ -7,3 +7,5 @@ app.secret_key = "chatbot_consumidor_secret_key_2026"
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/chat", methods=["POST"])

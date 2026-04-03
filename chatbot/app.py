@@ -9,3 +9,6 @@ def index():
     return render_template("index.html")
 
 @app.route("/chat", methods=["POST"])
+def chat():
+    dados = request.get_json(silent=True) or {}
+    mensagem = (dados.get("mensagem") or "").strip()

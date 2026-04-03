@@ -31,3 +31,8 @@ def chat():
         "bot": resultado["resposta"],
         "intencao": resultado["intencao"]
     })
+
+    session["historico"] = historico[-40:]
+    session["contexto"] = resultado["contexto"]
+
+    return jsonify(resultado)

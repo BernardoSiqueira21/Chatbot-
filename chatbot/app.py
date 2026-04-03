@@ -20,3 +20,14 @@ def chat():
             "confianca": 0,
             "contexto": session.get("contexto", {})
         })
+
+    historico = session.get("historico", [])
+    contexto = session.get("contexto", {})
+
+    resultado = processar_mensagem(mensagem, historico, contexto)
+
+    historico.append({
+        "usuario": mensagem,
+        "bot": resultado["resposta"],
+        "intencao": resultado["intencao"]
+    })

@@ -12,3 +12,11 @@ def index():
 def chat():
     dados = request.get_json(silent=True) or {}
     mensagem = (dados.get("mensagem") or "").strip()
+
+    if not mensagem:
+        return jsonify({
+            "resposta": "Digite uma mensagem para eu conseguir te ajudar melhor.",
+            "intencao": "vazia",
+            "confianca": 0,
+            "contexto": session.get("contexto", {})
+        })

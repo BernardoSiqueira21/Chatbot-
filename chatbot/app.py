@@ -10,8 +10,19 @@ def index():
 
 @app.route("/chat", methods=["POST"])
 def chat():
-    dados = request.get_json(silent=True) or {}
-    mensagem = (dados.get("mensagem") or "").strip()
+    try:
+        dados = request.get_json(force=True, silent=True)
+    except Exception:
+        dados = None
+
+    if not dados:
+        return jsonify({"resposta": "Requisicao invalida.", "intencao": "erro", "dicas": [], "relacionados": [], "oferta": ""}), 400
+
+    mensagem = ""
+    try:
+        mensagem = str(dados.get("mensagem", "")).strip()
+    except Exception:
+        mensagem = ""
 
     if not mensagem:
         return jsonify({

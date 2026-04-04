@@ -458,3 +458,195 @@ def montar_duvidas_comuns(intencao):
         return []
 
 
+def montar_oferta_aberta(intencao):
+    try:
+        ofertas = OFERTAS_POR_INTENCAO.get(intencao, [])
+        if ofertas:
+            return random.choice(ofertas)
+        return "Se quiser, posso continuar nesse tema ou mudar para outro ponto do seu caso."
+    except Exception:
+        return "Se quiser, posso continuar por aqui."
+
+
+def escolher_resposta_base(item_intencao, contexto, mensagem):
+    try:
+        if not item_intencao:
+            return random.choice(RESPOSTAS_NAO_ENTENDEU)
+        respostas = item_intencao.get("responses", [])
+        continuacoes = item_intencao.get("context_responses", [])
+
+        if eh_pergunta_de_continuidade(mensagem) and continuacoes:
+            return random.choice(continuacoes)
+        if (
+            contexto
+            and contexto.get("ultima_intencao") == item_intencao.get("tag")
+            and continuacoes
+            and random.random() < 0.55
+        ):
+            return random.choice(continuacoes)
+        if respostas:
+            return random.choice(respostas)
+        return "Entendi o ponto principal e posso continuar por esse caminho com você."
+    except Exception:
+        return "Entendi. Pode continuar me explicando o seu caso."
+
+
+def deve_herdar_contexto(mensagem, intencao_detectada, ultima_intencao):
+    try:
+        if not ultima_intencao:
+            return False
+        if eh_mudanca_de_tema(mensagem):
+            return False
+        if intencao_detectada != "desconhecida":
+            return False
+        if eh_pergunta_de_continuidade(mensagem):
+            return True
+        if mensagem_curta_dependente_de_contexto(mensagem):
+            return True
+        return False
+    except Exception:
+        return False
+
+
+def montar_contexto_memoria(contexto, historico):
+    temas = contexto.get("temas_visitados", [])
+    valor = contexto.get("valor_mencionado")
+    num_trocas = contexto.get("num_trocas", 0)
+
+    partes = []
+
+    if valor and num_trocas > 2:
+        partes.append(f"Sobre o valor de {valor} que você mencionou —")
+
+    if len(temas) >= 3 and num_trocas > 5:
+        nomes = [ROTULOS_TEMAS.get(t, t.replace("_", " ")) for t in temas[-3:]]
+        partes.append(f"Já passamos por {', '.join(nomes)}.")
+
+    return " ".join(partes) if partes else None
+
+
+def processar_mensagem(mensagem, historico, contexto):
+    try:
+        if not isinstance(mensagem, str):
+            mensagem = str(mensagem) if mensagem is not None else ""
+        mensagem = mensagem.strip()[:800]
+    except Exception:
+        mensagem = ""
+
+    if not mensagem:
+        return {
+            "mensagem_usuario": "",
+            "intencao": "vazia",
+            "confianca": 0,
+            "palavras_encontradas": [],
+            "contexto": contexto or {},
+            "resposta": "Por favor, escreva sua dúvida para que eu possa te ajudar.",
+            "dicas": [],
+            "relacionados": [],
+            "oferta": "",
+        }
+
+    if not isinstance(historico, list):
+        historico = []
+    if not isinstance(contexto, dict):
+        contexto = {}
+
+    try:
+        intencao, confianca, palavras, entidades = identificar_intencao(mensagem)
+    except Exception:
+        intencao, confianca, palavras, entidades = "desconhecida", 0, [], {}
+
+    try:
+        ultima_intencao = obter_ultima_intencao(historico)
+        ultimas_intencoes = obter_ultimas_intencoes(historico)
+    except Exception:
+        ultima_intencao = None
+        ultimas_intencoes = []
+
+    try:
+        if deve_herdar_contexto(mensagem, intencao, ultima_intencao):
+            intencao = ultima_intencao
+            confianca = max(confianca, 0.72)
+    except Exception:
+        pass
+
+    item_intencao = buscar_item_por_tag(intencao)
+    resposta_base = escolher_resposta_base(item_intencao, contexto, mensagem)
+
+    abertura = montar_abertura(intencao, historico, contexto)
+
+    # Monta as partes da resposta
+    partes_texto = []
+    if abertura:
+        partes_texto.append(abertura)
+    partes_texto.append(resposta_base)
+
+    # Referência de memória ocasional
+    mem_ctx = montar_contexto_memoria(contexto, historico)
+    if mem_ctx and random.random() < 0.25:
+        partes_texto.insert(1, mem_ctx)
+
+    # Temas relacionados no texto (só ocasionalmente)
+    rel_texto = montar_relacionados_texto(intencao)
+    if rel_texto and random.random() < 0.4:
+        partes_texto.append(rel_texto)
+
+    # Retomada para conversas longas
+    num_interacoes = len(historico)
+    if num_interacoes >= 20 and num_interacoes % 8 == 0:
+        partes_texto.append(random.choice(RETOMADAS_LONGA_CONVERSA))
+
+    # Oferta de continuidade
+    if (
+        len(ultimas_intencoes) >= 3
+        and len(set(ultimas_intencoes[-3:])) == 1
+        and intencao not in ["mudanca_tema", "orientacao_geral", "desconhecida"]
+    ):
+        oferta = (
+            "Se quiser, posso mudar o foco para outro aspecto "
+            "como provas, atendimento da empresa, prazos ou um tema diferente."
+        )
+    else:
+        oferta = montar_oferta_aberta(intencao)
+
+    resposta_final = "\n\n".join([p for p in partes_texto if p])
+
+    # Dicas
+    dicas = []
+    try:
+        base = montar_duvidas_comuns(intencao)
+        if base and random.random() < 0.85:
+            dicas = base
+    except Exception:
+        dicas = []
+
+    # Relacionados
+    relacionados_lista = []
+    try:
+        tags_rel = RELACIONADOS.get(intencao, [])
+        relacionados_lista = [
+            {"tag": t, "label": ROTULOS_TEMAS.get(t, t.replace("_", " "))}
+            for t in tags_rel
+        ]
+    except Exception:
+        relacionados_lista = []
+
+    try:
+        novo_contexto = atualizar_contexto(
+            contexto, intencao, mensagem, entidades,
+            oferta_pendente={"intencao": intencao, "tipo": "aberta"},
+        )
+    except Exception:
+        novo_contexto = contexto
+
+    return {
+        "mensagem_usuario": mensagem,
+        "intencao": intencao,
+        "confianca": confianca,
+        "palavras_encontradas": palavras,
+        "contexto": novo_contexto,
+        "resposta": resposta_final,
+        "dicas": dicas,
+        "relacionados": relacionados_lista,
+        "oferta": oferta,
+    }

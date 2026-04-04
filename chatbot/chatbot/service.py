@@ -29,3 +29,19 @@ ABERTURAS_HUMANAS = [
     "",
 ]
 
+ABERTURAS_FRUSTRACAO = [
+    "Entendo sua frustração — é completamente compreensível se sentir assim nessa situação.",
+    "Pelo que você descreveu, foi mesmo uma experiência bem desgastante.",
+    "Faz todo sentido ficar incomodado com isso.",
+    "Imagino que essa situação esteja sendo bastante cansativa.",
+    "É uma situação realmente incômoda.",
+    "Dá para entender o incômodo com isso.",
+]
+
+ABERTURAS_URGENCIA = [
+    "Entendido. Vou direto ao que você precisa saber.",
+    "Certo, vamos focar no essencial.",
+    "Sem enrolação — o que é mais importante agora:",
+    "Entendi a urgência.",
+]
+

@@ -89,3 +89,46 @@ GATILHOS_CONTINUIDADE = [
     "e ai", "e aí", "continua", "prossiga", "vai em frente",
 ]
 
+GATILHOS_MUDANCA_TEMA = [
+    "agora outra coisa", "mudando de assunto", "outro tema",
+    "outra duvida", "tenho outra pergunta",
+    "quero falar de outro caso", "novo caso", "vamos para outro assunto",
+    "quero mudar de assunto", "outro problema", "outra situacao",
+    "novo tema", "muda o assunto", "tenho outra questao",
+    "quero perguntar outra coisa", "posso perguntar outra coisa",
+]
+
+ROTULOS_TEMAS = {
+    "reembolso": "reembolso",
+    "sac": "atendimento e protocolo",
+    "prova_documental": "provas e documentos",
+    "produto_nao_entregue": "produto não entregue",
+    "empresa_negou_solucao": "empresa negou solução",
+    "garantia": "garantia e defeito",
+    "troca": "troca do produto",
+    "cancelamento": "cancelamento",
+    "compra_online": "compra online",
+    "atraso_entrega": "atraso na entrega",
+    "cobranca_indevida": "cobrança indevida",
+    "nota_fiscal": "nota fiscal",
+    "defeito_apos_uso": "defeito após uso",
+    "produto_diferente": "produto diferente do anunciado",
+    "servico_com_problema": "serviço com problema",
+    "arrependimento": "arrependimento na compra",
+    "orientacao_geral": "orientação geral",
+    "direito_basico": "direitos do consumidor",
+    "procon": "Procon e órgãos de defesa",
+    "assinatura_plano": "assinatura e planos",
+    "tempo_prazo": "prazos legais",
+    "propaganda_enganosa": "propaganda enganosa",
+    "loja_fisica": "compra em loja física",
+    "juizado_especial": "Juizado Especial",
+    "frete_entrega": "frete e logística",
+    "cartao_credito": "cartão de crédito",
+    "pix_transferencia": "Pix e transferências",
+    "voo_transporte": "voos e transporte",
+    "saude_plano": "plano de saúde",
+    "consumidor_gov": "consumidor.gov.br e plataformas",
+    "contrato_clausula_abusiva": "cláusulas abusivas em contrato",
+}
+

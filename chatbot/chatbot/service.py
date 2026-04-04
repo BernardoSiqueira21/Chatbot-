@@ -64,3 +64,28 @@ RETOMADAS_LONGA_CONVERSA = [
     "Já abordamos muita coisa. Se precisar, posso reforçar algum ponto ou abrirmos um tema diferente.",
 ]
 
+RESPOSTAS_NAO_ENTENDEU = [
+    "Não consegui entender direito. Pode descrever com mais detalhes o que aconteceu?",
+    "Não ficou totalmente claro. Me conta com mais calma o que está acontecendo no seu caso.",
+    "Hmm, não acompanhei bem. Tenta descrever o problema com suas próprias palavras.",
+    "Pode reformular? Não consegui entender bem. Qualquer detalhe já ajuda.",
+    "Não entendi direito. Me diz em poucas palavras: qual é o problema principal?",
+    "Não acompanhei totalmente. Pode me dar mais contexto? Por exemplo: o que foi comprado, o que aconteceu de errado.",
+]
+
+GATILHOS_CONTINUIDADE = [
+    "continue", "continua", "continuar", "continue por favor", "pode continuar",
+    "quero sim", "quero", "me explica", "me explica isso", "explique isso",
+    "quero saber", "quero entender melhor", "fale mais", "me diga mais",
+    "como seria isso", "o que fazer", "como fazer", "e se", "mas e",
+    "nesse caso", "e agora", "isso muda", "me mostra", "me mostre",
+    "aprofunda", "aprofundar", "pode aprofundar", "segue", "siga",
+    "vai por esse caminho", "me fala disso", "qual seria",
+    "quero a dica", "me da a dica", "me de a dica",
+    "opcao 1", "opcao 2", "opcao 3",
+    "sim", "claro", "pode ser", "vamos", "ok", "certo", "beleza",
+    "ta", "tá", "tá bom", "entendido", "combinado", "vai",
+    "me conta mais", "conta mais", "pode continuar", "sigo", "segue",
+    "e ai", "e aí", "continua", "prossiga", "vai em frente",
+]
+

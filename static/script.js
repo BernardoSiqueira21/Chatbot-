@@ -84,3 +84,86 @@ function makeUserAvatar() {
     return d;
 }
 
+// ===== MESSAGE BUILDER =====
+function makeMessageGroup(text, type) {
+    const group = document.createElement("div");
+    group.className = `message-group ${type}`;
+
+    const avatar = type === "bot" ? makeBotAvatar() : makeUserAvatar();
+
+    const body = document.createElement("div");
+    body.className = "msg-body";
+
+    const author = document.createElement("div");
+    author.className = "msg-author";
+    author.textContent = type === "bot" ? getNome() : "Você";
+
+    const bubble = document.createElement("div");
+    bubble.className = `bubble ${type}-bubble`;
+    bubble.innerHTML = text.replace(/\n/g, "<br>");
+
+    body.appendChild(author);
+    body.appendChild(bubble);
+    group.appendChild(avatar);
+    group.appendChild(body);
+    return group;
+}
+
+// ===== CHIPS =====
+function makeChipsSection(items, type, title) {
+    if (!items || items.length === 0) return null;
+
+    const section = document.createElement("div");
+    section.className = "chips-section";
+
+    const label = document.createElement("div");
+    label.className = "chips-title";
+    label.textContent = title;
+    section.appendChild(label);
+
+    const row = document.createElement("div");
+    row.className = "chips-row";
+
+    items.forEach(item => {
+        const texto = typeof item === "string" ? item : "Quero saber sobre " + item.label;
+        const btn = document.createElement("button");
+        btn.className = `chip ${type === "question" ? "chip-question" : "chip-topic"}`;
+        btn.textContent = typeof item === "string" ? item : item.label;
+        btn.dataset.texto = texto;
+        btn.type = "button";
+        btn.onclick = () => usarExemplo(texto);
+        row.appendChild(btn);
+    });
+
+    section.appendChild(row);
+    return section;
+}
+
+function reconectarChips() {
+    chatBox.querySelectorAll(".chip[data-texto]").forEach(chip => {
+        chip.onclick = () => usarExemplo(chip.dataset.texto);
+    });
+}
+
+// ===== TYPING INDICATOR =====
+function showTyping() {
+    const group = document.createElement("div");
+    group.className = "message-group bot";
+    group.id = "typing-indicator";
+
+    const avatar = makeBotAvatar();
+
+    const body = document.createElement("div");
+    body.className = "msg-body";
+
+    const bubble = document.createElement("div");
+    bubble.className = "bubble bot-bubble typing-indicator";
+    bubble.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+
+    body.appendChild(bubble);
+    group.appendChild(avatar);
+    group.appendChild(body);
+    chatBox.appendChild(group);
+    scrollBottom();
+}
+

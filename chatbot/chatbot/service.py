@@ -392,3 +392,69 @@ OFERTAS_POR_INTENCAO = {
 }
 
 
+def buscar_item_por_tag(tag):
+    try:
+        for item in INTENTS_DB.get("intents", []):
+            if item.get("tag") == tag:
+                return item
+    except Exception:
+        pass
+    return None
+
+
+def eh_pergunta_de_continuidade(mensagem):
+    try:
+        msg = mensagem.lower().strip()
+        return any(msg.startswith(g) or msg == g for g in GATILHOS_CONTINUIDADE)
+    except Exception:
+        return False
+
+
+def eh_mudanca_de_tema(mensagem):
+    try:
+        msg = mensagem.lower().strip()
+        return any(g in msg for g in GATILHOS_MUDANCA_TEMA)
+    except Exception:
+        return False
+
+
+def mensagem_curta_dependente_de_contexto(mensagem):
+    try:
+        return len(mensagem.lower().strip().split()) <= 6
+    except Exception:
+        return False
+
+
+def montar_abertura(intencao, historico, contexto):
+    try:
+        tom = contexto.get("tom", "neutro")
+        if tom == "frustrado":
+            return random.choice(ABERTURAS_FRUSTRACAO)
+        if tom == "urgente":
+            return random.choice(ABERTURAS_URGENCIA)
+        repeticoes = contar_intencao_no_historico(historico, intencao)
+        if repeticoes >= 2:
+            return random.choice(TRANSICOES_CONTEXTO)
+        return random.choice(ABERTURAS_HUMANAS)
+    except Exception:
+        return ""
+
+
+def montar_relacionados_texto(intencao):
+    try:
+        relacionados = RELACIONADOS.get(intencao, [])
+        if not relacionados:
+            return None
+        temas = [ROTULOS_TEMAS.get(tag, tag.replace("_", " ")) for tag in relacionados]
+        return "Temas relacionados: " + ", ".join(temas) + "."
+    except Exception:
+        return None
+
+
+def montar_duvidas_comuns(intencao):
+    try:
+        return list(DUVIDAS_COMUNS.get(intencao, []))
+    except Exception:
+        return []
+
+

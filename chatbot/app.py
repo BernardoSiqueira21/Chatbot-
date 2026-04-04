@@ -25,12 +25,7 @@ def chat():
         mensagem = ""
 
     if not mensagem:
-        return jsonify({
-            "resposta": "Digite uma mensagem para eu conseguir te ajudar melhor.",
-            "intencao": "vazia",
-            "confianca": 0,
-            "contexto": session.get("contexto", {})
-        })
+        return jsonify({"resposta": "Por favor, escreva sua duvida.", "intencao": "vazia", "dicas": [], "relacionados": [], "oferta": ""})
 
     historico = session.get("historico", [])
     contexto = session.get("contexto", {})

@@ -45,3 +45,22 @@ ABERTURAS_URGENCIA = [
     "Entendi a urgência.",
 ]
 
+TRANSICOES_CONTEXTO = [
+    "Ainda nesse ponto,",
+    "Continuando,",
+    "Pensando no que você disse,",
+    "Dentro desse mesmo assunto,",
+    "Levando isso em conta,",
+    "Seguindo esse raciocínio,",
+    "Com base no que você me contou,",
+    "Aprofundando nisso,",
+    "Complementando o que falamos,",
+]
+
+RETOMADAS_LONGA_CONVERSA = [
+    "Já percorremos bastante terreno nesse caso. Se quiser, posso resumir o que vimos ou mudar o foco para outro ponto.",
+    "Estamos avançando bem. Quer que eu consolide o que foi dito ou prefere continuar por esse caminho?",
+    "Passamos por vários ângulos desse caso. Posso continuar nesse ponto ou mudar o foco se precisar.",
+    "Já abordamos muita coisa. Se precisar, posso reforçar algum ponto ou abrirmos um tema diferente.",
+]
+

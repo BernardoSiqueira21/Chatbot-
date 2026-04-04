@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, session
 from chatbot.service import processar_mensagem
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
-app.secret_key = "chatbot_consumidor_secret_key_2026"
+app.secret_key = "cdc_chatbot_secret_2026_consumidor"
 
 @app.route("/")
 def index():
@@ -30,16 +30,31 @@ def chat():
     historico = session.get("historico", [])
     contexto = session.get("contexto", {})
 
-    resultado = processar_mensagem(mensagem, historico, contexto)
+    if not isinstance(historico, list):
+        historico = []
+    if not isinstance(contexto, dict):
+        contexto = {}
+
+    try:
+        resultado = processar_mensagem(mensagem, historico, contexto)
+    except Exception as e:
+        return jsonify({
+            "resposta": "Ocorreu um erro interno. Pode tentar novamente?",
+            "intencao": "erro",
+            "dicas": [],
+            "relacionados": [],
+            "oferta": "",
+        })
 
     historico.append({
         "usuario": mensagem,
-        "bot": resultado["resposta"],
-        "intencao": resultado["intencao"]
+        "bot": resultado.get("resposta", ""),
+        "intencao": resultado.get("intencao", "desconhecida"),
     })
 
-    session["historico"] = historico[-40:]
-    session["contexto"] = resultado["contexto"]
+    historico = historico[-60:]
+    session["historico"] = historico
+    session["contexto"] = resultado.get("contexto", {})
 
     return jsonify(resultado)
 

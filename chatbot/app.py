@@ -36,3 +36,12 @@ def chat():
     session["contexto"] = resultado["contexto"]
 
     return jsonify(resultado)
+
+@app.route("/reset", methods=["POST"])
+def reset():
+    session.pop("historico", None)
+    session.pop("contexto", None)
+    return jsonify({"ok": True})
+
+if __name__ == "__main__":
+    app.run(debug=True)

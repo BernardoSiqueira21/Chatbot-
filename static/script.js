@@ -167,3 +167,158 @@ function showTyping() {
     scrollBottom();
 }
 
+function hideTyping() {
+    const el = document.getElementById("typing-indicator");
+    if (el) el.remove();
+}
+
+// ===== ADD MESSAGES =====
+function addBotMessage(data) {
+    const group = makeMessageGroup(data.resposta || "Entendi. Pode continuar.", "bot");
+    chatBox.appendChild(group);
+
+    if (data.dicas && data.dicas.length > 0) {
+        const chips = makeChipsSection(data.dicas, "question", "Dúvidas comuns sobre este tema");
+        if (chips) chatBox.appendChild(chips);
+    }
+
+    if (data.relacionados && data.relacionados.length > 0) {
+        const chips = makeChipsSection(data.relacionados, "topic", "Temas relacionados");
+        if (chips) chatBox.appendChild(chips);
+    }
+
+    scrollBottom();
+    saveHistory();
+}
+
+function addUserMessage(text) {
+    const group = makeMessageGroup(text, "user");
+    chatBox.appendChild(group);
+    scrollBottom();
+    saveHistory();
+}
+
+// ===== INITIAL MESSAGE =====
+function renderInitial() {
+    chatBox.innerHTML = "";
+
+    // Date divider
+    const divider = document.createElement("div");
+    divider.className = "date-divider";
+    divider.innerHTML = `<span>Hoje, ${formatTime()}</span>`;
+    chatBox.appendChild(divider);
+
+    // Greeting
+    const group = makeMessageGroup(getSaudacao(), "bot");
+    chatBox.appendChild(group);
+
+    // Initial chips
+    const starterChips = [
+        "Produto com defeito, e agora?",
+        "Tive um problema com entrega",
+        "Me cobraram um valor errado",
+        "Quero cancelar uma compra online",
+        "A loja não quer trocar",
+        "Quero conhecer meus direitos",
+    ];
+    const chips = makeChipsSection(starterChips, "question", "Por onde quer começar?");
+    if (chips) chatBox.appendChild(chips);
+
+    scrollBottom(false);
+    saveHistory();
+}
+
+function loadHistory() {
+    try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            chatBox.innerHTML = saved;
+            reconectarChips();
+            scrollBottom(false);
+        } else {
+            renderInitial();
+        }
+    } catch(e) {
+        renderInitial();
+    }
+}
+
+// ===== SEND =====
+let sending = false;
+
+async function sendMessage() {
+    if (sending) return;
+    const msg = (userInput.value || "").trim();
+    if (!msg) return;
+
+    sending = true;
+    sendBtn.disabled = true;
+
+    addUserMessage(msg);
+    userInput.value = "";
+    userInput.focus();
+
+    // Human-like delay: random between 600ms and 1400ms
+    const delay = 600 + Math.random() * 800;
+    await new Promise(r => setTimeout(r, 250));
+    showTyping();
+    await new Promise(r => setTimeout(r, delay));
+
+    try {
+        const res = await fetch("/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ mensagem: msg })
+        });
+
+        let data;
+        try { data = await res.json(); }
+        catch(e) { data = { resposta: "Desculpe, houve um problema ao processar. Pode tentar novamente?" }; }
+
+        hideTyping();
+
+        if (data && data.resposta) {
+            addBotMessage(data);
+        } else {
+            addBotMessage({ resposta: "Desculpe, ocorreu um erro. Pode tentar novamente?" });
+        }
+    } catch(err) {
+        hideTyping();
+        addBotMessage({ resposta: "Não foi possível conectar. Verifique sua conexão e tente novamente." });
+    } finally {
+        sending = false;
+        sendBtn.disabled = false;
+    }
+}
+
+function usarExemplo(text) {
+    if (!text || sending) return;
+    userInput.value = text;
+    sendMessage();
+}
+
+// ===== CLEAR =====
+function clearChat() {
+    fetch("/reset", { method: "POST" }).catch(() => {});
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(NOME_KEY);
+    if (agentName) agentName.textContent = getNome() + " · Atendente virtual";
+    renderInitial();
+}
+
+// ===== EVENTS =====
+sendBtn.addEventListener("click", sendMessage);
+clearBtn.addEventListener("click", clearChat);
+
+userInput.addEventListener("keydown", e => {
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+    }
+});
+
+// ===== INIT =====
+window.addEventListener("load", () => {
+    if (agentName) agentName.textContent = getNome() + " · Atendente virtual";
+    loadHistory();
+});

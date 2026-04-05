@@ -111,3 +111,26 @@ def extrair_entidades(mensagem):
     return entidades
 
 
+def atualizar_contexto(contexto_atual, intencao, mensagem, entidades=None, oferta_pendente=None):
+    novo_contexto = dict(contexto_atual) if contexto_atual else {}
+
+    novo_contexto["ultima_intencao"] = intencao
+    novo_contexto["ultima_mensagem"] = mensagem
+
+    if entidades:
+        # Mescla entidades existentes com novas
+        entidades_existentes = novo_contexto.get("entidades", {})
+        entidades_existentes.update(entidades)
+        novo_contexto["entidades"] = entidades_existentes
+
+    if intencao != "desconhecida":
+        novo_contexto["topico_principal"] = intencao
+
+    temas_visitados = novo_contexto.get("temas_visitados", [])
+    if intencao != "desconhecida" and intencao not in temas_visitados:
+        temas_visitados.append(intencao)
+    novo_contexto["temas_visitados"] = temas_visitados[-15:]
+
+    num_trocas = novo_contexto.get("num_trocas", 0) + 1
+    novo_contexto["num_trocas"] = num_trocas
+

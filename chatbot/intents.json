@@ -359,6 +359,203 @@
         "A empresa já foi informada sobre o produto errado? O que disseram?",
         "Continuando — você aceitou receber o produto ou se recusou na entrega? Isso pode influenciar o processo."
       ]
+    },
+    {
+      "tag": "cobranca_indevida",
+      "patterns": [
+        "cobrança indevida", "cobranca indevida", "cobrança errada", "cobranca errada",
+        "me cobraram errado", "me cobraram duas vezes", "cobrança duplicada", "cobranca duplicada",
+        "valor indevido", "desconto errado", "fatura errada", "boleto errado",
+        "cobrado a mais", "cobraram a mais", "pagamento duplicado", "continuam cobrando",
+        "cobraram sem autorização", "cobraram sem autorizacao", "cobrança não autorizada",
+        "cobranca nao autorizada", "estornaram e cobraram de novo", "cobrança irregular",
+        "cobranca irregular", "cobrança que não reconheço", "cobranca que nao reconheco",
+        "cobrança estranha", "cobranca estranha", "cobrança indevida no cartão",
+        "cobranca indevida no cartao", "me debitaram errado", "debitaram duas vezes",
+        "cobrança repetida", "cobranca repetida", "serviço cancelado e ainda cobram",
+        "servico cancelado e ainda cobram", "paguei e cobram de novo",
+        "cobraram um valor que não combinei", "cobraram um valor que nao combinei",
+        "valor não corresponde ao contratado", "valor nao corresponde ao contratado"
+      ],
+      "responses": [
+        "Cobrança indevida precisa ser contestada por escrito — entre em contato com a empresa pelo canal oficial, informe o valor, a data e o motivo pelo qual é indevida. Guarde o protocolo dessa reclamação.",
+        "Se for cobrança no cartão, você pode também contestar diretamente com a operadora do cartão. Dependendo do caso, o banco pode fazer o chargeback — estorno da cobrança — enquanto a investigação acontece.",
+        "Para cobrança duplicada, o CDC prevê que você tem direito a receber de volta em dobro o valor cobrado indevidamente — mais correção monetária e juros. Isso se aplica quando comprovado que houve erro do fornecedor.",
+        "Documente bem: extrato bancário ou fatura do cartão mostrando as cobranças, comprovante do pagamento original ou do cancelamento, e todos os protocolos de atendimento. Isso é fundamental para qualquer caminho que você tome."
+      ],
+      "context_responses": [
+        "Continuando — você já entrou em contato com a empresa sobre essa cobrança? Qual foi a resposta?",
+        "Sobre a cobrança indevida — você tem como mostrar que pagou antes ou que o serviço foi cancelado? Um comprovante ou extrato já ajuda.",
+        "Se a empresa não resolver, o próximo passo costuma ser o Procon ou o consumidor.gov.br. Você já foi para alguma dessas vias?",
+        "Pensando no seu caso — a cobrança é recorrente ou foi uma única vez? Isso muda um pouco o caminho."
+      ]
+    },
+    {
+      "tag": "sac",
+      "patterns": [
+        "sac", "atendimento", "suporte", "reclamei", "reclamação", "reclamacao", "protocolo",
+        "ouvidoria", "não resolveram", "nao resolveram", "não ajudaram", "nao ajudaram",
+        "falei com a empresa", "entrei em contato", "atendente", "liguei para a empresa",
+        "mandei email", "mandei e-mail", "enviei mensagem", "chatei com eles", "chatei com a empresa",
+        "fui até a loja", "fui lá reclamar", "já reclamei", "ja reclamei", "já fiz reclamação",
+        "ja fiz reclamacao", "já entrei em contato", "ja entrei em contato",
+        "eles não resolvem", "eles nao resolvem", "ninguém resolve", "ninguem resolve",
+        "botaram para esperar", "ficam enrolando", "ficam me mandando de um lado para outro",
+        "atendimento horrível", "atendimento horrivel", "atendimento péssimo", "atendimento pessimo",
+        "atendimento demora", "não atenderam", "nao atenderam", "não consigo falar com ninguém",
+        "nao consigo falar com ninguem", "o sac não resolve", "o sac nao resolve",
+        "como faço reclamação", "como faco reclamacao", "onde reclamar", "como reclamar",
+        "onde falo com a empresa", "como falo com a empresa"
+      ],
+      "responses": [
+        "Quando você entra em contato com a empresa, o mais importante é registrar tudo por escrito — e-mail, chat, formulário do site. O protocolo de atendimento é seu aliado: com ele, você prova que tentou resolver antes de escalar a reclamação.",
+        "Se já reclamou e não resolveram, o próximo passo costuma ser a ouvidoria da empresa — que tem obrigação legal de responder em prazo determinado. Se ainda assim não resolver, Procon e consumidor.gov.br são os caminhos formais.",
+        "Para documentar o contato com a empresa: anota o canal usado, a data, o horário, o nome do atendente se possível, e o número do protocolo. Se for por telefone, tenta sempre confirmar o protocolo por e-mail logo depois.",
+        "A empresa tem obrigação de fornecer protocolo de atendimento. Se o SAC não resolver em 5 dias úteis, você pode escalar para a ouvidoria. Se a ouvidoria também não resolver, o Procon é o passo seguinte."
+      ],
+      "context_responses": [
+        "Continuando — você tem algum protocolo dos contatos que já fez com a empresa? Isso vai ser importante.",
+        "Para escalar a reclamação, o histórico de atendimento é muito útil. Você tem registros dos contatos anteriores?",
+        "Se o SAC não resolveu, a ouvidoria da empresa é o próximo passo. Você já tentou falar com a ouvidoria?",
+        "Pensando no seu caso — quanto tempo faz que você está tentando resolver com a empresa sem sucesso?"
+      ]
+    },
+    {
+      "tag": "direito_basico",
+      "patterns": [
+        "direito do consumidor", "direitos do consumidor", "cdc", "código do consumidor",
+        "codigo do consumidor", "quero saber meus direitos", "tenho direito", "isso é direito meu",
+        "isso e direito meu", "qual é meu direito", "qual e meu direito",
+        "o que diz a lei", "o que a lei diz", "lei do consumidor", "lei de defesa do consumidor",
+        "o que é o cdc", "o que e o cdc", "o cdc cobre isso", "cdc cobre isso",
+        "o código cobre", "o codigo cobre", "tenho amparo legal", "tenho proteção legal",
+        "a lei protege", "lei protege o consumidor", "quero saber a lei",
+        "quais são os direitos básicos", "quais sao os direitos basicos",
+        "direitos garantidos", "o que garante a lei", "o que a lei garante",
+        "o que posso exigir", "posso exigir isso", "tenho direito a isso"
+      ],
+      "responses": [
+        "O CDC — Código de Defesa do Consumidor, Lei 8.078/90 — define vários direitos fundamentais. Entre eles: proteção contra práticas abusivas, direito à informação clara, garantia em produtos e serviços, proteção contra propaganda enganosa e direito de arrependimento em compras não presenciais.",
+        "Seus direitos básicos como consumidor incluem: receber o produto ou serviço conforme anunciado, ter defeitos corrigidos, cancelar compras online em 7 dias, receber reembolso em caso de cancelamento, e ser atendido de forma adequada pelo SAC.",
+        "O CDC protege você em toda relação de consumo — compra de produto, contratação de serviço, assinatura de plano. A empresa sempre é considerada parte mais forte nessa relação, então a lei tende a proteger o consumidor.",
+        "Alguns direitos importantes: garantia legal de 30 dias para bens não duráveis e 90 dias para bens duráveis; direito de arrependimento em 7 dias em compras online; proibição de propaganda enganosa; direito a informações claras sobre preço, prazo e condições."
+      ],
+      "context_responses": [
+        "Quero aplicar isso ao seu caso. Me conta o que aconteceu para eu ser mais específica.",
+        "Esses são os direitos gerais. Dependendo do seu caso, existe um artigo específico do CDC que se aplica. O que aconteceu?",
+        "Continuando — qual parte do CDC você quer entender melhor? Posso aprofundar em qualquer uma delas."
+      ]
+    },
+    {
+      "tag": "reembolso",
+      "patterns": [
+        "reembolso", "devolução do dinheiro", "devolucao do dinheiro", "quero meu dinheiro de volta",
+        "estorno", "cancelaram mas não devolveram", "cancelaram mas nao devolveram",
+        "não devolveram o valor", "nao devolveram o valor", "ressarcimento", "receber de volta",
+        "valor de volta", "pedir reembolso", "como pedir reembolso", "onde pedir reembolso",
+        "prazo para reembolso", "quando devolve o dinheiro", "quantos dias para reembolso",
+        "dinheiro não voltou", "dinheiro nao voltou", "estorno não caiu", "estorno nao caiu",
+        "não recebi o estorno", "nao recebi o estorno", "não caiu o estorno",
+        "nao caiu o estorno", "paguei e cancelei mas não devolveram",
+        "paguei e cancelei mas nao devolveram", "cancelou e não devolveu",
+        "cancelou e nao devolveu", "quero ressarcimento", "quero ser ressarcido",
+        "quero ser ressarcida", "me devolvam o dinheiro", "cadê meu dinheiro",
+        "cade meu dinheiro", "onde está meu reembolso", "onde esta meu reembolso"
+      ],
+      "responses": [
+        "Para reembolso após cancelamento, o prazo varia conforme a forma de pagamento. No cartão de crédito, o estorno pode aparecer em até 2 faturas. No débito ou Pix, o prazo costuma ser mais curto — geralmente até 10 dias úteis. Se passar esse prazo, você pode cobrar formalmente.",
+        "Se o reembolso não voltou dentro do prazo informado pela empresa, entre em contato por escrito e solicite uma previsão formal. Se ainda não resolver, acione a operadora do cartão ou, no caso de Pix, o banco — e formalize no Procon.",
+        "Para reembolso após arrependimento em compra online, a devolução deve ser integral — incluindo frete que você pagou. A empresa não pode descontar nada do valor que você pagou originalmente.",
+        "Guarde todos os comprovantes: pedido de cancelamento, protocolo, e qualquer comunicação da empresa confirmando o reembolso. Se o valor não chegar, esses documentos são a base da reclamação."
+      ],
+      "context_responses": [
+        "Sobre o reembolso — quanto tempo faz que o cancelamento foi solicitado? E qual foi a forma de pagamento?",
+        "Continuando — a empresa confirmou o reembolso por escrito? Isso é importante para cobrar um prazo.",
+        "Se o estorno não apareceu, vale confirmar com o banco ou operadora do cartão também — às vezes o estorno foi feito, mas fica pendente no banco.",
+        "Pensando no seu caso — o reembolso foi prometido para quando? Eles deram alguma previsão?"
+      ]
+    },
+    {
+      "tag": "cancelamento",
+      "patterns": [
+        "cancelamento", "cancelar serviço", "cancelar servico", "cancelar compra",
+        "pedir cancelamento", "encerrar contrato", "encerrar plano", "quero desistir",
+        "quero encerrar", "cancelar assinatura", "cancelar pedido", "não consigo cancelar",
+        "nao consigo cancelar", "difícil de cancelar", "dificil de cancelar",
+        "dificuldade para cancelar", "como faço para cancelar", "como faco para cancelar",
+        "como cancelar", "onde cancelo", "empresa não cancela", "empresa nao cancela",
+        "não aceitam o cancelamento", "nao aceitam o cancelamento", "ficam enrolando no cancelamento",
+        "querem cobrar multa", "vão cobrar multa", "vao cobrar multa", "cobrando multa pelo cancelamento",
+        "não deixam cancelar", "nao deixam cancelar", "só consigo cancelar pessoalmente",
+        "so consigo cancelar pessoalmente", "só pelo telefone", "so pelo telefone",
+        "colocam burocracia para cancelar", "processo de cancelamento difícil",
+        "processo de cancelamento dificil", "bloqueando o cancelamento"
+      ],
+      "responses": [
+        "Você tem direito de cancelar. Para contratos de serviço ou assinatura, a empresa é obrigada a oferecer um meio de cancelamento tão fácil quanto o de contratação — se você contratou pelo app, pode cancelar pelo app; se foi pela internet, pode cancelar pela internet.",
+        "Sobre multa por cancelamento: ela pode existir em contratos com fidelidade, mas deve estar claramente prevista no contrato e ser proporcional. Fidelidade fora do prazo sem cláusula clara no contrato é ilegal.",
+        "Se a empresa está dificultando o cancelamento — exigindo que vá pessoalmente, colocando burocracia excessiva ou não respondendo as solicitações — isso em si já é uma prática abusiva que pode ser denunciada ao Procon.",
+        "Para formalizar o cancelamento: faça sempre por escrito, com protocolo. Se a empresa não cancelar dentro do prazo ou continuar cobrando, você tem base para exigir o encerramento e a devolução do que foi cobrado indevidamente após o pedido."
+      ],
+      "context_responses": [
+        "Continuando — qual é o tipo de serviço ou contrato que você quer cancelar? O processo pode variar.",
+        "Se a empresa está colocando obstáculos, documente essas tentativas. Você já tentou cancelar de que forma?",
+        "Sobre o cancelamento — existe cláusula de fidelidade no contrato? Você sabe quanto tempo falta para o término?",
+        "Pensando na sua situação — a empresa chegou a confirmar que cancelou ou ainda está em aberto?"
+      ]
+    },
+    {
+      "tag": "nota_fiscal",
+      "patterns": [
+        "nota fiscal", "cupom fiscal", "comprovante da compra", "não tenho nota", "nao tenho nota",
+        "perdi a nota", "tenho comprovante", "guardei a nota", "prova de compra", "recibo",
+        "não me deram nota", "nao me deram nota", "se recusaram a dar nota",
+        "loja não emitiu nota", "loja nao emitiu nota", "nota fiscal eletrônica", "nota fiscal eletronica",
+        "nfe", "danfe", "xml da nota", "segunda via da nota", "reemitir nota fiscal",
+        "nota fiscal obrigatória", "nota fiscal obrigatoria", "empresa tem que dar nota",
+        "empresa tem que emitir nota", "posso exigir nota fiscal", "tenho direito à nota",
+        "tenho direito a nota", "não emitem nota", "nao emitem nota",
+        "comprovante bancário serve", "comprovante bancario serve", "extrato do banco serve",
+        "print do pagamento serve", "comprovante de pix serve", "comprovante de transferência serve"
+      ],
+      "responses": [
+        "A nota fiscal é obrigatória em qualquer venda — empresa que se recusa a emitir está descumprindo a lei. Você pode exigir a nota no momento da compra ou solicitar depois. Se negarem, pode denunciar ao Procon e à Secretaria da Fazenda do seu estado.",
+        "Não ter a nota fiscal dificulta mas não impossibilita a reclamação. Comprovante de pagamento (extrato bancário, comprovante de Pix, histórico do cartão), print do pedido e troca de mensagens com a empresa também são provas válidas.",
+        "Para garantia e defeito, a nota fiscal é o documento mais forte. Mas o CDC aceita outros comprovantes — extrato, recibo, histórico de pedido. Se a empresa exigir a nota para realizar a garantia e você não tiver, ela está colocando obstáculo indevido.",
+        "Se a loja não emitiu nota fiscal, além dos seus direitos como consumidor, isso é também uma questão fiscal — você pode denunciar à Secretaria da Fazenda. Guarda qualquer comprovante que você tiver da compra."
+      ],
+      "context_responses": [
+        "Pensando no seu caso — você tem algum outro comprovante da compra além da nota? Extrato, print do pedido, e-mail de confirmação?",
+        "Continuando — se a empresa está pedindo nota fiscal para cobrir a garantia e você não tem, questione por escrito. Eles precisam aceitar outros comprovantes.",
+        "A nota fiscal emitida eletronicamente fica no sistema da empresa também. Você pode solicitar uma segunda via — inclusive por e-mail."
+      ]
+    },
+    {
+      "tag": "prova_documental",
+      "patterns": [
+        "que provas guardar", "quais provas preciso", "o que eu guardo", "o que guardar",
+        "tenho print", "tenho provas", "tenho foto", "guardei conversa", "guardei e-mail",
+        "guardei email", "quero juntar provas", "documentar o caso", "como provar",
+        "como comprovar", "quais documentos preciso", "o que serve como prova",
+        "print serve como prova", "foto serve como prova", "áudio serve como prova",
+        "audio serve como prova", "vídeo serve como prova", "video serve como prova",
+        "conversa de whatsapp serve", "conversa do whats serve", "print de chat serve",
+        "e-mail serve como prova", "email serve como prova", "como documentar",
+        "o que devo guardar", "o que não devo jogar fora", "o que nao devo jogar fora",
+        "como organizar as provas", "que tipo de prova precisarei", "como fortalecer meu caso",
+        "quero ter provas suficientes", "precisarei de provas para isso"
+      ],
+      "responses": [
+        "As provas mais valiosas em casos de consumidor são: nota fiscal ou comprovante de compra, prints do anúncio ou descrição do produto, fotos do defeito ou problema, histórico de conversa com a empresa (chat, e-mail, WhatsApp), e números de protocolo de atendimento.",
+        "Print de conversa vale sim como prova — seja no WhatsApp, chat do site, e-mail ou qualquer canal escrito. O ideal é guardar em mais de um lugar e não apagar. Se precisar usar formalmente, você pode autenticar com reconhecimento de firma ou usar como prova documental simples.",
+        "Para fortalecer o caso: documente o problema assim que ele aparecer — foto, vídeo, descrição escrita da data e horário. Guarda todos os contatos com a empresa em ordem cronológica. Quanto mais organizado, mais fácil fica se você precisar formalizar a reclamação.",
+        "Documentos que ajudam muito: comprovante de pagamento, histórico do pedido no site ou aplicativo, prints do anúncio, foto do produto com defeito, etiqueta da embalagem com código de envio, e-mail de confirmação da compra."
+      ],
+      "context_responses": [
+        "Pensando no seu caso — você já tem algum desses documentos guardados? Me conta o que tem disponível.",
+        "Continuando — o tipo de prova mais importante varia conforme o caso. Me conta o problema para eu ser mais específica sobre o que guardar.",
+        "Para esse tipo de situação, o mais importante costuma ser registrar o problema assim que aconteceu. Você já tem fotos ou algum registro?"
+      ]
     }
   ]
 }

@@ -26,3 +26,17 @@ def obter_temas_visitados(historico):
     for item in historico:
         tag = item.get("intencao")
         if tag and tag not in ("desconhecida", "saudacao", "despedida", "agradecimento") and tag not in vistos:
+            vistos.append(tag)
+    return vistos
+
+
+def obter_num_interacoes(historico):
+    return len(historico)
+
+
+def detectar_tom_usuario(mensagem):
+    msg_lower = mensagem.lower()
+
+    palavras_frustracao = [
+        "absurdo", "ridiculo", "ridículo", "indignado", "indignada", "nao aguento", "não aguento",
+        "cansado", "cansada", "pessimo", "péssimo", "horrivel", "horrível", "nunca mais",

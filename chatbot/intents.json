@@ -1,0 +1,79 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "eai", "ei",
+        "tudo bem", "alô", "alo", "começar", "iniciar conversa", "preciso de ajuda",
+        "quero tirar uma dúvida", "quero tirar uma duvida", "vamos começar", "vamos comecar",
+        "hello", "oi tudo bem", "boa", "bom dia tudo bem", "boa tarde tudo certo",
+        "olá tudo bem", "ola tudo bem", "oi boa tarde", "oi bom dia",
+        "posso tirar uma dúvida", "posso tirar uma duvida", "tenho uma duvida",
+        "tenho uma dúvida", "quero fazer uma pergunta", "posso perguntar",
+        "preciso de uma orientação", "preciso de uma orientacao", "me ajuda ai",
+        "pode me ajudar", "ola boa noite", "oi boa noite", "boa noite tudo bem"
+      ],
+      "responses": [
+        "Olá! Me conte com calma o que aconteceu no seu caso — pode ser por partes mesmo.",
+        "Oi! Pode me explicar o que está acontecendo? Vou acompanhar a situação com você.",
+        "Olá! Me descreve o problema com suas próprias palavras que a gente vai destrinchando juntos.",
+        "Oi! Me conta o que aconteceu — pode começar do começo, sem pressa."
+      ],
+      "context_responses": [
+        "Pode continuar. Estou acompanhando.",
+        "Certo, pode me dar mais detalhes.",
+        "Tudo bem, me diz mais sobre isso.",
+        "Pode continuar que eu acompanho."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "tchau", "até mais", "ate mais", "até logo", "ate logo", "obrigado", "obrigada",
+        "valeu", "falou", "encerrar", "finalizar", "era isso", "era só isso", "era so isso",
+        "já ajudou", "ja ajudou", "até", "ate", "foi ótimo", "foi otimo", "foi bom",
+        "satisfeito", "satisfeita", "consegui o que precisava", "acho que é isso",
+        "acho que e isso", "vou verificar", "vou tentar", "vou fazer isso",
+        "me ajudou muito", "muito útil", "muito util", "obrigado de mais",
+        "obrigada demais", "era tudo que precisava", "resolveu meu problema",
+        "entendi tudo", "ficou claro", "ficou bem claro", "agora entendi",
+        "já entendi", "ja entendi", "pode encerrar", "encerramos por aqui"
+      ],
+      "responses": [
+        "Fico feliz que tenha ajudado! Qualquer dúvida nova, pode voltar quando quiser.",
+        "Certo! Qualquer coisa é só chamar. Espero que tudo se resolva bem.",
+        "Foi um prazer orientar você. Qualquer situação nova, pode contar comigo.",
+        "Até! Se precisar de mais alguma informação depois, pode voltar."
+      ],
+      "context_responses": [
+        "Fico feliz que tenha ajudado. Pode voltar se surgir algo mais.",
+        "Espero que consiga resolver. Qualquer coisa me avise.",
+        "Até! Torço para que tudo se resolva bem."
+      ]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": [
+        "obrigado pela ajuda", "muito obrigado", "muito obrigada", "agradeço", "agradeco",
+        "ajudou bastante", "valeu pela ajuda", "valeu pela explicação", "valeu pela explicacao",
+        "grato", "grata", "super obrigado", "super obrigada", "obrigadão", "obrigadao",
+        "consegui entender", "ficou claro agora", "esclareceu bastante", "esclareceu muito",
+        "que bom que existe isso", "que bom", "top demais", "você foi ótimo", "voce foi otimo",
+        "você foi ótima", "voce foi otima", "ótima explicação", "otima explicacao",
+        "explicação clara", "explicacao clara", "adorei a explicação", "adorei a explicacao",
+        "isso foi muito útil", "isso foi muito util", "você ajudou demais", "voce ajudou demais"
+      ],
+      "responses": [
+        "Fico contente que tenha conseguido entender melhor a situação.",
+        "Que bom! Se precisar de algo mais, estou por aqui.",
+        "Sempre bom poder ajudar. Qualquer nova dúvida pode perguntar.",
+        "Boa sorte com o seu caso! Qualquer coisa é só voltar."
+      ],
+      "context_responses": [
+        "Que bom que ajudou! Se surgir algo mais, pode perguntar.",
+        "Fico feliz! Espero que resolva tudo bem.",
+        "Isso mesmo, pode contar comigo se precisar."
+      ]
+    }
+  ]
+}

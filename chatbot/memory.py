@@ -81,3 +81,8 @@ def extrair_entidades(mensagem):
         entidades["canal_compra"] = "fisica"
 
     # Objeto
+    if "produto" in texto:
+        entidades["objeto"] = "produto"
+    elif any(w in texto for w in ["servico", "serviço", "servicos", "serviços"]):
+        entidades["objeto"] = "servico"
+

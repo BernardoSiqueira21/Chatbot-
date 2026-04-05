@@ -126,6 +126,94 @@
         "Me conta o novo caso.",
         "Sem problema, pode continuar com o novo assunto."
       ]
+    },
+    {
+      "tag": "garantia",
+      "patterns": [
+        "garantia", "produto com defeito", "meu produto veio com defeito", "produto quebrado",
+        "produto estragado", "vício", "vicio", "defeito", "defeituoso", "conserto",
+        "manutenção", "manutencao", "não funciona", "nao funciona", "parou de funcionar",
+        "veio quebrado", "veio estragado", "produto ruim", "produto falhou", "falha no produto",
+        "produto deu problema", "deu problema", "apresentou problema", "tem problema",
+        "está com problema", "está com defeito", "esta com defeito", "veio com defeito",
+        "não liga", "nao liga", "não acende", "nao acende", "não funciona direito",
+        "nao funciona direito", "veio danificado", "chegou danificado", "chegou quebrado",
+        "produto danificado", "garantia do produto", "dentro da garantia",
+        "ainda está na garantia", "ainda esta na garantia", "produto novo com defeito",
+        "é novo e tem defeito", "e novo e tem defeito", "comprei e já veio com defeito",
+        "comprei e ja veio com defeito", "defeito de fabricação", "defeito de fabricacao",
+        "vícios do produto", "vicios do produto", "produto não serve", "produto nao serve"
+      ],
+      "responses": [
+        "Quando o produto apresenta defeito, o CDC prevê que você tem direito a conserto, troca ou restituição do valor. O prazo para reclamar começa a contar a partir de quando o defeito se manifesta — e o fornecedor tem até 30 dias para resolver. Se não resolver, você pode exigir a troca por outro produto ou o reembolso.",
+        "Se o produto veio com defeito ou apresentou falha, isso é chamado de vício do produto. Para bens duráveis, como eletrodomésticos ou eletrônicos, o prazo de reclamação é de 90 dias. Para bens não duráveis, são 30 dias. Esse prazo começa quando o defeito aparecer, não quando a compra foi feita.",
+        "Produto com defeito cai no artigo 18 do CDC. Você pode exigir conserto em 30 dias — se não for resolvido nesse prazo, pode pedir troca por produto novo, restituição do valor ou desconto proporcional. Me conta o que aconteceu com o produto para eu te orientar melhor.",
+        "Primeiro: guarda tudo — nota fiscal, comprovante de compra, fotos do defeito e registros do contato com a empresa. Se ainda não entrou em contato, o ideal é fazer isso por escrito para ter protocolo. Me conta mais sobre o defeito e quando ele apareceu."
+      ],
+      "context_responses": [
+        "Pensando nesse defeito que você mencionou — quando foi que ele apareceu? Isso muda bastante o caminho.",
+        "Se o defeito apareceu logo, é mais direto. Se foi depois de algum uso, a empresa pode tentar questionar — mas você ainda tem direitos. Me conta mais.",
+        "Para continuar, me diz: a empresa já foi contactada sobre esse defeito ou ainda não?",
+        "Continuando nesse ponto — você tem nota fiscal ou comprovante da compra? Isso vai ajudar bastante.",
+        "Nessa situação, a resposta da empresa é um passo importante. Ela já foi procurada?"
+      ]
+    },
+    {
+      "tag": "defeito_apos_uso",
+      "patterns": [
+        "deu defeito depois", "parou de funcionar depois", "quebrou depois de usar",
+        "estragou depois de alguns dias", "estragou depois de um tempo", "depois de usar deu problema",
+        "funcionou e depois parou", "apresentou defeito depois", "o problema apareceu depois",
+        "depois de alguns dias deu defeito", "usou e estragou", "usou algumas vezes e parou",
+        "usou pouco e deu problema", "durou pouco", "não durou", "nao durou", "durou dias",
+        "durou semanas", "ficou bom no começo depois piorou", "começou a falhar",
+        "comecou a falhar", "falhou depois de um tempo", "parou depois de pouco tempo",
+        "parou rápido", "parou rapido", "estragou cedo", "estragou rápido", "estragou rapido",
+        "o produto se deteriorou", "teve vida útil curta", "teve vida util curta",
+        "problema surgiu depois", "defeito tardio", "problema veio depois",
+        "funcionou pouco", "durou pouco tempo", "vida útil muito curta", "vida util muito curta"
+      ],
+      "responses": [
+        "Quando o defeito aparece depois de algum uso, a linha do tempo do problema fica importante. O CDC protege você tanto para defeitos imediatos quanto para os que surgem depois — o prazo de reclamação começa a contar quando o problema se manifesta, não quando foi comprado.",
+        "Mesmo que o produto tenha funcionado um tempo antes de dar defeito, você ainda pode ter direito a conserto ou troca. O que conta é: o defeito surgiu dentro do prazo legal de garantia? Para produtos duráveis, esse prazo é de 90 dias a partir do defeito.",
+        "Nesse cenário, a empresa pode tentar argumentar que foi mau uso. Por isso, é importante ter documentação — foto do defeito, como aconteceu, laudo técnico se possível. Me conta mais detalhes: o produto é o quê? Quanto tempo faz que comprou e quanto faz que o problema apareceu?",
+        "Produto que para de funcionar depois de pouco uso pode ser vício oculto — um defeito que não aparecia de imediato. O CDC cobre isso. Se a empresa se negar a resolver, ela precisa provar que foi mau uso, e não você."
+      ],
+      "context_responses": [
+        "Com base no que você disse, o defeito tardio ainda é coberto. Me conta: faz quanto tempo que o problema apareceu?",
+        "Continuando — nesse tipo de caso, a empresa frequentemente tenta dizer que foi mau uso. Você tem como documentar como usava o produto?",
+        "Pensando nisso — você tem a nota fiscal ou comprovante de compra? Isso ajuda a calcular se ainda está dentro do prazo legal.",
+        "Para esse tipo de situação, é bom ter registro por escrito do problema. Você já entrou em contato com a empresa?"
+      ]
+    },
+    {
+      "tag": "troca",
+      "patterns": [
+        "troca", "trocar produto", "trocar mercadoria", "trocar item", "devolver",
+        "devolução", "devolucao", "substituir", "substituição", "substituicao",
+        "quero trocar", "posso trocar", "a loja não quer trocar", "a loja nao quer trocar",
+        "não querem trocar", "nao querem trocar", "recusaram a troca", "troca negada",
+        "negaram a troca", "loja recusou a troca", "não aceitam troca", "nao aceitam troca",
+        "a troca foi negada", "não posso trocar", "nao posso trocar", "disseram que não troca",
+        "disseram que nao troca", "política de troca", "politica de troca",
+        "quero devolver o produto", "quero fazer a devolução", "quero fazer a devolucao",
+        "quero um produto diferente", "quero trocar por outro", "troca por um modelo diferente",
+        "produto veio errado quero trocar", "trocar por tamanho diferente",
+        "trocar por outra cor", "trocar por modelo diferente", "posso devolver",
+        "devo devolver", "como faço para trocar", "como faco para trocar"
+      ],
+      "responses": [
+        "O direito de troca por defeito é garantido pelo CDC. Se o produto apresentou vício, o fornecedor tem 30 dias para resolver — se não resolver nesse prazo, você pode exigir: troca por produto idêntico, restituição do valor pago, ou abatimento proporcional no preço.",
+        "Para troca por arrependimento, existem regras diferentes. Se foi compra online, você tem 7 dias para desistir sem precisar dar nenhuma explicação. Em loja física, a política de troca varia — a empresa não é obrigada por lei a aceitar troca sem defeito, mas muitas têm essa política própria.",
+        "Se a loja recusou a troca e o produto tem defeito, isso é um problema sério. Você pode registrar a reclamação no SAC, no Procon ou no consumidor.gov.br. Guarde tudo — protocolo do atendimento, fotos do defeito, comprovante da compra.",
+        "Sobre troca: produto com defeito é diferente de produto sem defeito que você não gostou. Para defeito, a lei garante. Para arrependimento em loja física, depende da política da loja. Me conta melhor o seu caso para eu ser mais específica."
+      ],
+      "context_responses": [
+        "Continuando nesse ponto da troca — o motivo da troca é defeito ou é outra coisa?",
+        "Para troca por defeito, a empresa tem obrigação legal. Para outros motivos, depende da política deles. Me conta o que aconteceu.",
+        "Se a loja já negou a troca, o próximo passo é registrar formalmente. Você já fez algum registro por escrito?",
+        "Pensando na sua situação — você tem algum comprovante de que a loja foi procurada e negou a troca?"
+      ]
     }
   ]
 }

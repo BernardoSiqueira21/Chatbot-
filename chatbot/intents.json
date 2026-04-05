@@ -745,6 +745,219 @@
         "Sobre o plano ou assinatura — existe cláusula de fidelidade no contrato? Se sim, você sabe quanto tempo falta?",
         "Para seguir — qual é o serviço em questão? Isso ajuda a entender se existem regras específicas além do CDC geral."
       ]
+    },
+    {
+      "tag": "juizado_especial",
+      "patterns": [
+        "juizado especial", "pequenas causas", "juizado civel", "juizado cível",
+        "posso processar", "posso entrar com processo", "vou processar a empresa",
+        "posso ir a justiça", "posso ir a justica", "ação judicial", "acao judicial",
+        "processo judicial", "entrar na justiça", "entrar na justica", "mover processo",
+        "quero mover processo", "quero entrar com ação", "quero entrar com acao",
+        "preciso de advogado", "precisa de advogado", "jecc", "jecrim",
+        "posso processar sem advogado", "dá para processar sozinho", "da para processar sozinho",
+        "como dar entrada no processo", "como dar entrada na ação", "como dar entrada na acao",
+        "como entrar com a ação", "como entrar com a acao", "quero dano moral",
+        "cabe dano moral", "posso pedir dano moral", "dano material", "dano moral e material"
+      ],
+      "responses": [
+        "O Juizado Especial Cível — JEC — permite que você processe a empresa sem advogado, desde que o valor seja de até 20 salários mínimos. Você leva os documentos do caso até o juizado mais próximo e faz a petição de forma relativamente simples.",
+        "Para valores até 20 salários mínimos, o JEC não exige advogado. Para valores acima disso, o advogado é obrigatório. O processo no JEC costuma ser mais rápido que a justiça comum.",
+        "Sobre dano moral: ele pode ser pedido junto com o dano material. O valor é arbitrado pelo juiz conforme a gravidade do caso — situações de constrangimento, tempo perdido excessivo, problemas sérios de saúde e similares tendem a ter mais chances.",
+        "Para dar entrada no JEC: leve todos os documentos organizados (comprovante de compra, protocolos de atendimento, registro da negativa da empresa, fotos do problema), o seu CPF, RG, e o endereço completo da empresa que você vai processar."
+      ],
+      "context_responses": [
+        "Continuando — você já esgotou as vias administrativas? Procon e consumidor.gov.br costumam ser um passo anterior ao JEC.",
+        "Para o Juizado Especial, ter toda a documentação organizada é muito importante. Você tem os documentos do caso?",
+        "Pensando no seu caso — o valor envolvido é quanto? Isso define se você pode ir ao JEC sem advogado ou não."
+      ]
+    },
+    {
+      "tag": "frete_entrega",
+      "patterns": [
+        "frete", "valor do frete", "frete grátis", "frete gratis", "frete cobrado errado",
+        "frete absurdo", "frete alto demais", "me cobraram frete", "cobraram frete indevido",
+        "frete não combinado", "frete nao combinado", "frete surpresa", "frete escondido",
+        "frete diferente do site", "frete diferente do anuncio", "frete diferente do anúncio",
+        "entregador", "motoboy", "courier", "quem paga o frete de devolução",
+        "quem paga o frete de volta", "frete da devolução", "frete da devolucao",
+        "frete do retorno", "logística reversa", "logistica reversa",
+        "empresa tem que pagar o frete", "eu pago o frete de volta"
+      ],
+      "responses": [
+        "Para devolução por arrependimento em compra online, o frete de volta é responsabilidade da empresa — você não paga. Já para devoluções por outros motivos, depende do que está no contrato ou política da loja.",
+        "Se o frete cobrado foi diferente do anunciado, isso é uma irregularidade. O valor anunciado é o que vale — a empresa não pode alterar depois que você finalizou a compra.",
+        "Logística reversa — o frete de devolução — em casos de defeito é sempre por conta da empresa. Você não deve pagar frete para devolver um produto com problema.",
+        "Se houver frete surpresa ou diferente do que foi anunciado, você pode contestar e exigir o valor correto. Guarda um print do anúncio original com o valor do frete anunciado."
+      ],
+      "context_responses": [
+        "Continuando — o frete foi cobrado diferente do que estava anunciado ou é uma questão de quem paga na devolução?",
+        "Para o frete de devolução — o motivo da devolução é defeito ou arrependimento? Isso define quem paga."
+      ]
+    },
+    {
+      "tag": "cartao_credito",
+      "patterns": [
+        "cartão de crédito", "cartao de credito", "contestar no cartão", "contestar no cartao",
+        "chargeback", "estorno no cartão", "estorno no cartao", "operadora do cartão",
+        "operadora do cartao", "fui debitado", "compra indevida no cartão", "compra indevida no cartao",
+        "cobrança no cartão que não reconheço", "cobranca no cartao que nao reconheco",
+        "cobrança não autorizada no cartão", "cobranca nao autorizada no cartao",
+        "parcelamento errado", "parcela errada", "parcelou diferente do combinado",
+        "número de parcelas errado", "numero de parcelas errado",
+        "juros que não combinei", "juros que nao combinei", "paguei à vista e parcelou",
+        "paguei a vista e parcelou", "estorno do cartão demorou", "estorno do cartao demorou"
+      ],
+      "responses": [
+        "Para cobranças indevidas no cartão, você tem duas frentes: contestar com a empresa que cobrou e contestar com a operadora do cartão. O chargeback — contestação formal na operadora — pode resultar no estorno enquanto a investigação acontece.",
+        "O estorno no cartão de crédito pode aparecer em até 2 faturas — depende da operadora e da data de fechamento. Se passou mais de 2 faturas sem aparecer, conteste com a operadora.",
+        "Se você reconhece a compra mas discorda do valor ou do número de parcelas, fale primeiro com a empresa. Se não resolver, a operadora do cartão pode ajudar a contestar.",
+        "Para chargeback por compra não reconhecida, entre em contato com a operadora do cartão diretamente. Esse processo é diferente — é a operadora que investiga e, se confirmar fraude, estorna o valor."
+      ],
+      "context_responses": [
+        "Continuando — a cobrança é algo que você não reconhece ou é uma compra que fez mas foi cobrada errado?",
+        "Para cobranças no cartão, vale checar com a operadora também. Você já entrou em contato com eles?",
+        "Sobre o estorno no cartão — qual foi a previsão que a empresa deu? Isso ajuda a saber se já extrapolou o prazo."
+      ]
+    },
+    {
+      "tag": "pix_transferencia",
+      "patterns": [
+        "pix", "transferência pix", "transferencia pix", "paguei por pix", "pagamento via pix",
+        "pix errado", "pix não confirmado", "pix nao confirmado", "pix sumiu",
+        "pix caiu", "não caiu o pix", "nao caiu o pix", "reembolso via pix",
+        "devolução via pix", "devolucao via pix", "estorno via pix",
+        "pix para empresa errada", "pix enviado para conta errada", "enviei pix errado"
+      ],
+      "responses": [
+        "Para reembolso via Pix, a empresa precisa te devolver o valor no mesmo método ou em outro acordado — o Pix é uma opção ágil para isso, geralmente em horas ou no mesmo dia.",
+        "Se o Pix foi enviado para a empresa e o produto não chegou ou o serviço não foi prestado, você tem direito ao reembolso. Guarda o comprovante do Pix e toda comunicação com a empresa.",
+        "Pix enviado para conta errada é uma situação diferente — você precisa entrar em contato com o banco e com o destinatário. A instituição financeira pode mediar a devolução, mas não garante automaticamente.",
+        "Se a empresa prometeu reembolso via Pix e não fez, solicite por escrito uma previsão. Se não resolver, pode acionar o banco e o Procon — o Pix tem rastreamento que facilita a comprovação do pagamento."
+      ],
+      "context_responses": [
+        "Sobre o Pix — você tem o comprovante da transação? Ele vai ser importante para qualquer reclamação.",
+        "Continuando — a empresa confirmou que vai devolver via Pix ou ainda está em aberto?"
+      ]
+    },
+    {
+      "tag": "voo_transporte",
+      "patterns": [
+        "voo cancelado", "voo atrasado", "voo", "aérea", "aerea", "companhia aérea",
+        "companhia aerea", "passagem aérea", "passagem aerea", "bagagem", "bagagem perdida",
+        "bagagem extraviada", "mala perdida", "mala extraviada", "reacomodação",
+        "reacomodacao", "reembolso de passagem", "cancelamento de voo", "overbooking",
+        "preterição de embarque", "negaram embarque", "não me deixaram embarcar",
+        "nao me deixaram embarcar", "onibus", "ônibus", "trem", "transporte terrestre",
+        "passagem de onibus", "passagem de ônibus", "atraso de onibus", "atraso de ônibus"
+      ],
+      "responses": [
+        "Para voos, a Anac — Agência Nacional de Aviação Civil — regula as regras. Em caso de cancelamento ou atraso superior a 4 horas, você tem direito a reacomodação em outro voo, reembolso integral ou assistência material (alimentação, hospedagem, dependendo do tempo de espera).",
+        "Para bagagem extraviada, a empresa aérea é responsável. Você deve fazer o registro imediatamente no balcão da companhia no aeroporto — esse registro é chamado de RIB (Registro de Irregularidade de Bagagem). O prazo para resolução é de 7 dias para voos domésticos.",
+        "Voo cancelado: se a companhia avisou com menos de 72 horas de antecedência, você tem direito a assistência material. Se com mais de 72 horas, tem direito a reacomodação ou reembolso, mas pode não ter direito à assistência material.",
+        "Para ônibus, as regras são reguladas pela ANTT. Atrasos acima de 60 minutos dão direito a informação sobre o motivo; atrasos acima de 1 hora podem dar direito a refeição; cancelamento dá direito a reembolso ou reacomodação."
+      ],
+      "context_responses": [
+        "Continuando — o problema é com voo ou com ônibus? As regras e órgãos reguladores são diferentes.",
+        "Sobre o voo — qual foi o motivo informado pela companhia? E quanto tempo de atraso ou se foi cancelado?",
+        "Para bagagem extraviada — você já fez o registro no aeroporto? Esse é o primeiro passo mais importante."
+      ]
+    },
+    {
+      "tag": "saude_plano",
+      "patterns": [
+        "plano de saúde", "plano de saude", "convênio médico", "convenio medico",
+        "negaram o procedimento", "negaram o exame", "negaram a cirurgia", "negaram cobertura",
+        "negaram o tratamento", "não autorizaram", "nao autorizaram", "glosa", "glosa médica",
+        "reembolso do plano", "reembolso do convênio", "não cobriu", "nao cobriu",
+        "plano não pagou", "plano nao pagou", "carência", "carencia do plano",
+        "prazo de carência", "prazo de carencia", "cobertura do plano", "o que o plano cobre",
+        "rol da ans", "ans", "agência nacional de saúde", "agencia nacional de saude",
+        "reclamação para a ans", "reclamacao para a ans"
+      ],
+      "responses": [
+        "Planos de saúde são regulados pela ANS — Agência Nacional de Saúde Suplementar. Se o plano negou um procedimento, exame ou tratamento, você pode questionar a negativa e solicitar justificativa por escrito. A ANS define o Rol de Procedimentos obrigatórios que todo plano deve cobrir.",
+        "Se o plano negou cobertura de algo que está no Rol da ANS, você pode recorrer diretamente ao plano por escrito, acionar a ouvidoria do plano, ou registrar reclamação na ANS pelo site ou telefone 0800 701 9656.",
+        "Para negativas de emergência ou urgência, o plano não pode aplicar carência — tem obrigação de cobrir desde o início do contrato. Se negaram atendimento emergencial, isso é uma situação urgente para acionar a ANS.",
+        "Guarda tudo: a negativa por escrito do plano, os documentos médicos pedindo o procedimento, o seu contrato e carteirinha. Quanto mais documentado, mais fácil contestar."
+      ],
+      "context_responses": [
+        "Sobre o plano de saúde — o procedimento negado estava sendo pedido por qual motivo médico? E o plano deu alguma justificativa por escrito?",
+        "Continuando — você tem quanto tempo no plano? Isso é relevante para entender se pode haver carência.",
+        "Para esse tipo de negativa, a ANS é o órgão mais direto. Você já entrou em contato com eles?"
+      ]
+    },
+    {
+      "tag": "consumidor_gov",
+      "patterns": [
+        "consumidor gov", "consumidor.gov.br", "consumidor gov br", "plataforma do governo",
+        "site do governo para reclamar", "reclamação no governo", "reclamacao no governo",
+        "reclamar online", "como usar o consumidor gov", "como usar a plataforma",
+        "reclame aqui", "reclameaqui", "como funciona o reclame aqui",
+        "reclamação no reclame aqui", "reclamacao no reclame aqui", "publicar reclamação",
+        "publicar reclamacao", "postar reclamação online", "postar reclamacao online",
+        "denúncia online", "denuncia online", "onde denunciar"
+      ],
+      "responses": [
+        "O consumidor.gov.br é uma plataforma do governo federal onde você pode registrar reclamações contra empresas cadastradas. Muitas grandes empresas respondem lá com mais agilidade do que pelo SAC — porque as respostas são públicas e monitoradas.",
+        "Para usar o consumidor.gov.br: crie uma conta com seu CPF, localize a empresa, descreva o problema e envie. A empresa tem prazo para responder — geralmente 10 dias. Se resolver por lá, você avalia o atendimento.",
+        "O Reclame Aqui é uma plataforma privada, mas também é eficaz em alguns casos — empresas com muitas reclamações sem resposta têm reputação prejudicada, então muitas se preocupam em resolver para não abaixar a nota.",
+        "Para denúncia de propaganda enganosa ou prática abusiva, além do Procon, você pode registrar no Senacon — Secretaria Nacional do Consumidor — pelo próprio consumidor.gov.br."
+      ],
+      "context_responses": [
+        "Continuando — você já tentou o consumidor.gov.br ou só o SAC da empresa até agora?",
+        "Para esse caso, o consumidor.gov.br pode ser um bom caminho. Você quer que eu explique como funciona o processo de registro?"
+      ]
+    },
+    {
+      "tag": "contrato_cláusula_abusiva",
+      "patterns": [
+        "cláusula abusiva", "clausula abusiva", "contrato abusivo", "contrato confuso",
+        "não li o contrato", "nao li o contrato", "assinei sem ler", "assinou sem ler",
+        "letras miúdas", "letras miudas", "letra pequena", "asterisco", "condicões escondidas",
+        "condicoes escondidas", "condições escondidas", "condição que não estava clara",
+        "condicao que nao estava clara", "cláusula que não entendi", "clausula que nao entendi",
+        "termos confusos", "contrato que prejudica o consumidor", "cláusula que favorece a empresa",
+        "clausula que favorece a empresa", "renúncia de direitos no contrato",
+        "renuncia de direitos no contrato", "contrato de adesão", "contrato de adesao",
+        "contrato que não podia negociar", "contrato que nao podia negociar"
+      ],
+      "responses": [
+        "Cláusulas abusivas são nulas de pleno direito no CDC — mesmo que você tenha assinado o contrato. O CDC lista exemplos de cláusulas proibidas: as que limitam seus direitos garantidos por lei, que isentam a empresa de responsabilidade, ou que impõem desvantagens excessivas.",
+        "Contrato de adesão — aqueles que você assina mas não pode negociar os termos — são comuns mas têm limitações. Em caso de dúvida, a interpretação mais favorável ao consumidor prevalece, e cláusulas ambíguas são interpretadas a seu favor.",
+        "Se tiver uma cláusula que parece abusiva, você pode questionar a empresa e, se não resolver, acionar o Procon. O Procon pode declarar a nulidade de cláusulas abusivas e aplicar sanções à empresa.",
+        "Mesmo assinando um contrato com cláusulas abusivas, elas não valem — a lei está acima do contrato nessa relação. Você não abre mão de seus direitos pelo CDC só porque está em um contrato."
+      ],
+      "context_responses": [
+        "Continuando — qual cláusula você acha que é abusiva? Me descreve o que está escrito e eu posso te ajudar a entender.",
+        "Para contestar uma cláusula — você tem o contrato em mãos? O ideal é identificar o trecho específico."
+      ]
+    },
+    {
+      "tag": "desconhecida",
+      "patterns": [
+        "não sei explicar", "nao sei explicar", "é complicado", "e complicado", "é confuso",
+        "e confuso", "não entendi", "nao entendi", "me ajuda", "não sei o que fazer",
+        "nao sei o que fazer", "estou perdido", "tô perdido", "to perdido",
+        "opção 1", "opcao 1", "opção 2", "opcao 2", "opção 3", "opcao 3",
+        "hmm", "deixa eu pensar", "não sei bem", "nao sei bem", "não sei como explicar",
+        "nao sei como explicar", "é difícil de explicar", "e dificil de explicar",
+        "complicado de explicar", "é uma situação estranha", "e uma situacao estranha",
+        "nunca vi isso", "que situação", "não sei que tipo de problema é",
+        "nao sei que tipo de problema e", "não sei categorizar", "nao sei categorizar",
+        "talvez", "pode ser", "acho que", "sei lá", "sei la"
+      ],
+      "responses": [
+        "Não tem problema. Me conta com suas próprias palavras o que aconteceu — pode ser breve mesmo, qualquer detalhe já ajuda a entender o caso.",
+        "Pode começar do começo, sem pressa. O que aconteceu? Com quem foi? Produto, serviço, loja? Assim eu consigo te orientar melhor.",
+        "Tudo bem. Me diz só: qual é o problema principal? A compra não foi entregue, veio com defeito, cobrou errado, cancelamento não saiu? Qualquer pista já ajuda.",
+        "Pode tentar explicar de qualquer forma. Quanto mais detalhes, melhor — mas mesmo um resumo já é suficiente para começar."
+      ],
+      "context_responses": [
+        "Entendi que está difícil de explicar. Tenta me dizer pelo menos: o que aconteceu de errado?",
+        "Não precisa ser técnico. Me conta a história como você contaria para um amigo.",
+        "Pode ir por partes. Começa pelo início: o que foi comprado ou contratado?"
+      ]
     }
   ]
 }

@@ -214,6 +214,151 @@
         "Se a loja já negou a troca, o próximo passo é registrar formalmente. Você já fez algum registro por escrito?",
         "Pensando na sua situação — você tem algum comprovante de que a loja foi procurada e negou a troca?"
       ]
+    },
+    {
+      "tag": "arrependimento",
+      "patterns": [
+        "arrependi", "arrependimento", "me arrependi", "quero cancelar", "cancelar compra",
+        "desistir da compra", "desistência", "desistencia", "não quero mais", "nao quero mais",
+        "compra online", "comprei pela internet", "comprei no site", "comprei pelo aplicativo",
+        "fiz a compra online", "não gostei do produto", "nao gostei do produto",
+        "mudei de ideia", "não era o que eu queria", "nao era o que eu queria",
+        "não gostei", "nao gostei", "quero desistir", "prazo de desistência",
+        "prazo de desistencia", "direito de arrependimento", "prazo para devolver",
+        "posso desistir da compra", "posso cancelar por arrependimento",
+        "direito de desistir", "7 dias para devolver", "sete dias para devolver",
+        "comprei e não quero mais", "comprei e nao quero mais", "produto não é o que eu esperava",
+        "produto nao e o que eu esperava", "não serve para o que eu precisava",
+        "nao serve para o que eu precisava", "não gostei depois que chegou",
+        "nao gostei depois que chegou", "quero devolver sem defeito"
+      ],
+      "responses": [
+        "Para compras feitas pela internet, telefone ou catálogo — fora de estabelecimento físico — o CDC garante o direito de arrependimento em até 7 dias corridos a partir do recebimento do produto ou da contratação do serviço. Você não precisa dar nenhuma explicação.",
+        "O prazo de 7 dias para desistência começa a contar quando o produto chega na sua mão. Se ainda está dentro desse prazo, você pode solicitar o cancelamento e o reembolso integral — incluindo o frete que pagou na compra, se houver.",
+        "Se o produto já chegou e você quer devolver por arrependimento, entre em contato com a loja o quanto antes, de preferência por escrito — e-mail, chat ou aplicativo — para ter registro. Dentro do prazo de 7 dias, a empresa é obrigada a aceitar.",
+        "Arrependimento em compra online: 7 dias para desistir, reembolso integral, e o custo do frete de devolução fica por conta do fornecedor — não seu. Se a empresa cobrar frete para devolução nesses casos, isso é ilegal."
+      ],
+      "context_responses": [
+        "Continuando — quantos dias faz que o produto chegou? Isso define se você ainda está no prazo.",
+        "Dentro dos 7 dias, é tranquilo. Depois disso, fica mais difícil sem defeito no produto. Me conta quando chegou.",
+        "Para exercer o arrependimento, o contato com a empresa precisa ser feito dentro dos 7 dias. Você já entrou em contato?",
+        "Se for dentro do prazo, eles são obrigados a aceitar. Me conta mais sobre como a empresa reagiu."
+      ]
+    },
+    {
+      "tag": "atraso_entrega",
+      "patterns": [
+        "atraso", "entrega atrasou", "pedido atrasado", "demora", "prazo", "encomenda",
+        "transportadora", "não entregaram", "nao entregaram", "produto não chegou",
+        "produto nao chegou", "pedido não chegou", "pedido nao chegou", "atrasou a entrega",
+        "demorou demais", "passou do prazo", "não cumpriram o prazo", "nao cumpriram o prazo",
+        "entrega demorou", "está atrasado", "esta atrasado", "devia ter chegado",
+        "devia ter chegado e não chegou", "devia ter chegado e nao chegou",
+        "extrapolou o prazo", "prazo vencido", "não entregou no prazo", "nao entregou no prazo",
+        "atrasou muito", "tá atrasado", "ta atrasado", "foi prometido um prazo",
+        "prometeram um prazo e não cumpriram", "prometeram um prazo e nao cumpriram",
+        "rastreio parado", "rastreio não atualiza", "rastreio nao atualiza",
+        "sem atualização no rastreio", "sem atualizacao no rastreio", "entrega pendente",
+        "pedido parado", "saiu para entrega e não veio", "saiu para entrega e nao veio"
+      ],
+      "responses": [
+        "Quando o pedido atrasa, você tem algumas opções: pode exigir que a entrega seja feita imediatamente, pode cancelar o pedido com reembolso integral, ou pode aceitar outro prazo — mas qualquer novo prazo oferecido pela empresa também precisa ser cumprido.",
+        "Atraso na entrega é descumprimento de contrato. A empresa é responsável pelo produto até ele chegar na sua mão — incluindo problemas com transportadora. Se o rastreio está parado ou o prazo foi ultrapassado, você pode exigir uma solução.",
+        "Primeiro passo: entre em contato com a empresa por escrito e solicite um posicionamento. Peça um novo prazo por escrito e guarde o protocolo. Se não resolverem, você pode cancelar e pedir reembolso, ou acionar o Procon.",
+        "Para atrasos, guarde: a confirmação do pedido com o prazo prometido, os registros do rastreio e os protocolos dos contatos que já fez com a empresa. Isso vai te ajudar muito se precisar formalizar a reclamação."
+      ],
+      "context_responses": [
+        "Continuando — quantos dias de atraso já acumulou? E a empresa deu algum retorno quando foi contactada?",
+        "Se a empresa já foi avisada e não deu solução, o próximo passo é formalizar a reclamação. Você já tem algum protocolo?",
+        "Pensando no seu caso — o rastreio mostra alguma movimentação ou está completamente parado?",
+        "Sobre esse atraso — o produto foi comprado direto da loja ou via marketplace? Isso pode mudar com quem você precisa falar primeiro."
+      ]
+    },
+    {
+      "tag": "produto_nao_entregue",
+      "patterns": [
+        "produto não foi entregue", "produto nao foi entregue", "não recebi", "nao recebi",
+        "meu pedido não chegou", "meu pedido nao chegou", "sumiu a entrega",
+        "a compra não chegou", "a compra nao chegou", "pedido desapareceu",
+        "consta entregue mas não recebi", "consta entregue mas nao recebi",
+        "não recebi meu produto", "nao recebi meu produto", "produto some",
+        "produto sumiu", "nunca chegou", "não chegou nada", "nao chegou nada",
+        "disseram que entregaram mas não recebi", "disseram que entregaram mas nao recebi",
+        "sistema diz entregue mas não chegou", "sistema diz entregue mas nao chegou",
+        "código de rastreio diz entregue mas não está aqui",
+        "codigo de rastreio diz entregue mas nao esta aqui",
+        "diz que foi entregue mas não foi", "diz que foi entregue mas nao foi",
+        "assinatura não é minha", "assinatura nao e minha", "entregaram na casa errada",
+        "entregaram para outra pessoa", "entrega no endereço errado",
+        "entrega no endereco errado", "colocaram endereço errado", "endereço errado na entrega"
+      ],
+      "responses": [
+        "Quando consta como entregue mas você não recebeu, é importante agir rápido. Entre em contato com a empresa e com a transportadora, relate que não recebeu e peça uma investigação. A empresa é responsável por comprovar a entrega — e a assinatura no comprovante deve ser a sua.",
+        "Se o produto nunca chegou, você tem direito ao reembolso integral ou a um novo envio. A responsabilidade pela entrega é da empresa vendedora — problemas com transportadora são questão interna deles, não sua.",
+        "Para esse caso, os documentos mais importantes são: confirmação do pedido, rastreio mostrando status de 'entregue', e qualquer comunicação com a empresa. Se houver câmeras na entrada do local de entrega, pode ser útil verificar.",
+        "Quando a transportadora marca como entregue e você não recebeu, exija da empresa o comprovante de entrega — ele precisa ter assinatura, identificação e data. Se não tiver ou a assinatura não for sua, eles precisam resolver."
+      ],
+      "context_responses": [
+        "Continuando — o rastreio mostra qual status exatamente? Isso ajuda a entender o que aconteceu.",
+        "Você já entrou em contato com a empresa sobre isso? Se sim, qual foi a resposta?",
+        "Nesse tipo de situação, tempo é importante. Quanto faz que o produto deveria ter chegado?",
+        "Se a empresa argumentar que foi entregue, você tem direito de ver o comprovante. Eles apresentaram isso?"
+      ]
+    },
+    {
+      "tag": "propaganda_enganosa",
+      "patterns": [
+        "propaganda enganosa", "publicidade enganosa", "anúncio enganoso", "anuncio enganoso",
+        "oferta enganosa", "me enganaram", "fui enganado", "fui enganada",
+        "produto diferente do anúncio", "produto diferente do anuncio", "prometeram uma coisa",
+        "veio outra coisa", "oferta falsa", "informação falsa", "informacao falsa",
+        "na foto era diferente", "foto diferente do produto real", "descrição enganosa",
+        "descricao enganosa", "especificação errada", "especificacao errada",
+        "anunciou uma coisa entregou outra", "era diferente na página", "era diferente na pagina",
+        "o site mentiu", "a loja mentiu", "anúncio mentiroso", "anuncio mentiroso",
+        "o anuncio não correspondia", "o anuncio nao correspondia", "propaganda mentirosa",
+        "o que estava escrito era diferente", "não é o que foi anunciado", "nao e o que foi anunciado",
+        "te enganaram na venda", "venderam enganando", "informação errada no site",
+        "informacao errada no site", "foi anunciado errado"
+      ],
+      "responses": [
+        "Propaganda enganosa é proibida pelo CDC — Código de Defesa do Consumidor. Se o produto ou serviço foi anunciado de forma diferente do que foi entregue, você tem direito de exigir o que foi prometido, aceitar outro produto ou serviço equivalente, ou rescindir o contrato com reembolso.",
+        "O que foi anunciado tem força de oferta — a empresa é obrigada a cumprir o que prometeu, seja no site, no catálogo, nas redes sociais ou em qualquer material publicitário. Se não cumprir, configura propaganda enganosa.",
+        "Para esse caso, a prova mais importante é o anúncio em si — print da página, foto do produto na vitrine, e-mail de oferta, panfleto. Se ainda der para salvar isso, faça agora. Depois me conta o que foi prometido e o que foi entregue de diferente.",
+        "Além de exigir seus direitos diretamente com a empresa, você pode denunciar propaganda enganosa ao Conar — que regula publicidade — e ao Procon. Guarda todos os registros: anúncio, nota fiscal, comunicações com a empresa."
+      ],
+      "context_responses": [
+        "Para continuar — você ainda tem o anúncio ou algum registro do que foi prometido? Isso é a peça chave.",
+        "Se você tiver print ou foto do anúncio, já é uma boa prova. Me conta o que estava prometido e o que chegou de diferente.",
+        "A empresa foi informada sobre essa diferença? Qual foi a resposta?",
+        "Continuando — se o anúncio estava no site, tenta salvar agora antes que seja alterado. Isso pode ser útil depois."
+      ]
+    },
+    {
+      "tag": "produto_diferente",
+      "patterns": [
+        "veio diferente", "produto diferente", "recebi outro produto", "recebi produto errado",
+        "mandaram item errado", "modelo diferente", "cor diferente", "tamanho diferente",
+        "produto não corresponde", "produto nao corresponde", "mandaram produto errado",
+        "produto não é o que pedi", "produto nao e o que pedi", "enviaram o produto errado",
+        "não é o que comprei", "nao e o que comprei", "chegou um produto que não pedi",
+        "chegou um produto que nao pedi", "confundiram o pedido", "pedido trocado",
+        "pedi um e mandaram outro", "a caixa era de outro produto", "veio o produto trocado",
+        "mandaram a cor errada", "mandaram o tamanho errado", "mandaram o modelo errado",
+        "é diferente do que está na descrição", "e diferente do que esta na descricao",
+        "não é o que estava no site", "nao e o que estava no site"
+      ],
+      "responses": [
+        "Se o produto recebido é diferente do pedido, a empresa errou. Você não é obrigado a ficar com o produto errado. Pode exigir o produto correto ou o cancelamento com reembolso integral.",
+        "Nesse caso, documente antes de qualquer coisa: foto do produto que chegou, foto da caixa com etiqueta de envio, e a tela do pedido mostrando o que foi comprado. Essa comparação é a principal prova.",
+        "Entre em contato com a empresa por escrito — informe o erro, envie as fotos e solicite o produto correto ou o reembolso. A empresa é responsável por pagar o frete de devolução do produto errado.",
+        "Produto diferente do pedido é erro do fornecedor — e o custo para corrigir esse erro, incluindo logística reversa, é deles. Você não deve pagar nada adicional."
+      ],
+      "context_responses": [
+        "Para continuar — você já fotografou o produto que chegou e o número do pedido? Isso é importante ter registrado.",
+        "A empresa já foi informada sobre o produto errado? O que disseram?",
+        "Continuando — você aceitou receber o produto ou se recusou na entrega? Isso pode influenciar o processo."
+      ]
     }
   ]
 }

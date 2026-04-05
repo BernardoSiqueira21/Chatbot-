@@ -556,6 +556,195 @@
         "Continuando — o tipo de prova mais importante varia conforme o caso. Me conta o problema para eu ser mais específica sobre o que guardar.",
         "Para esse tipo de situação, o mais importante costuma ser registrar o problema assim que aconteceu. Você já tem fotos ou algum registro?"
       ]
+    },
+    {
+      "tag": "servico_com_problema",
+      "patterns": [
+        "serviço com problema", "servico com problema", "prestação de serviço ruim",
+        "prestacao de servico ruim", "serviço mal feito", "servico mal feito",
+        "não prestaram o serviço direito", "nao prestaram o servico direito", "fizeram errado",
+        "qualidade ruim do serviço", "serviço incompleto", "servico incompleto",
+        "serviço não foi feito", "servico nao foi feito", "não fizeram o que combinamos",
+        "nao fizeram o que combinamos", "serviço foi mal prestado", "servico foi mal prestado",
+        "fizeram de qualquer jeito", "deixaram a desejar", "serviço piorou a situação",
+        "servico piorou a situacao", "estragoram mais do que consertaram",
+        "cobrou e não fez", "cobrou e nao fez", "cobrou e fez errado",
+        "cobrou mas ficou ruim", "serviço não funcionou", "servico nao funcionou",
+        "não cumpriram o que prometeram", "nao cumpriram o que prometeram",
+        "técnico não resolveu", "tecnico nao resolveu", "manutenção mal feita",
+        "manutencao mal feita", "reforma mal feita", "instalação errada", "instalacao errada"
+      ],
+      "responses": [
+        "Serviço mal prestado ou incompleto dá direito a rerealização sem custo adicional, desconto proporcional ou cancelamento com reembolso. O CDC prevê isso no artigo 20. O fornecedor tem obrigação de entregar o serviço conforme o que foi contratado.",
+        "Para serviço com problema, é importante ter documentado o que foi contratado — orçamento, contrato, e-mail de combinação — e o que foi entregue de diferente. Fotos antes e depois, se possível, ajudam bastante.",
+        "Se o serviço foi feito de forma errada, você pode exigir que seja refeito sem custo. Se a empresa se recusar, você pode contratar outro profissional para corrigir e cobrar os custos da empresa que errou.",
+        "Documentar serviço mal feito: fotos do problema, registro escrito do que foi combinado, comprovante de pagamento, e toda comunicação com a empresa sobre o problema. Se houver laudo técnico de outro profissional confirmando o erro, melhor ainda."
+      ],
+      "context_responses": [
+        "Continuando — você tem algum registro do que foi contratado? Orçamento, mensagem, contrato?",
+        "Sobre o serviço com problema — a empresa já foi informada e tentou corrigir? Qual foi a resposta?",
+        "Pensando no seu caso — o problema é que o serviço ficou incompleto ou ficou errado? Isso pode mudar o caminho.",
+        "Para esse tipo de situação, quanto mais documentação do problema, melhor. Você tem fotos do resultado?"
+      ]
+    },
+    {
+      "tag": "compra_online",
+      "patterns": [
+        "compra online", "comprei online", "comprei pela internet", "comprei no site",
+        "comprei no aplicativo", "fiz a compra pela internet", "loja virtual", "e-commerce",
+        "mercado online", "site de compras", "marketplace", "comprei pelo marketplace",
+        "comprei pelo mercado livre", "comprei pela amazon", "comprei pelo shopee",
+        "comprei pelo ifood", "comprei pelo magalu", "comprei pela magazine",
+        "loja online", "compra digital", "pedido online", "pedido pelo app",
+        "comprei por aplicativo", "comprei pelo celular", "pedido feito no aplicativo",
+        "site me enganou", "loja virtual me enganou", "problemas com compra na internet",
+        "problema em compra online", "problema em loja virtual", "comprei online e me arrependi",
+        "compra no e-commerce deu problema"
+      ],
+      "responses": [
+        "Compras online têm proteções específicas no CDC. O principal diferencial é o direito de arrependimento em 7 dias — você pode desistir da compra sem precisar dar qualquer explicação, com reembolso integral.",
+        "Em compras online, a empresa tem obrigações claras: informação precisa sobre o produto, prazo de entrega definido, e canais de atendimento acessíveis. Se qualquer um desses pontos falhar, você tem base para reclamar.",
+        "Para compras em marketplace — como Mercado Livre, Shopee, Amazon — a responsabilidade é tanto do vendedor quanto da plataforma. Se o vendedor não resolver, você pode acionar a plataforma diretamente.",
+        "Compras online: guarda sempre a confirmação do pedido, o prazo de entrega informado, e toda comunicação com a loja. Se algo der errado, esses registros são sua principal ferramenta."
+      ],
+      "context_responses": [
+        "Continuando — o que está acontecendo com a compra online? Me conta o problema específico.",
+        "Para compra online, o canal de venda faz diferença — foi direto com a loja ou via marketplace? Isso define com quem você precisa falar primeiro.",
+        "Sobre a compra online — você ainda está dentro dos 7 dias de arrependimento ou já passou esse prazo?"
+      ]
+    },
+    {
+      "tag": "loja_fisica",
+      "patterns": [
+        "loja física", "loja fisica", "comprei na loja", "compra presencial", "fui na loja",
+        "comprei pessoalmente", "na loja mesmo", "foi presencial", "fui até a loja",
+        "fui pessoalmente", "loja local", "comprei no estabelecimento", "fui ao estabelecimento",
+        "comprei presencialmente", "na loja física", "na loja fisica", "na loja de rua",
+        "foi na loja de rua", "comprei em uma loja presencial", "comprei direto na loja",
+        "loja do bairro", "loja de shopping", "comprei no shopping", "foi em loja física",
+        "foi em loja fisica", "fui até o estabelecimento", "estabelecimento físico",
+        "estabelecimento fisico", "loja real", "compra presencial em estabelecimento"
+      ],
+      "responses": [
+        "Em loja física, as regras são um pouco diferentes. O direito de arrependimento de 7 dias não se aplica — ele é exclusivo para compras não presenciais. Mas o direito de troca por defeito continua valendo normalmente.",
+        "Para compra presencial: se o produto tem defeito, a empresa tem obrigação de resolver. Se não tem defeito e você apenas não gostou, a troca depende da política de troca da loja — que muitas têm voluntariamente, mas não são obrigadas por lei.",
+        "Em loja física, guarda sempre o cupom fiscal ou nota fiscal — é sua principal prova de compra. Se a loja tem política de troca, peça ela por escrito ou fotografe o aviso da política antes de sair.",
+        "Mesmo em compra presencial, se o produto apresentar defeito nos prazos legais — 30 dias para não duráveis, 90 dias para duráveis — você tem direito garantido pelo CDC, independentemente da política de troca da loja."
+      ],
+      "context_responses": [
+        "Continuando — qual é o problema com o produto comprado na loja? É defeito ou outra coisa?",
+        "Para compra em loja física, a nota fiscal é muito importante. Você tem o cupom ou comprovante da compra?",
+        "Sobre a loja física — a loja tem política de troca anunciada? Às vezes isso já resolve mesmo sem precisar acionar direitos formais."
+      ]
+    },
+    {
+      "tag": "empresa_negou_solucao",
+      "patterns": [
+        "a empresa negou", "a loja negou", "não quiseram resolver", "nao quiseram resolver",
+        "recusaram meu pedido", "negaram a troca", "negaram o cancelamento", "negaram o reembolso",
+        "disseram que não podem fazer nada", "disseram que nao podem fazer nada",
+        "não aceitaram", "nao aceitaram", "recusaram resolver", "empresa não quer resolver",
+        "empresa nao quer resolver", "a empresa se recusou", "ficaram me ignorando",
+        "não respondem", "nao respondem", "ignoraram minha reclamação", "ignoraram minha reclamacao",
+        "não deram retorno", "nao deram retorno", "empresa negou tudo", "negaram tudo",
+        "disseram que não é responsabilidade deles", "disseram que nao e responsabilidade deles",
+        "jogaram a culpa no fabricante", "jogaram a culpa na transportadora", "jogaram na fabricante",
+        "jogaram a culpa em outro", "disseram que não podem me ajudar", "disseram que nao podem me ajudar",
+        "empresa não se responsabiliza", "empresa nao se responsabiliza",
+        "recusaram formalmente", "mandaram embora", "me mandaram embora"
+      ],
+      "responses": [
+        "Quando a empresa nega a solução, você tem alternativas formais. O consumidor.gov.br é uma plataforma do governo federal onde você pode registrar a reclamação — muitas empresas respondem nesse canal com mais agilidade. O Procon do seu estado é outra via.",
+        "Se a empresa jogou a culpa no fabricante ou na transportadora, isso é problema deles — não seu. O CDC prevê responsabilidade solidária: você contratou com aquela empresa, e ela é responsável por resolver, independentemente de quem causou o problema.",
+        "Após a negativa da empresa, documente tudo: protocolo de atendimento, e-mail de negativa, datas dos contatos. Esse histórico vai ser útil no Procon, no consumidor.gov.br ou eventualmente no Juizado Especial Cível — o chamado 'Juizado de Pequenas Causas'.",
+        "A sequência depois de uma negativa costuma ser: 1) ouvidoria da empresa, 2) consumidor.gov.br, 3) Procon, 4) Juizado Especial Cível. Você não precisa seguir essa ordem necessariamente — pode ir direto ao Procon se preferir."
+      ],
+      "context_responses": [
+        "Continuando — a empresa negou de que forma? Por escrito, por telefone? Você tem algum registro dessa negativa?",
+        "Para avançar depois da negativa, o histórico de tentativas é muito valioso. Me conta o que você já tentou e como foi respondido.",
+        "Se a empresa não quis resolver, o próximo passo mais eficaz geralmente é o consumidor.gov.br — empresas cadastradas lá têm prazo para responder e são monitoradas. Você já tentou essa plataforma?",
+        "Pensando na sua situação — qual foi o argumento que a empresa usou para negar? Isso pode ajudar a entender qual é o caminho mais forte para contestar."
+      ]
+    },
+    {
+      "tag": "tempo_prazo",
+      "patterns": [
+        "já passou tempo", "ja passou tempo", "passou muito tempo", "faz alguns dias",
+        "faz semanas", "faz meses", "demorei para reclamar", "já tem tempo", "ja tem tempo",
+        "isso aconteceu faz tempo", "depois de alguns dias", "depois de algumas semanas",
+        "depois de um tempo", "prazo legal", "prazo de reclamação", "prazo de garantia",
+        "ainda estou no prazo", "ainda estou dentro do prazo", "já passou o prazo",
+        "ja passou o prazo", "perdi o prazo", "o prazo venceu", "quanto tempo tenho",
+        "quanto tempo eu tenho", "por quanto tempo posso reclamar", "ainda dá tempo",
+        "ainda da tempo", "ainda posso reclamar", "expirou o prazo", "prescreveu",
+        "prescrição", "prescricao", "decadência", "decadencia", "caducou o direito",
+        "quantos dias tenho", "quantos meses tenho", "qual é o prazo", "qual e o prazo"
+      ],
+      "responses": [
+        "Os prazos do CDC funcionam assim: para reclamar de defeito em produtos não duráveis (alimentos, cosméticos), são 30 dias. Para bens duráveis (eletrônicos, eletrodomésticos), são 90 dias. Esse prazo começa quando o defeito aparece — e fica suspenso enquanto a empresa está analisando o caso.",
+        "Existe também o prazo de prescrição — o prazo para entrar com uma ação judicial — que é de 5 anos a partir do dano ou do conhecimento do dano. Ou seja, mesmo que o prazo de reclamação com a empresa tenha passado, você pode ainda ter prazo para outras vias.",
+        "Se você demorou para perceber o defeito — especialmente em defeitos ocultos — o prazo começa a contar de quando você descobriu o problema, não de quando comprou. Isso pode ser importante dependendo do seu caso.",
+        "Para entrega atrasada e outras situações que não são defeito de produto, os prazos são diferentes. Me conta o que aconteceu para eu te falar o prazo específico que se aplica."
+      ],
+      "context_responses": [
+        "Continuando — quando foi feita a compra e quando o problema apareceu? Isso me ajuda a calcular o prazo.",
+        "Para verificar o prazo no seu caso — o produto é considerado durável? Eletrônicos, eletrodomésticos, móveis são duráveis. Roupas e alimentos são não duráveis.",
+        "Sobre o tempo que passou — você entrou em contato com a empresa logo quando percebeu o problema? Isso pode ser relevante para o prazo."
+      ]
+    },
+    {
+      "tag": "procon",
+      "patterns": [
+        "procon", "posso ir ao procon", "vale reclamar no procon", "reclamar no procon",
+        "abrir reclamação", "abrir reclamacao", "registrar reclamação", "registrar reclamacao",
+        "quero reclamar formalmente", "como funciona o procon", "o procon resolve",
+        "o procon ajuda", "devo ir ao procon", "quando ir ao procon", "vale a pena o procon",
+        "o procon tem poder", "o que o procon faz", "como é o procon", "como e o procon",
+        "consumidor gov", "consumidor.gov.br", "reclame aqui", "site de reclamação",
+        "site de reclamacao", "plataforma de reclamação", "plataforma de reclamacao",
+        "juizado especial", "pequenas causas", "juizado civel", "juizado cível",
+        "posso processar a empresa", "posso ir a justiça", "posso ir a justica",
+        "posso entrar com processo", "procon online", "procon virtual"
+      ],
+      "responses": [
+        "O Procon é o órgão de defesa do consumidor — ele pode mediar o conflito com a empresa e aplicar sanções. Você pode registrar a reclamação pelo site do Procon do seu estado ou presencialmente. Leve todos os documentos do caso.",
+        "O consumidor.gov.br é uma plataforma federal onde muitas empresas grandes estão cadastradas e têm prazo para responder. É uma opção rápida antes de ir ao Procon — muitas reclamações se resolvem por lá.",
+        "Se o valor em questão for de até 20 salários mínimos, você pode ir ao Juizado Especial Cível — o antigo 'Juizado de Pequenas Causas' — sem precisar de advogado. Leva os documentos do caso e faz a reclamação diretamente.",
+        "A sequência mais comum: 1) tentar resolver com a empresa diretamente, 2) consumidor.gov.br, 3) Procon, 4) Juizado Especial Cível. Mas você pode ir direto ao Procon ou ao Juizado se preferir — não é obrigatório seguir essa ordem."
+      ],
+      "context_responses": [
+        "Continuando — você quer ir ao Procon ou tem interesse no consumidor.gov.br primeiro? Posso explicar como funciona cada um.",
+        "Para o Procon, você vai precisar de todos os documentos do caso organizado. Me conta o que você tem disponível.",
+        "Pensando no seu caso — o valor envolvido é alto? Se for até 20 salários mínimos, o Juizado Especial pode ser uma opção mais direta."
+      ]
+    },
+    {
+      "tag": "assinatura_plano",
+      "patterns": [
+        "assinatura", "plano", "mensalidade", "serviço recorrente", "servico recorrente",
+        "cobrança mensal", "cobranca mensal", "streaming", "app por assinatura",
+        "assinatura indevida", "não consigo cancelar assinatura", "nao consigo cancelar assinatura",
+        "cancelar plano", "cancelar mensalidade", "plano de telefone", "plano de internet",
+        "plano de academia", "assinatura de streaming", "plano de saúde", "plano de saude",
+        "renovação automática", "renovacao automatica", "cobrou de novo", "renovou sem avisar",
+        "renovaram sem minha autorização", "renovaram sem minha autorizacao",
+        "não autorizei a renovação", "nao autorizei a renovacao", "trial cobrou",
+        "teste gratuito cobrou", "período de teste acabou e cobrou", "periodo de teste acabou e cobrou",
+        "cobraram após o período gratuito", "cobraram apos o periodo gratuito",
+        "fidelidade expirou mas continuam cobrando", "plano mudou o valor sem avisar",
+        "aumentaram o plano sem aviso", "mudaram as condições do plano", "mudaram as condicoes do plano"
+      ],
+      "responses": [
+        "Para planos e assinaturas, você tem o direito de cancelar a qualquer momento. A empresa pode cobrar multa rescisória se existir cláusula de fidelidade no contrato — mas essa multa deve ser proporcional ao tempo restante e estar claramente prevista.",
+        "Se a assinatura renovou automaticamente sem aviso prévio e você não autorizou, isso pode ser contestado. Muitos contratos de renovação automática precisam notificar o consumidor antes — se não fizeram, a renovação pode ser anulada.",
+        "Para trial gratuito que passou a cobrar: verifique as condições do período de teste — geralmente há um aviso de que vai cobrar após o prazo. Se não houve aviso claro, você pode contestar a cobrança com a empresa e, se não resolver, com a operadora do cartão.",
+        "Se o plano mudou de preço ou condições sem aviso prévio adequado, isso é prática abusiva. Você tem direito de cancelar sem multa nesse caso, já que a empresa alterou unilateralmente o contrato."
+      ],
+      "context_responses": [
+        "Continuando — você quer cancelar a assinatura ou está com problema de cobrança indevida? Me conta melhor.",
+        "Sobre o plano ou assinatura — existe cláusula de fidelidade no contrato? Se sim, você sabe quanto tempo falta?",
+        "Para seguir — qual é o serviço em questão? Isso ajuda a entender se existem regras específicas além do CDC geral."
+      ]
     }
   ]
 }

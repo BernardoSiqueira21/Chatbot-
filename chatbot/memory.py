@@ -54,3 +54,17 @@ def detectar_tom_usuario(mensagem):
         "muito urgente", "prazo vencendo", "prazo acabando", "ta vencendo", "tá vencendo",
     ]
 
+    palavras_desespero = [
+        "desesperado", "desesperada", "nao sei o que fazer", "não sei o que fazer",
+        "estou perdido", "estou perdida", "sem saida", "sem saída", "nao tenho mais opcao",
+        "não tenho mais opção", "precisando muito", "ja tentei tudo", "já tentei tudo",
+    ]
+
+    if any(p in msg_lower for p in palavras_desespero):
+        return "desesperado"
+    if any(p in msg_lower for p in palavras_frustracao):
+        return "frustrado"
+    if any(p in msg_lower for p in palavras_urgencia):
+        return "urgente"
+    return "neutro"
+

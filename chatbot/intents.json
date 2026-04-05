@@ -74,6 +74,58 @@
         "Fico feliz! Espero que resolva tudo bem.",
         "Isso mesmo, pode contar comigo se precisar."
       ]
+    },
+    {
+      "tag": "orientacao_geral",
+      "patterns": [
+        "quais são meus direitos", "quais sao meus direitos", "quero entender melhor",
+        "me explica melhor", "me explique melhor", "quero uma orientação geral",
+        "orientação geral", "orientacao geral", "resumidamente", "de forma geral",
+        "em geral", "como isso funciona", "explica isso melhor", "me dá uma visão geral",
+        "me de uma visao geral", "por onde começo", "por onde comeco", "não sei por onde começar",
+        "nao sei por onde comecar", "como funciona tudo isso", "me orienta",
+        "me orienta por favor", "o que devo fazer", "o que eu faço", "o que eu faco",
+        "como proceder", "qual o procedimento", "como devo agir", "o que é correto fazer",
+        "o que e correto fazer", "me dá um norte", "me da um norte", "to perdido nisso tudo",
+        "tô perdida nisso tudo", "não sei nada disso", "nao sei nada disso",
+        "nunca passei por isso", "primeira vez que acontece", "como funciona essa parte",
+        "que lei é essa", "que lei e essa", "qual é a lei", "qual e a lei"
+      ],
+      "responses": [
+        "O Código de Defesa do Consumidor — o CDC — é a principal lei que protege você nesse tipo de situação. Ela define obrigações para fornecedores, prazos de garantia, regras de troca e cancelamento, e o que fazer quando uma empresa não resolve. Me conta mais sobre o seu caso para eu poder ir direto ao ponto.",
+        "De forma geral, quando você tem um problema com uma empresa, o primeiro passo é registrar tudo por escrito — seja pelo SAC, e-mail ou app — e guardar o número do protocolo. Dependendo do problema, existem prazos e direitos específicos. Me explica melhor o que aconteceu e eu te direciono.",
+        "Tudo depende do tipo de problema. Se for produto com defeito, entrega atrasada, cobrança errada ou cancelamento, cada situação tem regras diferentes no CDC. Vamos com calma — me conta o que aconteceu no seu caso.",
+        "O caminho mais comum começa assim: você contata a empresa, registra a reclamação com protocolo e, se não resolver, vai ao Procon ou plataformas como o consumidor.gov.br. Me diz o que está acontecendo que eu detalho melhor."
+      ],
+      "context_responses": [
+        "Posso detalhar qualquer um desses pontos. O que mais se aplica ao seu caso?",
+        "Se quiser, me diz o que aconteceu especificamente e eu foco nisso.",
+        "Posso continuar nessa visão geral ou entrar em um caso específico — o que preferir."
+      ]
+    },
+    {
+      "tag": "mudanca_tema",
+      "patterns": [
+        "agora outra coisa", "mudando de assunto", "outro tema", "outra dúvida", "outra duvida",
+        "tenho outra pergunta", "quero falar de outro caso", "novo caso", "vamos para outro assunto",
+        "quero mudar de assunto", "outra situação", "outra situacao", "novo problema",
+        "novo tema", "muda o assunto", "mudando de caso", "tenho mais uma dúvida", "tenho mais uma duvida",
+        "agora sobre outra coisa", "tenho outro caso", "posso perguntar outra coisa",
+        "posso mudar de assunto", "tenho mais uma questão", "tenho mais uma questao",
+        "quero falar de algo diferente", "saindo desse tema", "mudei de ideia no tema",
+        "outra questão", "outra questao", "antes de ir tenho outra dúvida", "antes de ir tenho outra duvida"
+      ],
+      "responses": [
+        "Claro! Me conta o novo caso que eu sigo por aí.",
+        "Sem problema. Qual é a nova situação?",
+        "Pode mudar. Me explica o novo problema.",
+        "Tudo bem! Me conta o que aconteceu agora."
+      ],
+      "context_responses": [
+        "Pode seguir. Qual é o novo tema?",
+        "Me conta o novo caso.",
+        "Sem problema, pode continuar com o novo assunto."
+      ]
     }
   ]
 }

@@ -78,3 +78,73 @@ def gerar_stems(tokens):
         except Exception:
             stems.append(token)
     return stems
+
+
+def detectar_entidades(texto_normalizado):
+    entidades = {}
+
+    if any(w in texto_normalizado for w in ["internet", "online", "site", "aplicativo", "app", "e-commerce"]):
+        entidades["canal_compra"] = "online"
+    elif any(w in texto_normalizado for w in ["loja fisica", "loja física", "presencial", "pessoalmente"]):
+        entidades["canal_compra"] = "fisica"
+
+    if "produto" in texto_normalizado:
+        entidades["objeto"] = "produto"
+    elif any(w in texto_normalizado for w in ["servico", "serviço", "servicos", "serviços"]):
+        entidades["objeto"] = "servico"
+
+    if any(w in texto_normalizado for w in ["dias", "semanas", "meses", "horas"]):
+        entidades["menciona_tempo"] = True
+
+    return entidades
+
+
+def identificar_intencao(texto):
+    texto_normalizado = normalizar_texto(texto)
+    tokens_usuario = preprocessar_texto(texto)
+    stems_usuario = gerar_stems(tokens_usuario)
+
+    if not tokens_usuario:
+        return "desconhecida", 0, [], {}
+
+    pontuacoes = {}
+    correspondencias_map = {}
+
+    for item in INTENTS_DB["intents"]:
+        tag = item["tag"]
+        palavras = [normalizar_texto(p) for p in item["patterns"]]
+        stems_palavras = gerar_stems(palavras)
+
+        pontuacao = 0.0
+        correspondencias = []
+
+        for token, stem in zip(tokens_usuario, stems_usuario):
+            for palavra, stem_p in zip(palavras, stems_palavras):
+                if " " in palavra and palavra in texto_normalizado:
+                    pontuacao += 3.0
+                    if palavra not in correspondencias:
+                        correspondencias.append(palavra)
+                elif token == palavra:
+                    pontuacao += 1.5
+                    if token not in correspondencias:
+                        correspondencias.append(token)
+                elif stem == stem_p and len(stem) > 3:
+                    pontuacao += 0.8
+                    if token not in correspondencias:
+                        correspondencias.append(token)
+
+        pontuacoes[tag] = pontuacao
+        correspondencias_map[tag] = correspondencias
+
+    melhor_intencao = max(pontuacoes, key=pontuacoes.get)
+    melhor_pontuacao = pontuacoes[melhor_intencao]
+
+    if melhor_pontuacao < 0.5:
+        return "desconhecida", 0, [], detectar_entidades(texto_normalizado)
+
+    return (
+        melhor_intencao,
+        round(melhor_pontuacao, 2),
+        correspondencias_map[melhor_intencao],
+        detectar_entidades(texto_normalizado)
+    )

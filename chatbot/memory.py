@@ -40,3 +40,17 @@ def detectar_tom_usuario(mensagem):
     palavras_frustracao = [
         "absurdo", "ridiculo", "ridículo", "indignado", "indignada", "nao aguento", "não aguento",
         "cansado", "cansada", "pessimo", "péssimo", "horrivel", "horrível", "nunca mais",
+        "prejudicado", "prejudicada", "lesado", "lesada", "inacreditavel", "inacreditável",
+        "um absurdo", "que vergonha", "nunca vi", "abuso", "revoltante", "revoltado",
+        "revoltada", "que raiva", "to com raiva", "tô com raiva", "fui lesado", "fui lesada",
+        "puta merda", "me lascaram", "me roubaram", "roubando", "ladrao", "ladrão",
+        "me enganaram", "enganação", "enganacao", "me passaram para trás",
+    ]
+
+    palavras_urgencia = [
+        "urgente", "urgencia", "urgência", "preciso ja", "preciso já", "hoje", "agora mesmo",
+        "nao pode esperar", "não pode esperar", "correndo", "rapido", "rápido", "imediato",
+        "preciso resolver hoje", "nao tenho tempo", "não tenho tempo", "emergência", "emergencia",
+        "muito urgente", "prazo vencendo", "prazo acabando", "ta vencendo", "tá vencendo",
+    ]
+

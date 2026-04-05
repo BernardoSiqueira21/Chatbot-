@@ -86,3 +86,13 @@ def extrair_entidades(mensagem):
     elif any(w in texto for w in ["servico", "serviço", "servicos", "serviços"]):
         entidades["objeto"] = "servico"
 
+    # Menção de tempo
+    match_tempo = re.search(r"(\d+)\s*(dia|dias|semana|semanas|mes|mês|meses|hora|horas)", texto)
+    if match_tempo:
+        entidades["tempo_mencionado"] = match_tempo.group(0)
+
+    # Valor monetário
+    match_valor = re.search(r"r\$\s?[\d.,]+|\d+\s*reais", texto, re.IGNORECASE)
+    if match_valor:
+        entidades["valor_mencionado"] = match_valor.group(0)
+

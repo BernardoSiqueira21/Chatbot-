@@ -68,3 +68,16 @@ def detectar_tom_usuario(mensagem):
         return "urgente"
     return "neutro"
 
+
+def extrair_entidades(mensagem):
+    """Extrai entidades relevantes do texto para enriquecer o contexto."""
+    texto = mensagem.lower()
+    entidades = {}
+
+    # Canal de compra
+    if any(w in texto for w in ["internet", "online", "site", "aplicativo", "app", "e-commerce", "marketplace"]):
+        entidades["canal_compra"] = "online"
+    elif any(w in texto for w in ["loja fisica", "loja física", "presencial", "pessoalmente", "na loja"]):
+        entidades["canal_compra"] = "fisica"
+
+    # Objeto

@@ -134,3 +134,31 @@ def atualizar_contexto(contexto_atual, intencao, mensagem, entidades=None, ofert
     num_trocas = novo_contexto.get("num_trocas", 0) + 1
     novo_contexto["num_trocas"] = num_trocas
 
+    # Tom do usuário — mantém frustração/desespero por mais tempo
+    tom = detectar_tom_usuario(mensagem)
+    tom_anterior = novo_contexto.get("tom", "neutro")
+    if tom != "neutro":
+        novo_contexto["tom"] = tom
+    elif tom_anterior in ("frustrado", "desesperado") and num_trocas < 4:
+        # Mantém o tom negativo por algumas trocas
+        pass
+    else:
+        novo_contexto["tom"] = "neutro"
+
+    # Extrai valor monetário se não tiver ainda
+    match_valor = re.search(r"R\$\s?[\d.,]+|\d+\s*reais", mensagem, re.IGNORECASE)
+    if match_valor and "valor_mencionado" not in novo_contexto:
+        novo_contexto["valor_mencionado"] = match_valor.group(0)
+
+    # Extrai entidades adicionais da mensagem
+    entidades_msg = extrair_entidades(mensagem)
+    if entidades_msg:
+        entidades_ctx = novo_contexto.get("entidades", {})
+        entidades_ctx.update(entidades_msg)
+        novo_contexto["entidades"] = entidades_ctx
+
+    if oferta_pendente:
+        novo_contexto["oferta_pendente"] = oferta_pendente
+    else:
+        novo_contexto["oferta_pendente"] = None
+

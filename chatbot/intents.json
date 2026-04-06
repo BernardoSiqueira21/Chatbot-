@@ -1,0 +1,963 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "eai", "ei",
+        "tudo bem", "alô", "alo", "começar", "iniciar conversa", "preciso de ajuda",
+        "quero tirar uma dúvida", "quero tirar uma duvida", "vamos começar", "vamos comecar",
+        "hello", "oi tudo bem", "boa", "bom dia tudo bem", "boa tarde tudo certo",
+        "olá tudo bem", "ola tudo bem", "oi boa tarde", "oi bom dia",
+        "posso tirar uma dúvida", "posso tirar uma duvida", "tenho uma duvida",
+        "tenho uma dúvida", "quero fazer uma pergunta", "posso perguntar",
+        "preciso de uma orientação", "preciso de uma orientacao", "me ajuda ai",
+        "pode me ajudar", "ola boa noite", "oi boa noite", "boa noite tudo bem"
+      ],
+      "responses": [
+        "Olá! Me conte com calma o que aconteceu no seu caso — pode ser por partes mesmo.",
+        "Oi! Pode me explicar o que está acontecendo? Vou acompanhar a situação com você.",
+        "Olá! Me descreve o problema com suas próprias palavras que a gente vai destrinchando juntos.",
+        "Oi! Me conta o que aconteceu — pode começar do começo, sem pressa."
+      ],
+      "context_responses": [
+        "Pode continuar. Estou acompanhando.",
+        "Certo, pode me dar mais detalhes.",
+        "Tudo bem, me diz mais sobre isso.",
+        "Pode continuar que eu acompanho."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "tchau", "até mais", "ate mais", "até logo", "ate logo", "obrigado", "obrigada",
+        "valeu", "falou", "encerrar", "finalizar", "era isso", "era só isso", "era so isso",
+        "já ajudou", "ja ajudou", "até", "ate", "foi ótimo", "foi otimo", "foi bom",
+        "satisfeito", "satisfeita", "consegui o que precisava", "acho que é isso",
+        "acho que e isso", "vou verificar", "vou tentar", "vou fazer isso",
+        "me ajudou muito", "muito útil", "muito util", "obrigado de mais",
+        "obrigada demais", "era tudo que precisava", "resolveu meu problema",
+        "entendi tudo", "ficou claro", "ficou bem claro", "agora entendi",
+        "já entendi", "ja entendi", "pode encerrar", "encerramos por aqui"
+      ],
+      "responses": [
+        "Fico feliz que tenha ajudado! Qualquer dúvida nova, pode voltar quando quiser.",
+        "Certo! Qualquer coisa é só chamar. Espero que tudo se resolva bem.",
+        "Foi um prazer orientar você. Qualquer situação nova, pode contar comigo.",
+        "Até! Se precisar de mais alguma informação depois, pode voltar."
+      ],
+      "context_responses": [
+        "Fico feliz que tenha ajudado. Pode voltar se surgir algo mais.",
+        "Espero que consiga resolver. Qualquer coisa me avise.",
+        "Até! Torço para que tudo se resolva bem."
+      ]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": [
+        "obrigado pela ajuda", "muito obrigado", "muito obrigada", "agradeço", "agradeco",
+        "ajudou bastante", "valeu pela ajuda", "valeu pela explicação", "valeu pela explicacao",
+        "grato", "grata", "super obrigado", "super obrigada", "obrigadão", "obrigadao",
+        "consegui entender", "ficou claro agora", "esclareceu bastante", "esclareceu muito",
+        "que bom que existe isso", "que bom", "top demais", "você foi ótimo", "voce foi otimo",
+        "você foi ótima", "voce foi otima", "ótima explicação", "otima explicacao",
+        "explicação clara", "explicacao clara", "adorei a explicação", "adorei a explicacao",
+        "isso foi muito útil", "isso foi muito util", "você ajudou demais", "voce ajudou demais"
+      ],
+      "responses": [
+        "Fico contente que tenha conseguido entender melhor a situação.",
+        "Que bom! Se precisar de algo mais, estou por aqui.",
+        "Sempre bom poder ajudar. Qualquer nova dúvida pode perguntar.",
+        "Boa sorte com o seu caso! Qualquer coisa é só voltar."
+      ],
+      "context_responses": [
+        "Que bom que ajudou! Se surgir algo mais, pode perguntar.",
+        "Fico feliz! Espero que resolva tudo bem.",
+        "Isso mesmo, pode contar comigo se precisar."
+      ]
+    },
+    {
+      "tag": "orientacao_geral",
+      "patterns": [
+        "quais são meus direitos", "quais sao meus direitos", "quero entender melhor",
+        "me explica melhor", "me explique melhor", "quero uma orientação geral",
+        "orientação geral", "orientacao geral", "resumidamente", "de forma geral",
+        "em geral", "como isso funciona", "explica isso melhor", "me dá uma visão geral",
+        "me de uma visao geral", "por onde começo", "por onde comeco", "não sei por onde começar",
+        "nao sei por onde comecar", "como funciona tudo isso", "me orienta",
+        "me orienta por favor", "o que devo fazer", "o que eu faço", "o que eu faco",
+        "como proceder", "qual o procedimento", "como devo agir", "o que é correto fazer",
+        "o que e correto fazer", "me dá um norte", "me da um norte", "to perdido nisso tudo",
+        "tô perdida nisso tudo", "não sei nada disso", "nao sei nada disso",
+        "nunca passei por isso", "primeira vez que acontece", "como funciona essa parte",
+        "que lei é essa", "que lei e essa", "qual é a lei", "qual e a lei"
+      ],
+      "responses": [
+        "O Código de Defesa do Consumidor — o CDC — é a principal lei que protege você nesse tipo de situação. Ela define obrigações para fornecedores, prazos de garantia, regras de troca e cancelamento, e o que fazer quando uma empresa não resolve. Me conta mais sobre o seu caso para eu poder ir direto ao ponto.",
+        "De forma geral, quando você tem um problema com uma empresa, o primeiro passo é registrar tudo por escrito — seja pelo SAC, e-mail ou app — e guardar o número do protocolo. Dependendo do problema, existem prazos e direitos específicos. Me explica melhor o que aconteceu e eu te direciono.",
+        "Tudo depende do tipo de problema. Se for produto com defeito, entrega atrasada, cobrança errada ou cancelamento, cada situação tem regras diferentes no CDC. Vamos com calma — me conta o que aconteceu no seu caso.",
+        "O caminho mais comum começa assim: você contata a empresa, registra a reclamação com protocolo e, se não resolver, vai ao Procon ou plataformas como o consumidor.gov.br. Me diz o que está acontecendo que eu detalho melhor."
+      ],
+      "context_responses": [
+        "Posso detalhar qualquer um desses pontos. O que mais se aplica ao seu caso?",
+        "Se quiser, me diz o que aconteceu especificamente e eu foco nisso.",
+        "Posso continuar nessa visão geral ou entrar em um caso específico — o que preferir."
+      ]
+    },
+    {
+      "tag": "mudanca_tema",
+      "patterns": [
+        "agora outra coisa", "mudando de assunto", "outro tema", "outra dúvida", "outra duvida",
+        "tenho outra pergunta", "quero falar de outro caso", "novo caso", "vamos para outro assunto",
+        "quero mudar de assunto", "outra situação", "outra situacao", "novo problema",
+        "novo tema", "muda o assunto", "mudando de caso", "tenho mais uma dúvida", "tenho mais uma duvida",
+        "agora sobre outra coisa", "tenho outro caso", "posso perguntar outra coisa",
+        "posso mudar de assunto", "tenho mais uma questão", "tenho mais uma questao",
+        "quero falar de algo diferente", "saindo desse tema", "mudei de ideia no tema",
+        "outra questão", "outra questao", "antes de ir tenho outra dúvida", "antes de ir tenho outra duvida"
+      ],
+      "responses": [
+        "Claro! Me conta o novo caso que eu sigo por aí.",
+        "Sem problema. Qual é a nova situação?",
+        "Pode mudar. Me explica o novo problema.",
+        "Tudo bem! Me conta o que aconteceu agora."
+      ],
+      "context_responses": [
+        "Pode seguir. Qual é o novo tema?",
+        "Me conta o novo caso.",
+        "Sem problema, pode continuar com o novo assunto."
+      ]
+    },
+    {
+      "tag": "garantia",
+      "patterns": [
+        "garantia", "produto com defeito", "meu produto veio com defeito", "produto quebrado",
+        "produto estragado", "vício", "vicio", "defeito", "defeituoso", "conserto",
+        "manutenção", "manutencao", "não funciona", "nao funciona", "parou de funcionar",
+        "veio quebrado", "veio estragado", "produto ruim", "produto falhou", "falha no produto",
+        "produto deu problema", "deu problema", "apresentou problema", "tem problema",
+        "está com problema", "está com defeito", "esta com defeito", "veio com defeito",
+        "não liga", "nao liga", "não acende", "nao acende", "não funciona direito",
+        "nao funciona direito", "veio danificado", "chegou danificado", "chegou quebrado",
+        "produto danificado", "garantia do produto", "dentro da garantia",
+        "ainda está na garantia", "ainda esta na garantia", "produto novo com defeito",
+        "é novo e tem defeito", "e novo e tem defeito", "comprei e já veio com defeito",
+        "comprei e ja veio com defeito", "defeito de fabricação", "defeito de fabricacao",
+        "vícios do produto", "vicios do produto", "produto não serve", "produto nao serve"
+      ],
+      "responses": [
+        "Quando o produto apresenta defeito, o CDC prevê que você tem direito a conserto, troca ou restituição do valor. O prazo para reclamar começa a contar a partir de quando o defeito se manifesta — e o fornecedor tem até 30 dias para resolver. Se não resolver, você pode exigir a troca por outro produto ou o reembolso.",
+        "Se o produto veio com defeito ou apresentou falha, isso é chamado de vício do produto. Para bens duráveis, como eletrodomésticos ou eletrônicos, o prazo de reclamação é de 90 dias. Para bens não duráveis, são 30 dias. Esse prazo começa quando o defeito aparecer, não quando a compra foi feita.",
+        "Produto com defeito cai no artigo 18 do CDC. Você pode exigir conserto em 30 dias — se não for resolvido nesse prazo, pode pedir troca por produto novo, restituição do valor ou desconto proporcional. Me conta o que aconteceu com o produto para eu te orientar melhor.",
+        "Primeiro: guarda tudo — nota fiscal, comprovante de compra, fotos do defeito e registros do contato com a empresa. Se ainda não entrou em contato, o ideal é fazer isso por escrito para ter protocolo. Me conta mais sobre o defeito e quando ele apareceu."
+      ],
+      "context_responses": [
+        "Pensando nesse defeito que você mencionou — quando foi que ele apareceu? Isso muda bastante o caminho.",
+        "Se o defeito apareceu logo, é mais direto. Se foi depois de algum uso, a empresa pode tentar questionar — mas você ainda tem direitos. Me conta mais.",
+        "Para continuar, me diz: a empresa já foi contactada sobre esse defeito ou ainda não?",
+        "Continuando nesse ponto — você tem nota fiscal ou comprovante da compra? Isso vai ajudar bastante.",
+        "Nessa situação, a resposta da empresa é um passo importante. Ela já foi procurada?"
+      ]
+    },
+    {
+      "tag": "defeito_apos_uso",
+      "patterns": [
+        "deu defeito depois", "parou de funcionar depois", "quebrou depois de usar",
+        "estragou depois de alguns dias", "estragou depois de um tempo", "depois de usar deu problema",
+        "funcionou e depois parou", "apresentou defeito depois", "o problema apareceu depois",
+        "depois de alguns dias deu defeito", "usou e estragou", "usou algumas vezes e parou",
+        "usou pouco e deu problema", "durou pouco", "não durou", "nao durou", "durou dias",
+        "durou semanas", "ficou bom no começo depois piorou", "começou a falhar",
+        "comecou a falhar", "falhou depois de um tempo", "parou depois de pouco tempo",
+        "parou rápido", "parou rapido", "estragou cedo", "estragou rápido", "estragou rapido",
+        "o produto se deteriorou", "teve vida útil curta", "teve vida util curta",
+        "problema surgiu depois", "defeito tardio", "problema veio depois",
+        "funcionou pouco", "durou pouco tempo", "vida útil muito curta", "vida util muito curta"
+      ],
+      "responses": [
+        "Quando o defeito aparece depois de algum uso, a linha do tempo do problema fica importante. O CDC protege você tanto para defeitos imediatos quanto para os que surgem depois — o prazo de reclamação começa a contar quando o problema se manifesta, não quando foi comprado.",
+        "Mesmo que o produto tenha funcionado um tempo antes de dar defeito, você ainda pode ter direito a conserto ou troca. O que conta é: o defeito surgiu dentro do prazo legal de garantia? Para produtos duráveis, esse prazo é de 90 dias a partir do defeito.",
+        "Nesse cenário, a empresa pode tentar argumentar que foi mau uso. Por isso, é importante ter documentação — foto do defeito, como aconteceu, laudo técnico se possível. Me conta mais detalhes: o produto é o quê? Quanto tempo faz que comprou e quanto faz que o problema apareceu?",
+        "Produto que para de funcionar depois de pouco uso pode ser vício oculto — um defeito que não aparecia de imediato. O CDC cobre isso. Se a empresa se negar a resolver, ela precisa provar que foi mau uso, e não você."
+      ],
+      "context_responses": [
+        "Com base no que você disse, o defeito tardio ainda é coberto. Me conta: faz quanto tempo que o problema apareceu?",
+        "Continuando — nesse tipo de caso, a empresa frequentemente tenta dizer que foi mau uso. Você tem como documentar como usava o produto?",
+        "Pensando nisso — você tem a nota fiscal ou comprovante de compra? Isso ajuda a calcular se ainda está dentro do prazo legal.",
+        "Para esse tipo de situação, é bom ter registro por escrito do problema. Você já entrou em contato com a empresa?"
+      ]
+    },
+    {
+      "tag": "troca",
+      "patterns": [
+        "troca", "trocar produto", "trocar mercadoria", "trocar item", "devolver",
+        "devolução", "devolucao", "substituir", "substituição", "substituicao",
+        "quero trocar", "posso trocar", "a loja não quer trocar", "a loja nao quer trocar",
+        "não querem trocar", "nao querem trocar", "recusaram a troca", "troca negada",
+        "negaram a troca", "loja recusou a troca", "não aceitam troca", "nao aceitam troca",
+        "a troca foi negada", "não posso trocar", "nao posso trocar", "disseram que não troca",
+        "disseram que nao troca", "política de troca", "politica de troca",
+        "quero devolver o produto", "quero fazer a devolução", "quero fazer a devolucao",
+        "quero um produto diferente", "quero trocar por outro", "troca por um modelo diferente",
+        "produto veio errado quero trocar", "trocar por tamanho diferente",
+        "trocar por outra cor", "trocar por modelo diferente", "posso devolver",
+        "devo devolver", "como faço para trocar", "como faco para trocar"
+      ],
+      "responses": [
+        "O direito de troca por defeito é garantido pelo CDC. Se o produto apresentou vício, o fornecedor tem 30 dias para resolver — se não resolver nesse prazo, você pode exigir: troca por produto idêntico, restituição do valor pago, ou abatimento proporcional no preço.",
+        "Para troca por arrependimento, existem regras diferentes. Se foi compra online, você tem 7 dias para desistir sem precisar dar nenhuma explicação. Em loja física, a política de troca varia — a empresa não é obrigada por lei a aceitar troca sem defeito, mas muitas têm essa política própria.",
+        "Se a loja recusou a troca e o produto tem defeito, isso é um problema sério. Você pode registrar a reclamação no SAC, no Procon ou no consumidor.gov.br. Guarde tudo — protocolo do atendimento, fotos do defeito, comprovante da compra.",
+        "Sobre troca: produto com defeito é diferente de produto sem defeito que você não gostou. Para defeito, a lei garante. Para arrependimento em loja física, depende da política da loja. Me conta melhor o seu caso para eu ser mais específica."
+      ],
+      "context_responses": [
+        "Continuando nesse ponto da troca — o motivo da troca é defeito ou é outra coisa?",
+        "Para troca por defeito, a empresa tem obrigação legal. Para outros motivos, depende da política deles. Me conta o que aconteceu.",
+        "Se a loja já negou a troca, o próximo passo é registrar formalmente. Você já fez algum registro por escrito?",
+        "Pensando na sua situação — você tem algum comprovante de que a loja foi procurada e negou a troca?"
+      ]
+    },
+    {
+      "tag": "arrependimento",
+      "patterns": [
+        "arrependi", "arrependimento", "me arrependi", "quero cancelar", "cancelar compra",
+        "desistir da compra", "desistência", "desistencia", "não quero mais", "nao quero mais",
+        "compra online", "comprei pela internet", "comprei no site", "comprei pelo aplicativo",
+        "fiz a compra online", "não gostei do produto", "nao gostei do produto",
+        "mudei de ideia", "não era o que eu queria", "nao era o que eu queria",
+        "não gostei", "nao gostei", "quero desistir", "prazo de desistência",
+        "prazo de desistencia", "direito de arrependimento", "prazo para devolver",
+        "posso desistir da compra", "posso cancelar por arrependimento",
+        "direito de desistir", "7 dias para devolver", "sete dias para devolver",
+        "comprei e não quero mais", "comprei e nao quero mais", "produto não é o que eu esperava",
+        "produto nao e o que eu esperava", "não serve para o que eu precisava",
+        "nao serve para o que eu precisava", "não gostei depois que chegou",
+        "nao gostei depois que chegou", "quero devolver sem defeito"
+      ],
+      "responses": [
+        "Para compras feitas pela internet, telefone ou catálogo — fora de estabelecimento físico — o CDC garante o direito de arrependimento em até 7 dias corridos a partir do recebimento do produto ou da contratação do serviço. Você não precisa dar nenhuma explicação.",
+        "O prazo de 7 dias para desistência começa a contar quando o produto chega na sua mão. Se ainda está dentro desse prazo, você pode solicitar o cancelamento e o reembolso integral — incluindo o frete que pagou na compra, se houver.",
+        "Se o produto já chegou e você quer devolver por arrependimento, entre em contato com a loja o quanto antes, de preferência por escrito — e-mail, chat ou aplicativo — para ter registro. Dentro do prazo de 7 dias, a empresa é obrigada a aceitar.",
+        "Arrependimento em compra online: 7 dias para desistir, reembolso integral, e o custo do frete de devolução fica por conta do fornecedor — não seu. Se a empresa cobrar frete para devolução nesses casos, isso é ilegal."
+      ],
+      "context_responses": [
+        "Continuando — quantos dias faz que o produto chegou? Isso define se você ainda está no prazo.",
+        "Dentro dos 7 dias, é tranquilo. Depois disso, fica mais difícil sem defeito no produto. Me conta quando chegou.",
+        "Para exercer o arrependimento, o contato com a empresa precisa ser feito dentro dos 7 dias. Você já entrou em contato?",
+        "Se for dentro do prazo, eles são obrigados a aceitar. Me conta mais sobre como a empresa reagiu."
+      ]
+    },
+    {
+      "tag": "atraso_entrega",
+      "patterns": [
+        "atraso", "entrega atrasou", "pedido atrasado", "demora", "prazo", "encomenda",
+        "transportadora", "não entregaram", "nao entregaram", "produto não chegou",
+        "produto nao chegou", "pedido não chegou", "pedido nao chegou", "atrasou a entrega",
+        "demorou demais", "passou do prazo", "não cumpriram o prazo", "nao cumpriram o prazo",
+        "entrega demorou", "está atrasado", "esta atrasado", "devia ter chegado",
+        "devia ter chegado e não chegou", "devia ter chegado e nao chegou",
+        "extrapolou o prazo", "prazo vencido", "não entregou no prazo", "nao entregou no prazo",
+        "atrasou muito", "tá atrasado", "ta atrasado", "foi prometido um prazo",
+        "prometeram um prazo e não cumpriram", "prometeram um prazo e nao cumpriram",
+        "rastreio parado", "rastreio não atualiza", "rastreio nao atualiza",
+        "sem atualização no rastreio", "sem atualizacao no rastreio", "entrega pendente",
+        "pedido parado", "saiu para entrega e não veio", "saiu para entrega e nao veio"
+      ],
+      "responses": [
+        "Quando o pedido atrasa, você tem algumas opções: pode exigir que a entrega seja feita imediatamente, pode cancelar o pedido com reembolso integral, ou pode aceitar outro prazo — mas qualquer novo prazo oferecido pela empresa também precisa ser cumprido.",
+        "Atraso na entrega é descumprimento de contrato. A empresa é responsável pelo produto até ele chegar na sua mão — incluindo problemas com transportadora. Se o rastreio está parado ou o prazo foi ultrapassado, você pode exigir uma solução.",
+        "Primeiro passo: entre em contato com a empresa por escrito e solicite um posicionamento. Peça um novo prazo por escrito e guarde o protocolo. Se não resolverem, você pode cancelar e pedir reembolso, ou acionar o Procon.",
+        "Para atrasos, guarde: a confirmação do pedido com o prazo prometido, os registros do rastreio e os protocolos dos contatos que já fez com a empresa. Isso vai te ajudar muito se precisar formalizar a reclamação."
+      ],
+      "context_responses": [
+        "Continuando — quantos dias de atraso já acumulou? E a empresa deu algum retorno quando foi contactada?",
+        "Se a empresa já foi avisada e não deu solução, o próximo passo é formalizar a reclamação. Você já tem algum protocolo?",
+        "Pensando no seu caso — o rastreio mostra alguma movimentação ou está completamente parado?",
+        "Sobre esse atraso — o produto foi comprado direto da loja ou via marketplace? Isso pode mudar com quem você precisa falar primeiro."
+      ]
+    },
+    {
+      "tag": "produto_nao_entregue",
+      "patterns": [
+        "produto não foi entregue", "produto nao foi entregue", "não recebi", "nao recebi",
+        "meu pedido não chegou", "meu pedido nao chegou", "sumiu a entrega",
+        "a compra não chegou", "a compra nao chegou", "pedido desapareceu",
+        "consta entregue mas não recebi", "consta entregue mas nao recebi",
+        "não recebi meu produto", "nao recebi meu produto", "produto some",
+        "produto sumiu", "nunca chegou", "não chegou nada", "nao chegou nada",
+        "disseram que entregaram mas não recebi", "disseram que entregaram mas nao recebi",
+        "sistema diz entregue mas não chegou", "sistema diz entregue mas nao chegou",
+        "código de rastreio diz entregue mas não está aqui",
+        "codigo de rastreio diz entregue mas nao esta aqui",
+        "diz que foi entregue mas não foi", "diz que foi entregue mas nao foi",
+        "assinatura não é minha", "assinatura nao e minha", "entregaram na casa errada",
+        "entregaram para outra pessoa", "entrega no endereço errado",
+        "entrega no endereco errado", "colocaram endereço errado", "endereço errado na entrega"
+      ],
+      "responses": [
+        "Quando consta como entregue mas você não recebeu, é importante agir rápido. Entre em contato com a empresa e com a transportadora, relate que não recebeu e peça uma investigação. A empresa é responsável por comprovar a entrega — e a assinatura no comprovante deve ser a sua.",
+        "Se o produto nunca chegou, você tem direito ao reembolso integral ou a um novo envio. A responsabilidade pela entrega é da empresa vendedora — problemas com transportadora são questão interna deles, não sua.",
+        "Para esse caso, os documentos mais importantes são: confirmação do pedido, rastreio mostrando status de 'entregue', e qualquer comunicação com a empresa. Se houver câmeras na entrada do local de entrega, pode ser útil verificar.",
+        "Quando a transportadora marca como entregue e você não recebeu, exija da empresa o comprovante de entrega — ele precisa ter assinatura, identificação e data. Se não tiver ou a assinatura não for sua, eles precisam resolver."
+      ],
+      "context_responses": [
+        "Continuando — o rastreio mostra qual status exatamente? Isso ajuda a entender o que aconteceu.",
+        "Você já entrou em contato com a empresa sobre isso? Se sim, qual foi a resposta?",
+        "Nesse tipo de situação, tempo é importante. Quanto faz que o produto deveria ter chegado?",
+        "Se a empresa argumentar que foi entregue, você tem direito de ver o comprovante. Eles apresentaram isso?"
+      ]
+    },
+    {
+      "tag": "propaganda_enganosa",
+      "patterns": [
+        "propaganda enganosa", "publicidade enganosa", "anúncio enganoso", "anuncio enganoso",
+        "oferta enganosa", "me enganaram", "fui enganado", "fui enganada",
+        "produto diferente do anúncio", "produto diferente do anuncio", "prometeram uma coisa",
+        "veio outra coisa", "oferta falsa", "informação falsa", "informacao falsa",
+        "na foto era diferente", "foto diferente do produto real", "descrição enganosa",
+        "descricao enganosa", "especificação errada", "especificacao errada",
+        "anunciou uma coisa entregou outra", "era diferente na página", "era diferente na pagina",
+        "o site mentiu", "a loja mentiu", "anúncio mentiroso", "anuncio mentiroso",
+        "o anuncio não correspondia", "o anuncio nao correspondia", "propaganda mentirosa",
+        "o que estava escrito era diferente", "não é o que foi anunciado", "nao e o que foi anunciado",
+        "te enganaram na venda", "venderam enganando", "informação errada no site",
+        "informacao errada no site", "foi anunciado errado"
+      ],
+      "responses": [
+        "Propaganda enganosa é proibida pelo CDC — Código de Defesa do Consumidor. Se o produto ou serviço foi anunciado de forma diferente do que foi entregue, você tem direito de exigir o que foi prometido, aceitar outro produto ou serviço equivalente, ou rescindir o contrato com reembolso.",
+        "O que foi anunciado tem força de oferta — a empresa é obrigada a cumprir o que prometeu, seja no site, no catálogo, nas redes sociais ou em qualquer material publicitário. Se não cumprir, configura propaganda enganosa.",
+        "Para esse caso, a prova mais importante é o anúncio em si — print da página, foto do produto na vitrine, e-mail de oferta, panfleto. Se ainda der para salvar isso, faça agora. Depois me conta o que foi prometido e o que foi entregue de diferente.",
+        "Além de exigir seus direitos diretamente com a empresa, você pode denunciar propaganda enganosa ao Conar — que regula publicidade — e ao Procon. Guarda todos os registros: anúncio, nota fiscal, comunicações com a empresa."
+      ],
+      "context_responses": [
+        "Para continuar — você ainda tem o anúncio ou algum registro do que foi prometido? Isso é a peça chave.",
+        "Se você tiver print ou foto do anúncio, já é uma boa prova. Me conta o que estava prometido e o que chegou de diferente.",
+        "A empresa foi informada sobre essa diferença? Qual foi a resposta?",
+        "Continuando — se o anúncio estava no site, tenta salvar agora antes que seja alterado. Isso pode ser útil depois."
+      ]
+    },
+    {
+      "tag": "produto_diferente",
+      "patterns": [
+        "veio diferente", "produto diferente", "recebi outro produto", "recebi produto errado",
+        "mandaram item errado", "modelo diferente", "cor diferente", "tamanho diferente",
+        "produto não corresponde", "produto nao corresponde", "mandaram produto errado",
+        "produto não é o que pedi", "produto nao e o que pedi", "enviaram o produto errado",
+        "não é o que comprei", "nao e o que comprei", "chegou um produto que não pedi",
+        "chegou um produto que nao pedi", "confundiram o pedido", "pedido trocado",
+        "pedi um e mandaram outro", "a caixa era de outro produto", "veio o produto trocado",
+        "mandaram a cor errada", "mandaram o tamanho errado", "mandaram o modelo errado",
+        "é diferente do que está na descrição", "e diferente do que esta na descricao",
+        "não é o que estava no site", "nao e o que estava no site"
+      ],
+      "responses": [
+        "Se o produto recebido é diferente do pedido, a empresa errou. Você não é obrigado a ficar com o produto errado. Pode exigir o produto correto ou o cancelamento com reembolso integral.",
+        "Nesse caso, documente antes de qualquer coisa: foto do produto que chegou, foto da caixa com etiqueta de envio, e a tela do pedido mostrando o que foi comprado. Essa comparação é a principal prova.",
+        "Entre em contato com a empresa por escrito — informe o erro, envie as fotos e solicite o produto correto ou o reembolso. A empresa é responsável por pagar o frete de devolução do produto errado.",
+        "Produto diferente do pedido é erro do fornecedor — e o custo para corrigir esse erro, incluindo logística reversa, é deles. Você não deve pagar nada adicional."
+      ],
+      "context_responses": [
+        "Para continuar — você já fotografou o produto que chegou e o número do pedido? Isso é importante ter registrado.",
+        "A empresa já foi informada sobre o produto errado? O que disseram?",
+        "Continuando — você aceitou receber o produto ou se recusou na entrega? Isso pode influenciar o processo."
+      ]
+    },
+    {
+      "tag": "cobranca_indevida",
+      "patterns": [
+        "cobrança indevida", "cobranca indevida", "cobrança errada", "cobranca errada",
+        "me cobraram errado", "me cobraram duas vezes", "cobrança duplicada", "cobranca duplicada",
+        "valor indevido", "desconto errado", "fatura errada", "boleto errado",
+        "cobrado a mais", "cobraram a mais", "pagamento duplicado", "continuam cobrando",
+        "cobraram sem autorização", "cobraram sem autorizacao", "cobrança não autorizada",
+        "cobranca nao autorizada", "estornaram e cobraram de novo", "cobrança irregular",
+        "cobranca irregular", "cobrança que não reconheço", "cobranca que nao reconheco",
+        "cobrança estranha", "cobranca estranha", "cobrança indevida no cartão",
+        "cobranca indevida no cartao", "me debitaram errado", "debitaram duas vezes",
+        "cobrança repetida", "cobranca repetida", "serviço cancelado e ainda cobram",
+        "servico cancelado e ainda cobram", "paguei e cobram de novo",
+        "cobraram um valor que não combinei", "cobraram um valor que nao combinei",
+        "valor não corresponde ao contratado", "valor nao corresponde ao contratado"
+      ],
+      "responses": [
+        "Cobrança indevida precisa ser contestada por escrito — entre em contato com a empresa pelo canal oficial, informe o valor, a data e o motivo pelo qual é indevida. Guarde o protocolo dessa reclamação.",
+        "Se for cobrança no cartão, você pode também contestar diretamente com a operadora do cartão. Dependendo do caso, o banco pode fazer o chargeback — estorno da cobrança — enquanto a investigação acontece.",
+        "Para cobrança duplicada, o CDC prevê que você tem direito a receber de volta em dobro o valor cobrado indevidamente — mais correção monetária e juros. Isso se aplica quando comprovado que houve erro do fornecedor.",
+        "Documente bem: extrato bancário ou fatura do cartão mostrando as cobranças, comprovante do pagamento original ou do cancelamento, e todos os protocolos de atendimento. Isso é fundamental para qualquer caminho que você tome."
+      ],
+      "context_responses": [
+        "Continuando — você já entrou em contato com a empresa sobre essa cobrança? Qual foi a resposta?",
+        "Sobre a cobrança indevida — você tem como mostrar que pagou antes ou que o serviço foi cancelado? Um comprovante ou extrato já ajuda.",
+        "Se a empresa não resolver, o próximo passo costuma ser o Procon ou o consumidor.gov.br. Você já foi para alguma dessas vias?",
+        "Pensando no seu caso — a cobrança é recorrente ou foi uma única vez? Isso muda um pouco o caminho."
+      ]
+    },
+    {
+      "tag": "sac",
+      "patterns": [
+        "sac", "atendimento", "suporte", "reclamei", "reclamação", "reclamacao", "protocolo",
+        "ouvidoria", "não resolveram", "nao resolveram", "não ajudaram", "nao ajudaram",
+        "falei com a empresa", "entrei em contato", "atendente", "liguei para a empresa",
+        "mandei email", "mandei e-mail", "enviei mensagem", "chatei com eles", "chatei com a empresa",
+        "fui até a loja", "fui lá reclamar", "já reclamei", "ja reclamei", "já fiz reclamação",
+        "ja fiz reclamacao", "já entrei em contato", "ja entrei em contato",
+        "eles não resolvem", "eles nao resolvem", "ninguém resolve", "ninguem resolve",
+        "botaram para esperar", "ficam enrolando", "ficam me mandando de um lado para outro",
+        "atendimento horrível", "atendimento horrivel", "atendimento péssimo", "atendimento pessimo",
+        "atendimento demora", "não atenderam", "nao atenderam", "não consigo falar com ninguém",
+        "nao consigo falar com ninguem", "o sac não resolve", "o sac nao resolve",
+        "como faço reclamação", "como faco reclamacao", "onde reclamar", "como reclamar",
+        "onde falo com a empresa", "como falo com a empresa"
+      ],
+      "responses": [
+        "Quando você entra em contato com a empresa, o mais importante é registrar tudo por escrito — e-mail, chat, formulário do site. O protocolo de atendimento é seu aliado: com ele, você prova que tentou resolver antes de escalar a reclamação.",
+        "Se já reclamou e não resolveram, o próximo passo costuma ser a ouvidoria da empresa — que tem obrigação legal de responder em prazo determinado. Se ainda assim não resolver, Procon e consumidor.gov.br são os caminhos formais.",
+        "Para documentar o contato com a empresa: anota o canal usado, a data, o horário, o nome do atendente se possível, e o número do protocolo. Se for por telefone, tenta sempre confirmar o protocolo por e-mail logo depois.",
+        "A empresa tem obrigação de fornecer protocolo de atendimento. Se o SAC não resolver em 5 dias úteis, você pode escalar para a ouvidoria. Se a ouvidoria também não resolver, o Procon é o passo seguinte."
+      ],
+      "context_responses": [
+        "Continuando — você tem algum protocolo dos contatos que já fez com a empresa? Isso vai ser importante.",
+        "Para escalar a reclamação, o histórico de atendimento é muito útil. Você tem registros dos contatos anteriores?",
+        "Se o SAC não resolveu, a ouvidoria da empresa é o próximo passo. Você já tentou falar com a ouvidoria?",
+        "Pensando no seu caso — quanto tempo faz que você está tentando resolver com a empresa sem sucesso?"
+      ]
+    },
+    {
+      "tag": "direito_basico",
+      "patterns": [
+        "direito do consumidor", "direitos do consumidor", "cdc", "código do consumidor",
+        "codigo do consumidor", "quero saber meus direitos", "tenho direito", "isso é direito meu",
+        "isso e direito meu", "qual é meu direito", "qual e meu direito",
+        "o que diz a lei", "o que a lei diz", "lei do consumidor", "lei de defesa do consumidor",
+        "o que é o cdc", "o que e o cdc", "o cdc cobre isso", "cdc cobre isso",
+        "o código cobre", "o codigo cobre", "tenho amparo legal", "tenho proteção legal",
+        "a lei protege", "lei protege o consumidor", "quero saber a lei",
+        "quais são os direitos básicos", "quais sao os direitos basicos",
+        "direitos garantidos", "o que garante a lei", "o que a lei garante",
+        "o que posso exigir", "posso exigir isso", "tenho direito a isso"
+      ],
+      "responses": [
+        "O CDC — Código de Defesa do Consumidor, Lei 8.078/90 — define vários direitos fundamentais. Entre eles: proteção contra práticas abusivas, direito à informação clara, garantia em produtos e serviços, proteção contra propaganda enganosa e direito de arrependimento em compras não presenciais.",
+        "Seus direitos básicos como consumidor incluem: receber o produto ou serviço conforme anunciado, ter defeitos corrigidos, cancelar compras online em 7 dias, receber reembolso em caso de cancelamento, e ser atendido de forma adequada pelo SAC.",
+        "O CDC protege você em toda relação de consumo — compra de produto, contratação de serviço, assinatura de plano. A empresa sempre é considerada parte mais forte nessa relação, então a lei tende a proteger o consumidor.",
+        "Alguns direitos importantes: garantia legal de 30 dias para bens não duráveis e 90 dias para bens duráveis; direito de arrependimento em 7 dias em compras online; proibição de propaganda enganosa; direito a informações claras sobre preço, prazo e condições."
+      ],
+      "context_responses": [
+        "Quero aplicar isso ao seu caso. Me conta o que aconteceu para eu ser mais específica.",
+        "Esses são os direitos gerais. Dependendo do seu caso, existe um artigo específico do CDC que se aplica. O que aconteceu?",
+        "Continuando — qual parte do CDC você quer entender melhor? Posso aprofundar em qualquer uma delas."
+      ]
+    },
+    {
+      "tag": "reembolso",
+      "patterns": [
+        "reembolso", "devolução do dinheiro", "devolucao do dinheiro", "quero meu dinheiro de volta",
+        "estorno", "cancelaram mas não devolveram", "cancelaram mas nao devolveram",
+        "não devolveram o valor", "nao devolveram o valor", "ressarcimento", "receber de volta",
+        "valor de volta", "pedir reembolso", "como pedir reembolso", "onde pedir reembolso",
+        "prazo para reembolso", "quando devolve o dinheiro", "quantos dias para reembolso",
+        "dinheiro não voltou", "dinheiro nao voltou", "estorno não caiu", "estorno nao caiu",
+        "não recebi o estorno", "nao recebi o estorno", "não caiu o estorno",
+        "nao caiu o estorno", "paguei e cancelei mas não devolveram",
+        "paguei e cancelei mas nao devolveram", "cancelou e não devolveu",
+        "cancelou e nao devolveu", "quero ressarcimento", "quero ser ressarcido",
+        "quero ser ressarcida", "me devolvam o dinheiro", "cadê meu dinheiro",
+        "cade meu dinheiro", "onde está meu reembolso", "onde esta meu reembolso"
+      ],
+      "responses": [
+        "Para reembolso após cancelamento, o prazo varia conforme a forma de pagamento. No cartão de crédito, o estorno pode aparecer em até 2 faturas. No débito ou Pix, o prazo costuma ser mais curto — geralmente até 10 dias úteis. Se passar esse prazo, você pode cobrar formalmente.",
+        "Se o reembolso não voltou dentro do prazo informado pela empresa, entre em contato por escrito e solicite uma previsão formal. Se ainda não resolver, acione a operadora do cartão ou, no caso de Pix, o banco — e formalize no Procon.",
+        "Para reembolso após arrependimento em compra online, a devolução deve ser integral — incluindo frete que você pagou. A empresa não pode descontar nada do valor que você pagou originalmente.",
+        "Guarde todos os comprovantes: pedido de cancelamento, protocolo, e qualquer comunicação da empresa confirmando o reembolso. Se o valor não chegar, esses documentos são a base da reclamação."
+      ],
+      "context_responses": [
+        "Sobre o reembolso — quanto tempo faz que o cancelamento foi solicitado? E qual foi a forma de pagamento?",
+        "Continuando — a empresa confirmou o reembolso por escrito? Isso é importante para cobrar um prazo.",
+        "Se o estorno não apareceu, vale confirmar com o banco ou operadora do cartão também — às vezes o estorno foi feito, mas fica pendente no banco.",
+        "Pensando no seu caso — o reembolso foi prometido para quando? Eles deram alguma previsão?"
+      ]
+    },
+    {
+      "tag": "cancelamento",
+      "patterns": [
+        "cancelamento", "cancelar serviço", "cancelar servico", "cancelar compra",
+        "pedir cancelamento", "encerrar contrato", "encerrar plano", "quero desistir",
+        "quero encerrar", "cancelar assinatura", "cancelar pedido", "não consigo cancelar",
+        "nao consigo cancelar", "difícil de cancelar", "dificil de cancelar",
+        "dificuldade para cancelar", "como faço para cancelar", "como faco para cancelar",
+        "como cancelar", "onde cancelo", "empresa não cancela", "empresa nao cancela",
+        "não aceitam o cancelamento", "nao aceitam o cancelamento", "ficam enrolando no cancelamento",
+        "querem cobrar multa", "vão cobrar multa", "vao cobrar multa", "cobrando multa pelo cancelamento",
+        "não deixam cancelar", "nao deixam cancelar", "só consigo cancelar pessoalmente",
+        "so consigo cancelar pessoalmente", "só pelo telefone", "so pelo telefone",
+        "colocam burocracia para cancelar", "processo de cancelamento difícil",
+        "processo de cancelamento dificil", "bloqueando o cancelamento"
+      ],
+      "responses": [
+        "Você tem direito de cancelar. Para contratos de serviço ou assinatura, a empresa é obrigada a oferecer um meio de cancelamento tão fácil quanto o de contratação — se você contratou pelo app, pode cancelar pelo app; se foi pela internet, pode cancelar pela internet.",
+        "Sobre multa por cancelamento: ela pode existir em contratos com fidelidade, mas deve estar claramente prevista no contrato e ser proporcional. Fidelidade fora do prazo sem cláusula clara no contrato é ilegal.",
+        "Se a empresa está dificultando o cancelamento — exigindo que vá pessoalmente, colocando burocracia excessiva ou não respondendo as solicitações — isso em si já é uma prática abusiva que pode ser denunciada ao Procon.",
+        "Para formalizar o cancelamento: faça sempre por escrito, com protocolo. Se a empresa não cancelar dentro do prazo ou continuar cobrando, você tem base para exigir o encerramento e a devolução do que foi cobrado indevidamente após o pedido."
+      ],
+      "context_responses": [
+        "Continuando — qual é o tipo de serviço ou contrato que você quer cancelar? O processo pode variar.",
+        "Se a empresa está colocando obstáculos, documente essas tentativas. Você já tentou cancelar de que forma?",
+        "Sobre o cancelamento — existe cláusula de fidelidade no contrato? Você sabe quanto tempo falta para o término?",
+        "Pensando na sua situação — a empresa chegou a confirmar que cancelou ou ainda está em aberto?"
+      ]
+    },
+    {
+      "tag": "nota_fiscal",
+      "patterns": [
+        "nota fiscal", "cupom fiscal", "comprovante da compra", "não tenho nota", "nao tenho nota",
+        "perdi a nota", "tenho comprovante", "guardei a nota", "prova de compra", "recibo",
+        "não me deram nota", "nao me deram nota", "se recusaram a dar nota",
+        "loja não emitiu nota", "loja nao emitiu nota", "nota fiscal eletrônica", "nota fiscal eletronica",
+        "nfe", "danfe", "xml da nota", "segunda via da nota", "reemitir nota fiscal",
+        "nota fiscal obrigatória", "nota fiscal obrigatoria", "empresa tem que dar nota",
+        "empresa tem que emitir nota", "posso exigir nota fiscal", "tenho direito à nota",
+        "tenho direito a nota", "não emitem nota", "nao emitem nota",
+        "comprovante bancário serve", "comprovante bancario serve", "extrato do banco serve",
+        "print do pagamento serve", "comprovante de pix serve", "comprovante de transferência serve"
+      ],
+      "responses": [
+        "A nota fiscal é obrigatória em qualquer venda — empresa que se recusa a emitir está descumprindo a lei. Você pode exigir a nota no momento da compra ou solicitar depois. Se negarem, pode denunciar ao Procon e à Secretaria da Fazenda do seu estado.",
+        "Não ter a nota fiscal dificulta mas não impossibilita a reclamação. Comprovante de pagamento (extrato bancário, comprovante de Pix, histórico do cartão), print do pedido e troca de mensagens com a empresa também são provas válidas.",
+        "Para garantia e defeito, a nota fiscal é o documento mais forte. Mas o CDC aceita outros comprovantes — extrato, recibo, histórico de pedido. Se a empresa exigir a nota para realizar a garantia e você não tiver, ela está colocando obstáculo indevido.",
+        "Se a loja não emitiu nota fiscal, além dos seus direitos como consumidor, isso é também uma questão fiscal — você pode denunciar à Secretaria da Fazenda. Guarda qualquer comprovante que você tiver da compra."
+      ],
+      "context_responses": [
+        "Pensando no seu caso — você tem algum outro comprovante da compra além da nota? Extrato, print do pedido, e-mail de confirmação?",
+        "Continuando — se a empresa está pedindo nota fiscal para cobrir a garantia e você não tem, questione por escrito. Eles precisam aceitar outros comprovantes.",
+        "A nota fiscal emitida eletronicamente fica no sistema da empresa também. Você pode solicitar uma segunda via — inclusive por e-mail."
+      ]
+    },
+    {
+      "tag": "prova_documental",
+      "patterns": [
+        "que provas guardar", "quais provas preciso", "o que eu guardo", "o que guardar",
+        "tenho print", "tenho provas", "tenho foto", "guardei conversa", "guardei e-mail",
+        "guardei email", "quero juntar provas", "documentar o caso", "como provar",
+        "como comprovar", "quais documentos preciso", "o que serve como prova",
+        "print serve como prova", "foto serve como prova", "áudio serve como prova",
+        "audio serve como prova", "vídeo serve como prova", "video serve como prova",
+        "conversa de whatsapp serve", "conversa do whats serve", "print de chat serve",
+        "e-mail serve como prova", "email serve como prova", "como documentar",
+        "o que devo guardar", "o que não devo jogar fora", "o que nao devo jogar fora",
+        "como organizar as provas", "que tipo de prova precisarei", "como fortalecer meu caso",
+        "quero ter provas suficientes", "precisarei de provas para isso"
+      ],
+      "responses": [
+        "As provas mais valiosas em casos de consumidor são: nota fiscal ou comprovante de compra, prints do anúncio ou descrição do produto, fotos do defeito ou problema, histórico de conversa com a empresa (chat, e-mail, WhatsApp), e números de protocolo de atendimento.",
+        "Print de conversa vale sim como prova — seja no WhatsApp, chat do site, e-mail ou qualquer canal escrito. O ideal é guardar em mais de um lugar e não apagar. Se precisar usar formalmente, você pode autenticar com reconhecimento de firma ou usar como prova documental simples.",
+        "Para fortalecer o caso: documente o problema assim que ele aparecer — foto, vídeo, descrição escrita da data e horário. Guarda todos os contatos com a empresa em ordem cronológica. Quanto mais organizado, mais fácil fica se você precisar formalizar a reclamação.",
+        "Documentos que ajudam muito: comprovante de pagamento, histórico do pedido no site ou aplicativo, prints do anúncio, foto do produto com defeito, etiqueta da embalagem com código de envio, e-mail de confirmação da compra."
+      ],
+      "context_responses": [
+        "Pensando no seu caso — você já tem algum desses documentos guardados? Me conta o que tem disponível.",
+        "Continuando — o tipo de prova mais importante varia conforme o caso. Me conta o problema para eu ser mais específica sobre o que guardar.",
+        "Para esse tipo de situação, o mais importante costuma ser registrar o problema assim que aconteceu. Você já tem fotos ou algum registro?"
+      ]
+    },
+    {
+      "tag": "servico_com_problema",
+      "patterns": [
+        "serviço com problema", "servico com problema", "prestação de serviço ruim",
+        "prestacao de servico ruim", "serviço mal feito", "servico mal feito",
+        "não prestaram o serviço direito", "nao prestaram o servico direito", "fizeram errado",
+        "qualidade ruim do serviço", "serviço incompleto", "servico incompleto",
+        "serviço não foi feito", "servico nao foi feito", "não fizeram o que combinamos",
+        "nao fizeram o que combinamos", "serviço foi mal prestado", "servico foi mal prestado",
+        "fizeram de qualquer jeito", "deixaram a desejar", "serviço piorou a situação",
+        "servico piorou a situacao", "estragoram mais do que consertaram",
+        "cobrou e não fez", "cobrou e nao fez", "cobrou e fez errado",
+        "cobrou mas ficou ruim", "serviço não funcionou", "servico nao funcionou",
+        "não cumpriram o que prometeram", "nao cumpriram o que prometeram",
+        "técnico não resolveu", "tecnico nao resolveu", "manutenção mal feita",
+        "manutencao mal feita", "reforma mal feita", "instalação errada", "instalacao errada"
+      ],
+      "responses": [
+        "Serviço mal prestado ou incompleto dá direito a rerealização sem custo adicional, desconto proporcional ou cancelamento com reembolso. O CDC prevê isso no artigo 20. O fornecedor tem obrigação de entregar o serviço conforme o que foi contratado.",
+        "Para serviço com problema, é importante ter documentado o que foi contratado — orçamento, contrato, e-mail de combinação — e o que foi entregue de diferente. Fotos antes e depois, se possível, ajudam bastante.",
+        "Se o serviço foi feito de forma errada, você pode exigir que seja refeito sem custo. Se a empresa se recusar, você pode contratar outro profissional para corrigir e cobrar os custos da empresa que errou.",
+        "Documentar serviço mal feito: fotos do problema, registro escrito do que foi combinado, comprovante de pagamento, e toda comunicação com a empresa sobre o problema. Se houver laudo técnico de outro profissional confirmando o erro, melhor ainda."
+      ],
+      "context_responses": [
+        "Continuando — você tem algum registro do que foi contratado? Orçamento, mensagem, contrato?",
+        "Sobre o serviço com problema — a empresa já foi informada e tentou corrigir? Qual foi a resposta?",
+        "Pensando no seu caso — o problema é que o serviço ficou incompleto ou ficou errado? Isso pode mudar o caminho.",
+        "Para esse tipo de situação, quanto mais documentação do problema, melhor. Você tem fotos do resultado?"
+      ]
+    },
+    {
+      "tag": "compra_online",
+      "patterns": [
+        "compra online", "comprei online", "comprei pela internet", "comprei no site",
+        "comprei no aplicativo", "fiz a compra pela internet", "loja virtual", "e-commerce",
+        "mercado online", "site de compras", "marketplace", "comprei pelo marketplace",
+        "comprei pelo mercado livre", "comprei pela amazon", "comprei pelo shopee",
+        "comprei pelo ifood", "comprei pelo magalu", "comprei pela magazine",
+        "loja online", "compra digital", "pedido online", "pedido pelo app",
+        "comprei por aplicativo", "comprei pelo celular", "pedido feito no aplicativo",
+        "site me enganou", "loja virtual me enganou", "problemas com compra na internet",
+        "problema em compra online", "problema em loja virtual", "comprei online e me arrependi",
+        "compra no e-commerce deu problema"
+      ],
+      "responses": [
+        "Compras online têm proteções específicas no CDC. O principal diferencial é o direito de arrependimento em 7 dias — você pode desistir da compra sem precisar dar qualquer explicação, com reembolso integral.",
+        "Em compras online, a empresa tem obrigações claras: informação precisa sobre o produto, prazo de entrega definido, e canais de atendimento acessíveis. Se qualquer um desses pontos falhar, você tem base para reclamar.",
+        "Para compras em marketplace — como Mercado Livre, Shopee, Amazon — a responsabilidade é tanto do vendedor quanto da plataforma. Se o vendedor não resolver, você pode acionar a plataforma diretamente.",
+        "Compras online: guarda sempre a confirmação do pedido, o prazo de entrega informado, e toda comunicação com a loja. Se algo der errado, esses registros são sua principal ferramenta."
+      ],
+      "context_responses": [
+        "Continuando — o que está acontecendo com a compra online? Me conta o problema específico.",
+        "Para compra online, o canal de venda faz diferença — foi direto com a loja ou via marketplace? Isso define com quem você precisa falar primeiro.",
+        "Sobre a compra online — você ainda está dentro dos 7 dias de arrependimento ou já passou esse prazo?"
+      ]
+    },
+    {
+      "tag": "loja_fisica",
+      "patterns": [
+        "loja física", "loja fisica", "comprei na loja", "compra presencial", "fui na loja",
+        "comprei pessoalmente", "na loja mesmo", "foi presencial", "fui até a loja",
+        "fui pessoalmente", "loja local", "comprei no estabelecimento", "fui ao estabelecimento",
+        "comprei presencialmente", "na loja física", "na loja fisica", "na loja de rua",
+        "foi na loja de rua", "comprei em uma loja presencial", "comprei direto na loja",
+        "loja do bairro", "loja de shopping", "comprei no shopping", "foi em loja física",
+        "foi em loja fisica", "fui até o estabelecimento", "estabelecimento físico",
+        "estabelecimento fisico", "loja real", "compra presencial em estabelecimento"
+      ],
+      "responses": [
+        "Em loja física, as regras são um pouco diferentes. O direito de arrependimento de 7 dias não se aplica — ele é exclusivo para compras não presenciais. Mas o direito de troca por defeito continua valendo normalmente.",
+        "Para compra presencial: se o produto tem defeito, a empresa tem obrigação de resolver. Se não tem defeito e você apenas não gostou, a troca depende da política de troca da loja — que muitas têm voluntariamente, mas não são obrigadas por lei.",
+        "Em loja física, guarda sempre o cupom fiscal ou nota fiscal — é sua principal prova de compra. Se a loja tem política de troca, peça ela por escrito ou fotografe o aviso da política antes de sair.",
+        "Mesmo em compra presencial, se o produto apresentar defeito nos prazos legais — 30 dias para não duráveis, 90 dias para duráveis — você tem direito garantido pelo CDC, independentemente da política de troca da loja."
+      ],
+      "context_responses": [
+        "Continuando — qual é o problema com o produto comprado na loja? É defeito ou outra coisa?",
+        "Para compra em loja física, a nota fiscal é muito importante. Você tem o cupom ou comprovante da compra?",
+        "Sobre a loja física — a loja tem política de troca anunciada? Às vezes isso já resolve mesmo sem precisar acionar direitos formais."
+      ]
+    },
+    {
+      "tag": "empresa_negou_solucao",
+      "patterns": [
+        "a empresa negou", "a loja negou", "não quiseram resolver", "nao quiseram resolver",
+        "recusaram meu pedido", "negaram a troca", "negaram o cancelamento", "negaram o reembolso",
+        "disseram que não podem fazer nada", "disseram que nao podem fazer nada",
+        "não aceitaram", "nao aceitaram", "recusaram resolver", "empresa não quer resolver",
+        "empresa nao quer resolver", "a empresa se recusou", "ficaram me ignorando",
+        "não respondem", "nao respondem", "ignoraram minha reclamação", "ignoraram minha reclamacao",
+        "não deram retorno", "nao deram retorno", "empresa negou tudo", "negaram tudo",
+        "disseram que não é responsabilidade deles", "disseram que nao e responsabilidade deles",
+        "jogaram a culpa no fabricante", "jogaram a culpa na transportadora", "jogaram na fabricante",
+        "jogaram a culpa em outro", "disseram que não podem me ajudar", "disseram que nao podem me ajudar",
+        "empresa não se responsabiliza", "empresa nao se responsabiliza",
+        "recusaram formalmente", "mandaram embora", "me mandaram embora"
+      ],
+      "responses": [
+        "Quando a empresa nega a solução, você tem alternativas formais. O consumidor.gov.br é uma plataforma do governo federal onde você pode registrar a reclamação — muitas empresas respondem nesse canal com mais agilidade. O Procon do seu estado é outra via.",
+        "Se a empresa jogou a culpa no fabricante ou na transportadora, isso é problema deles — não seu. O CDC prevê responsabilidade solidária: você contratou com aquela empresa, e ela é responsável por resolver, independentemente de quem causou o problema.",
+        "Após a negativa da empresa, documente tudo: protocolo de atendimento, e-mail de negativa, datas dos contatos. Esse histórico vai ser útil no Procon, no consumidor.gov.br ou eventualmente no Juizado Especial Cível — o chamado 'Juizado de Pequenas Causas'.",
+        "A sequência depois de uma negativa costuma ser: 1) ouvidoria da empresa, 2) consumidor.gov.br, 3) Procon, 4) Juizado Especial Cível. Você não precisa seguir essa ordem necessariamente — pode ir direto ao Procon se preferir."
+      ],
+      "context_responses": [
+        "Continuando — a empresa negou de que forma? Por escrito, por telefone? Você tem algum registro dessa negativa?",
+        "Para avançar depois da negativa, o histórico de tentativas é muito valioso. Me conta o que você já tentou e como foi respondido.",
+        "Se a empresa não quis resolver, o próximo passo mais eficaz geralmente é o consumidor.gov.br — empresas cadastradas lá têm prazo para responder e são monitoradas. Você já tentou essa plataforma?",
+        "Pensando na sua situação — qual foi o argumento que a empresa usou para negar? Isso pode ajudar a entender qual é o caminho mais forte para contestar."
+      ]
+    },
+    {
+      "tag": "tempo_prazo",
+      "patterns": [
+        "já passou tempo", "ja passou tempo", "passou muito tempo", "faz alguns dias",
+        "faz semanas", "faz meses", "demorei para reclamar", "já tem tempo", "ja tem tempo",
+        "isso aconteceu faz tempo", "depois de alguns dias", "depois de algumas semanas",
+        "depois de um tempo", "prazo legal", "prazo de reclamação", "prazo de garantia",
+        "ainda estou no prazo", "ainda estou dentro do prazo", "já passou o prazo",
+        "ja passou o prazo", "perdi o prazo", "o prazo venceu", "quanto tempo tenho",
+        "quanto tempo eu tenho", "por quanto tempo posso reclamar", "ainda dá tempo",
+        "ainda da tempo", "ainda posso reclamar", "expirou o prazo", "prescreveu",
+        "prescrição", "prescricao", "decadência", "decadencia", "caducou o direito",
+        "quantos dias tenho", "quantos meses tenho", "qual é o prazo", "qual e o prazo"
+      ],
+      "responses": [
+        "Os prazos do CDC funcionam assim: para reclamar de defeito em produtos não duráveis (alimentos, cosméticos), são 30 dias. Para bens duráveis (eletrônicos, eletrodomésticos), são 90 dias. Esse prazo começa quando o defeito aparece — e fica suspenso enquanto a empresa está analisando o caso.",
+        "Existe também o prazo de prescrição — o prazo para entrar com uma ação judicial — que é de 5 anos a partir do dano ou do conhecimento do dano. Ou seja, mesmo que o prazo de reclamação com a empresa tenha passado, você pode ainda ter prazo para outras vias.",
+        "Se você demorou para perceber o defeito — especialmente em defeitos ocultos — o prazo começa a contar de quando você descobriu o problema, não de quando comprou. Isso pode ser importante dependendo do seu caso.",
+        "Para entrega atrasada e outras situações que não são defeito de produto, os prazos são diferentes. Me conta o que aconteceu para eu te falar o prazo específico que se aplica."
+      ],
+      "context_responses": [
+        "Continuando — quando foi feita a compra e quando o problema apareceu? Isso me ajuda a calcular o prazo.",
+        "Para verificar o prazo no seu caso — o produto é considerado durável? Eletrônicos, eletrodomésticos, móveis são duráveis. Roupas e alimentos são não duráveis.",
+        "Sobre o tempo que passou — você entrou em contato com a empresa logo quando percebeu o problema? Isso pode ser relevante para o prazo."
+      ]
+    },
+    {
+      "tag": "procon",
+      "patterns": [
+        "procon", "posso ir ao procon", "vale reclamar no procon", "reclamar no procon",
+        "abrir reclamação", "abrir reclamacao", "registrar reclamação", "registrar reclamacao",
+        "quero reclamar formalmente", "como funciona o procon", "o procon resolve",
+        "o procon ajuda", "devo ir ao procon", "quando ir ao procon", "vale a pena o procon",
+        "o procon tem poder", "o que o procon faz", "como é o procon", "como e o procon",
+        "consumidor gov", "consumidor.gov.br", "reclame aqui", "site de reclamação",
+        "site de reclamacao", "plataforma de reclamação", "plataforma de reclamacao",
+        "juizado especial", "pequenas causas", "juizado civel", "juizado cível",
+        "posso processar a empresa", "posso ir a justiça", "posso ir a justica",
+        "posso entrar com processo", "procon online", "procon virtual"
+      ],
+      "responses": [
+        "O Procon é o órgão de defesa do consumidor — ele pode mediar o conflito com a empresa e aplicar sanções. Você pode registrar a reclamação pelo site do Procon do seu estado ou presencialmente. Leve todos os documentos do caso.",
+        "O consumidor.gov.br é uma plataforma federal onde muitas empresas grandes estão cadastradas e têm prazo para responder. É uma opção rápida antes de ir ao Procon — muitas reclamações se resolvem por lá.",
+        "Se o valor em questão for de até 20 salários mínimos, você pode ir ao Juizado Especial Cível — o antigo 'Juizado de Pequenas Causas' — sem precisar de advogado. Leva os documentos do caso e faz a reclamação diretamente.",
+        "A sequência mais comum: 1) tentar resolver com a empresa diretamente, 2) consumidor.gov.br, 3) Procon, 4) Juizado Especial Cível. Mas você pode ir direto ao Procon ou ao Juizado se preferir — não é obrigatório seguir essa ordem."
+      ],
+      "context_responses": [
+        "Continuando — você quer ir ao Procon ou tem interesse no consumidor.gov.br primeiro? Posso explicar como funciona cada um.",
+        "Para o Procon, você vai precisar de todos os documentos do caso organizado. Me conta o que você tem disponível.",
+        "Pensando no seu caso — o valor envolvido é alto? Se for até 20 salários mínimos, o Juizado Especial pode ser uma opção mais direta."
+      ]
+    },
+    {
+      "tag": "assinatura_plano",
+      "patterns": [
+        "assinatura", "plano", "mensalidade", "serviço recorrente", "servico recorrente",
+        "cobrança mensal", "cobranca mensal", "streaming", "app por assinatura",
+        "assinatura indevida", "não consigo cancelar assinatura", "nao consigo cancelar assinatura",
+        "cancelar plano", "cancelar mensalidade", "plano de telefone", "plano de internet",
+        "plano de academia", "assinatura de streaming", "plano de saúde", "plano de saude",
+        "renovação automática", "renovacao automatica", "cobrou de novo", "renovou sem avisar",
+        "renovaram sem minha autorização", "renovaram sem minha autorizacao",
+        "não autorizei a renovação", "nao autorizei a renovacao", "trial cobrou",
+        "teste gratuito cobrou", "período de teste acabou e cobrou", "periodo de teste acabou e cobrou",
+        "cobraram após o período gratuito", "cobraram apos o periodo gratuito",
+        "fidelidade expirou mas continuam cobrando", "plano mudou o valor sem avisar",
+        "aumentaram o plano sem aviso", "mudaram as condições do plano", "mudaram as condicoes do plano"
+      ],
+      "responses": [
+        "Para planos e assinaturas, você tem o direito de cancelar a qualquer momento. A empresa pode cobrar multa rescisória se existir cláusula de fidelidade no contrato — mas essa multa deve ser proporcional ao tempo restante e estar claramente prevista.",
+        "Se a assinatura renovou automaticamente sem aviso prévio e você não autorizou, isso pode ser contestado. Muitos contratos de renovação automática precisam notificar o consumidor antes — se não fizeram, a renovação pode ser anulada.",
+        "Para trial gratuito que passou a cobrar: verifique as condições do período de teste — geralmente há um aviso de que vai cobrar após o prazo. Se não houve aviso claro, você pode contestar a cobrança com a empresa e, se não resolver, com a operadora do cartão.",
+        "Se o plano mudou de preço ou condições sem aviso prévio adequado, isso é prática abusiva. Você tem direito de cancelar sem multa nesse caso, já que a empresa alterou unilateralmente o contrato."
+      ],
+      "context_responses": [
+        "Continuando — você quer cancelar a assinatura ou está com problema de cobrança indevida? Me conta melhor.",
+        "Sobre o plano ou assinatura — existe cláusula de fidelidade no contrato? Se sim, você sabe quanto tempo falta?",
+        "Para seguir — qual é o serviço em questão? Isso ajuda a entender se existem regras específicas além do CDC geral."
+      ]
+    },
+    {
+      "tag": "juizado_especial",
+      "patterns": [
+        "juizado especial", "pequenas causas", "juizado civel", "juizado cível",
+        "posso processar", "posso entrar com processo", "vou processar a empresa",
+        "posso ir a justiça", "posso ir a justica", "ação judicial", "acao judicial",
+        "processo judicial", "entrar na justiça", "entrar na justica", "mover processo",
+        "quero mover processo", "quero entrar com ação", "quero entrar com acao",
+        "preciso de advogado", "precisa de advogado", "jecc", "jecrim",
+        "posso processar sem advogado", "dá para processar sozinho", "da para processar sozinho",
+        "como dar entrada no processo", "como dar entrada na ação", "como dar entrada na acao",
+        "como entrar com a ação", "como entrar com a acao", "quero dano moral",
+        "cabe dano moral", "posso pedir dano moral", "dano material", "dano moral e material"
+      ],
+      "responses": [
+        "O Juizado Especial Cível — JEC — permite que você processe a empresa sem advogado, desde que o valor seja de até 20 salários mínimos. Você leva os documentos do caso até o juizado mais próximo e faz a petição de forma relativamente simples.",
+        "Para valores até 20 salários mínimos, o JEC não exige advogado. Para valores acima disso, o advogado é obrigatório. O processo no JEC costuma ser mais rápido que a justiça comum.",
+        "Sobre dano moral: ele pode ser pedido junto com o dano material. O valor é arbitrado pelo juiz conforme a gravidade do caso — situações de constrangimento, tempo perdido excessivo, problemas sérios de saúde e similares tendem a ter mais chances.",
+        "Para dar entrada no JEC: leve todos os documentos organizados (comprovante de compra, protocolos de atendimento, registro da negativa da empresa, fotos do problema), o seu CPF, RG, e o endereço completo da empresa que você vai processar."
+      ],
+      "context_responses": [
+        "Continuando — você já esgotou as vias administrativas? Procon e consumidor.gov.br costumam ser um passo anterior ao JEC.",
+        "Para o Juizado Especial, ter toda a documentação organizada é muito importante. Você tem os documentos do caso?",
+        "Pensando no seu caso — o valor envolvido é quanto? Isso define se você pode ir ao JEC sem advogado ou não."
+      ]
+    },
+    {
+      "tag": "frete_entrega",
+      "patterns": [
+        "frete", "valor do frete", "frete grátis", "frete gratis", "frete cobrado errado",
+        "frete absurdo", "frete alto demais", "me cobraram frete", "cobraram frete indevido",
+        "frete não combinado", "frete nao combinado", "frete surpresa", "frete escondido",
+        "frete diferente do site", "frete diferente do anuncio", "frete diferente do anúncio",
+        "entregador", "motoboy", "courier", "quem paga o frete de devolução",
+        "quem paga o frete de volta", "frete da devolução", "frete da devolucao",
+        "frete do retorno", "logística reversa", "logistica reversa",
+        "empresa tem que pagar o frete", "eu pago o frete de volta"
+      ],
+      "responses": [
+        "Para devolução por arrependimento em compra online, o frete de volta é responsabilidade da empresa — você não paga. Já para devoluções por outros motivos, depende do que está no contrato ou política da loja.",
+        "Se o frete cobrado foi diferente do anunciado, isso é uma irregularidade. O valor anunciado é o que vale — a empresa não pode alterar depois que você finalizou a compra.",
+        "Logística reversa — o frete de devolução — em casos de defeito é sempre por conta da empresa. Você não deve pagar frete para devolver um produto com problema.",
+        "Se houver frete surpresa ou diferente do que foi anunciado, você pode contestar e exigir o valor correto. Guarda um print do anúncio original com o valor do frete anunciado."
+      ],
+      "context_responses": [
+        "Continuando — o frete foi cobrado diferente do que estava anunciado ou é uma questão de quem paga na devolução?",
+        "Para o frete de devolução — o motivo da devolução é defeito ou arrependimento? Isso define quem paga."
+      ]
+    },
+    {
+      "tag": "cartao_credito",
+      "patterns": [
+        "cartão de crédito", "cartao de credito", "contestar no cartão", "contestar no cartao",
+        "chargeback", "estorno no cartão", "estorno no cartao", "operadora do cartão",
+        "operadora do cartao", "fui debitado", "compra indevida no cartão", "compra indevida no cartao",
+        "cobrança no cartão que não reconheço", "cobranca no cartao que nao reconheco",
+        "cobrança não autorizada no cartão", "cobranca nao autorizada no cartao",
+        "parcelamento errado", "parcela errada", "parcelou diferente do combinado",
+        "número de parcelas errado", "numero de parcelas errado",
+        "juros que não combinei", "juros que nao combinei", "paguei à vista e parcelou",
+        "paguei a vista e parcelou", "estorno do cartão demorou", "estorno do cartao demorou"
+      ],
+      "responses": [
+        "Para cobranças indevidas no cartão, você tem duas frentes: contestar com a empresa que cobrou e contestar com a operadora do cartão. O chargeback — contestação formal na operadora — pode resultar no estorno enquanto a investigação acontece.",
+        "O estorno no cartão de crédito pode aparecer em até 2 faturas — depende da operadora e da data de fechamento. Se passou mais de 2 faturas sem aparecer, conteste com a operadora.",
+        "Se você reconhece a compra mas discorda do valor ou do número de parcelas, fale primeiro com a empresa. Se não resolver, a operadora do cartão pode ajudar a contestar.",
+        "Para chargeback por compra não reconhecida, entre em contato com a operadora do cartão diretamente. Esse processo é diferente — é a operadora que investiga e, se confirmar fraude, estorna o valor."
+      ],
+      "context_responses": [
+        "Continuando — a cobrança é algo que você não reconhece ou é uma compra que fez mas foi cobrada errado?",
+        "Para cobranças no cartão, vale checar com a operadora também. Você já entrou em contato com eles?",
+        "Sobre o estorno no cartão — qual foi a previsão que a empresa deu? Isso ajuda a saber se já extrapolou o prazo."
+      ]
+    },
+    {
+      "tag": "pix_transferencia",
+      "patterns": [
+        "pix", "transferência pix", "transferencia pix", "paguei por pix", "pagamento via pix",
+        "pix errado", "pix não confirmado", "pix nao confirmado", "pix sumiu",
+        "pix caiu", "não caiu o pix", "nao caiu o pix", "reembolso via pix",
+        "devolução via pix", "devolucao via pix", "estorno via pix",
+        "pix para empresa errada", "pix enviado para conta errada", "enviei pix errado"
+      ],
+      "responses": [
+        "Para reembolso via Pix, a empresa precisa te devolver o valor no mesmo método ou em outro acordado — o Pix é uma opção ágil para isso, geralmente em horas ou no mesmo dia.",
+        "Se o Pix foi enviado para a empresa e o produto não chegou ou o serviço não foi prestado, você tem direito ao reembolso. Guarda o comprovante do Pix e toda comunicação com a empresa.",
+        "Pix enviado para conta errada é uma situação diferente — você precisa entrar em contato com o banco e com o destinatário. A instituição financeira pode mediar a devolução, mas não garante automaticamente.",
+        "Se a empresa prometeu reembolso via Pix e não fez, solicite por escrito uma previsão. Se não resolver, pode acionar o banco e o Procon — o Pix tem rastreamento que facilita a comprovação do pagamento."
+      ],
+      "context_responses": [
+        "Sobre o Pix — você tem o comprovante da transação? Ele vai ser importante para qualquer reclamação.",
+        "Continuando — a empresa confirmou que vai devolver via Pix ou ainda está em aberto?"
+      ]
+    },
+    {
+      "tag": "voo_transporte",
+      "patterns": [
+        "voo cancelado", "voo atrasado", "voo", "aérea", "aerea", "companhia aérea",
+        "companhia aerea", "passagem aérea", "passagem aerea", "bagagem", "bagagem perdida",
+        "bagagem extraviada", "mala perdida", "mala extraviada", "reacomodação",
+        "reacomodacao", "reembolso de passagem", "cancelamento de voo", "overbooking",
+        "preterição de embarque", "negaram embarque", "não me deixaram embarcar",
+        "nao me deixaram embarcar", "onibus", "ônibus", "trem", "transporte terrestre",
+        "passagem de onibus", "passagem de ônibus", "atraso de onibus", "atraso de ônibus"
+      ],
+      "responses": [
+        "Para voos, a Anac — Agência Nacional de Aviação Civil — regula as regras. Em caso de cancelamento ou atraso superior a 4 horas, você tem direito a reacomodação em outro voo, reembolso integral ou assistência material (alimentação, hospedagem, dependendo do tempo de espera).",
+        "Para bagagem extraviada, a empresa aérea é responsável. Você deve fazer o registro imediatamente no balcão da companhia no aeroporto — esse registro é chamado de RIB (Registro de Irregularidade de Bagagem). O prazo para resolução é de 7 dias para voos domésticos.",
+        "Voo cancelado: se a companhia avisou com menos de 72 horas de antecedência, você tem direito a assistência material. Se com mais de 72 horas, tem direito a reacomodação ou reembolso, mas pode não ter direito à assistência material.",
+        "Para ônibus, as regras são reguladas pela ANTT. Atrasos acima de 60 minutos dão direito a informação sobre o motivo; atrasos acima de 1 hora podem dar direito a refeição; cancelamento dá direito a reembolso ou reacomodação."
+      ],
+      "context_responses": [
+        "Continuando — o problema é com voo ou com ônibus? As regras e órgãos reguladores são diferentes.",
+        "Sobre o voo — qual foi o motivo informado pela companhia? E quanto tempo de atraso ou se foi cancelado?",
+        "Para bagagem extraviada — você já fez o registro no aeroporto? Esse é o primeiro passo mais importante."
+      ]
+    },
+    {
+      "tag": "saude_plano",
+      "patterns": [
+        "plano de saúde", "plano de saude", "convênio médico", "convenio medico",
+        "negaram o procedimento", "negaram o exame", "negaram a cirurgia", "negaram cobertura",
+        "negaram o tratamento", "não autorizaram", "nao autorizaram", "glosa", "glosa médica",
+        "reembolso do plano", "reembolso do convênio", "não cobriu", "nao cobriu",
+        "plano não pagou", "plano nao pagou", "carência", "carencia do plano",
+        "prazo de carência", "prazo de carencia", "cobertura do plano", "o que o plano cobre",
+        "rol da ans", "ans", "agência nacional de saúde", "agencia nacional de saude",
+        "reclamação para a ans", "reclamacao para a ans"
+      ],
+      "responses": [
+        "Planos de saúde são regulados pela ANS — Agência Nacional de Saúde Suplementar. Se o plano negou um procedimento, exame ou tratamento, você pode questionar a negativa e solicitar justificativa por escrito. A ANS define o Rol de Procedimentos obrigatórios que todo plano deve cobrir.",
+        "Se o plano negou cobertura de algo que está no Rol da ANS, você pode recorrer diretamente ao plano por escrito, acionar a ouvidoria do plano, ou registrar reclamação na ANS pelo site ou telefone 0800 701 9656.",
+        "Para negativas de emergência ou urgência, o plano não pode aplicar carência — tem obrigação de cobrir desde o início do contrato. Se negaram atendimento emergencial, isso é uma situação urgente para acionar a ANS.",
+        "Guarda tudo: a negativa por escrito do plano, os documentos médicos pedindo o procedimento, o seu contrato e carteirinha. Quanto mais documentado, mais fácil contestar."
+      ],
+      "context_responses": [
+        "Sobre o plano de saúde — o procedimento negado estava sendo pedido por qual motivo médico? E o plano deu alguma justificativa por escrito?",
+        "Continuando — você tem quanto tempo no plano? Isso é relevante para entender se pode haver carência.",
+        "Para esse tipo de negativa, a ANS é o órgão mais direto. Você já entrou em contato com eles?"
+      ]
+    },
+    {
+      "tag": "consumidor_gov",
+      "patterns": [
+        "consumidor gov", "consumidor.gov.br", "consumidor gov br", "plataforma do governo",
+        "site do governo para reclamar", "reclamação no governo", "reclamacao no governo",
+        "reclamar online", "como usar o consumidor gov", "como usar a plataforma",
+        "reclame aqui", "reclameaqui", "como funciona o reclame aqui",
+        "reclamação no reclame aqui", "reclamacao no reclame aqui", "publicar reclamação",
+        "publicar reclamacao", "postar reclamação online", "postar reclamacao online",
+        "denúncia online", "denuncia online", "onde denunciar"
+      ],
+      "responses": [
+        "O consumidor.gov.br é uma plataforma do governo federal onde você pode registrar reclamações contra empresas cadastradas. Muitas grandes empresas respondem lá com mais agilidade do que pelo SAC — porque as respostas são públicas e monitoradas.",
+        "Para usar o consumidor.gov.br: crie uma conta com seu CPF, localize a empresa, descreva o problema e envie. A empresa tem prazo para responder — geralmente 10 dias. Se resolver por lá, você avalia o atendimento.",
+        "O Reclame Aqui é uma plataforma privada, mas também é eficaz em alguns casos — empresas com muitas reclamações sem resposta têm reputação prejudicada, então muitas se preocupam em resolver para não abaixar a nota.",
+        "Para denúncia de propaganda enganosa ou prática abusiva, além do Procon, você pode registrar no Senacon — Secretaria Nacional do Consumidor — pelo próprio consumidor.gov.br."
+      ],
+      "context_responses": [
+        "Continuando — você já tentou o consumidor.gov.br ou só o SAC da empresa até agora?",
+        "Para esse caso, o consumidor.gov.br pode ser um bom caminho. Você quer que eu explique como funciona o processo de registro?"
+      ]
+    },
+    {
+      "tag": "contrato_cláusula_abusiva",
+      "patterns": [
+        "cláusula abusiva", "clausula abusiva", "contrato abusivo", "contrato confuso",
+        "não li o contrato", "nao li o contrato", "assinei sem ler", "assinou sem ler",
+        "letras miúdas", "letras miudas", "letra pequena", "asterisco", "condicões escondidas",
+        "condicoes escondidas", "condições escondidas", "condição que não estava clara",
+        "condicao que nao estava clara", "cláusula que não entendi", "clausula que nao entendi",
+        "termos confusos", "contrato que prejudica o consumidor", "cláusula que favorece a empresa",
+        "clausula que favorece a empresa", "renúncia de direitos no contrato",
+        "renuncia de direitos no contrato", "contrato de adesão", "contrato de adesao",
+        "contrato que não podia negociar", "contrato que nao podia negociar"
+      ],
+      "responses": [
+        "Cláusulas abusivas são nulas de pleno direito no CDC — mesmo que você tenha assinado o contrato. O CDC lista exemplos de cláusulas proibidas: as que limitam seus direitos garantidos por lei, que isentam a empresa de responsabilidade, ou que impõem desvantagens excessivas.",
+        "Contrato de adesão — aqueles que você assina mas não pode negociar os termos — são comuns mas têm limitações. Em caso de dúvida, a interpretação mais favorável ao consumidor prevalece, e cláusulas ambíguas são interpretadas a seu favor.",
+        "Se tiver uma cláusula que parece abusiva, você pode questionar a empresa e, se não resolver, acionar o Procon. O Procon pode declarar a nulidade de cláusulas abusivas e aplicar sanções à empresa.",
+        "Mesmo assinando um contrato com cláusulas abusivas, elas não valem — a lei está acima do contrato nessa relação. Você não abre mão de seus direitos pelo CDC só porque está em um contrato."
+      ],
+      "context_responses": [
+        "Continuando — qual cláusula você acha que é abusiva? Me descreve o que está escrito e eu posso te ajudar a entender.",
+        "Para contestar uma cláusula — você tem o contrato em mãos? O ideal é identificar o trecho específico."
+      ]
+    },
+    {
+      "tag": "desconhecida",
+      "patterns": [
+        "não sei explicar", "nao sei explicar", "é complicado", "e complicado", "é confuso",
+        "e confuso", "não entendi", "nao entendi", "me ajuda", "não sei o que fazer",
+        "nao sei o que fazer", "estou perdido", "tô perdido", "to perdido",
+        "opção 1", "opcao 1", "opção 2", "opcao 2", "opção 3", "opcao 3",
+        "hmm", "deixa eu pensar", "não sei bem", "nao sei bem", "não sei como explicar",
+        "nao sei como explicar", "é difícil de explicar", "e dificil de explicar",
+        "complicado de explicar", "é uma situação estranha", "e uma situacao estranha",
+        "nunca vi isso", "que situação", "não sei que tipo de problema é",
+        "nao sei que tipo de problema e", "não sei categorizar", "nao sei categorizar",
+        "talvez", "pode ser", "acho que", "sei lá", "sei la"
+      ],
+      "responses": [
+        "Não tem problema. Me conta com suas próprias palavras o que aconteceu — pode ser breve mesmo, qualquer detalhe já ajuda a entender o caso.",
+        "Pode começar do começo, sem pressa. O que aconteceu? Com quem foi? Produto, serviço, loja? Assim eu consigo te orientar melhor.",
+        "Tudo bem. Me diz só: qual é o problema principal? A compra não foi entregue, veio com defeito, cobrou errado, cancelamento não saiu? Qualquer pista já ajuda.",
+        "Pode tentar explicar de qualquer forma. Quanto mais detalhes, melhor — mas mesmo um resumo já é suficiente para começar."
+      ],
+      "context_responses": [
+        "Entendi que está difícil de explicar. Tenta me dizer pelo menos: o que aconteceu de errado?",
+        "Não precisa ser técnico. Me conta a história como você contaria para um amigo.",
+        "Pode ir por partes. Começa pelo início: o que foi comprado ou contratado?"
+      ]
+    }
+  ]
+}

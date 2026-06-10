@@ -194,3 +194,35 @@ def _chamar_groq_websearch(messages):
     except Exception as e:
         logger.warning(f"Groq web_search erro: {e}")
     return None
+
+def consultar_llm(mensagem, contexto_kb=None, historico=None, nome="Marina",
+                  revelar=False, usar_websearch=False):
+    inicio   = time.time()
+    hist     = historico if isinstance(historico, list) else []
+    messages = _montar_messages(mensagem, contexto_kb, hist, nome=nome, revelar=revelar)
+
+    if usar_websearch:
+        texto = _chamar_groq_websearch(messages)
+        if texto:
+            return {"resposta": texto, "modelo": MODELOS["groq"] + " (web)",
+                    "tempo_ms": int((time.time()-inicio)*1000),
+                    "fonte": "llm_web", "sucesso": True, "erro": None}
+
+    texto = _chamar_api(GROQ_URL, _tok("GROQ_TOKEN"), MODELOS["groq"], messages)
+    if texto:
+        return {"resposta": texto, "modelo": MODELOS["groq"],
+                "tempo_ms": int((time.time()-inicio)*1000),
+                "fonte": "llm", "sucesso": True, "erro": None}
+
+    texto = _chamar_api(TOGETHER_URL, _tok("TOGETHER_TOKEN"), MODELOS["together"], messages)
+    if texto:
+        return {"resposta": texto, "modelo": MODELOS["together"],
+                "tempo_ms": int((time.time()-inicio)*1000),
+                "fonte": "llm", "sucesso": True, "erro": None}
+
+    return {"resposta": None, "modelo": None,
+            "tempo_ms": int((time.time()-inicio)*1000),
+            "fonte": "llm_falhou", "sucesso": False, "erro": "sem_conexao"}
+
+def llm_disponivel():
+    return bool(_tok("GROQ_TOKEN") or _tok("TOGETHER_TOKEN"))

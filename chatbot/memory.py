@@ -137,6 +137,11 @@ def detectar_entidades(texto):
         if data_rel:
             ents["data_evento"] = data_rel
 
+    # Canal
+    for canal, termos in _CANAIS.items():
+        if any(t in tn for t in termos):
+            ents["canal"] = canal
+            break
 
 def extrair_entidades(mensagem):
     """Extrai entidades relevantes do texto para enriquecer o contexto."""

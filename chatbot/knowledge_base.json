@@ -153,3 +153,143 @@
       ],
       "prazos": {}
     },
+    "art13": {
+      "numero": 13,
+      "titulo": "Responsabilidade Solidária — Comerciante",
+      "texto": "O comerciante é igualmente responsável quando: I — o fabricante não puder ser identificado; II — o produto for fornecido sem identificação clara do fabricante; III — não conservar adequadamente os produtos perigosos ou de controle.",
+      "resumo": "Loja também é responsável se o fabricante não puder ser identificado ou o produto não tiver identificação.",
+      "palavras_chave": [
+        "comerciante responsavel",
+        "loja responsavel",
+        "fabricante nao identificado",
+        "responsabilidade loja",
+        "quem paga o dano"
+      ],
+      "prazos": {}
+    },
+    "art14": {
+      "numero": 14,
+      "titulo": "Responsabilidade pelo Fato do Serviço",
+      "texto": "O fornecedor de serviços responde, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos relativos à prestação dos serviços, bem como por informações insuficientes ou inadequadas sobre sua fruição e riscos.",
+      "resumo": "Serviço que causou dano: prestador responde sem necessidade de provar culpa — responsabilidade objetiva.",
+      "palavras_chave": [
+        "servico causou dano",
+        "acidente servico",
+        "dano servico",
+        "responsabilidade prestador",
+        "servico me prejudicou",
+        "me prejudicaram"
+      ],
+      "prazos": {}
+    },
+    "art17": {
+      "numero": 17,
+      "titulo": "Equiparação — Vítimas do Acidente de Consumo",
+      "texto": "Para os efeitos desta Seção, equiparam-se aos consumidores todas as vítimas do evento, mesmo que não sejam os compradores do produto ou serviço.",
+      "resumo": "Terceiros que foram prejudicados por acidente de consumo também têm os mesmos direitos do consumidor.",
+      "palavras_chave": [
+        "terceiro vitima",
+        "nao comprei mas fui prejudicado",
+        "vitima acidente",
+        "bystander",
+        "passante prejudicado"
+      ],
+      "prazos": {}
+    },
+    "art18": {
+      "numero": 18,
+      "titulo": "Vícios de Qualidade — Produtos",
+      "texto": "Os fornecedores respondem solidariamente pelos vícios de qualidade que tornem o produto impróprio ao consumo ou lhes diminuam o valor. Não sendo sanado no prazo de 30 dias, o consumidor pode exigir: I — substituição do produto; II — restituição da quantia paga; III — abatimento proporcional do preço.",
+      "resumo": "Produto com defeito: empresa tem 30 dias para resolver. Se não resolver, você escolhe: troca, reembolso ou desconto.",
+      "palavras_chave": [
+        "defeito",
+        "vicio",
+        "produto com defeito",
+        "produto quebrado",
+        "garantia",
+        "troca",
+        "conserto",
+        "produto ruim",
+        "nao funciona",
+        "veio quebrado",
+        "apresentou problema",
+        "esta com defeito",
+        "parou de funcionar",
+        "celular parou",
+        "nao liga",
+        "vem com defeito",
+        "produto danificado",
+        "produto estragado",
+        "veio danificado",
+        "produto falhou",
+        "quebrou logo",
+        "defeito de fabricacao",
+        "problemas no produto",
+        "quero reembolso",
+        "quero dinheiro de volta",
+        "ressarcimento",
+        "reembolso garantia",
+        "quebrou",
+        "parou de funcionar",
+        "nao liga",
+        "vicio oculto",
+        "apresentou defeito",
+        "com problema",
+        "veio com vicio",
+        "esta quebrado",
+        "veio quebrado",
+        "nao funciona direito",
+        "parou de funcionar",
+        "com defeito de fabricacao",
+        "veio errado",
+        "produto ruim"
+      ],
+      "prazos": {
+        "prazo_resolucao_empresa_dias": 30
+      },
+      "opcoes": [
+        "substituição do produto",
+        "restituição do valor pago",
+        "abatimento proporcional do preço"
+      ]
+    },
+    "art19": {
+      "numero": 19,
+      "titulo": "Vícios de Quantidade",
+      "texto": "Os fornecedores respondem pelos vícios de quantidade do produto sempre que seu conteúdo líquido for inferior às indicações constantes do recipiente, da embalagem, rotulagem ou de mensagem publicitária.",
+      "resumo": "Se o produto veio com quantidade menor que a anunciada (peso, volume, unidades), você tem direito de reclamar.",
+      "palavras_chave": [
+        "quantidade errada",
+        "peso errado",
+        "menos do que anunciado",
+        "conteudo inferior",
+        "embalagem errada",
+        "produto incompleto",
+        "faltou item",
+        "faltaram pecas"
+      ],
+      "prazos": {}
+    },
+    "art20": {
+      "numero": 20,
+      "titulo": "Vícios de Qualidade — Serviços",
+      "texto": "O fornecedor de serviços responde pelos vícios de qualidade que os tornem impróprios ao consumo ou lhes diminuam o valor. O consumidor pode exigir: I — reexecução dos serviços sem custo; II — restituição da quantia paga; III — abatimento proporcional do preço.",
+      "resumo": "Serviço com defeito ou mal executado: exija reexecução gratuita, reembolso ou desconto.",
+      "palavras_chave": [
+        "servico com problema",
+        "servico ruim",
+        "servico mal feito",
+        "servico incompleto",
+        "nao fizeram direito",
+        "cobrou e fez errado",
+        "tecnico nao resolveu",
+        "servico errado",
+        "resultado diferente"
+      ],
+      "prazos": {},
+      "opcoes": [
+        "reexecução gratuita do serviço",
+        "restituição do valor pago",
+        "abatimento proporcional do preço"
+      ]
+    },

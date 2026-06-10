@@ -1347,3 +1347,141 @@
       ],
       "prazos": {}
     },
+    "art80": {
+      "numero": 80,
+      "titulo": "Responsabilidade pelo Produto — Ação Regressiva",
+      "texto": "No processo penal atinente aos crimes previstos neste código, bem como a outros crimes e contravenções que envolvam relações de consumo, poderão intervir, como assistentes do Ministério Público, os legitimados indicados no art. 82, inciso III e IV, aos quais também é facultado propor ação penal subsidiária, se a denúncia não for oferecida no prazo legal.",
+      "resumo": "Associações de defesa do consumidor podem atuar como assistentes do MP em processos criminais e propor ação penal subsidiária.",
+      "palavras_chave": [
+        "associacao consumidor mp",
+        "assistente ministerio publico",
+        "acao penal subsidiaria",
+        "procon acao penal",
+        "associacao intervir processo"
+      ],
+      "prazos": {}
+    },
+    "art81": {
+      "numero": 81,
+      "titulo": "Defesa Coletiva — Direitos Difusos, Coletivos e Individuais Homogêneos",
+      "texto": "A defesa dos interesses e direitos dos consumidores e das vítimas poderá ser exercida em juízo individualmente, ou a título coletivo. A defesa coletiva será exercida quando se tratar de: I — interesses ou direitos difusos (indetermináveis, ligados por circunstância de fato); II — interesses ou direitos coletivos (grupo determinável, ligados por relação jurídica base); III — interesses ou direitos individuais homogêneos (origem comum).",
+      "resumo": "Consumidores podem se unir em ações coletivas: direitos difusos (todos afetados), coletivos (grupo determinado) ou individuais homogêneos (mesma origem).",
+      "palavras_chave": [
+        "acao coletiva consumidor",
+        "direito difuso",
+        "direito coletivo",
+        "acao coletiva",
+        "grupo consumidores prejudicados",
+        "acao grupo",
+        "class action"
+      ],
+      "prazos": {}
+    },
+    "art82": {
+      "numero": 82,
+      "titulo": "Legitimados para Ação Coletiva",
+      "texto": "Para os fins do art. 81, parágrafo único, são legitimados concorrentemente: I — o Ministério Público; II — a União, os Estados, os Municípios e o Distrito Federal; III — as entidades e órgãos da Administração Pública, direta ou indireta, ainda que sem personalidade jurídica, especificamente destinados à defesa dos interesses e direitos protegidos por este código; IV — as associações legalmente constituídas há pelo menos um ano e que incluam entre seus fins institucionais a defesa dos interesses e direitos protegidos por este código.",
+      "resumo": "Podem entrar com ação coletiva: MP, governo (União, estados, municípios), Procon e associações de consumidores com mais de 1 ano.",
+      "palavras_chave": [
+        "quem pode acao coletiva",
+        "ministerio publico acao",
+        "procon acao judicial",
+        "associacao acao consumidor",
+        "legitimidade acao coletiva"
+      ],
+      "prazos": {}
+    },
+    "art83": {
+      "numero": 83,
+      "titulo": "Espécies de Ações para Defesa do Consumidor",
+      "texto": "Para a defesa dos direitos e interesses protegidos por este código são admissíveis todas as espécies de ações capazes de propiciar sua adequada e efetiva tutela.",
+      "resumo": "O consumidor pode usar qualquer tipo de ação judicial para defender seus direitos — não há limitação de espécie processual.",
+      "palavras_chave": [
+        "tipos de acao",
+        "qualquer acao judicial",
+        "acoes cabíveis",
+        "acao adequada consumidor",
+        "tutela jurisdicional"
+      ],
+      "prazos": {}
+    },
+    "art84": {
+      "numero": 84,
+      "titulo": "Tutela Específica — Obrigação de Fazer ou Não Fazer",
+      "texto": "Na ação que tenha por objeto o cumprimento da obrigação de fazer ou não fazer, o juiz concederá a tutela específica da obrigação ou determinará providências que assegurem o resultado prático equivalente ao do adimplemento. § 3° Sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente.",
+      "resumo": "O juiz pode conceder liminar para obrigar empresa a fazer ou parar algo — tutela específica e urgente.",
+      "palavras_chave": [
+        "tutela especifica",
+        "liminar",
+        "obrigacao fazer",
+        "obrigacao nao fazer",
+        "acao cumprimento",
+        "medida urgente judicial"
+      ],
+      "prazos": {}
+    },
+    "art85": {
+      "numero": 85,
+      "titulo": "Ações Coletivas — Desconsideração da Personalidade Jurídica",
+      "texto": "Nas ações coletivas de que trata este código não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas, nem condenação da associação autora, salvo comprovada má-fé, em honorários de advogados, custas e despesas processuais.",
+      "resumo": "Ações coletivas são gratuitas para as associações — sem custas antecipadas nem honorários, exceto má-fé.",
+      "palavras_chave": [
+        "acao coletiva gratuita",
+        "sem custas acao coletiva",
+        "honorarios acao coletiva",
+        "associacao sem custas"
+      ],
+      "prazos": {}
+    },
+    "art86": {
+      "numero": 86,
+      "titulo": "Ações Coletivas — Comunicação",
+      "texto": "Nas ações coletivas de que trata este código, a sentença fará coisa julgada erga omnes, nos casos dos incisos I e II do parágrafo único do art. 81, e ultra partes, no caso do inciso III, apenas no plano coletivo.",
+      "resumo": "A sentença de ação coletiva vale para todos os afetados (erga omnes) em direitos difusos e coletivos.",
+      "palavras_chave": [
+        "coisa julgada coletiva",
+        "sentenca coletiva vale para todos",
+        "erga omnes",
+        "decisao coletiva beneficia todos"
+      ],
+      "prazos": {}
+    },
+    "art87": {
+      "numero": 87,
+      "titulo": "Ações Coletivas — Fundo de Reconstituição",
+      "texto": "Nas ações coletivas de que trata este código não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas.",
+      "resumo": "Ações coletivas de consumidores são isentas de custas e despesas antecipadas.",
+      "palavras_chave": [
+        "isencao custas coletiva",
+        "sem taxa acao coletiva",
+        "acao gratuita consumidor"
+      ],
+      "prazos": {}
+    },
+    "art88": {
+      "numero": 88,
+      "titulo": "Litispendência — Ações Individuais e Coletivas",
+      "texto": "Na hipótese do art. 13, parágrafo único deste código, a ação de regresso poderá ser ajuizada em processo autônomo, facultada a possibilidade de prosseguir-se nos mesmos autos, vedada a denunciação da lide.",
+      "resumo": "O fornecedor pode cobrar de terceiro responsável em ação separada — vedada a denunciação da lide no processo do consumidor.",
+      "palavras_chave": [
+        "acao regressiva",
+        "litispendencia",
+        "denunciacao lide",
+        "acao individual coletiva",
+        "processo autonomo regressivo"
+      ],
+      "prazos": {}
+    },
+    "art89": {
+      "numero": 89,
+      "titulo": "Coisa Julgada — Ações Coletivas",
+      "texto": "Nos casos de dano ambiental, a ação coletiva é cabível para a reparação dos danos individualmente sofridos, cabendo ao Ministério Público promovê-la.",
+      "resumo": "O MP pode promover ação coletiva para reparar danos ambientais que afetaram consumidores individualmente.",
+      "palavras_chave": [
+        "dano ambiental consumidor",
+        "mp acao ambiental",
+        "reparacao coletiva ambiental",
+        "acao mp dano"
+      ],
+      "prazos": {}
+    },

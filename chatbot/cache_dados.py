@@ -101,3 +101,26 @@ def _norm(t):
     return "".join(c for c in unicodedata.normalize("NFD", t.lower())
                    if unicodedata.category(c) != "Mn")
 
+def get_cache(mensagem):
+    """
+    Retorna dado em cache se válido, ou None se expirado/inexistente.
+    """
+    chave = _detectar_chave(mensagem)
+    if not chave:
+        return None
+
+    cache = _carregar_cache()
+    entrada = cache.get(chave)
+    if not entrada:
+        return None
+
+    ttl = TTL.get(CATEGORIAS.get(chave, "anual"), 24*3600)
+    idade = time.time() - entrada.get("timestamp", 0)
+
+    if idade > ttl:
+        logger.debug(f"Cache expirado para '{chave}' ({idade/3600:.1f}h)")
+        return None
+
+    entrada["cache_hit"] = True
+    entrada["idade_horas"] = round(idade / 3600, 1)
+    return entrada

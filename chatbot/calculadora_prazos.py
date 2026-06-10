@@ -110,3 +110,56 @@ def calcular_prazos(data_base, contexto=None):
         "prazos":        resultados,
     }
 
+def _detectar_intencao_prazo(mensagem):
+    m = mensagem.lower()
+    return any(p in m for p in [
+        "calcular prazo","calcular prazos","ainda tenho prazo","ainda estou no prazo",
+        "qual o prazo","quanto tempo tenho","prazo venceu","perdi o prazo",
+        "ja passou o prazo","tempo para reclamar","quando vence","prazo garantia",
+        "quanto tempo ainda","posso ainda reclamar",
+    ])
+
+def montar_prompt_prazos(contexto, historico, mensagem_usuario):
+    """
+    Retorna (é_calculadora, data_encontrada, resultado_calculo).
+    Busca data na mensagem atual, no histórico e no contexto do caso.
+    """
+    if not _detectar_intencao_prazo(mensagem_usuario):
+        return False, None, None
+
+    data = _extrair_data(mensagem_usuario)
+
+    if not data:
+        for item in reversed(historico or []):
+            data = _extrair_data(item.get("usuario",""))
+            if data: break
+
+    if not data and contexto.get("caso",{}).get("data_evento"):
+        data = _extrair_data(contexto["caso"]["data_evento"])
+
+    if not data:
+        return True, None, None 
+
+    resultado = calcular_prazos(data, contexto)
+    return True, data, resultado
+
+def formatar_prazos_para_llm(resultado, contexto=None):
+    """Formata o resultado para o LLM usar na resposta."""
+    linhas = [
+        f"CÁLCULO DE PRAZOS CDC — base: {resultado['data_base']} ({resultado['dias_passados']} dias atrás)",
+        ""
+    ]
+    for p in resultado["prazos"]:
+        if p["tipo"] == "anos": continue  
+        emoji = "✅" if p["status"] == "ok" else "⚠️" if p["status"] == "urgente" else "❌"
+        if p["status"] == "vencido":
+            linhas.append(f"{emoji} {p['nome']} ({p['artigo']}): VENCIDO há {abs(p['restante'])} dia(s)")
+        else:
+            linhas.append(f"{emoji} {p['nome']} ({p['artigo']}): {p['restante']} dia(s) restante(s)")
+
+    prescricao = next((p for p in resultado["prazos"] if p["tipo"] == "anos"), None)
+    if prescricao:
+        linhas.append(f"\n⚖️  {prescricao['nome']} ({prescricao['artigo']}): "
+                      f"{'VENCIDO' if prescricao['status'] == 'vencido' else str(prescricao['restante'])+' dias restantes'}")
+
+    return "\n".join(linhas)

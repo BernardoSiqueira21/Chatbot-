@@ -168,4 +168,16 @@ def detectar_entidades(texto):
 
     return ents
 
+def detectar_tom_usuario(msg):
+    mn = _norm(msg)
+    if any(p in mn for p in ["absurdo","ridiculo","furioso","indignado","nao aguento",
+                               "ladrao","revoltado","vergonha","inaceitavel","estranhissimo",
+                               "pessimo","horrivel","nojo","raiva","cancelo","processo"]):
+        return "frustrado"
+    if any(p in mn for p in ["urgente","urgencia","agora mesmo","imediato","hoje ainda",
+                               "preciso ja","emergencia","critico","importante","ja tentei",
+                               "varias vezes","varias tentativas","nao aguento mais"]):
+        return "urgente"
+    return "neutro"
+
 

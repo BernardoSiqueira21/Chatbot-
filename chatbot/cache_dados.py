@@ -186,3 +186,21 @@ def _extrair_numeros(texto):
             pass
     return nums
 
+def listar_cache():
+    """Retorna resumo do cache atual (para debug/admin)."""
+    cache = _carregar_cache()
+    agora = time.time()
+    resultado = {}
+    for chave, entrada in cache.items():
+        ttl = TTL.get(CATEGORIAS.get(chave,"anual"), 24*3600)
+        idade = agora - entrada.get("timestamp", 0)
+        expirado = idade > ttl
+        resultado[chave] = {
+            "confianca": entrada.get("confianca","?"),
+            "idade_horas": round(idade/3600, 1),
+            "expirado": expirado,
+            "fonte": entrada.get("fonte","?"),
+            "preview": entrada.get("texto","")[:80],
+        }
+    return resultado
+

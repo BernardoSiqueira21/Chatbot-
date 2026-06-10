@@ -131,6 +131,12 @@ def detectar_entidades(texto):
         except ValueError:
             pass
 
+    # Data relativa (se não achou absoluta)
+    if "data_evento" not in ents:
+        data_rel = _extrair_data_relativa(texto)
+        if data_rel:
+            ents["data_evento"] = data_rel
+
 
 def extrair_entidades(mensagem):
     """Extrai entidades relevantes do texto para enriquecer o contexto."""

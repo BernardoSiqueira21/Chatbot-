@@ -145,3 +145,52 @@ def _montar_messages(mensagem, contexto_kb, historico_lista, nome="Marina", reve
             messages.append({"role": "assistant",  "content": item["bot"]})
     messages.append({"role": "user", "content": mensagem})
     return messages
+
+def _chamar_api(url, token, model, messages):
+    if not token:
+        return None
+    try:
+        r = requests.post(url,
+            headers={"Authorization": f"Bearer {token}",
+                     "Content-Type": "application/json"},
+            json={"model": model, "messages": messages,
+                  "max_tokens": 600, "temperature": 0.72},
+            timeout=15)
+        if r.status_code == 200:
+            return r.json()["choices"][0]["message"]["content"].strip()
+        if r.status_code == 429:
+            logger.warning(f"Rate limit em {url}")
+        else:
+            logger.warning(f"{url} status {r.status_code}: {r.text[:100]}")
+    except Exception as e:
+        logger.warning(f"Erro {url}: {e}")
+    return None
+
+def _chamar_groq_websearch(messages):
+    """Chama o Groq com web search nativo — retorna dados atualizados em tempo real."""
+    token = _tok("GROQ_TOKEN")
+    if not token:
+        return None
+    try:
+        r = requests.post(GROQ_URL,
+            headers={"Authorization": f"Bearer {token}",
+                     "Content-Type": "application/json"},
+            json={
+                "model": MODELOS["groq"],
+                "messages": messages,
+                "max_tokens": 600,
+                "temperature": 0.5,
+                "tools": [{"type": "web_search"}],
+                "tool_choice": "auto",
+            },
+            timeout=20)
+        if r.status_code == 200:
+            data = r.json()
+            content = data["choices"][0]["message"].get("content", "")
+            if content and content.strip():
+                return content.strip()
+        else:
+            logger.warning(f"Groq web_search {r.status_code}: {r.text[:100]}")
+    except Exception as e:
+        logger.warning(f"Groq web_search erro: {e}")
+    return None

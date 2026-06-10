@@ -794,3 +794,119 @@
       ],
       "prazos": {}
     },
+    "art51": {
+      "numero": 51,
+      "titulo": "Cláusulas Abusivas — Nulidade Automática",
+      "texto": "São nulas de pleno direito cláusulas que: I — impossibilitem, exonerem ou atenuem a responsabilidade do fornecedor; II — subtraiam ao consumidor a opção de reembolso; IV — estabeleçam obrigações abusivas ou coloquem o consumidor em desvantagem exagerada; VI — invertam o ônus da prova em prejuízo do consumidor; XI — autorizem cancelamento unilateral sem igual direito ao consumidor; XII — obriguem ressarcimento sem reciprocidade.",
+      "resumo": "Cláusulas abusivas são nulas automaticamente — mesmo assinadas, não têm validade legal.",
+      "palavras_chave": [
+        "clausula abusiva",
+        "contrato abusivo",
+        "clausula nula",
+        "condicao abusiva",
+        "contrato ilegal",
+        "letras miudas",
+        "nao li o contrato",
+        "assinei sem saber",
+        "contrato prejudicial",
+        "clausula invalida"
+      ],
+      "prazos": {}
+    },
+    "art52": {
+      "numero": 52,
+      "titulo": "Crédito ao Consumidor — Informações Obrigatórias",
+      "texto": "No fornecimento de crédito ou financiamento, o fornecedor deve informar: preço em moeda nacional; montante dos juros e taxa efetiva anual; acréscimos legais; número e periodicidade das prestações; soma total a pagar, com e sem financiamento.",
+      "resumo": "Financiamento ou crédito: empresa deve informar CET, taxa de juros, número de parcelas e valor total — antes de assinar.",
+      "palavras_chave": [
+        "credito",
+        "financiamento",
+        "parcelamento",
+        "juros",
+        "taxa de juros",
+        "prestacoes",
+        "nao informaram os juros",
+        "cet",
+        "custo efetivo",
+        "emprestimo",
+        "fgts"
+      ],
+      "prazos": {}
+    },
+    "art53": {
+      "numero": 53,
+      "titulo": "Cláusula de Decaimento — Proibição",
+      "texto": "Nos contratos de compra e venda de móveis ou imóveis mediante pagamento em prestações, bem como nas alienações fiduciárias em garantia, consideram-se nulas de pleno direito as cláusulas que estabeleçam a perda total das prestações pagas em benefício do credor.",
+      "resumo": "Proibida cláusula que faz o consumidor perder tudo que pagou se cancelar contrato de parcelamento (ex: consórcio, imóvel).",
+      "palavras_chave": [
+        "perder prestacoes",
+        "perdi o que paguei",
+        "clausula decaimento",
+        "consorcio",
+        "imovel",
+        "financiamento cancelado",
+        "perda total",
+        "restituicao parcelas"
+      ],
+      "prazos": {}
+    },
+    "art54": {
+      "numero": 54,
+      "titulo": "Contrato de Adesão — Regras",
+      "texto": "Contrato de adesão é aquele estabelecido unilateralmente pelo fornecedor, sem que o consumidor possa discutir ou modificar seu conteúdo. Os contratos devem ser redigidos em termos claros com fonte mínima 12, de modo a facilitar a compreensão.",
+      "resumo": "Contratos de adesão (padrões) devem ter fonte mínima 12 e linguagem clara — cláusulas escondidas não valem.",
+      "palavras_chave": [
+        "contrato de adesao",
+        "nao pude negociar",
+        "contrato padrao",
+        "fonte pequena",
+        "letra miuda contrato",
+        "contrato imposto"
+      ],
+      "prazos": {}
+    },
+    "art55": {
+      "numero": 55,
+      "titulo": "Normas de Defesa do Consumidor — Fiscalização",
+      "texto": "A União, os Estados e o Distrito Federal, em caráter concorrente e nas suas respectivas áreas de atuação administrativa, baixarão normas relativas à produção, industrialização, distribuição e consumo de produtos e serviços.",
+      "resumo": "A fiscalização do consumo é feita pela União, Estados e DF — há atuação em todos os níveis de governo.",
+      "palavras_chave": [
+        "fiscalizacao",
+        "inmetro",
+        "anvisa",
+        "orgao regulador",
+        "norma tecnica",
+        "producao",
+        "industrializacao"
+      ],
+      "prazos": {}
+    },
+    "art56": {
+      "numero": 56,
+      "titulo": "Sanções Administrativas",
+      "texto": "As infrações das normas de defesa do consumidor ficam sujeitas a: I — multa; II — apreensão do produto; III — inutilização do produto; IV — cassação do registro; V — proibição de fabricação; VI — suspensão de fornecimento; VII — suspensão temporária de atividade; VIII — revogação de concessão ou permissão; IX — cassação de licença; X — interdição; XI — intervenção administrativa; XII — imposição de contrapropaganda.",
+      "resumo": "Empresas que violam o CDC podem ser multadas, ter produtos apreendidos ou atividade suspensa.",
+      "palavras_chave": [
+        "sancao",
+        "multa empresa",
+        "punicao empresa",
+        "penalidade",
+        "apreensao",
+        "interdição empresa"
+      ],
+      "prazos": {}
+    },
+    "art57": {
+      "numero": 57,
+      "titulo": "Multa — Critérios",
+      "texto": "A pena de multa, graduada de acordo com a gravidade da infração, a vantagem auferida e a condição econômica do fornecedor, será aplicada mediante procedimento administrativo, revertendo para o Fundo de que trata a Lei n.º 7.347/85.",
+      "resumo": "Multa administrativa considera: gravidade, lucro obtido e porte econômico da empresa.",
+      "palavras_chave": [
+        "multa procon",
+        "multa administrativa",
+        "valor multa",
+        "penalidade empresa",
+        "sancao empresa"
+      ],
+      "prazos": {}
+    },

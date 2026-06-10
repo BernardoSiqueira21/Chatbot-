@@ -443,3 +443,172 @@
       ],
       "prazos": {}
     },
+    "art31": {
+      "numero": 31,
+      "titulo": "Informações Obrigatórias na Oferta",
+      "texto": "A oferta e apresentação de produtos ou serviços devem assegurar informações corretas, claras, precisas, ostensivas e em língua portuguesa sobre características, qualidades, quantidade, composição, preço, garantia, prazos de validade e origem.",
+      "resumo": "A empresa deve informar claramente: características, preço, quantidade, prazo de validade, garantia e origem do produto.",
+      "palavras_chave": [
+        "informacao produto",
+        "falta informacao",
+        "embalagem sem informacao",
+        "preco nao informado",
+        "composicao",
+        "ingredientes",
+        "validade",
+        "origem"
+      ],
+      "prazos": {}
+    },
+    "art32": {
+      "numero": 32,
+      "titulo": "Responsabilidade pela Oferta — Fabricante e Importador",
+      "texto": "Os fabricantes e importadores deverão assegurar a oferta de componentes e peças de reposição enquanto não cessar a fabricação ou importação do produto.",
+      "resumo": "Fabricante deve garantir peças de reposição enquanto fabricar o produto — não pode deixar o consumidor sem assistência.",
+      "palavras_chave": [
+        "peca reposicao",
+        "componente",
+        "fabricante peca",
+        "importador peca",
+        "assistencia tecnica",
+        "nao tem peca"
+      ],
+      "prazos": {}
+    },
+    "art33": {
+      "numero": 33,
+      "titulo": "Oferta por Reembolso Postal ou Domicílio",
+      "texto": "Em caso de oferta ou venda por reembolso postal, deve constar o nome do fabricante e endereço no produto, embalagem ou publicidade.",
+      "resumo": "Vendas por reembolso postal ou domicílio devem identificar claramente o vendedor.",
+      "palavras_chave": [
+        "reembolso postal",
+        "venda domicilio",
+        "entrega domicilio",
+        "correios",
+        "venda pelo correio"
+      ],
+      "prazos": {}
+    },
+    "art35": {
+      "numero": 35,
+      "titulo": "Descumprimento da Oferta — Opções do Consumidor",
+      "texto": "Se o fornecedor recusar cumprimento à oferta, o consumidor pode: I — exigir o cumprimento forçado nos termos da oferta; II — aceitar produto ou serviço equivalente; III — rescindir o contrato com restituição do valor pago atualizado.",
+      "resumo": "Empresa não cumpriu o que anunciou: exija cumprimento, aceite equivalente ou cancele com reembolso corrigido.",
+      "palavras_chave": [
+        "empresa nao cumpriu",
+        "nao honraram",
+        "propaganda enganosa",
+        "produto diferente do anunciado",
+        "empresa recusou",
+        "atraso entrega",
+        "entrega atrasou",
+        "pedido atrasado",
+        "nao entregaram no prazo",
+        "prazo entrega",
+        "entrega nao chegou",
+        "pedido sumiu",
+        "rastreio parado",
+        "nao chegou",
+        "meu pedido",
+        "produto nao chegou",
+        "nao recebi",
+        "prazo vencido",
+        "atraso na entrega",
+        "atrasou entrega",
+        "entrega atrasada",
+        "nao entregaram",
+        "pedido atrasado",
+        "prazo entrega venceu",
+        "atraso no pedido",
+        "demorando para entregar"
+      ],
+      "prazos": {},
+      "opcoes": [
+        "exigir cumprimento da oferta",
+        "aceitar produto/serviço equivalente",
+        "cancelar com reembolso atualizado"
+      ]
+    },
+    "art36": {
+      "numero": 36,
+      "titulo": "Identificação de Publicidade",
+      "texto": "A publicidade deve ser veiculada de tal forma que o consumidor, fácil e imediatamente, a identifique como tal.",
+      "resumo": "Publicidade deve ser claramente identificada como tal — conteúdo pago que pareça editorial é prática enganosa.",
+      "palavras_chave": [
+        "publicidade velada",
+        "publi",
+        "publipost",
+        "influencer",
+        "propaganda disfarçada",
+        "anuncio disfarçado",
+        "conteudo patrocinado"
+      ],
+      "prazos": {}
+    },
+    "art37": {
+      "numero": 37,
+      "titulo": "Publicidade Enganosa e Abusiva",
+      "texto": "É proibida toda publicidade enganosa ou abusiva. É enganosa qualquer modalidade de informação ou comunicação de caráter publicitário, inteira ou parcialmente falsa, ou que omita dado essencial. É abusiva a publicidade que explora o medo, a superstição, discrimine, incite violência ou aproveite da inexperiência da criança.",
+      "resumo": "Proibida: publicidade enganosa (falsa ou que omite dado importante) e publicidade abusiva (medo, criança, discriminação).",
+      "palavras_chave": [
+        "publicidade enganosa",
+        "propaganda enganosa",
+        "anuncio falso",
+        "publicidade abusiva",
+        "propaganda abusiva",
+        "enganaram com propaganda",
+        "anuncio mentiroso",
+        "publicidade crianca",
+        "propaganda medo"
+      ],
+      "prazos": {}
+    },
+    "art38": {
+      "numero": 38,
+      "titulo": "Ônus da Prova — Publicidade",
+      "texto": "O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina.",
+      "resumo": "Na publicidade, a empresa deve provar que o anúncio é verdadeiro — não é o consumidor que precisa provar que é falso.",
+      "palavras_chave": [
+        "prova publicidade",
+        "empresa prova",
+        "onus prova",
+        "anuncio verdadeiro",
+        "empresa deve provar"
+      ],
+      "prazos": {}
+    },
+    "art39": {
+      "numero": 39,
+      "titulo": "Práticas Abusivas",
+      "texto": "É vedado: I — venda casada; II — recusar atendimento; III — enviar produto não solicitado; IV — prevalecer da fraqueza do consumidor; V — exigir vantagem excessiva; VI — executar serviço sem orçamento prévio; VII — repassar informação depreciativa sobre consumidor; VIII — colocar produto em desacordo com normas; IX — recusar venda mediante pronto pagamento; X — elevar preços sem justa causa.",
+      "resumo": "Práticas proibidas: venda casada, produto não solicitado, serviço sem orçamento, recusa de venda, elevação injustificada de preço.",
+      "palavras_chave": [
+        "pratica abusiva",
+        "empresa abusiva",
+        "venda casada",
+        "produto nao solicitado",
+        "cobrou sem orcamento",
+        "recusou vender",
+        "exigiu condicao",
+        "abuso",
+        "preco elevado sem motivo"
+      ],
+      "prazos": {}
+    },
+    "art40": {
+      "numero": 40,
+      "titulo": "Orçamento Prévio — Serviços",
+      "texto": "O fornecedor de serviço será obrigado a entregar ao consumidor orçamento prévio discriminando o valor da mão-de-obra, dos materiais e equipamentos, condições de pagamento, datas de início e término, e outros dados pertinentes.",
+      "resumo": "Serviço: empresa obrigatoriamente deve entregar orçamento antes de executar — valor, prazo e condições detalhados.",
+      "palavras_chave": [
+        "orcamento",
+        "orcamento previo",
+        "cobrou sem orcamento",
+        "valor servico",
+        "cobrou mais que combinado",
+        "preco diferente",
+        "quanto vai custar",
+        "precificacao servico"
+      ],
+      "prazos": {}
+    },

@@ -187,3 +187,9 @@ def obter_ultima_intencao(historico):
             return i
     return None
 
+def obter_ultimas_intencoes(historico, n=5):
+    return [item.get("intencao","desconhecida") for item in (historico or [])[-n:]]
+
+def contar_intencao(historico, intencao):
+    return sum(1 for i in (historico or []) if i.get("intencao") == intencao)
+

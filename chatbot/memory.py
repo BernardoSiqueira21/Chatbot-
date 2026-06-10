@@ -201,3 +201,21 @@ def resumir_historico_para_llm(historico, n=3):
         if item.get("bot"):     linhas.append(f"Assistente: {item['bot'][:150]}")
     return "\n".join(linhas) or None
 
+def atualizar_contexto(ctx, intencao, mensagem, entidades, **kw):
+    novo = dict(ctx or {})
+    novo["ultima_intencao"] = intencao
+    novo["num_trocas"]      = novo.get("num_trocas", 0) + 1
+    novo["tom"]             = detectar_tom_usuario(mensagem)
+
+    temas = novo.get("temas_visitados", [])
+    if intencao not in ("desconhecida","vazia","saudacao","despedida","loop") and intencao not in temas:
+        temas.append(intencao)
+    novo["temas_visitados"] = temas
+
+    caso = novo.get("caso", {})
+    for chave, valor in entidades.items():
+        if valor and (chave not in caso or len(str(valor)) > len(str(caso.get(chave,"")))):
+            caso[chave] = valor
+    novo["caso"] = caso
+    return novo
+

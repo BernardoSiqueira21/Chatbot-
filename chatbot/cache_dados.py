@@ -171,3 +171,18 @@ def validar_duplo(texto1, fonte1, texto2, fonte2):
         logger.info(f"Validação divergiu: {n1} vs {n2} ({diferenca:.1%})")
         return texto1, fonte1, "media"
 
+def _extrair_numeros(texto):
+    """Extrai números relevantes de um texto (preços, taxas, percentuais)."""
+    nums = []
+    # Normaliza: troca vírgula decimal por ponto, remove separadores de milhar
+    texto_norm = re.sub(r'(\d)\.(\d{3})', r'\1\2', texto)  # remove ponto de milhar
+    texto_norm = texto_norm.replace(',', '.')               # vírgula → ponto decimal
+    for m in re.finditer(r'\d+\.?\d*', texto_norm):
+        try:
+            n = float(m.group())
+            if n > 0.001:
+                nums.append(n)
+        except Exception:
+            pass
+    return nums
+

@@ -143,27 +143,6 @@ def detectar_entidades(texto):
             ents["canal"] = canal
             break
 
-def extrair_entidades(mensagem):
-    """Extrai entidades relevantes do texto para enriquecer o contexto."""
-    texto = mensagem.lower()
-    entidades = {}
-
-    # Canal de compra
-    if any(w in texto for w in ["internet", "online", "site", "aplicativo", "app", "e-commerce", "marketplace"]):
-        entidades["canal_compra"] = "online"
-    elif any(w in texto for w in ["loja fisica", "loja física", "presencial", "pessoalmente", "na loja"]):
-        entidades["canal_compra"] = "fisica"
-
-    # Objeto
-    if "produto" in texto:
-        entidades["objeto"] = "produto"
-    elif any(w in texto for w in ["servico", "serviço", "servicos", "serviços"]):
-        entidades["objeto"] = "servico"
-
-    # Menção de tempo
-    match_tempo = re.search(r"(\d+)\s*(dia|dias|semana|semanas|mes|mês|meses|hora|horas)", texto)
-    if match_tempo:
-        entidades["tempo_mencionado"] = match_tempo.group(0)
 
     # Valor monetário
     match_valor = re.search(r"r\$\s?[\d.,]+|\d+\s*reais", texto, re.IGNORECASE)

@@ -1118,3 +1118,136 @@
       ],
       "prazos": {}
     },
+    "art60": {
+      "numero": 60,
+      "titulo": "Crime — Contrapropaganda",
+      "texto": "A imposição de contrapropaganda será cominada quando o fornecedor incorrer na prática de publicidade enganosa ou abusiva, nos termos do art. 37 e de acordo com o art. 56, inciso XII. A contrapropaganda será divulgada pelo responsável da mesma forma, frequência e dimensão e, preferencialmente, no mesmo veículo, local, espaço e horário, de forma capaz de desfazer o malefício da publicidade enganosa.",
+      "resumo": "Empresa que fizer propaganda enganosa pode ser obrigada a fazer contrapropaganda: desfazer o engano no mesmo espaço, horário e veículo.",
+      "palavras_chave": [
+        "contrapropaganda",
+        "desfazer propaganda enganosa",
+        "retratacao publicidade",
+        "corrigir anuncio falso",
+        "obrigado retratar"
+      ],
+      "prazos": {}
+    },
+    "art61": {
+      "numero": 61,
+      "titulo": "Crime — Penas de Detenção (Quadro Geral)",
+      "texto": "Constituem crimes contra as relações de consumo previstas neste Código, sem prejuízo do disposto no Código Penal e leis especiais, as condutas tipificadas nos artigos seguintes.",
+      "resumo": "As condutas previstas nos artigos seguintes são crimes contra as relações de consumo — além de punições administrativas.",
+      "palavras_chave": [
+        "crime consumo",
+        "crime fornecedor",
+        "infração penal consumo",
+        "conduta criminosa fornecedor"
+      ],
+      "prazos": {}
+    },
+    "art62": {
+      "numero": 62,
+      "titulo": "Crime — Venda de Produto Irregular",
+      "texto": "Comercializar produtos ou serviços que, por determinação judicial ou administrativa, foram retirados do mercado, ou cuja fabricação, distribuição ou venda seja proibida: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Vender produto que foi retirado do mercado por determinação judicial ou administrativa é CRIME.",
+      "palavras_chave": [
+        "venda produto proibido",
+        "produto retirado mercado",
+        "vender produto ilegal",
+        "produto proibido venda"
+      ],
+      "prazos": {}
+    },
+    "art63": {
+      "numero": 63,
+      "titulo": "Crime — Omissão de Comunicação de Periculosidade",
+      "texto": "Omitir dizeres ou sinais ostensivos sobre a nocividade ou periculosidade de produtos, nas embalagens, nos invólucros, nos recipientes ou na publicidade: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Não colocar avisos de perigo na embalagem do produto é CRIME — pena de até 2 anos.",
+      "palavras_chave": [
+        "embalagem sem aviso",
+        "falta aviso perigo embalagem",
+        "produto sem sinalizacao risco",
+        "omitiu aviso perigo"
+      ],
+      "prazos": {}
+    },
+    "art64": {
+      "numero": 64,
+      "titulo": "Crime — Não Atendimento de Recall",
+      "texto": "Deixar de comunicar à autoridade competente e aos consumidores a nocividade ou periculosidade de produtos cujo conhecimento seja posterior à sua colocação no mercado: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Empresa que não faz recall quando descobre produto perigoso comete CRIME.",
+      "palavras_chave": [
+        "nao fez recall",
+        "recall nao realizado",
+        "empresa ignorou perigo",
+        "produto perigoso sem recall",
+        "omitiu recall"
+      ],
+      "prazos": {}
+    },
+    "art65": {
+      "numero": 65,
+      "titulo": "Crime — Execução de Serviço Perigoso",
+      "texto": "Executar serviço de alto grau de periculosidade, contrariando determinação de autoridade competente: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Prestar serviço perigoso contrariando autoridade competente é CRIME.",
+      "palavras_chave": [
+        "servico perigoso",
+        "executou servico proibido",
+        "servico de risco autoridade",
+        "servico irregular perigoso"
+      ],
+      "prazos": {}
+    },
+    "art66": {
+      "numero": 66,
+      "titulo": "Crime — Informação Falsa ou Enganosa",
+      "texto": "Fazer afirmação falsa ou enganosa, ou omitir informação relevante sobre a natureza, característica, qualidade, quantidade, segurança, desempenho, durabilidade, preço ou garantia de produtos ou serviços: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Mentir ou omitir informação relevante sobre produto ou serviço é CRIME — pena de até 1 ano.",
+      "palavras_chave": [
+        "informacao falsa produto",
+        "mentiu sobre produto",
+        "omitiu informacao produto",
+        "enganou sobre qualidade",
+        "informacao enganosa produto crime"
+      ],
+      "prazos": {}
+    },
+    "art67": {
+      "numero": 67,
+      "titulo": "Crime — Publicidade Enganosa (Pena)",
+      "texto": "Fazer ou promover publicidade que sabe ou deveria saber ser enganosa ou abusiva: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Fazer propaganda sabendo que é enganosa é CRIME — pena de até 1 ano de detenção.",
+      "palavras_chave": [
+        "propaganda enganosa crime",
+        "publicidade enganosa crime",
+        "anuncio mentiroso crime",
+        "crime publicidade enganosa"
+      ],
+      "prazos": {}
+    },
+    "art68": {
+      "numero": 68,
+      "titulo": "Crime — Publicidade Abusiva (Pena)",
+      "texto": "Fazer ou promover publicidade que sabe ou deveria saber ser abusiva, nos termos do § 2° do art. 37: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Fazer propaganda abusiva (explorando medo, criança, discriminação) é CRIME.",
+      "palavras_chave": [
+        "publicidade abusiva crime",
+        "propaganda abusiva crime",
+        "anuncio abusivo crime",
+        "crime propaganda crianca"
+      ],
+      "prazos": {}
+    },
+    "art69": {
+      "numero": 69,
+      "titulo": "Crime — Omissão de Informação Relevante",
+      "texto": "Deixar de organizar dados fáticos, técnicos e científicos que dão base à publicidade: Pena — Detenção de um a seis meses ou multa.",
+      "resumo": "Empresa que não mantém comprovação dos dados usados em publicidade comete crime.",
+      "palavras_chave": [
+        "sem comprovacao publicidade",
+        "dados publicidade",
+        "base cientifica anuncio",
+        "empresa nao prova anuncio"
+      ],
+      "prazos": {}
+    },

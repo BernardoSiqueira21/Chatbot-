@@ -8,6 +8,31 @@ def _norm(t):
     return "".join(c for c in unicodedata.normalize("NFD", t.lower())
                    if unicodedata.category(c) != "Mn")
 
+_EMPRESAS_CONHECIDAS = [
+    # Fabricantes / marcas (maior especificidade — listados primeiro)
+    "samsung","lg","apple","iphone","ipad","macbook","sony","motorola","xiaomi","positivo",
+    "renault","volkswagen","vw","fiat","chevrolet","gm","ford","honda","toyota","hyundai",
+    "natura","avon","o boticario","nivea","unilever",
+    "sul america","bradesco saude","unimed","amil","hapvida","notre dame","golden cross",
+    # Bancos e fintechs
+    "nubank","itau","bradesco","banco do brasil","bb","caixa","santander","inter",
+    "c6","picpay","mercado pago","pagseguro","stone","cielo",
+    # Operadoras
+    "tim","claro","vivo","oi","nextel","net","sky","embratel","algar","sercomtel",
+    "claro net","vivo fibra","tim fibra","claro tv",
+    # Apps e plataformas
+    "ifood","rappi","uber","uber eats","99","cabify","lalamove","loggi",
+    # Varejistas (depois para não sobrepor fabricantes)
+    "mercado livre","shopee","aliexpress","shein","amazon","ebay","wish","temu",
+    "americanas","submarino","shoptime","magazine luiza","magalu","casas bahia",
+    "carrefour","extra","pao de acucar","assai","atacadao",
+    # Utilities e serviços
+    "sabesp","copel","cemig","light","enel","energisa","coelba","celpe",
+    "anatel","procon","anvisa","inss","receita federal","detran",
+    # Seguradoras
+    "porto seguro","tokio marine","allianz","liberty","mapfre","sura",
+]
+
 
 
 def obter_ultima_intencao(historico):

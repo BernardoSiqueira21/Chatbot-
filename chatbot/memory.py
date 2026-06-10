@@ -121,6 +121,15 @@ def detectar_entidades(texto):
         except Exception:
             pass
 
+    # Data absoluta (DD/MM/AAAA ou DD/MM/AA)
+    m = re.search(r'\b(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})\b', texto)
+    if m:
+        d, mo, a = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if a < 100: a += 2000
+        try:
+            ents["data_evento"] = datetime.date(a, mo, d).strftime("%d/%m/%Y")
+        except ValueError:
+            pass
 
 
 def extrair_entidades(mensagem):

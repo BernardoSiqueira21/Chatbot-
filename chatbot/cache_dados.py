@@ -204,3 +204,11 @@ def listar_cache():
         }
     return resultado
 
+def limpar_cache():
+    """Limpa todo o cache (para testes ou reset manual)."""
+    try:
+        if CACHE_FILE.exists():
+            CACHE_FILE.unlink()
+        logger.info("Cache limpo")
+    except Exception as e:
+        logger.warning(f"Erro ao limpar cache: {e}")

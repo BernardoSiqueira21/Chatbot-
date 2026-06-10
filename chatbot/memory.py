@@ -153,6 +153,11 @@ def detectar_entidades(texto):
         if m:
             ents[label] = m.group(1)
             break
+    # Número isolado com contexto (ex: "número 98765")
+    if "protocolo" not in ents and "pedido" not in ents:
+        m = re.search(r'\b(?:numero|n[°º]|#)\s*(\d{4,})\b', tn)
+        if m:
+            ents["referencia"] = m.group(1)
 
     # Valor monetário
     match_valor = re.search(r"r\$\s?[\d.,]+|\d+\s*reais", texto, re.IGNORECASE)

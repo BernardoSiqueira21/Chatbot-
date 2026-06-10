@@ -1004,3 +1004,48 @@
       ],
       "prazos": {}
     },
+    "art11": {
+      "numero": 11,
+      "titulo": "Decadência — Vício Oculto",
+      "texto": "O prazo decadencial da reclamação começa a fluir a partir do momento em que ficar evidenciado o defeito no caso dos vícios ocultos.",
+      "resumo": "Para defeitos ocultos (que só aparecem depois), o prazo de 30 ou 90 dias começa a contar a partir do momento em que o vício foi descoberto, não da compra.",
+      "palavras_chave": [
+        "vicio oculto",
+        "defeito oculto",
+        "prazo vicio oculto",
+        "defeito apareceu depois",
+        "defeito demorou aparecer",
+        "prazo comeca quando descobriu"
+      ],
+      "prazos": {}
+    },
+    "art15": {
+      "numero": 15,
+      "titulo": "Vício de Quantidade — Pesagem na Presença do Consumidor",
+      "texto": "Os produtos ou serviços destinados ao público em geral, quando fornecidos coletivamente, deverão ser pesados ou medidos na presença do consumidor, salvo quando o produto já estiver embalado.",
+      "resumo": "Produtos vendidos a granel devem ser pesados ou medidos na frente do consumidor.",
+      "palavras_chave": [
+        "pesagem",
+        "medida",
+        "peso",
+        "balanca",
+        "granel",
+        "pesado na frente",
+        "medir produto"
+      ],
+      "prazos": {}
+    },
+    "art16": {
+      "numero": 16,
+      "titulo": "Vício de Quantidade — Recipientes e Embalagens",
+      "texto": "Os fornecedores de produtos e serviços que, posteriormente à introdução destes no mercado de consumo, tiverem conhecimento de sua periculosidade, deverão comunicar o fato imediatamente às autoridades competentes e aos consumidores, mediante anúncios publicitários.",
+      "resumo": "Se o fornecedor descobrir perigo no produto após lançá-lo, deve comunicar imediatamente as autoridades e os consumidores.",
+      "palavras_chave": [
+        "comunicar perigo",
+        "produto perigoso mercado",
+        "aviso posterior",
+        "recall comunicado",
+        "perigo descoberto depois"
+      ],
+      "prazos": {}
+    },

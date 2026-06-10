@@ -1063,3 +1063,18 @@
       ],
       "prazos": {}
     },
+    "art34": {
+      "numero": 34,
+      "titulo": "Solidariedade do Fornecedor — Representantes",
+      "texto": "O fornecedor do produto ou serviço é solidariamente responsável pelos atos de seus prepostos ou representantes autônomos.",
+      "resumo": "A empresa responde pelos atos dos seus vendedores, representantes e funcionários — mesmo que sejam autônomos.",
+      "palavras_chave": [
+        "vendedor autonomo",
+        "representante empresa",
+        "preposto",
+        "funcionario empresa responsavel",
+        "vendedor externo",
+        "corretor responsavel"
+      ],
+      "prazos": {}
+    },

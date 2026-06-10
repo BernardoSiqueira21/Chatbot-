@@ -46,6 +46,7 @@ _MESES = {
     "julho":7,"agosto":8,"setembro":9,"outubro":10,"novembro":11,"dezembro":12,
 }
 
+def _extrair_data_relativa(texto, hoje=None):
     """Extrai datas relativas: 'há 3 dias', 'semana passada', 'ontem', etc."""
     hoje = hoje or datetime.date.today()
     tn   = _norm(texto)
@@ -87,6 +88,11 @@ def detectar_entidades(texto):
     tn   = _norm(texto)
     ents = {}
 
+    # Empresa — termos compostos primeiro
+    for emp in sorted(_EMPRESAS_CONHECIDAS, key=len, reverse=True):
+        if emp in tn:
+            ents["empresa"] = emp.title()
+            break
 
 def obter_ultima_intencao(historico):
     if not historico:

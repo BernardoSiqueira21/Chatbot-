@@ -94,6 +94,20 @@ def detectar_entidades(texto):
             ents["empresa"] = emp.title()
             break
 
+    # Empresa genérica
+    if "empresa" not in ents:
+        m = re.search(r'\b(?:empresa|loja|marca|site|app|banco|operadora)\s+([A-Za-z][A-Za-zÀ-ú]{2,20})', texto)
+        if m:
+            ents["empresa"] = m.group(1).title()
+
+    # Produto
+    for p in ["celular","smartphone","notebook","laptop","geladeira","televisao","tv",
+              "maquina de lavar","maquina","fogao","ar condicionado","tablet","smartwatch",
+              "roupa","sapato","tenis","bolsa","medicamento","remedio","alimento",
+              "produto","eletronico","veiculo","carro","moto","bicicleta"]:
+        if p in tn:
+            ents["objeto"] = p
+            break
 
 def detectar_tom_usuario(mensagem):
     msg_lower = mensagem.lower()

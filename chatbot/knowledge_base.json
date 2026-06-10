@@ -1251,3 +1251,99 @@
       ],
       "prazos": {}
     },
+    "art70": {
+      "numero": 70,
+      "titulo": "Crime — Emprego de Peça Usada sem Informação",
+      "texto": "Empregar na reparação de produtos, peça ou componente de reposição usado, sem autorização do consumidor: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Usar peça usada no conserto sem avisar o consumidor é CRIME — pena de até 1 ano.",
+      "palavras_chave": [
+        "peca usada sem avisar",
+        "componente usado sem autorizacao",
+        "assistencia tecnica peca usada",
+        "trocou por peca velha",
+        "colocou peca usada crime"
+      ],
+      "prazos": {}
+    },
+    "art74": {
+      "numero": 74,
+      "titulo": "Descumprimento de Medidas Administrativas",
+      "texto": "Deixar de entregar ao consumidor o termo de garantia adequadamente preenchido e com especificação clara de seu conteúdo: Pena — Detenção de um a seis meses ou multa.",
+      "resumo": "Não entregar o termo de garantia preenchido corretamente ao consumidor é crime.",
+      "palavras_chave": [
+        "termo garantia nao entregue",
+        "garantia sem preenchimento",
+        "nao deram termo garantia",
+        "certificado garantia incorreto"
+      ],
+      "prazos": {}
+    },
+    "art75": {
+      "numero": 75,
+      "titulo": "Sanções Penais — Pessoas Jurídicas",
+      "texto": "Quem, de qualquer forma, concorrer para os crimes referidos neste código, incide nas penas a esses cominadas na medida de sua culpabilidade, bem como o diretor, administrador ou gerente da pessoa jurídica que promover, permitir ou por qualquer modo aprovar o fornecimento, oferta, exposição à venda ou manutenção em depósito de produtos ou a oferta e prestação de serviços nas condições por eles proibidas.",
+      "resumo": "Diretores e gerentes também podem ser responsabilizados criminalmente pelos crimes do CDC praticados pela empresa.",
+      "palavras_chave": [
+        "diretor responsavel crime",
+        "gerente responsavel",
+        "socio responsavel crime",
+        "pessoa fisica responsavel empresa crime"
+      ],
+      "prazos": {}
+    },
+    "art76": {
+      "numero": 76,
+      "titulo": "Agravantes — Crimes de Consumo",
+      "texto": "São circunstâncias agravantes dos crimes tipificados neste código, entre outras: serem cometidos em época de grave crise econômica ou por ocasião de calamidade; ocasionarem grave dano individual ou coletivo; dissimularem-se na aparência de contrato de consumo; serem praticados em detrimento de operário ou rurícola; atingirem pessoas idosas, portadoras de deficiência mental, interditadas ou, ainda, minores.",
+      "resumo": "Crimes contra idosos, pessoas com deficiência, crianças ou em crise econômica têm penas agravadas.",
+      "palavras_chave": [
+        "agravante crime consumo",
+        "crime contra idoso",
+        "crime contra criança",
+        "pena maior idoso",
+        "crime deficiencia mental",
+        "agravante consumidor vulneravel"
+      ],
+      "prazos": {}
+    },
+    "art77": {
+      "numero": 77,
+      "titulo": "Pena de Multa — Critérios",
+      "texto": "A pena pecuniária prevista nesta Seção será fixada em dias-multa, correspondente ao mínimo e ao máximo de dias de duração da pena privativa de liberdade cominada ao crime. Na individualização desta multa, o juiz observará o disposto no art. 60, §1° do Código Penal.",
+      "resumo": "O valor da multa criminal é calculado em dias-multa conforme o Código Penal.",
+      "palavras_chave": [
+        "multa criminal",
+        "dias multa",
+        "calculo multa crime",
+        "pena pecuniaria crime consumo"
+      ],
+      "prazos": {}
+    },
+    "art78": {
+      "numero": 78,
+      "titulo": "Penas Restritivas de Direitos",
+      "texto": "Além das penas privativas de liberdade e de multa, podem ser impostas, cumulativa ou alternadamente, observado o disposto nos arts. 44 a 47 do Código Penal: I — a interdição temporária de direitos; II — a publicação em órgãos de comunicação de grande circulação ou audiência, às expensas do condenado, de extrato de sentença condenatória, ou de atos jurídicos que causem dano ao consumidor; III — a convocação de grupos de consumidores lesados.",
+      "resumo": "Além de prisão e multa, condenados por crimes do CDC podem ser obrigados a publicar a sentença em jornais e convocar consumidores lesados.",
+      "palavras_chave": [
+        "publicar sentenca",
+        "interdição direitos",
+        "convocar consumidores",
+        "pena alternativa crime",
+        "publicacao jornal condenacao"
+      ],
+      "prazos": {}
+    },
+    "art79": {
+      "numero": 79,
+      "titulo": "Ação Penal",
+      "texto": "Para os fins deste Código, a ação penal é pública incondicionada.",
+      "resumo": "Os crimes do CDC são de ação penal pública incondicionada — o Ministério Público pode agir independentemente de queixa da vítima.",
+      "palavras_chave": [
+        "acao penal",
+        "ministerio publico",
+        "denuncia crime consumo",
+        "acao penal publica",
+        "mp pode agir sem vítima"
+      ],
+      "prazos": {}
+    },

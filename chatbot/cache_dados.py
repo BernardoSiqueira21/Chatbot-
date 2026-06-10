@@ -41,3 +41,24 @@ CATEGORIAS = {
     "selic":"inflacao","ipca":"inflacao","igpm":"inflacao",
     # Anuais
     "salario_minimo":"anual","inss_teto":"anual","imposto_renda":"anual",
+    "fgts":"anual","bolsa_familia":"anual","gasolina":"mercado",
+    # Jurídicos
+    "juros_rotativo":"juridico","limite_juros":"juridico",
+}
+
+def _carregar_cache():
+    try:
+        if CACHE_FILE.exists():
+            with open(CACHE_FILE, encoding="utf-8") as f:
+                return json.load(f)
+    except Exception as e:
+        logger.warning(f"Cache leitura: {e}")
+    return {}
+
+def _salvar_cache(cache):
+    try:
+        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.warning(f"Cache escrita: {e}")
+

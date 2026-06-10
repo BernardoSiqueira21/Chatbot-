@@ -109,3 +109,39 @@ unrelated news, general chat), politely redirect:
   "Esse tema não é comigo. E aquele problema da entrega, resolveu?"
   "Hmm, não é minha especialidade. Sobre o plano de saúde que comentou..."
 
+USER TONE AWARENESS:
+If the context contains USER_TOM=frustrado: acknowledge their frustration first, then help.
+  Example: "Que situação chata, dá pra entender a frustração. Vamos resolver isso juntos."
+If the context contains USER_TOM=urgente: be direct, skip small talk, give the most actionable answer.
+  Example: Skip the preamble — answer directly and immediately.
+If USER_TOM=neutro or absent: normal conversational tone.
+Never be dismissive of the user's feelings. Always validate before answering."""
+
+SYSTEM_PROMPT_REVEAL = """You are {nome}, a virtual assistant specialized in Brazilian Consumer Law (CDC Lei 8.078/1990).
+Today is {hoje}. Knowledge current up to early 2026. For newer data, rely only on DADO_ATUAL provided.
+SCOPE: Consumer law only. Politely redirect off-scope questions.
+LANGUAGE: Always respond in the exact language the user is writing in.
+The user asked if you are a bot. Be honest and warm, then continue naturally.
+After answering, ask one natural follow-up question."""
+
+def _get_prompt(nome="Marina", revelar=False):
+    import datetime
+    hoje = datetime.date.today().strftime("%d/%m/%Y")
+    t = SYSTEM_PROMPT_REVEAL if revelar else SYSTEM_PROMPT_HUMAN
+    return t.replace("{nome}", nome).replace("{hoje}", hoje)
+
+def _tok(key):
+    return os.environ.get(key, "").strip()
+
+def _montar_messages(mensagem, contexto_kb, historico_lista, nome="Marina", revelar=False):
+    messages = [{"role": "system", "content": _get_prompt(nome, revelar)}]
+    if contexto_kb:
+        messages.append({"role": "system",
+                         "content": f"CONTEXT (verified, use directly):\n{contexto_kb}"})
+    for item in (historico_lista or [])[-6:]:
+        if item.get("usuario"):
+            messages.append({"role": "user",      "content": item["usuario"]})
+        if item.get("bot"):
+            messages.append({"role": "assistant",  "content": item["bot"]})
+    messages.append({"role": "user", "content": mensagem})
+    return messages

@@ -33,6 +33,14 @@ _EMPRESAS_CONHECIDAS = [
     "porto seguro","tokio marine","allianz","liberty","mapfre","sura",
 ]
 
+_CANAIS = {
+    "online":    ["online","internet","site","app","aplicativo","celular","shopee",
+                  "aliexpress","mercado livre","amazon","shein","temu","pelo app"],
+    "loja_fisica":["loja","fisicamente","presencial","shopping","estabelecimento","loja fisica"],
+    "telefone":  ["telefone","ligacao","telemarketing","0800","call center","por telefone"],
+    "delivery":  ["delivery","entrega","ifood","rappi","por entrega"],
+}
+
 
 
 def obter_ultima_intencao(historico):

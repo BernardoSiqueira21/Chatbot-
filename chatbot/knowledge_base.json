@@ -1,0 +1,138 @@
+{
+  "versao": "4.0",
+  "nome": "Código de Defesa do Consumidor — Base Completa",
+  "lei": "Lei n.º 8.078, de 11 de setembro de 1990",
+  "artigos": {
+    "art1": {
+      "numero": 1,
+      "titulo": "Norma de Ordem Pública",
+      "texto": "O CDC estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social. Não pode ser afastado por contrato.",
+      "resumo": "O CDC é norma de ordem pública — não pode ser afastado por contrato ou acordo entre partes.",
+      "palavras_chave": [
+        "cdc",
+        "codigo de defesa",
+        "lei do consumidor",
+        "norma",
+        "ordem publica",
+        "lei 8078"
+      ],
+      "prazos": {}
+    },
+    "art2": {
+      "numero": 2,
+      "titulo": "Definição de Consumidor",
+      "texto": "Consumidor é toda pessoa física ou jurídica que adquire ou utiliza produto ou serviço como destinatário final. Equipara-se a consumidor a coletividade de pessoas que haja intervindo nas relações de consumo.",
+      "resumo": "Consumidor é quem adquire produto ou serviço como destinatário final, podendo ser pessoa física ou jurídica.",
+      "palavras_chave": [
+        "consumidor",
+        "quem e consumidor",
+        "pessoa fisica",
+        "destinatario final",
+        "sou consumidor"
+      ],
+      "prazos": {}
+    },
+    "art3": {
+      "numero": 3,
+      "titulo": "Definição de Fornecedor",
+      "texto": "Fornecedor é toda pessoa física ou jurídica, pública ou privada, que desenvolve atividade de produção, montagem, criação, construção, importação, exportação, distribuição ou comercialização de produtos ou prestação de serviços.",
+      "resumo": "Fornecedor é qualquer empresa ou pessoa que vende produtos ou presta serviços — inclui fabricante, importador, revendedor.",
+      "palavras_chave": [
+        "fornecedor",
+        "empresa",
+        "loja",
+        "fabricante",
+        "vendedor",
+        "importador",
+        "quem e responsavel"
+      ],
+      "prazos": {}
+    },
+    "art4": {
+      "numero": 4,
+      "titulo": "Política Nacional das Relações de Consumo",
+      "texto": "A Política Nacional das Relações de Consumo tem por objetivo o atendimento das necessidades dos consumidores, o respeito à sua dignidade, saúde e segurança, a proteção de seus interesses econômicos, a melhoria da sua qualidade de vida, bem como a transparência e harmonia das relações de consumo.",
+      "resumo": "Princípios da política de proteção: dignidade, segurança, transparência e harmonia nas relações de consumo.",
+      "palavras_chave": [
+        "politica nacional",
+        "principios",
+        "dignidade consumidor",
+        "transparencia",
+        "harmonia"
+      ],
+      "prazos": {}
+    },
+    "art6": {
+      "numero": 6,
+      "titulo": "Direitos Básicos do Consumidor",
+      "texto": "São direitos básicos do consumidor: I — proteção da vida, saúde e segurança; II — educação sobre consumo; III — informação adequada e clara sobre produtos e serviços; IV — proteção contra publicidade enganosa e abusiva; V — modificação de cláusulas contratuais desproporcionais; VI — prevenção e reparação de danos; VII — acesso aos órgãos judiciários e administrativos; VIII — facilitação da defesa dos direitos; X — adequada e eficaz prestação dos serviços públicos.",
+      "resumo": "Seus direitos básicos: informação clara, proteção contra propaganda enganosa, reparação de danos e acesso à justiça.",
+      "palavras_chave": [
+        "direitos basicos",
+        "direitos do consumidor",
+        "meus direitos",
+        "o que posso exigir",
+        "direitos fundamentais",
+        "cdc",
+        "codigo de defesa",
+        "quais meus direitos"
+      ],
+      "prazos": {}
+    },
+    "art7": {
+      "numero": 7,
+      "titulo": "Direitos Previstos em Outras Normas",
+      "texto": "Os direitos previstos no CDC não excluem outros decorrentes de tratados ou convenções internacionais, legislação interna ordinária, de regulamentos expedidos pelas autoridades administrativas competentes, bem como dos que derivem dos princípios gerais do direito.",
+      "resumo": "Os direitos do CDC somam-se a outros direitos previstos em leis específicas — o consumidor pode acumular proteções.",
+      "palavras_chave": [
+        "outros direitos",
+        "tratados",
+        "normas",
+        "legislacao",
+        "protecao adicional"
+      ],
+      "prazos": {}
+    },
+    "art8": {
+      "numero": 8,
+      "titulo": "Segurança dos Produtos e Serviços",
+      "texto": "Os produtos e serviços colocados no mercado de consumo não acarretarão riscos à saúde ou segurança dos consumidores, exceto os considerados normais e previsíveis em decorrência de sua natureza e fruição.",
+      "resumo": "Produtos e serviços devem ser seguros. O fornecedor é responsável por qualquer risco à saúde ou segurança.",
+      "palavras_chave": [
+        "seguranca produto",
+        "risco saude",
+        "produto perigoso",
+        "produto inseguro",
+        "acidente produto"
+      ],
+      "prazos": {}
+    },
+    "art9": {
+      "numero": 9,
+      "titulo": "Informação sobre Periculosidade",
+      "texto": "O fornecedor de produtos e serviços potencialmente nocivos ou perigosos à saúde ou segurança deverá informar, de maneira ostensiva e adequada, a respeito da sua nocividade ou periculosidade.",
+      "resumo": "Produtos perigosos devem ter aviso claro e ostensivo sobre os riscos — a empresa é obrigada a informar.",
+      "palavras_chave": [
+        "produto perigoso",
+        "aviso perigo",
+        "informacao risco",
+        "nocivo",
+        "periculosidade"
+      ],
+      "prazos": {}
+    },
+    "art10": {
+      "numero": 10,
+      "titulo": "Recall — Retirada de Produtos do Mercado",
+      "texto": "O fornecedor não poderá colocar no mercado de consumo produto ou serviço que sabe ou deveria saber apresentar alto grau de nocividade ou periculosidade à saúde ou segurança. Deve comunicar às autoridades e aos consumidores e proceder à retirada imediata do produto do mercado (recall).",
+      "resumo": "Recall: empresa deve retirar do mercado produto perigoso e comunicar consumidores imediatamente.",
+      "palavras_chave": [
+        "recall",
+        "retirada produto",
+        "produto nocivo",
+        "produto danoso",
+        "alto risco",
+        "comunicacao perigo"
+      ],
+      "prazos": {}
+    },

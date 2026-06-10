@@ -1485,3 +1485,138 @@
       ],
       "prazos": {}
     },
+    "art90": {
+      "numero": 90,
+      "titulo": "Aplicação do Código de Processo Civil",
+      "texto": "Aplicam-se às ações previstas neste título as normas do Código de Processo Civil e da Lei n° 7.347, de 24 de julho de 1985, inclusive no que respeita ao inquérito civil, naquilo que não contrariar suas disposições.",
+      "resumo": "As ações coletivas de consumidores seguem as regras do CPC e da Lei da Ação Civil Pública.",
+      "palavras_chave": [
+        "codigo processo civil",
+        "lei acao civil publica",
+        "inquérito civil",
+        "normas processuais consumidor"
+      ],
+      "prazos": {}
+    },
+    "art91": {
+      "numero": 91,
+      "titulo": "Ações Coletivas — Legitimidade Ativa",
+      "texto": "Os legitimados de que trata o art. 82 poderão propor, em nome próprio e no interesse das vítimas ou seus sucessores, ação civil coletiva de responsabilidade pelos danos individualmente sofridos, de acordo com o disposto nos artigos seguintes.",
+      "resumo": "MP e associações podem propor ação coletiva para reparar danos individuais sofridos por vários consumidores.",
+      "palavras_chave": [
+        "acao civil coletiva",
+        "responsabilidade danos coletivos",
+        "acao nome proprio consumidor",
+        "representacao coletiva"
+      ],
+      "prazos": {}
+    },
+    "art92": {
+      "numero": 92,
+      "titulo": "Competência — Ações Coletivas",
+      "texto": "O foro competente para a propositura da ação será aquele onde ocorreu ou deva ocorrer o dano, quando de âmbito local.",
+      "resumo": "A ação coletiva deve ser proposta no foro onde ocorreu o dano.",
+      "palavras_chave": [
+        "foro competente",
+        "onde entrar com acao",
+        "competencia territorial",
+        "local do dano",
+        "onde processar empresa"
+      ],
+      "prazos": {}
+    },
+    "art93": {
+      "numero": 93,
+      "titulo": "Competência Nacional — Danos de Âmbito Nacional",
+      "texto": "Ressalvada a competência da Justiça Federal, é competente para a causa a justiça local: I — no foro do lugar onde ocorreu ou deva ocorrer o dano, quando de âmbito local; II — no foro da Capital do Estado ou no do Distrito Federal, para os danos de âmbito nacional ou regional.",
+      "resumo": "Para danos nacionais ou regionais, a ação é proposta na capital do estado ou no DF.",
+      "palavras_chave": [
+        "dano nacional",
+        "capital estado acao",
+        "justiça federal consumidor",
+        "foro nacional",
+        "competencia nacional"
+      ],
+      "prazos": {}
+    },
+    "art94": {
+      "numero": 94,
+      "titulo": "Litisconsortes — Ações Coletivas",
+      "texto": "Proposta a ação, será publicado edital no órgão oficial, a fim de que os interessados possam intervir no processo como litisconsortes, sem prejuízo de ampla divulgação pelos meios de comunicação social por parte dos órgãos de defesa do consumidor.",
+      "resumo": "Ao propor ação coletiva, deve-se publicar edital para que outros consumidores possam participar.",
+      "palavras_chave": [
+        "edital acao coletiva",
+        "participar acao coletiva",
+        "litisconsorte",
+        "intervir processo coletivo",
+        "integrar acao grupo"
+      ],
+      "prazos": {}
+    },
+    "art95": {
+      "numero": 95,
+      "titulo": "Liquidação — Condenação Genérica",
+      "texto": "Em caso de procedência do pedido, a condenação será genérica, fixando a responsabilidade do réu pelos danos causados.",
+      "resumo": "Na ação coletiva, a condenação inicial é genérica — cada consumidor depois liquida o seu valor específico.",
+      "palavras_chave": [
+        "condenacao generica",
+        "liquidacao sentenca",
+        "valor dano individual",
+        "quantificar dano",
+        "sentenca generica coletiva"
+      ],
+      "prazos": {}
+    },
+    "art96": {
+      "numero": 96,
+      "titulo": "Liquidação — Prazo para Habilitação",
+      "texto": "Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347, de 24 de julho de 1985 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento.",
+      "resumo": "Indenizações individuais têm preferência no pagamento em relação às coletivas.",
+      "palavras_chave": [
+        "preferencia pagamento",
+        "credito individual coletivo",
+        "prioridade indenizacao",
+        "ordem pagamento sentenca"
+      ],
+      "prazos": {}
+    },
+    "art97": {
+      "numero": 97,
+      "titulo": "Liquidação e Execução — Legitimidade",
+      "texto": "A liquidação e a execução de sentença poderão ser promovidas pela vítima e seus sucessores, assim como pelos legitimados de que trata o art. 82.",
+      "resumo": "A vítima, seus herdeiros, MP e associações podem executar a sentença coletiva.",
+      "palavras_chave": [
+        "executar sentenca",
+        "liquidar sentenca",
+        "cumprimento sentenca coletiva",
+        "herdeiro executar sentenca"
+      ],
+      "prazos": {}
+    },
+    "art98": {
+      "numero": 98,
+      "titulo": "Execução — Prazo de Habilitação dos Interessados",
+      "texto": "A execução poderá ser coletiva, sendo promovida pelos legitimados de que trata o art. 82, abrangendo as vítimas cujas indenizações já tiveram sido fixadas em sentença de liquidação, sem prejuízo do ajuizamento de outras execuções. § 2° A execução nas ações coletivas a que se refere o inciso III do parágrafo único do art. 81 far-se-á pelo valor da indenização devida ao consumidor, acrescido de correção monetária.",
+      "resumo": "A execução coletiva pode ser promovida por todos os legitimados, com correção monetária dos valores.",
+      "palavras_chave": [
+        "execucao coletiva",
+        "correcao monetaria sentenca",
+        "valor atualizado indenizacao",
+        "execucao grupo consumidores"
+      ],
+      "prazos": {}
+    },
+    "art99": {
+      "numero": 99,
+      "titulo": "Fundo de Reconstituição dos Bens Lesados",
+      "texto": "Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347/85 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento. O produto da indenização devida aos consumidores fica destinado ao fundo criado pela Lei n.° 7.347/85.",
+      "resumo": "Quando não há consumidores identificados para receber, o dinheiro vai para o Fundo de Defesa de Direitos Difusos.",
+      "palavras_chave": [
+        "fundo defesa",
+        "dinheiro fundo",
+        "lei 7347",
+        "fundo difuso",
+        "dinheiro coletivo fundo"
+      ],
+      "prazos": {}
+    },

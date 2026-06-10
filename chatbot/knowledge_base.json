@@ -1620,3 +1620,88 @@
       ],
       "prazos": {}
     },
+    "art100": {
+      "numero": 100,
+      "titulo": "Destinação do Produto da Condenação",
+      "texto": "Decorrido o prazo de um ano sem habilitação de interessados em número compatível com a gravidade do dano, poderão os legitimados do art. 82 promover a liquidação e execução da indenização devida.",
+      "resumo": "Se após 1 ano poucos consumidores se habilitarem, os legitimados (MP, associações) podem executar a condenação pelo valor total.",
+      "palavras_chave": [
+        "prazo habilitacao",
+        "um ano execucao",
+        "poucos habilitados",
+        "execucao total indenizacao",
+        "fundo remanescente"
+      ],
+      "prazos": {
+        "habilitacao_anos": 1
+      }
+    },
+    "art102": {
+      "numero": 102,
+      "titulo": "Prescrição — Ação Coletiva",
+      "texto": "Os legitimados a agir na forma deste código poderão propor ação de caráter coletivo para tutelar interesses individuais homogêneos.",
+      "resumo": "MP e associações podem propor ação coletiva para proteger interesses individuais semelhantes de múltiplos consumidores.",
+      "palavras_chave": [
+        "acao coletiva interesses homogeneos",
+        "tutela coletiva",
+        "grupo mesmos direitos",
+        "interesses homogeneos"
+      ],
+      "prazos": {}
+    },
+    "art103": {
+      "numero": 103,
+      "titulo": "Efeitos da Coisa Julgada nas Ações Coletivas",
+      "texto": "Nas ações coletivas de que trata este código, a sentença fará coisa julgada: I — erga omnes, exceto se o pedido for julgado improcedente por insuficiência de provas, hipótese em que qualquer legitimado poderá intentar outra ação, com idêntico fundamento valendo-se de nova prova (difusos); II — ultra partes (coletivos); III — erga omnes, apenas para beneficiar as vítimas (individuais homogêneos). § 3° Os efeitos da coisa julgada erga omnes não prejudicarão os interesses e direitos individuais dos integrantes da coletividade.",
+      "resumo": "A sentença coletiva beneficia todos mas nunca prejudica o consumidor individualmente — ele ainda pode entrar com ação própria.",
+      "palavras_chave": [
+        "coisa julgada nao prejudica individual",
+        "acao individual apos coletiva",
+        "sentenca coletiva beneficio",
+        "erga omnes beneficio"
+      ],
+      "prazos": {}
+    },
+    "art105": {
+      "numero": 105,
+      "titulo": "Sistema Nacional de Defesa do Consumidor — SNDC",
+      "texto": "Integram o Sistema Nacional de Defesa do Consumidor (SNDC), os órgãos federais, estaduais, do Distrito Federal e municipais e as entidades privadas de defesa do consumidor.",
+      "resumo": "O SNDC é formado por todos os Procons, Senacon, órgãos governamentais e associações privadas de defesa do consumidor.",
+      "palavras_chave": [
+        "sndc",
+        "sistema nacional defesa consumidor",
+        "orgaos defesa",
+        "procon federal",
+        "senacon",
+        "sistema defesa"
+      ],
+      "prazos": {}
+    },
+    "art106": {
+      "numero": 106,
+      "titulo": "Atribuições do DPDC (Senacon)",
+      "texto": "O Departamento Nacional de Defesa do Consumidor, da Secretaria Nacional de Direito Econômico, tem as seguintes atribuições: planejar, elaborar, propor, coordenar e executar a política nacional de proteção ao consumidor; receber, analisar, avaliar e encaminhar consultas, denúncias ou sugestões presentadas por entidades representativas ou pessoas jurídicas de direito público ou privado; prestar aos consumidores orientação permanente sobre seus direitos e garantias; informar, conscientizar e motivar o consumidor.",
+      "resumo": "A Senacon (antiga DPDC) coordena a política nacional do consumidor, recebe denúncias e orienta consumidores.",
+      "palavras_chave": [
+        "senacon",
+        "dpdc",
+        "politica nacional consumidor",
+        "orgao federal consumidor",
+        "secretaria consumidor",
+        "receber denuncia federal"
+      ],
+      "prazos": {}
+    },
+    "art107": {
+      "numero": 107,
+      "titulo": "Convenções Coletivas de Consumo",
+      "texto": "As entidades civis de consumidores e as associações de fornecedores ou sindicatos de categoria econômica podem regular, por convenção escrita, relações de consumo que tenham por objeto estabelecer condições relativas ao preço, à qualidade, à quantidade, à garantia e características de produtos e serviços, bem como à reclamação e composição do conflito de consumo.",
+      "resumo": "Associações de consumidores e de empresas podem firmar convenções coletivas regulando condições de venda, preço e resolução de conflitos.",
+      "palavras_chave": [
+        "convencao coletiva consumo",
+        "acordo consumidores empresas",
+        "regulamento setorial",
+        "norma setor convenio"
+      ],
+      "prazos": {}
+    },

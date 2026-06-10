@@ -1091,3 +1091,30 @@
       ],
       "prazos": {}
     },
+    "art58": {
+      "numero": 58,
+      "titulo": "Crime — Omissão de Dizeres Obrigatórios",
+      "texto": "Deixar de comunicar à autoridade competente e aos consumidores a nocividade ou periculosidade de produtos cujo conhecimento seja posterior à sua colocação no mercado: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Empresa que descobre perigo no produto e não avisa comete CRIME — pena de até 2 anos de detenção.",
+      "palavras_chave": [
+        "crime omissao",
+        "empresa nao avisou perigo",
+        "omitiu informacao perigo",
+        "crime fornecedor",
+        "escondeu perigo produto"
+      ],
+      "prazos": {}
+    },
+    "art59": {
+      "numero": 59,
+      "titulo": "Crime — Reincidência e Agravantes",
+      "texto": "As penas de detenção e multa do crime de omissão de comunicação de periculosidade poderão ser aumentadas de um terço até a metade quando a infração for cometida por empresa ou profissional que atue em setor regulamentado.",
+      "resumo": "Penas maiores quando o crime é cometido por empresa de setor regulamentado (banco, plano de saúde, etc.).",
+      "palavras_chave": [
+        "pena maior empresa",
+        "agravante empresa regulamentada",
+        "crime empresa banco",
+        "setor regulamentado crime"
+      ],
+      "prazos": {}
+    },

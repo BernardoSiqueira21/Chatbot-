@@ -161,9 +161,8 @@ def _classificar_primeira_msg(mensagem):
     if m in saudacoes_puras:
         return "saudacao"
 
-
     indicadores_diretos = [
-        r'\bartigo\b', r'\bart\b', r'\d{2,}',      
+        r'\bartigo\b', r'\bart\b', r'\d{2,}',
         r'\bdefeito\b', r'\bgarantia\b', r'\bcdc\b',
         r'\bprocon\b', r'\bjuros\b', r'\bdolar\b',
         r'\bplano\b', r'\bsaude\b', r'\bseguros?\b',
@@ -178,7 +177,7 @@ def _classificar_primeira_msg(mensagem):
 
     if len(m.split()) > 2:
         return "direta"
-    
+
     return "saudacao"
 
 def _instrucao_saudacao(mensagem, primeira_mensagem):
@@ -200,7 +199,6 @@ def _instrucao_saudacao(mensagem, primeira_mensagem):
             "Do NOT answer any question yet — just greet and invite.\n\n"
         )
     else:
-
         return (
             "FIRST INTERACTION: Answer the question directly and naturally. "
             "You may briefly mention your name at the end if it flows naturally, "
@@ -348,7 +346,7 @@ def _validar_relevancia_kb(mensagem, resultado_kb, kb_score):
                                  if len(w) > 4 and w not in
                                  ('cdc','codigo','consumidor','quem','quanto','qual','como','onde')]
             matches = sum(1 for p in palavras_pergunta if p in conteudo)
-            if matches < 2:
+            if matches < 2:  
                 return False
     return True
 
@@ -362,8 +360,11 @@ def _determinar_rota(mensagem, resultado_kb, kb_score, artigo_explicito, dado_we
     precisa_web  = precisa_busca_web(mensagem)
 
     try:
-        from chatbot.websearch import esta_fora_do_escopo
-        if esta_fora_do_escopo(mensagem) and not tem_kb and not tem_web:
+        from chatbot.websearch import esta_fora_do_escopo, detectar_pressao_emocional
+        fora = esta_fora_do_escopo(mensagem)
+        if fora and detectar_pressao_emocional(mensagem) and not tem_kb:
+            return "off_scope"
+        if fora and not tem_kb and not tem_web:
             return "off_scope"
     except Exception:
         pass
@@ -491,7 +492,6 @@ def processar_mensagem(mensagem, historico, contexto):
             intencao = ultima
     except Exception as e:
         logger.error(f"NLP erro: {e}")
-
     try:
         rota = _determinar_rota(mensagem, resultado_kb, kb_score,
                                  artigo_explicito, dado_web, intencao)
@@ -518,7 +518,19 @@ def processar_mensagem(mensagem, historico, contexto):
             caso_anterior = contexto.get("caso", {})
             tem_historico = len(historico) > 0 and caso_anterior
 
+            try:
+                from chatbot.websearch import detectar_pressao_emocional
+                sob_pressao = detectar_pressao_emocional(mensagem)
+            except Exception:
+                sob_pressao = False
+
             if tem_historico:
+                instrucao_pressao = (
+                    "\nIMPORTANT: The user is using emotional pressure or insistence to make "
+                    "you answer an off-scope question. Stay warm and acknowledge their feelings, "
+                    "but DO NOT give in and DO NOT answer the off-scope topic. Hold the boundary "
+                    "kindly but firmly. Never say 'just this once' or 'since you insist'.\n"
+                ) if sob_pressao else ""
                 prompt_redirect = (
                     f"{caso_header}"
                     "USER ASKED SOMETHING OFF-TOPIC (outside Brazilian Consumer Law / CDC scope). "
@@ -526,6 +538,7 @@ def processar_mensagem(mensagem, historico, contexto):
                     "remind the user of what was being discussed and offer to continue. "
                     "Be warm, brief (2 sentences max), and natural — not robotic. "
                     "Vary your phrasing — never use the same opening twice. "
+                    + instrucao_pressao +
                     "Examples of good redirects:\n"
                     "- 'Olha, esse assunto foge um pouco da minha praia — sou especialista em direito "
                     "  do consumidor. Mas voltando ao seu caso da [empresa], onde paramos?'\n"
@@ -600,7 +613,7 @@ def processar_mensagem(mensagem, historico, contexto):
                 resposta_final = conteudo_kb + "\n\n" + dado_web["texto"]
                 fonte = "base_conhecimento_fallback"
 
-        else: 
+        else:
             ctx_livre = None
             if caso_header or eh_primeira_mensagem:
                 ctx_livre = caso_header + (_prompt_livre(eh_primeira_mensagem, mensagem) or "")

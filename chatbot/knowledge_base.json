@@ -910,3 +910,51 @@
       ],
       "prazos": {}
     },
+    "art71": {
+      "numero": 71,
+      "titulo": "Cobrança Vexatória — Crime",
+      "texto": "Utilizar, na cobrança de dívidas, de ameaça, coação, constrangimento físico ou moral, afirmações falsas incorretas ou enganosas, ou qualquer outro procedimento que exponha o consumidor, injustificadamente, a ridículo ou interfira com seu trabalho, descanso ou lazer: Pena — detenção de três meses a um ano e multa.",
+      "resumo": "Cobrança com ameaça, constrangimento ou assédio é CRIME — pena de até 1 ano de detenção.",
+      "palavras_chave": [
+        "cobranca com ameaca",
+        "ameaca pagamento",
+        "constrangimento cobranca",
+        "me constrangeram",
+        "cobranca abusiva",
+        "crime cobranca",
+        "ligacao ameacando",
+        "assedio cobranca"
+      ],
+      "prazos": {}
+    },
+    "art72": {
+      "numero": 72,
+      "titulo": "Recusa de Atendimento — Crime",
+      "texto": "Impedir ou dificultar o acesso do consumidor às informações que sobre ele constem em cadastros, banco de dados, fichas e registros: Pena — detenção de seis meses a um ano ou multa.",
+      "resumo": "Empresa que impede consumidor de ver seu cadastro comete crime — pena de até 1 ano.",
+      "palavras_chave": [
+        "acesso cadastro",
+        "negar informacao",
+        "impedir consulta",
+        "nao mostram cadastro",
+        "dados consumidor",
+        "direito informacao"
+      ],
+      "prazos": {}
+    },
+    "art73": {
+      "numero": 73,
+      "titulo": "Correção de Informações — Crime",
+      "texto": "Deixar de corrigir imediatamente informação sobre consumidor constante de cadastro, banco de dados, fichas ou registros que sabe ou deveria saber ser inexata: Pena — detenção de um a seis meses ou multa.",
+      "resumo": "Não corrigir informação errada em cadastro (Serasa, SPC) quando comunicado é crime.",
+      "palavras_chave": [
+        "corrigir serasa",
+        "corrigir spc",
+        "informacao errada cadastro",
+        "dado incorreto",
+        "retificacao",
+        "nome sujo errado",
+        "negativacao errada"
+      ],
+      "prazos": {}
+    },

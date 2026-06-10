@@ -169,13 +169,6 @@ def detectar_entidades(texto):
     return ents
 
 
-    # Extrai entidades adicionais da mensagem
-    entidades_msg = extrair_entidades(mensagem)
-    if entidades_msg:
-        entidades_ctx = novo_contexto.get("entidades", {})
-        entidades_ctx.update(entidades_msg)
-        novo_contexto["entidades"] = entidades_ctx
-
     if oferta_pendente:
         novo_contexto["oferta_pendente"] = oferta_pendente
     else:

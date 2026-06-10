@@ -219,3 +219,17 @@ def atualizar_contexto(ctx, intencao, mensagem, entidades, **kw):
     novo["caso"] = caso
     return novo
 
+def resumo_caso(contexto):
+    caso = contexto.get("caso", {})
+    if not caso:
+        return None
+    partes = []
+    if caso.get("empresa"):     partes.append(f"empresa: {caso['empresa']}")
+    if caso.get("objeto"):      partes.append(f"produto: {caso['objeto']}")
+    if caso.get("valor"):       partes.append(f"valor: {caso['valor']}")
+    if caso.get("data_evento"): partes.append(f"data: {caso['data_evento']}")
+    if caso.get("canal"):       partes.append(f"canal: {caso['canal']}")
+    if caso.get("protocolo"):   partes.append(f"protocolo: {caso['protocolo']}")
+    if caso.get("pedido"):      partes.append(f"pedido: {caso['pedido']}")
+    if caso.get("tentativas"):  partes.append(f"tentativas: {caso['tentativas']}")
+    return ", ".join(partes) if partes else None

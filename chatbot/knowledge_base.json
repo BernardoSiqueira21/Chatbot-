@@ -293,3 +293,153 @@
         "abatimento proporcional do preço"
       ]
     },
+    "art21": {
+      "numero": 21,
+      "titulo": "Reparação — Reexecução por Terceiro",
+      "texto": "No fornecimento de serviços que tenham por objetivo a reparação de qualquer produto, considerar-se-á implícita a obrigação do fornecedor de empregar componentes de reposição originais adequados e novos, ou que mantenham as especificações técnicas do fabricante, salvo, quanto a estes últimos, autorização em contrário do consumidor.",
+      "resumo": "Ao consertar produto, a empresa deve usar peças originais ou equivalentes — não pode usar peças inadequadas sem avisar.",
+      "palavras_chave": [
+        "conserto",
+        "reparo",
+        "assistencia tecnica",
+        "peca original",
+        "peca reposicao",
+        "tecnico",
+        "manutencao"
+      ],
+      "prazos": {}
+    },
+    "art22": {
+      "numero": 22,
+      "titulo": "Serviços Essenciais — Continuidade",
+      "texto": "Os órgãos públicos, por si ou suas empresas, concessionárias, permissionárias ou sob qualquer outra forma de empreendimento, são obrigados a fornecer serviços adequados, eficientes, seguros e, quanto aos essenciais, contínuos.",
+      "resumo": "Serviços essenciais (água, luz, gás, telefone) não podem ser interrompidos de forma abusiva.",
+      "palavras_chave": [
+        "luz cortada",
+        "agua cortada",
+        "gas cortado",
+        "internet cortada",
+        "servico essencial",
+        "corte indevido",
+        "concessionaria",
+        "servico publico"
+      ],
+      "prazos": {}
+    },
+    "art23": {
+      "numero": 23,
+      "titulo": "Ignorância sobre Vício — Irrelevância",
+      "texto": "A ignorância do fornecedor sobre os vícios de qualidade por inadequação dos produtos e serviços não o exime de responsabilidade.",
+      "resumo": "A empresa não pode alegar que 'não sabia do defeito' para se eximir de responsabilidade.",
+      "palavras_chave": [
+        "empresa nao sabia",
+        "nao sabia do defeito",
+        "ignorancia fornecedor",
+        "desconhecia problema"
+      ],
+      "prazos": {}
+    },
+    "art24": {
+      "numero": 24,
+      "titulo": "Garantia Legal — Independência de Termo",
+      "texto": "A garantia legal de adequação do produto ou serviço independe de termo expresso, vedada a exoneração contratual do fornecedor.",
+      "resumo": "A garantia legal existe independentemente de contrato ou termo escrito — a empresa não pode se isentar dela contratualmente.",
+      "palavras_chave": [
+        "garantia legal",
+        "garantia obrigatoria",
+        "garantia independe",
+        "sem garantia escrita",
+        "termo garantia"
+      ],
+      "prazos": {}
+    },
+    "art25": {
+      "numero": 25,
+      "titulo": "Vedação de Cláusula de Não Indenizar",
+      "texto": "É vedada a estipulação contratual de cláusula que impossibilite, exonere ou atenue a obrigação de indenizar prevista nesta e nas seções anteriores.",
+      "resumo": "Cláusulas que tentam isentar a empresa de indenizar são nulas — não valem mesmo que você tenha assinado.",
+      "palavras_chave": [
+        "clausula nao indenizar",
+        "empresa nao indeniza",
+        "contrato sem indenizacao",
+        "clausula isencao",
+        "sem direito a indenizacao"
+      ],
+      "prazos": {}
+    },
+    "art26": {
+      "numero": 26,
+      "titulo": "Prazo de Decadência — Reclamação de Vícios",
+      "texto": "O direito de reclamar pelos vícios aparentes ou de fácil constatação caduca em: I — 30 dias para produtos e serviços não duráveis; II — 90 dias para produtos e serviços duráveis. O prazo inicia na entrega do produto. A reclamação ao fornecedor obsta a decadência.",
+      "resumo": "Prazo para reclamar: 30 dias (não duráveis) ou 90 dias (duráveis) a partir do defeito. Reclamar por escrito interrompe o prazo.",
+      "palavras_chave": [
+        "prazo",
+        "prazo para reclamar",
+        "quanto tempo tenho",
+        "prazo de garantia",
+        "decadencia",
+        "ja passou o prazo",
+        "ainda posso reclamar",
+        "tempo para reclamar",
+        "prazo venceu",
+        "expirou prazo"
+      ],
+      "prazos": {
+        "nao_duraveis_dias": 30,
+        "duraveis_dias": 90
+      }
+    },
+    "art27": {
+      "numero": 27,
+      "titulo": "Prescrição — Ação Judicial por Danos",
+      "texto": "Prescreve em 5 anos a pretensão à reparação pelos danos causados por fato do produto ou do serviço, contados a partir do conhecimento do dano e de sua autoria.",
+      "resumo": "Você tem 5 anos para entrar com ação judicial por danos causados por produto ou serviço.",
+      "palavras_chave": [
+        "prescricao",
+        "prazo judicial",
+        "5 anos",
+        "prazo para processar",
+        "acao judicial",
+        "prazo para entrar na justica",
+        "processar empresa",
+        "quanto tempo tenho para processar"
+      ],
+      "prazos": {
+        "prescricao_anos": 5
+      }
+    },
+    "art28": {
+      "numero": 28,
+      "titulo": "Desconsideração da Personalidade Jurídica",
+      "texto": "O juiz poderá desconsiderar a personalidade jurídica da sociedade quando, em detrimento do consumidor, houver abuso de direito, excesso de poder, infração da lei, fato ou ato ilícito ou violação dos estatutos ou contrato social.",
+      "resumo": "Em casos graves, o juiz pode responsabilizar pessoalmente os sócios da empresa para proteger o consumidor.",
+      "palavras_chave": [
+        "desconsideracao",
+        "empresa faliu",
+        "empresa fechou",
+        "socio responsavel",
+        "patrimonio socio",
+        "empresa sem dinheiro"
+      ],
+      "prazos": {}
+    },
+    "art30": {
+      "numero": 30,
+      "titulo": "Força Vinculante da Oferta",
+      "texto": "Toda informação ou publicidade veiculada por qualquer meio de comunicação obriga o fornecedor que a fizer veicular e integra o contrato celebrado.",
+      "resumo": "O que foi anunciado obriga a empresa — preço, prazo e condições do anúncio têm força de contrato.",
+      "palavras_chave": [
+        "oferta",
+        "anuncio",
+        "publicidade",
+        "propaganda",
+        "o que foi anunciado",
+        "o que estava no site",
+        "preco anunciado",
+        "empresa tem que cumprir",
+        "oferta vincula",
+        "preco errado",
+        "anuncio diferente"
+      ],
+      "prazos": {}
+    },

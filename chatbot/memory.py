@@ -169,16 +169,3 @@ def detectar_entidades(texto):
     return ents
 
 
-    # Rastreia se empresa já foi contactada
-    sinais_contato = ["ja entrei", "já entrei", "liguei", "mandei email", "falei com",
-                      "fui até", "reclamei", "protocolo", "ja reclamei", "já reclamei"]
-    if any(s in mensagem.lower() for s in sinais_contato):
-        novo_contexto["empresa_contactada"] = True
-
-    # Rastreia se tem prova documental
-    sinais_prova = ["tenho foto", "tenho print", "tenho nota", "guardei", "tenho comprovante",
-                    "tenho protocolo", "tenho e-mail", "tenho email"]
-    if any(s in mensagem.lower() for s in sinais_prova):
-        novo_contexto["tem_provas"] = True
-
-    return novo_contexto

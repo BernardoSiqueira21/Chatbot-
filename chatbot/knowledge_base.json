@@ -612,3 +612,185 @@
       ],
       "prazos": {}
     },
+    "art41": {
+      "numero": 41,
+      "titulo": "Reajuste de Preço — Serviços",
+      "texto": "No caso de recusa ou demora do orçamento, ou caso o consumidor não o aceite, as despesas realizadas só podem ser cobradas se o consumidor as tiver previamente autorizado.",
+      "resumo": "Se o consumidor não aprovação orçamento, empresa não pode cobrar pelo trabalho realizado sem autorização.",
+      "palavras_chave": [
+        "nao aprovei orcamento",
+        "nao autorizei",
+        "cobrou sem autorizacao",
+        "realizou servico sem autorizar",
+        "fez sem permissao"
+      ],
+      "prazos": {}
+    },
+    "art42": {
+      "numero": 42,
+      "titulo": "Cobrança de Dívidas — Vedações e Repetição do Indébito",
+      "texto": "Na cobrança de débitos, o consumidor não será exposto a ridículo, nem submetido a constrangimento ou ameaça. O consumidor cobrado em quantia indevida tem direito à repetição do indébito por valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros legais, salvo engano justificável.",
+      "resumo": "Cobrança indevida: direito à devolução em dobro do valor cobrado a mais (salvo engano justificável). Vedadas ameaças e constrangimentos.",
+      "palavras_chave": [
+        "cobranca indevida",
+        "cobrado errado",
+        "cobrado a mais",
+        "cobrado duas vezes",
+        "cobraram errado",
+        "cobraram indevido",
+        "me cobraram",
+        "cobrança duplicada",
+        "devolucao em dobro",
+        "valor indevido",
+        "estorno",
+        "cobranca abusiva",
+        "me ameacaram cobrando",
+        "cobraram sem autorizacao",
+        "cobrança indevida",
+        "pagamento indevido",
+        "pagamento duplicado",
+        "cobrado incorreto"
+      ],
+      "prazos": {},
+      "direitos": [
+        "devolução em dobro do excesso cobrado",
+        "correção monetária e juros legais"
+      ]
+    },
+    "art43": {
+      "numero": 43,
+      "titulo": "Cadastro de Consumidor — SPC, Serasa",
+      "texto": "O consumidor terá acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, bem como sobre as respectivas fontes. O consumidor inadimplente deve ser comunicado por escrito quando seu nome for inscrito em cadastro de inadimplência.",
+      "resumo": "Você tem direito de saber e corrigir o que está nos cadastros negativos (SPC, Serasa). Empresa deve avisar antes de negativar.",
+      "palavras_chave": [
+        "spc",
+        "serasa",
+        "nome sujo",
+        "negativado",
+        "cadastro inadimplente",
+        "restricao credito",
+        "nome negativado",
+        "inscricao spc",
+        "inscricao serasa",
+        "retificacao cadastro"
+      ],
+      "prazos": {}
+    },
+    "art44": {
+      "numero": 44,
+      "titulo": "Cadastros de Reclamações Fundamentadas",
+      "texto": "Os órgãos públicos de defesa do consumidor manterão cadastros atualizados de reclamações fundamentadas contra fornecedores de produtos e serviços.",
+      "resumo": "Procon e órgãos de defesa mantêm cadastro público de empresas com reclamações — você pode consultar antes de comprar.",
+      "palavras_chave": [
+        "cadastro empresa",
+        "reclamacao empresa",
+        "empresa ruim",
+        "historico empresa",
+        "procon cadastro"
+      ],
+      "prazos": {}
+    },
+    "art46": {
+      "numero": 46,
+      "titulo": "Contratos — Ciência do Consumidor",
+      "texto": "Os contratos não obrigarão os consumidores se não lhes for dada a oportunidade de tomar conhecimento prévio de seu conteúdo, ou se os respectivos instrumentos forem redigidos de modo a dificultar a compreensão.",
+      "resumo": "Contrato com letras miúdas ou linguagem confusa não obriga o consumidor se ele não teve chance de ler antes.",
+      "palavras_chave": [
+        "contrato",
+        "nao li o contrato",
+        "nao sabia das condicoes",
+        "contrato confuso",
+        "letra pequena",
+        "letras miudas",
+        "nao entendi contrato",
+        "contrato em outra lingua",
+        "clausula escondida"
+      ],
+      "prazos": {}
+    },
+    "art47": {
+      "numero": 47,
+      "titulo": "Interpretação Favorável ao Consumidor",
+      "texto": "As cláusulas contratuais serão interpretadas de maneira mais favorável ao consumidor.",
+      "resumo": "Em caso de dúvida sobre cláusula contratual, a interpretação é sempre a mais favorável ao consumidor — 'in dubio pro consumidor'.",
+      "palavras_chave": [
+        "interpretacao contrato",
+        "clausula confusa",
+        "dubio pro consumidor",
+        "interpretacao favoravel",
+        "clausula ambigua",
+        "dupla interpretacao"
+      ],
+      "prazos": {}
+    },
+    "art48": {
+      "numero": 48,
+      "titulo": "Obrigatoriedade da Oferta — Contrato Escrito",
+      "texto": "As declarações de vontade constantes de escritos particulares, recibos e pré-contratos relativos às relações de consumo vinculam o fornecedor.",
+      "resumo": "Recibos, pré-contratos e qualquer escrito do fornecedor obrigam a empresa — vale como compromisso contratual.",
+      "palavras_chave": [
+        "recibo",
+        "pre-contrato",
+        "escrito",
+        "compromisso",
+        "proposta escrita",
+        "declaracao escrita"
+      ],
+      "prazos": {}
+    },
+    "art49": {
+      "numero": 49,
+      "titulo": "Direito de Arrependimento — Compras fora do Estabelecimento",
+      "texto": "O consumidor pode desistir do contrato em 7 dias a contar do recebimento do produto, em compras fora do estabelecimento (online, telefone, domicílio). Os valores pagos serão devolvidos imediatamente e integralmente, incluindo frete.",
+      "resumo": "Compra online ou por telefone: 7 dias para desistir após receber. Reembolso integral obrigatório, inclusive frete de envio.",
+      "palavras_chave": [
+        "arrependimento",
+        "compra online",
+        "7 dias",
+        "desistir",
+        "cancelar compra",
+        "nao quero mais",
+        "comprei pela internet",
+        "comprei no site",
+        "comprei pelo app",
+        "direito de arrependimento",
+        "devolver sem defeito",
+        "desistir da compra",
+        "compra a distancia",
+        "compra por telefone",
+        "quero devolver",
+        "devolver compra",
+        "cancelar pedido online",
+        "arrependido da compra",
+        "me arrependi",
+        "cancelar compra",
+        "quero cancelar",
+        "desistir da compra",
+        "nao quero mais",
+        "comprei e nao quero",
+        "arrependimento compra",
+        "devolucao sem defeito",
+        "nao gostei do produto",
+        "mudei de ideia",
+        "devolver produto sem defeito"
+      ],
+      "prazos": {
+        "arrependimento_dias": 7
+      }
+    },
+    "art50": {
+      "numero": 50,
+      "titulo": "Garantia Contratual — Complemento da Legal",
+      "texto": "A garantia contratual é complementar à legal e será conferida mediante termo escrito. O termo de garantia ou equivalente deve ser padronizado e esclarecer de maneira adequada em que consiste a garantia, bem como a forma, o prazo e o lugar em que pode ser exercitada.",
+      "resumo": "A garantia da fabricante (ex: 1 ano) é adicional à garantia legal do CDC — você tem as duas ao mesmo tempo.",
+      "palavras_chave": [
+        "garantia fabricante",
+        "garantia contratual",
+        "garantia estendida",
+        "prazo garantia",
+        "termo garantia",
+        "certificado garantia",
+        "garantia expirou mas"
+      ],
+      "prazos": {}
+    },

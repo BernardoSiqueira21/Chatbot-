@@ -180,4 +180,10 @@ def detectar_tom_usuario(msg):
         return "urgente"
     return "neutro"
 
+def obter_ultima_intencao(historico):
+    for item in reversed(historico or []):
+        i = item.get("intencao")
+        if i and i not in ("desconhecida","vazia","erro","loop","reclamacao_formal","calculo_prazo"):
+            return i
+    return None
 

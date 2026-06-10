@@ -46,6 +46,47 @@ _MESES = {
     "julho":7,"agosto":8,"setembro":9,"outubro":10,"novembro":11,"dezembro":12,
 }
 
+    """Extrai datas relativas: 'há 3 dias', 'semana passada', 'ontem', etc."""
+    hoje = hoje or datetime.date.today()
+    tn   = _norm(texto)
+
+    # "há X dias/semanas/meses"
+    m = re.search(r'ha\s+(\d+)\s+(dia|semana|mes|ano)', tn)
+    if m:
+        n, unidade = int(m.group(1)), m.group(2)
+        delta = {"dia": n, "semana": n*7, "mes": n*30, "ano": n*365}.get(unidade, 0)
+        data = hoje - datetime.timedelta(days=delta)
+        return data.strftime("%d/%m/%Y")
+
+    # "ontem"
+    if "ontem" in tn:
+        return (hoje - datetime.timedelta(days=1)).strftime("%d/%m/%Y")
+
+    # "semana passada"
+    if "semana passada" in tn:
+        return (hoje - datetime.timedelta(days=7)).strftime("%d/%m/%Y")
+
+    # "mes passado"
+    if "mes passado" in tn or "mês passado" in tn:
+        return (hoje - datetime.timedelta(days=30)).strftime("%d/%m/%Y")
+
+    # "em fevereiro", "em janeiro de 2026" etc.
+    for mes_nome, mes_num in _MESES.items():
+        m = re.search(rf'\bem\s+{mes_nome}(?:\s+de\s+(\d{{4}}))?', tn)
+        if m:
+            ano = int(m.group(1)) if m.group(1) else hoje.year
+            try:
+                return datetime.date(ano, mes_num, 1).strftime("01/%m/%Y")
+            except ValueError:
+                pass
+
+    return None
+
+def detectar_entidades(texto):
+    """Extrai entidades: empresa, produto, valor, data, canal, protocolo, tentativas."""
+    tn   = _norm(texto)
+    ents = {}
+
 
 def obter_ultima_intencao(historico):
     if not historico:

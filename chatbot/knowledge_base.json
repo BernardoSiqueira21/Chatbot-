@@ -958,3 +958,34 @@
       ],
       "prazos": {}
     },
+    "art101": {
+      "numero": 101,
+      "titulo": "Ação Civil — Legitimidade",
+      "texto": "Na ação de responsabilidade civil do fornecedor de produtos e serviços, sem prejuízo do disposto nos Capítulos I e II deste Título, serão observadas as normas do Código de Processo Civil e, quanto à legitimidade para propor a ação: I — no caso de acidente de consumo, são legitimados a propor a ação o consumidor ou seus herdeiros ou sucessores.",
+      "resumo": "Em acidente de consumo, o consumidor ou seus herdeiros podem propor ação civil contra o fornecedor.",
+      "palavras_chave": [
+        "acao civil",
+        "processo",
+        "entrar na justica",
+        "propor acao",
+        "herdeiros",
+        "sucessores",
+        "legitimidade"
+      ],
+      "prazos": {}
+    },
+    "art104": {
+      "numero": 104,
+      "titulo": "Coisa Julgada — Ações Coletivas",
+      "texto": "As ações coletivas não induzem litispendência para as ações individuais, mas os efeitos da coisa julgada erga omnes ou ultra partes não beneficiarão os autores das ações individuais, se não for requerida sua suspensão no prazo de trinta dias.",
+      "resumo": "Ação coletiva e ação individual podem correr juntas. O consumidor pode pedir suspensão da individual para aproveitar a coletiva.",
+      "palavras_chave": [
+        "acao coletiva",
+        "class action",
+        "acao individual",
+        "litispendencia",
+        "suspensao acao",
+        "grupo consumidores"
+      ],
+      "prazos": {}
+    },

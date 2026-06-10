@@ -1,4 +1,13 @@
-import re
+"""
+memory.py — Memória de contexto do caso
+Extrai e persiste: empresa, produto, valor, data, canal, protocolo, tentativas, tom
+"""
+import re, unicodedata, datetime
+
+def _norm(t):
+    return "".join(c for c in unicodedata.normalize("NFD", t.lower())
+                   if unicodedata.category(c) != "Mn")
+
 
 
 def obter_ultima_intencao(historico):

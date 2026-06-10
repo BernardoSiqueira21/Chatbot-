@@ -169,11 +169,6 @@ def detectar_entidades(texto):
     return ents
 
 
-    if oferta_pendente:
-        novo_contexto["oferta_pendente"] = oferta_pendente
-    else:
-        novo_contexto["oferta_pendente"] = None
-
     # Rastreia se empresa já foi contactada
     sinais_contato = ["ja entrei", "já entrei", "liguei", "mandei email", "falei com",
                       "fui até", "reclamei", "protocolo", "ja reclamei", "já reclamei"]

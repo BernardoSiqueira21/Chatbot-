@@ -97,3 +97,7 @@ def _detectar_chave(mensagem):
             return chave
     return None
 
+def _norm(t):
+    return "".join(c for c in unicodedata.normalize("NFD", t.lower())
+                   if unicodedata.category(c) != "Mn")
+

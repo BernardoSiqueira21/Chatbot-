@@ -159,6 +159,14 @@ def detectar_entidades(texto):
         if m:
             ents["referencia"] = m.group(1)
 
+    # Tentativas de contato
+    m = re.search(r'\b(\d+)\s*(?:vezes?|tentativa|contato)', tn)
+    if m:
+        n = int(m.group(1))
+        if n > 0:
+            ents["tentativas"] = n
+
+    return ents
 
     num_trocas = novo_contexto.get("num_trocas", 0) + 1
     novo_contexto["num_trocas"] = num_trocas

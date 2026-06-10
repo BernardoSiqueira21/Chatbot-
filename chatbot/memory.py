@@ -109,39 +109,6 @@ def detectar_entidades(texto):
             ents["objeto"] = p
             break
 
-def detectar_tom_usuario(mensagem):
-    msg_lower = mensagem.lower()
-
-    palavras_frustracao = [
-        "absurdo", "ridiculo", "ridículo", "indignado", "indignada", "nao aguento", "não aguento",
-        "cansado", "cansada", "pessimo", "péssimo", "horrivel", "horrível", "nunca mais",
-        "prejudicado", "prejudicada", "lesado", "lesada", "inacreditavel", "inacreditável",
-        "um absurdo", "que vergonha", "nunca vi", "abuso", "revoltante", "revoltado",
-        "revoltada", "que raiva", "to com raiva", "tô com raiva", "fui lesado", "fui lesada",
-        "puta merda", "me lascaram", "me roubaram", "roubando", "ladrao", "ladrão",
-        "me enganaram", "enganação", "enganacao", "me passaram para trás",
-    ]
-
-    palavras_urgencia = [
-        "urgente", "urgencia", "urgência", "preciso ja", "preciso já", "hoje", "agora mesmo",
-        "nao pode esperar", "não pode esperar", "correndo", "rapido", "rápido", "imediato",
-        "preciso resolver hoje", "nao tenho tempo", "não tenho tempo", "emergência", "emergencia",
-        "muito urgente", "prazo vencendo", "prazo acabando", "ta vencendo", "tá vencendo",
-    ]
-
-    palavras_desespero = [
-        "desesperado", "desesperada", "nao sei o que fazer", "não sei o que fazer",
-        "estou perdido", "estou perdida", "sem saida", "sem saída", "nao tenho mais opcao",
-        "não tenho mais opção", "precisando muito", "ja tentei tudo", "já tentei tudo",
-    ]
-
-    if any(p in msg_lower for p in palavras_desespero):
-        return "desesperado"
-    if any(p in msg_lower for p in palavras_frustracao):
-        return "frustrado"
-    if any(p in msg_lower for p in palavras_urgencia):
-        return "urgente"
-    return "neutro"
 
 
 def extrair_entidades(mensagem):

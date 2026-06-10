@@ -989,3 +989,18 @@
       ],
       "prazos": {}
     },
+    "art5": {
+      "numero": 5,
+      "titulo": "Instrumentos de Defesa do Consumidor",
+      "texto": "Para a execução da Política Nacional das Relações de Consumo, contará o poder público com os seguintes instrumentos: manutenção de assistência jurídica, integral e gratuita para o consumidor carente; instituição de Promotorias de Justiça de Defesa do Consumidor; criação de delegacias de polícia especializadas no atendimento de consumidores vítimas de infrações penais de consumo; criação de Juizados Especiais de Pequenas Causas e Varas Especializadas para a solução de litígios de consumo; concessão de estímulos à criação e desenvolvimento das Associações de Defesa do Consumidor.",
+      "resumo": "O Estado deve garantir ao consumidor: assistência jurídica gratuita, Procon, delegacias especializadas, Juizados Especiais e apoio a associações de defesa.",
+      "palavras_chave": [
+        "assistencia juridica gratuita",
+        "procon",
+        "delegacia consumidor",
+        "juizado especial",
+        "associacao defesa consumidor",
+        "instrumentos defesa"
+      ],
+      "prazos": {}
+    },

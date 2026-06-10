@@ -159,26 +159,6 @@ def detectar_entidades(texto):
         if m:
             ents["referencia"] = m.group(1)
 
-    # Valor monetário
-    match_valor = re.search(r"r\$\s?[\d.,]+|\d+\s*reais", texto, re.IGNORECASE)
-    if match_valor:
-        entidades["valor_mencionado"] = match_valor.group(0)
-
-    # Tipo de produto específico
-    produtos_duráveis = ["celular", "smartphone", "notebook", "computador", "televisão", "televisao",
-                         "tv", "geladeira", "fogão", "fogao", "lavadora", "maquina de lavar",
-                         "ar condicionado", "microondas", "tablet", "videogame"]
-    if any(p in texto for p in produtos_duráveis):
-        entidades["tipo_produto"] = "duravel"
-
-    # Plataformas específicas
-    if any(p in texto for p in ["mercado livre", "mercadolivre", "shopee", "amazon", "americanas",
-                                  "magazine luiza", "magalu", "casas bahia", "submarino"]):
-        entidades["marketplace"] = True
-
-    return entidades
-
-
 def atualizar_contexto(contexto_atual, intencao, mensagem, entidades=None, oferta_pendente=None):
     novo_contexto = dict(contexto_atual) if contexto_atual else {}
 

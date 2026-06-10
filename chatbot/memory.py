@@ -193,3 +193,11 @@ def obter_ultimas_intencoes(historico, n=5):
 def contar_intencao(historico, intencao):
     return sum(1 for i in (historico or []) if i.get("intencao") == intencao)
 
+def resumir_historico_para_llm(historico, n=3):
+    if not historico: return None
+    linhas = []
+    for item in (historico or [])[-n:]:
+        if item.get("usuario"): linhas.append(f"Usuário: {item['usuario'][:120]}")
+        if item.get("bot"):     linhas.append(f"Assistente: {item['bot'][:150]}")
+    return "\n".join(linhas) or None
+

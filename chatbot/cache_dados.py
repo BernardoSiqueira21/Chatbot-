@@ -62,3 +62,38 @@ def _salvar_cache(cache):
     except Exception as e:
         logger.warning(f"Cache escrita: {e}")
 
+def _detectar_chave(mensagem):
+    """Detecta qual dado está sendo pedido e retorna a chave do cache."""
+    mn = _norm(mensagem)
+
+    # Importa o mapa de moedas do websearch para consistência
+    try:
+        from chatbot.websearch import _MOEDAS_MAP, _norm as _ws_norm
+        mn_ws = _ws_norm(mensagem)
+        for termo in sorted(_MOEDAS_MAP.keys(), key=len, reverse=True):
+            par, _ = _MOEDAS_MAP[termo]
+            if termo in mn_ws:
+                # Usa o par como chave de cache (ex: "USD-BRL", "CNY-BRL")
+                return par.replace("-","_").lower()
+    except Exception:
+        pass
+
+    # Fallback para assuntos não-moeda
+    mapeamento = [
+        (["ibovespa","bolsa"],                              "ibovespa"),
+        (["selic","taxa selic","taxa basica"],              "selic"),
+        (["ipca","inflacao","igpm"],                        "ipca"),
+        (["salario minimo","piso salarial"],                "salario_minimo"),
+        (["teto inss","inss maximo","previdencia teto"],    "inss_teto"),
+        (["imposto renda","irpf"],                          "imposto_renda"),
+        (["fgts"],                                          "fgts"),
+        (["bolsa familia","bpc","auxilio"],                 "bolsa_familia"),
+        (["juros rotativo","rotativo cartao",
+          "juros cartao","limite juros cartao"],            "juros_rotativo"),
+        (["gasolina","combustivel"],                        "gasolina"),
+    ]
+    for termos, chave in mapeamento:
+        if any(t in mn for t in termos):
+            return chave
+    return None
+

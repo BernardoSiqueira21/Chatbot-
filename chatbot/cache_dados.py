@@ -124,3 +124,50 @@ def get_cache(mensagem):
     entrada["cache_hit"] = True
     entrada["idade_horas"] = round(idade / 3600, 1)
     return entrada
+
+def set_cache(mensagem, texto, fonte, confianca="media"):
+    """
+    Salva dado no cache com timestamp e nível de confiança.
+    """
+    chave = _detectar_chave(mensagem)
+    if not chave:
+        return
+
+    cache = _carregar_cache()
+    cache[chave] = {
+        "texto":      texto,
+        "fonte":      fonte,
+        "confianca":  confianca,
+        "timestamp":  time.time(),
+        "chave":      chave,
+        "categoria":  CATEGORIAS.get(chave, "anual"),
+    }
+    _salvar_cache(cache)
+    logger.debug(f"Cache salvo: {chave} (confianca={confianca})")
+
+def validar_duplo(texto1, fonte1, texto2, fonte2):
+    """
+    Compara dois valores numéricos encontrados em dois textos.
+    Retorna (texto_final, fonte_final, confianca).
+
+    Confiança ALTA: os dois valores numéricos principais concordam (±2%)
+    Confiança MÉDIA: divergem, usa o texto1 (mais recente/prioritário)
+    """
+    nums1 = _extrair_numeros(texto1)
+    nums2 = _extrair_numeros(texto2)
+
+    if not nums1 or not nums2:
+        return texto1, fonte1, "media"
+
+    # Compara o primeiro número significativo de cada
+    n1, n2 = nums1[0], nums2[0]
+    if n1 == 0 or n2 == 0:
+        return texto1, fonte1, "media"
+
+    diferenca = abs(n1 - n2) / max(n1, n2)
+    if diferenca <= 0.02:  # concordam com margem de 2%
+        return texto1, f"{fonte1} + {fonte2}", "alta"
+    else:
+        logger.info(f"Validação divergiu: {n1} vs {n2} ({diferenca:.1%})")
+        return texto1, fonte1, "media"
+

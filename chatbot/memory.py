@@ -109,6 +109,18 @@ def detectar_entidades(texto):
             ents["objeto"] = p
             break
 
+    # Valor monetário
+    m = re.search(r'r\$\s*([\d.]+(?:,\d{1,2})?)', tn)
+    if not m:
+        m = re.search(r'([\d.]+(?:,\d{1,2})?)\s*(?:reais|real)', tn)
+    if m:
+        try:
+            v = m.group(1).replace(".", "").replace(",", ".")
+            val = float(v)
+            ents["valor"] = f"R$ {val:,.2f}".replace(",","X").replace(".",",").replace("X",".")
+        except Exception:
+            pass
+
 
 
 def extrair_entidades(mensagem):

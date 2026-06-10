@@ -143,6 +143,16 @@ def detectar_entidades(texto):
             ents["canal"] = canal
             break
 
+    # Protocolo / número de pedido / ordem de serviço
+    for label, pattern in [
+        ("protocolo",  r'\b(?:protocolo|prot\.?)\s*[:\-#]?\s*(\d{4,})\b'),
+        ("pedido",     r'\b(?:pedido|order|ordem)\s*[:\-#]?\s*(\d{4,})\b'),
+        ("os",         r'\b(?:os|o\.s\.?|ordem de servico)\s*[:\-#]?\s*(\d{4,})\b'),
+    ]:
+        m = re.search(pattern, tn)
+        if m:
+            ents[label] = m.group(1)
+            break
 
     # Valor monetário
     match_valor = re.search(r"r\$\s?[\d.,]+|\d+\s*reais", texto, re.IGNORECASE)

@@ -169,11 +169,6 @@ def detectar_entidades(texto):
     return ents
 
 
-    # Extrai valor monetário se não tiver ainda
-    match_valor = re.search(r"R\$\s?[\d.,]+|\d+\s*reais", mensagem, re.IGNORECASE)
-    if match_valor and "valor_mencionado" not in novo_contexto:
-        novo_contexto["valor_mencionado"] = match_valor.group(0)
-
     # Extrai entidades adicionais da mensagem
     entidades_msg = extrair_entidades(mensagem)
     if entidades_msg:

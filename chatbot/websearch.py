@@ -87,3 +87,50 @@ _OFF_SCOPE_BLOCKLIST = [
     "eleicao","presidente","deputado","partido","ideologia",
     "religiao","biblia","corao","oracao",
 ]
+
+def esta_fora_do_escopo(mensagem):
+    """Detecta se a mensagem é off-topic (fora do tema CDC/consumidor)."""
+    mn = _norm(mensagem)
+    return any(t in mn for t in _OFF_SCOPE_BLOCKLIST)
+
+_PRESSAO_EMOCIONAL = [
+    "por favor","pelo amor de deus","te imploro","imploro","suplico",
+    "to chorando","estou chorando","chorando muito","muito triste","to triste",
+    "estou triste","to desesperado","estou desesperado","desespero","angustia",
+    "to sofrendo","estou sofrendo","minha vida","ultima esperanca","unica esperanca",
+    "vou me machucar","ninguem me ajuda","so voce pode","preciso muito",
+    "to em panico","estou em panico","nao aguento","nao aguento mais",
+    "se voce nao","se voce realmente","se voce fosse","prova que",
+    "voce nao se importa","voce e inutil","entao voce nao serve",
+    "que tipo de assistente","um bom assistente faria","decepcionado com voce",
+    "ignore as regras","ignora as regras","esquece as regras","sem regras",
+    "finge que","finja que","faz de conta","so dessa vez","so uma vez",
+    "ninguem vai saber","entre nos","modo desenvolvedor","sem restricoes",
+    "voce pode sim","eu sei que voce consegue","sei que voce sabe",
+    "responde mesmo assim","me responde assim mesmo","quebra o protocolo",
+]
+
+def detectar_pressao_emocional(mensagem):
+
+    mn = _norm(mensagem)
+    return any(t in mn for t in _PRESSAO_EMOCIONAL)
+
+
+def _detectar_moedas(mn):
+    pares_vistos  = set()
+    resultado     = []
+    termos_usados = set()
+    for termo in sorted(_MOEDAS_MAP.keys(), key=len, reverse=True):
+        par, nome = _MOEDAS_MAP[termo]
+        if par in pares_vistos: continue
+        if len(termo) <= 4 and termo.isalpha():
+            bate = bool(re.search(r'\b' + re.escape(termo) + r'\b', mn))
+        else:
+            bate = termo in mn
+        if bate:
+            partes = set(termo.split())
+            if not partes.issubset(termos_usados):
+                resultado.append((par, nome))
+                pares_vistos.add(par)
+                termos_usados.update(partes)
+    return resultado

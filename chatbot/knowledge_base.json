@@ -77,3 +77,85 @@
       ],
       "prazos": {}
     },
+    "art114": {
+      "numero": 114,
+      "titulo": "Alteração da Lei dos Juizados Especiais",
+      "texto": "O art. 2° da Lei n° 7.244, de 7 de novembro de 1984, passa a ter a seguinte redação: Art. 2° — As causas de valor até vinte salários mínimos serão processadas e julgadas pelo Juizado Especial de Pequenas Causas, desde que não sejam de natureza alimentar, falimentar, fiscal, de interesse da Fazenda Pública, nem se refiram a acidente do trabalho, a resíduos e ao estado e capacidade das pessoas, ainda que de cunho patrimonial.",
+      "resumo": "Causas de consumo até 20 salários mínimos vão ao Juizado Especial — processo gratuito e sem advogado.",
+      "palavras_chave": [
+        "juizado especial",
+        "pequenas causas",
+        "20 salarios minimos",
+        "sem advogado processo",
+        "processo gratuito consumidor"
+      ],
+      "prazos": {}
+    },
+    "art115": {
+      "numero": 115,
+      "titulo": "Revogações",
+      "texto": "Revogam-se: — O art. 2° do Decreto-lei n° 2.182, de 23 de novembro de 1984; — Os arts. 22 e 23 do Decreto-lei n° 986, de 21 de outubro de 1969.",
+      "resumo": "Artigo de revogação de normas anteriores incompatíveis com o CDC.",
+      "palavras_chave": [
+        "revogacao norma",
+        "lei anterior revogada",
+        "decreto revogado cdc"
+      ],
+      "prazos": {}
+    },
+    "art116": {
+      "numero": 116,
+      "titulo": "Vigência",
+      "texto": "Este Código entrará em vigor noventa dias após sua publicação.",
+      "resumo": "O CDC entrou em vigor 90 dias após publicação em setembro de 1990.",
+      "palavras_chave": [
+        "vigencia cdc",
+        "quando entrou vigor",
+        "data vigencia lei",
+        "noventa dias publicacao"
+      ],
+      "prazos": {}
+    },
+    "art117": {
+      "numero": 117,
+      "titulo": "Acréscimo à Lei de Ação Civil Pública — Meio Ambiente",
+      "texto": "Acrescente-se à Lei 7.347/85 o seguinte dispositivo, renumerando-se o atual parágrafo único como §1°.",
+      "resumo": "Ampliação da ação civil pública para incluir defesa do consumidor junto ao meio ambiente.",
+      "palavras_chave": [
+        "acao civil publica",
+        "lei 7347",
+        "meio ambiente consumidor",
+        "ampliacao lei"
+      ],
+      "prazos": {}
+    },
+    "art118": {
+      "numero": 118,
+      "titulo": "Normas de Transição",
+      "texto": "As normas de defesa do consumidor ora instituídas não se aplicam às relações jurídicas já constituídas definitivamente antes de sua vigência.",
+      "resumo": "O CDC não se aplica retroativamente a contratos já concluídos antes de sua entrada em vigor.",
+      "palavras_chave": [
+        "retroatividade cdc",
+        "contrato antigo",
+        "aplicacao retroativa",
+        "antes do cdc",
+        "norma transicao"
+      ],
+      "prazos": {}
+    },
+    "art119": {
+      "numero": 119,
+      "titulo": "Sanção — Promulgação",
+      "texto": "Esta lei foi sancionada pelo Presidente da República Fernando Collor de Mello em 11 de setembro de 1990.",
+      "resumo": "O CDC foi sancionado em 11 de setembro de 1990.",
+      "palavras_chave": [
+        "sancao cdc",
+        "promulgacao lei",
+        "data cdc",
+        "lei 8078 1990",
+        "setembro 1990",
+        "criacao cdc"
+      ],
+      "prazos": {}
+    }
+  },

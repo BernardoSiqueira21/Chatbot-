@@ -508,3 +508,214 @@
       "art": "Art. 43 § 2°"
     }
   },
+  "dados_atualizados": {
+    "cartao_credito_juros": {
+      "titulo": "Juros do Rotativo do Cartão de Crédito — Regras 2026",
+      "conteudo": "JUROS DO ROTATIVO DO CARTÃO DE CRÉDITO (dados de 2026):\n\nTAXA COBRADA: Os juros do rotativo chegam a 435,9% ao ano em média (fevereiro/2026, Banco Central). É uma das modalidades de crédito mais caras do mercado.\n\nTETO DA DÍVIDA (proteção legal): Pela regulação vigente, a soma de juros e encargos NÃO PODE ultrapassar 100% do valor principal original. Ou seja: uma dívida de R$ 1.000 nunca pode gerar saldo devedor superior a R$ 2.000 (dívida original + juros). Isso evita que a dívida cresça indefinidamente.\n\nPRAZO: O rotativo dura apenas 30 dias. Se não for quitado, o banco é obrigado a transferir o saldo para parcelamento com taxas menores.\n\nALTERNATIVA: Parcelamento da fatura (~200,2% ao ano) é mais barato que o rotativo, mas cuidado com acúmulo de parcelas.\n\nPara comparar taxas por banco: Banco Central do Brasil — bcb.gov.br (ferramenta de taxas de juros).",
+      "vigencia": "2026 (dados BC fevereiro/2026)",
+      "fonte": "Banco Central do Brasil + Agência Brasil + Valor Econômico (2026)",
+      "palavras_chave": [
+        "juros rotativo",
+        "rotativo cartao",
+        "limite juros cartao",
+        "taxa cartao credito",
+        "juros maximo cartao",
+        "cartao juros alto",
+        "quanto cobram juros cartao",
+        "juro cartao",
+        "porcentagem juros cartao",
+        "150 por cento",
+        "100 por cento juros",
+        "juros credito rotativo",
+        "fatura cartao juros",
+        "encargos cartao",
+        "teto juros",
+        "limite juros",
+        "maximo juros cartao",
+        "banco cobrar juros cartao",
+        "lei desenrola",
+        "14690",
+        "5171",
+        "cmn 5171",
+        "juros cartao lei"
+      ]
+    },
+    "taxa_selic": {
+      "titulo": "Taxa Selic — Referência para Juros e Correção",
+      "conteudo": "A taxa Selic é a taxa básica de juros da economia brasileira, definida pelo Copom (Comitê de Política Monetária do Banco Central). Ela serve de referência para financiamentos, empréstimos e correção de valores. Consulte o valor atual em bcb.gov.br — a Selic é revisada a cada 45 dias aproximadamente.",
+      "fonte": "Banco Central do Brasil",
+      "palavras_chave": [
+        "selic",
+        "taxa basica",
+        "taxa juros brasil",
+        "copom",
+        "banco central juros"
+      ]
+    },
+    "salario_minimo_2025": {
+      "titulo": "Salário Mínimo 2026",
+      "conteudo": "O salário mínimo em 2026 é de R$ 1.621,00, em vigor desde 1º de janeiro de 2026 (aumento de 6,79% em relação aos R$ 1.518 de 2025). Esse valor é a base para aposentadorias do INSS, BPC, seguro-desemprego e outros benefícios. Para o Juizado Especial Cível: causas até 20 salários mínimos (R$ 32.420,00) podem ser movidas sem advogado.",
+      "vigencia": "1º de janeiro de 2026",
+      "fonte": "Diário Oficial da União, 24/12/2025",
+      "palavras_chave": [
+        "salario minimo",
+        "salário mínimo",
+        "piso salarial",
+        "salario minimo 2026",
+        "valor minimo",
+        "1621",
+        "quanto ganha minimo",
+        "salario base",
+        "piso nacional",
+        "juizado especial valor",
+        "valor salario"
+      ]
+    },
+    "pix_limites": {
+      "titulo": "Pix — Limites e Proteção ao Consumidor",
+      "conteudo": "O Pix é regulado pelo Banco Central. Em casos de fraude (golpe do Pix), o consumidor deve: 1) Registrar boletim de ocorrência imediatamente; 2) Comunicar o banco em até 80 minutos para tentativa de bloqueio via Mecanismo Especial de Devolução (MED); 3) O banco tem até 7 dias úteis para analisar e responder. O banco não é obrigado a devolver valores em golpes onde o próprio cliente autorizou a transferência (engenharia social), mas pode devolver por política interna.",
+      "fonte": "Resolução BCB 1/2020 e atualizações 2024",
+      "palavras_chave": [
+        "golpe pix",
+        "fraude pix",
+        "pix fraude",
+        "devolucao pix",
+        "transferencia pix errada",
+        "med pix",
+        "mecanismo devolucao pix",
+        "cai em golpe pix",
+        "transferi errado pix",
+        "pix roubado",
+        "fui enganado pix",
+        "pix indevido",
+        "mandei pix errado",
+        "pix enviado errado",
+        "cai no golpe pix",
+        "pix errado"
+      ]
+    },
+    "superendividamento": {
+      "titulo": "Lei do Superendividamento — Lei 14.181/2021",
+      "conteudo": "A Lei 14.181/2021 (que alterou o CDC) protege consumidores superendividados — aqueles que não conseguem pagar suas dívidas sem comprometer o mínimo existencial (alimentação, saúde, moradia). Direitos: renegociação de todas as dívidas em um único processo judicial; preservação do mínimo existencial; proibição de práticas abusivas de crédito; vedação de publicidade de crédito irresponsável.",
+      "vigencia": "Julho de 2021 em diante",
+      "fonte": "Lei 14.181/2021",
+      "palavras_chave": [
+        "superendividado",
+        "superendividamento",
+        "nao consigo pagar dividas",
+        "dividas demais",
+        "muitas dividas acumuladas",
+        "renegociar todas dividas",
+        "lei superendividamento",
+        "minimo existencial divida",
+        "endividado demais",
+        "sem conseguir pagar divida",
+        "devendo demais",
+        "nao tenho como pagar dividas",
+        "divida acima do limite",
+        "dividas me sufocando"
+      ]
+    },
+    "seguro_dpvat_2025": {
+      "titulo": "DPVAT — Seguro de Trânsito",
+      "conteudo": "O DPVAT (Seguro de Danos Pessoais Causados por Veículos Automotores de Vias Terrestres) foi extinto em 2020 e substituído pelo SPVAT (Sistema de Proteção por Morte e Invalidez no Trânsito) em 2024, administrado pela Caixa Seguradora. Cobre: morte (R$ 13.500), invalidez permanente (até R$ 13.500) e despesas médicas (até R$ 2.700). Para acionar: caixa.gov.br/seguradora.",
+      "fonte": "Lei 14.744/2023",
+      "palavras_chave": [
+        "dpvat",
+        "spvat",
+        "seguro transito",
+        "acidente carro",
+        "indenizacao acidente",
+        "seguro obrigatorio",
+        "atropelamento indenizacao"
+      ]
+    },
+    "cobranca_abusiva_2024": {
+      "titulo": "Práticas Abusivas de Cobrança — Atualização 2024",
+      "conteudo": "Além das vedações do Art. 42 do CDC, a Resolução CMN 4.949/2021 (atualizada em 2024) proíbe: mensagens de cobrança fora do horário das 8h às 20h; contato com terceiros sobre a dívida (exceto para localizar o devedor); exposição em redes sociais; ameaças. Reclamações: Procon, consumidor.gov.br ou Banco Central (para instituições financeiras).",
+      "fonte": "Art. 42 CDC + Resolução CMN 4.949/2021",
+      "palavras_chave": [
+        "ligacao cobranca",
+        "horario cobranca",
+        "ligam fora hora",
+        "cobranca fora horario",
+        "mensagem cobranca noite",
+        "assedio cobranca",
+        "me ligam todo dia cobrando",
+        "cobranca abusiva",
+        "me perturbam cobrando",
+        "ligacoes cobranca"
+      ]
+    },
+    "ecommerce_direitos": {
+      "titulo": "Direitos do Consumidor em E-commerce",
+      "conteudo": "O e-commerce no Brasil é regulado pelo Decreto 7.962/2013 (Lei do E-commerce) e pelo CDC.\n\nDireitos garantidos:\n• Arrependimento em 7 dias após recebimento sem precisar justificar (Art. 49 CDC)\n• Frete de devolução por conta da loja\n• Informações claras sobre produto, preço, prazo e empresa\n• CNPJ, endereço e telefone do vendedor obrigatórios no site\n• Confirmação da compra por e-mail obrigatória\n• Reembolso integral em até 10 dias úteis após cancelamento\n\nMarketplace: a plataforma (Mercado Livre, Shopee, Amazon) responde solidariamente com o vendedor quando há problemas com o produto.",
+      "palavras_chave": [
+        "ecommerce",
+        "e-commerce",
+        "compra online",
+        "loja virtual",
+        "marketplace",
+        "shopee",
+        "mercado livre",
+        "amazon",
+        "americanas",
+        "direitos compra online",
+        "decreto 7962",
+        "lei ecommerce",
+        "loja online",
+        "shopee defeito",
+        "shopee problema",
+        "aliexpress defeito",
+        "shein devolucao",
+        "loja virtual problema",
+        "site online defeito",
+        "compra site",
+        "pedido site"
+      ],
+      "fonte": "Decreto 7.962/2013 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "marketplace_responsabilidade": {
+      "titulo": "Responsabilidade do Marketplace (Mercado Livre, Shopee, etc.)",
+      "conteudo": "Decisão do STJ (REsp 1.744.213): o marketplace responde solidariamente com o vendedor quando: não verifica adequadamente os vendedores; produto é defeituoso ou não entregue; vendedor some ou não resolve o problema.\n\nO consumidor pode acionar diretamente a plataforma (Mercado Livre, Shopee, Amazon, Magalu, etc.) mesmo que o vendedor seja um terceiro.\n\nComo acionar: abra disputa na própria plataforma. Se não resolver: consumidor.gov.br ou Procon.",
+      "palavras_chave": [
+        "marketplace responsavel",
+        "mercado livre responsabilidade",
+        "shopee problema",
+        "vendedor sumiu marketplace",
+        "plataforma responsavel",
+        "amazon problema",
+        "magalu responsavel",
+        "comprei no marketplace",
+        "vendedor terceiro",
+        "shopee responsavel",
+        "aliexpress responsavel",
+        "shein responsavel",
+        "mercado livre problema vendedor",
+        "amazon vendedor terceiro",
+        "plataforma responsavel",
+        "quem responde marketplace"
+      ],
+      "fonte": "STJ — REsp 1.744.213 + CDC Art. 3°",
+      "vigencia": "Jurisprudência consolidada"
+    },
+    "taxa_cdi": {
+      "titulo": "CDI — Taxa e Investimentos",
+      "conteudo": "O CDI (Certificado de Depósito Interbancário) é a taxa de referência para investimentos de renda fixa no Brasil. Geralmente fica muito próxima à Selic.\n\nUsada como base para: CDBs, LCIs, LCAs, fundos DI, poupança e outros.\nValor atual: consulte o site da B3 (b3.com.br) ou do Banco Central (bcb.gov.br).\n\nConsumidor: ao contratar investimento, peça a taxa em % do CDI. Quanto mais perto de 100% do CDI (ou acima), melhor o rendimento.",
+      "palavras_chave": [
+        "cdi",
+        "taxa cdi",
+        "rendimento cdi",
+        "investimento cdi",
+        "porcentagem cdi",
+        "cdb",
+        "lci",
+        "lca",
+        "renda fixa",
+        "quanto rende",
+        "rendimento investimento"
+      ],
+      "fonte": "B3 / Banco Central do Brasil",
+      "vigencia": "Atualizado diariamente"
+    },

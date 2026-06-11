@@ -25,3 +25,21 @@ def _buscar_html(query):
     except Exception as e:
         logger.warning(f"Busca erro: {e}")
         return None
+
+ATUALIZACOES = [
+    {
+        "chave": "salario_minimo_2025",
+        "query": "salário mínimo Brasil 2026 valor atual decreto",
+        "titulo": "Salário Mínimo 2026",
+    },
+    {
+        "chave": "cartao_credito_juros",
+        "query": "limite juros rotativo cartão crédito 2025 2026 banco central percentual",
+        "titulo": "Juros do Rotativo do Cartão de Crédito",
+    },
+    {
+        "chave": "taxa_selic",
+        "query": "taxa selic atual 2026 banco central copom",
+        "titulo": "Taxa Selic Atual",
+    },
+]

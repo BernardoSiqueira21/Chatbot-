@@ -160,3 +160,33 @@ def stats_route():
         "taxa_web_pct":       round(s["via_web"] / total * 100, 1),
         "tempo_medio_llm_ms": media_ms,
     })
+
+@app.route("/cache", methods=["GET"])
+def ver_cache():
+    """Visualiza o estado atual do cache de dados."""
+    try:
+        from chatbot.cache_dados import listar_cache
+        return jsonify(listar_cache())
+    except Exception as e:
+        return jsonify({"erro": str(e)}), 500
+
+@app.route("/cache", methods=["DELETE"])
+def limpar_cache():
+    """Limpa o cache de dados."""
+    try:
+        from chatbot.cache_dados import limpar_cache as _limpar
+        _limpar()
+        return jsonify({"ok": True, "mensagem": "Cache limpo"})
+    except Exception as e:
+        return jsonify({"erro": str(e)}), 500
+
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({
+        "status":         "ok",
+        "llm_disponivel": llm_disponivel(),
+        "modelo_llm":     "llama-3.3-70b-versatile (Groq)",
+    })
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=5000)

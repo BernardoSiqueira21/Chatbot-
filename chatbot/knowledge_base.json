@@ -159,3 +159,114 @@
       "prazos": {}
     }
   },
+  "orgaos_defesa": {
+    "procon": {
+      "nome": "Procon",
+      "descricao": "Órgão estadual/municipal de proteção ao consumidor. Media conflitos, aplica multas e sanciona empresas. Presente em todos os estados.",
+      "como_acionar": "Site do Procon do seu estado ou presencialmente. Leve: documentos do caso, nota fiscal, protocolos de atendimento.",
+      "prazo_resposta": "Variável por estado",
+      "palavras_chave": [
+        "procon",
+        "orgao de defesa",
+        "reclamar formalmente",
+        "denuncia",
+        "sancao",
+        "onde reclamar",
+        "acionar procon",
+        "registrar procon",
+        "ir ao procon",
+        "como usar procon",
+        "procon online",
+        "procon sp",
+        "procon rj",
+        "abrir reclamacao procon"
+      ]
+    },
+    "consumidor_gov": {
+      "nome": "consumidor.gov.br",
+      "descricao": "Plataforma federal de resolução de conflitos. Empresas cadastradas têm prazo para responder publicamente. Respostas são públicas e auditáveis.",
+      "como_acionar": "consumidor.gov.br — crie conta com CPF, localize a empresa e registre a reclamação. Prazo de resposta: até 10 dias úteis.",
+      "prazo_resposta": "Até 10 dias úteis",
+      "palavras_chave": [
+        "consumidor gov",
+        "plataforma governo",
+        "reclamar online",
+        "consumidorgov",
+        "onde reclamar online",
+        "site reclamacao"
+      ]
+    },
+    "juizado_especial": {
+      "nome": "Juizado Especial Cível (JEC)",
+      "descricao": "Processo gratuito sem advogado para valores até 20 salários mínimos. Mais rápido que justiça comum. Acima de 20 SM, advogado obrigatório.",
+      "como_acionar": "JEC mais próximo com: CPF, RG, endereço da empresa, documentos do caso, descrição do pedido e valor estimado.",
+      "prazo_resposta": "Processo mais rápido que justiça comum",
+      "palavras_chave": [
+        "juizado especial",
+        "pequenas causas",
+        "processar",
+        "sem advogado",
+        "dano moral",
+        "jec",
+        "entrar na justica",
+        "processo judicial",
+        "acao judicial"
+      ]
+    },
+    "ans": {
+      "nome": "ANS — Agência Nacional de Saúde Suplementar",
+      "descricao": "Regula planos de saúde. Acionar quando o plano nega cobertura prevista no Rol de Procedimentos ou descredencia médico/hospital.",
+      "como_acionar": "0800 701 9656 ou ans.gov.br. Leve: contrato, carteirinha e negativa por escrito.",
+      "prazo_resposta": "Varia por tipo de reclamação",
+      "palavras_chave": [
+        "plano de saude",
+        "convenio medico",
+        "ans",
+        "negativa cobertura",
+        "plano negou",
+        "descredenciamento",
+        "rol procedimentos",
+        "plano negou",
+        "plano de saude negou",
+        "convenio negou cobertura",
+        "seguro saude negou",
+        "plano recusou",
+        "cobertura negada plano"
+      ]
+    },
+    "anac": {
+      "nome": "ANAC — Agência Nacional de Aviação Civil",
+      "descricao": "Regula aviação civil. Para problemas com voos, bagagens, cancelamentos, overbooking e atrasos.",
+      "como_acionar": "anac.gov.br ou ligue 163.",
+      "prazo_resposta": "Varia",
+      "palavras_chave": [
+        "voo",
+        "aviao",
+        "companhia aerea",
+        "bagagem",
+        "voo cancelado",
+        "voo atrasado",
+        "overbooking",
+        "anac",
+        "atraso voo",
+        "extravio bagagem"
+      ]
+    },
+    "anatel": {
+      "nome": "ANATEL — Agência Nacional de Telecomunicações",
+      "descricao": "Regula telefonia, internet e TV por assinatura. Acionar para problemas de qualidade, cobranças indevidas ou cancelamento de serviço.",
+      "como_acionar": "anatel.gov.br ou ligue 1331.",
+      "prazo_resposta": "Varia",
+      "palavras_chave": [
+        "telefone",
+        "internet",
+        "banda larga",
+        "tv a cabo",
+        "operadora",
+        "anatel",
+        "sinal ruim",
+        "internet lenta",
+        "cobrado internet",
+        "cancelar telefone"
+      ]
+    },

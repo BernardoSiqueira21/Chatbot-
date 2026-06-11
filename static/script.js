@@ -23,10 +23,13 @@ function toggleTheme() { applyTheme(getTheme() === "light" ? "dark" : "light"); 
 applyTheme(getTheme());
 
 // ===== AGENT =====
-function getNome() {
-    let n = localStorage.getItem(NOME_KEY);
-    if (!n) { n = NOMES[Math.floor(Math.random()*NOMES.length)]; localStorage.setItem(NOME_KEY, n); }
+function sortearNome() {
+    const n = NOMES[Math.floor(Math.random()*NOMES.length)];
+    localStorage.setItem(NOME_KEY, n);
     return n;
+}
+function getNome() {
+    return localStorage.getItem(NOME_KEY) || sortearNome();
 }
 function getSaudacao() { return SAUDACOES[Math.floor(Math.random()*SAUDACOES.length)].replace("{nome}", getNome()); }
 
@@ -263,7 +266,7 @@ async function atualizarStats() {
         if (!res.ok) return;
         const s = await res.json();
         const panel = document.getElementById("stats-panel");
-
+        
         if (panel && s.total_mensagens > 0) {
             panel.style.display = "flex";
             panel.innerHTML = `
@@ -302,7 +305,7 @@ async function sendMessage() {
     sending = true; 
     sendBtn.disabled = true;
     addUserMessage(msg);
-    
+
     userInput.value = ""; 
     userInput.style.height = "auto";
     
@@ -339,14 +342,19 @@ function usarExemplo(text) {
 
 function clearChat() {
     fetch("/reset", {method:"POST"}).catch(()=>{});
-    localStorage.removeItem(STORAGE_KEY); 
+    localStorage.removeItem(STORAGE_KEY);
+    sortearNome();
     renderInitial(); 
-
+    
     const panel = document.getElementById("stats-panel");
     if (panel) {
         panel.style.display = "none";
         panel.innerHTML = "";
     }
+}
+
+if (sendBtn) {
+    sendBtn.addEventListener("click", sendMessage);
 }
 
 if (clearBtn) {

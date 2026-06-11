@@ -111,7 +111,6 @@ _PRESSAO_EMOCIONAL = [
 ]
 
 def detectar_pressao_emocional(mensagem):
-
     mn = _norm(mensagem)
     return any(t in mn for t in _PRESSAO_EMOCIONAL)
 
@@ -134,3 +133,30 @@ def _detectar_moedas(mn):
                 pares_vistos.add(par)
                 termos_usados.update(partes)
     return resultado
+
+def precisa_busca_web(mensagem):
+    if esta_fora_do_escopo(mensagem):
+        return False
+    mn = _norm(mensagem)
+    if _detectar_moedas(mn):                              return True
+    if any(p in mn for p in _CAMBIO_GENERICO):            return True
+    if any(p in mn for p in _RECALL_ANVISA):              return True
+    sempre_disparam = [
+        "selic","taxa selic","ipca","igpm","cdi","taxa cdi","inpc",
+        "fipe","tabela fipe","preco fipe","valor fipe","tabela fipe carro",
+        "aneel","tarifa energia","bandeira tarifaria","conta de luz","conta luz",
+        "tarifa agua","conta agua","tarifa de agua","conta de agua",
+        "gasolina","diesel","etanol","combustivel","preço gasolina","preço diesel",
+        "salario minimo","salário mínimo","piso salarial",
+        "inss valor","bpc valor","auxilio brasil valor","bolsa familia valor",
+        "fgts saque","fgts aniversario","saque aniversario fgts",
+        "rol ans","reajuste plano saude","ans reajuste",
+        "internet caiu","velocidade internet","brasilbandalarga",
+        "cheque especial juros","teto cheque especial","superendividamento",
+    ]
+    if any(t in mn for t in sempre_disparam):             return True
+    tem_assunto = any(a in mn for a in _FINANCEIRO)
+    tem_tempo   = any(p in mn for p in _PALAVRAS_TEMPO)
+    if tem_assunto and tem_tempo:                         return True
+    if tem_assunto and re.search(r'\b202[5-9]\b', mn):    return True
+    return False

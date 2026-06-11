@@ -33,3 +33,17 @@ _MOEDAS_MAP = {
     "jpy": ("JPY-BRL","Iene japonês"),
     "cny": ("CNY-BRL","Yuan chinês"),
 }
+
+_CAMBIO_GENERICO = [
+    "cambio","cotacao","quanto vale","valor da moeda","conversao","conversor",
+]
+_FINANCEIRO = [
+    "selic","taxa selic","ipca","igpm","inpc","inflacao","inflação",
+    "cdi","taxa cdi","rendimento poupanca","rendimento cdi",
+    "salario minimo","salário mínimo","piso salarial","inss","bpc","auxilio brasil",
+    "bolsa familia","imposto renda","irpf","fgts saque","fgts aniversario",
+    "gasolina","combustivel","diesel","etanol","preço gasolina",
+    "fipe","tabela fipe","preco fipe","valor fipe",
+    "tarifa energia","aneel","bandeira tarifaria","conta de luz",
+    "tarifa agua","conta agua",
+]

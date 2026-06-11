@@ -375,3 +375,136 @@
         "nao quiseram"
       ]
     },
+    "nome_sujo_indevido": {
+      "titulo": "Nome negativado indevidamente — Art. 43 CDC",
+      "passos": [
+        "1. Verifique o que consta em Serasa/SPC (você tem direito de consultar grátis)",
+        "2. Se a dívida não é sua: contate a empresa que negativou por escrito",
+        "3. Prazo para retirada: imediato após quitação ou comprovação de erro",
+        "4. A empresa deve avisar antes de negativar — se não avisou, é dano moral",
+        "5. Não retirou? Procon ou Juizado Especial com pedido de dano moral"
+      ],
+      "palavras_chave": [
+        "nome sujo",
+        "serasa",
+        "spc",
+        "negativado",
+        "restricao",
+        "nome indevido"
+      ]
+    },
+    "plano_saude_negativa": {
+      "titulo": "Plano de saúde negou cobertura — ANS",
+      "passos": [
+        "1. Solicite a negativa por escrito da operadora",
+        "2. Verifique se o procedimento consta no Rol de Procedimentos da ANS",
+        "3. Carências máximas legais: urgência 24h, consultas 30 dias, internação 180 dias, parto 300 dias",
+        "4. Acione a ANS: 0800 701 9656 ou ans.gov.br",
+        "5. Urgência: plano tem 3 dias úteis para responder — se negar, busque liminar (Defensoria Pública)"
+      ],
+      "palavras_chave": [
+        "plano de saude",
+        "negou cobertura",
+        "ans",
+        "convenio",
+        "rol procedimentos",
+        "plano negou",
+        "plano saude negou",
+        "convenio negou",
+        "plano nao cobre",
+        "negativa plano",
+        "recusaram plano",
+        "plano recusou",
+        "carencia plano",
+        "carência plano",
+        "prazo carencia",
+        "carencia convenio"
+      ]
+    },
+    "compra_marketplace": {
+      "titulo": "Problema em marketplace — Fluxo",
+      "passos": [
+        "1. Abra disputa diretamente na plataforma (Mercado Livre, Shopee, etc.)",
+        "2. Guarde prints de toda a conversa e do anúncio original",
+        "3. Se a plataforma não resolver: consumidor.gov.br (prazo de resposta: 10 dias)",
+        "4. Plataforma e vendedor respondem solidariamente pelo CDC",
+        "5. Procon ou Juizado Especial se necessário"
+      ],
+      "palavras_chave": [
+        "marketplace",
+        "shopee",
+        "mercado livre",
+        "amazon",
+        "plataforma",
+        "vendedor sumiu"
+      ]
+    },
+    "lgpd_exercer_direitos": {
+      "titulo": "Exercer direitos LGPD — Fluxo",
+      "passos": [
+        "1. Acesse o site da empresa → procure 'Privacidade', 'Meus Dados' ou 'LGPD'",
+        "2. Faça a solicitação formal (exclusão, correção, acesso aos dados)",
+        "3. Prazo para resposta: 15 dias",
+        "4. Sem resposta: denuncie à ANPD (gov.br/anpd)",
+        "5. Dano por vazamento: busque indenização no Juizado Especial"
+      ],
+      "palavras_chave": [
+        "lgpd",
+        "dados pessoais",
+        "excluir dados",
+        "vazamento",
+        "privacidade",
+        "anpd"
+      ]
+    },
+    "consignado_fraude": {
+      "titulo": "Empréstimo consignado não autorizado — Fluxo",
+      "passos": [
+        "1. Bloqueie a margem consignável no banco imediatamente",
+        "2. Registre Boletim de Ocorrência (B.O.)",
+        "3. Acione o INSS (135) se for beneficiário",
+        "4. Comunique o Banco Central (145)",
+        "5. Procon ou Juizado Especial para cancelamento e restituição"
+      ],
+      "palavras_chave": [
+        "consignado fraude",
+        "emprestimo nao autorizado",
+        "descontaram sem autorizar",
+        "golpe consignado"
+      ]
+    }
+  },
+  "prazos_resumidos": {
+    "arrependimento_online": {
+      "prazo": "7 dias corridos",
+      "art": "Art. 49"
+    },
+    "reclamar_produto_nao_duravel": {
+      "prazo": "30 dias",
+      "art": "Art. 26, I"
+    },
+    "reclamar_produto_duravel": {
+      "prazo": "90 dias",
+      "art": "Art. 26, II"
+    },
+    "empresa_resolver_defeito": {
+      "prazo": "30 dias",
+      "art": "Art. 18 § 1°"
+    },
+    "prescricao_judicial": {
+      "prazo": "5 anos",
+      "art": "Art. 27"
+    },
+    "sac_resposta": {
+      "prazo": "5 dias úteis",
+      "art": "Decreto 6.523/2008"
+    },
+    "ans_urgencia": {
+      "prazo": "3 dias úteis",
+      "art": "RN ANS 259/2011"
+    },
+    "negativacao_aviso": {
+      "prazo": "Antes da inscrição",
+      "art": "Art. 43 § 2°"
+    }
+  },

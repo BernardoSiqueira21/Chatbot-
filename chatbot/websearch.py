@@ -160,3 +160,185 @@ def precisa_busca_web(mensagem):
     if tem_assunto and tem_tempo:                         return True
     if tem_assunto and re.search(r'\b202[5-9]\b', mn):    return True
     return False
+
+def _montar_query(mensagem):
+    mn   = _norm(mensagem)
+    hoje = HOJE.strftime("%d/%m/%Y")
+    ano  = HOJE.year
+
+    pares = _detectar_moedas(mn)
+    if pares:
+        nomes = " e ".join(n for _, n in pares[:2])
+        return f"cotação {nomes} real brasileiro hoje {hoje}"
+
+    mapeamentos = [
+        (_RECALL_ANVISA,            lambda: f"{mensagem} ANVISA recall {ano}"),
+        (["selic","taxa selic"],    lambda: f"taxa Selic atual {ano} Banco Central"),
+        (["ipca","inflacao"],       lambda: f"IPCA inflação Brasil {ano} acumulado IBGE"),
+        (["cdi","rendimento"],      lambda: f"taxa CDI hoje {ano}"),
+        (["salario minimo","piso"], lambda: f"salário mínimo Brasil {ano}"),
+        (["inss","bpc"],            lambda: f"INSS valor benefício {ano}"),
+        (["gasolina","combustivel"],lambda: f"preço gasolina Brasil hoje {ano}"),
+        (["fipe","tabela fipe"],    lambda: f"tabela FIPE {mensagem} {ano}"),
+        (["aneel","tarifa energia","bandeira tarifaria","conta de luz"],
+                                    lambda: f"tarifa energia ANEEL bandeira {ano}"),
+        (["tarifa agua","conta agua"], lambda: f"tarifa água {mensagem} {ano}"),
+        (["fgts saque","saque aniversario fgts","fgts aniversario"],
+                                    lambda: f"FGTS saque aniversário regras {ano}"),
+        (["rol ans","reajuste plano","ans reajuste"],
+                                    lambda: f"ANS rol procedimentos plano saúde {ano}"),
+        (["cheque especial","teto cheque especial"],
+                                    lambda: f"cheque especial teto juros Banco Central {ano}"),
+        (["bpc","auxilio brasil","bolsa familia"],
+                                    lambda: f"{mensagem} valor {ano} CadÚnico"),
+        (["internet caiu","velocidade internet"],
+                                    lambda: f"velocidade internet ANATEL Marco Civil {ano}"),
+    ]
+    for gatilhos, fn in mapeamentos:
+        if any(g in mn for g in gatilhos):
+            return fn()
+
+    palavras = [w for w in mensagem.split() if len(w) > 3][:6]
+    return " ".join(palavras) + f" Brasil consumidor {hoje}"
+
+def buscar_dado_atual(mensagem):
+    mn     = _norm(mensagem)
+    inicio = time.time()
+    pares  = _detectar_moedas(mn)
+    if pares:
+        r = _buscar_cambio(pares, inicio)
+        if r: return r
+    query = _montar_query(mensagem)
+    for fn in [_tentar_brave, _tentar_ddg_instant, _tentar_ddg_html]:
+        r = fn(query, inicio)
+        if r and r.get("sucesso"):
+            r["data_busca"] = HOJE.isoformat()
+            return r
+    return {"sucesso": False, "erro": "sem resultado", "query": query}
+
+def buscar_com_validacao(mensagem):
+    from chatbot.cache_dados import get_cache, set_cache, validar_duplo
+    cached = get_cache(mensagem)
+    if cached:
+        cached["sucesso"] = True
+        cached["origem"]  = "cache"
+        return cached
+    mn = _norm(mensagem); inicio = time.time()
+    pares = _detectar_moedas(mn)
+    r1 = r2 = None
+    if pares:
+        r1 = _buscar_cambio(pares, inicio)
+        if r1:
+            q2 = _montar_query(mensagem)
+            r2 = _tentar_ddg_instant(q2, inicio) or _tentar_ddg_html(q2, inicio)
+    else:
+        query = _montar_query(mensagem)
+        r1 = (_tentar_brave(query, inicio) or _tentar_ddg_instant(query, inicio)
+               or _tentar_ddg_html(query, inicio))
+        if r1:
+            q2 = query + " atualizado"
+            r2 = _tentar_ddg_instant(q2, inicio) or _tentar_ddg_html(q2, inicio)
+    if not r1 or not r1.get("sucesso"):
+        return {"sucesso": False, "erro": "sem resultado", "origem": "busca"}
+    texto1, fonte1 = r1["texto"], r1.get("fonte","web")
+    if r2 and r2.get("sucesso"):
+        texto_final, fonte_final, confianca = validar_duplo(
+            texto1, fonte1, r2["texto"], r2.get("fonte","web2"))
+    else:
+        texto_final, fonte_final, confianca = texto1, fonte1, "media"
+    set_cache(mensagem, texto_final, fonte_final, confianca)
+    return {
+        "texto": texto_final, "fonte": fonte_final, "confianca": confianca,
+        "sucesso": True, "origem": "busca_dupla",
+        "tempo_ms": int((time.time()-inicio)*1000),
+        "data_busca": HOJE.isoformat(),
+    }
+
+def _buscar_cambio(pares, inicio):
+    simbolos = ",".join(p for p, _ in pares)
+    try:
+        r = requests.get(
+            f"https://economia.awesomeapi.com.br/json/last/{simbolos}",
+            timeout=TIMEOUT,
+            headers={"User-Agent": "ConsumidorBot/1.0"},
+        )
+        if r.status_code == 200:
+            data, linhas = r.json(), []
+            for par, nome in pares:
+                chave = par.replace("-","")
+                if chave in data:
+                    d   = data[chave]
+                    bid = float(d.get("bid",0)); ask = float(d.get("ask",0))
+                    var = float(d.get("pctChange",0)); hora = d.get("create_date","")[:16]
+                    linhas.append(
+                        f"{nome}: R$ {bid:.2f} (compra) / R$ {ask:.2f} (venda) "
+                        f"variação {var:+.2f}% — {hora}"
+                    )
+                else:
+                    linhas.append(f"{nome}: não disponível via API")
+            if linhas:
+                return {"texto": "\n".join(linhas),
+                        "fonte": "AwesomeAPI / Banco Central",
+                        "sucesso": True,
+                        "tempo_ms": int((time.time()-inicio)*1000),
+                        "data_busca": HOJE.isoformat()}
+    except Exception as e:
+        logger.warning(f"AwesomeAPI: {e}")
+    return None
+
+def _tentar_brave(query, inicio):
+    token = os.environ.get("BRAVE_API_KEY","").strip()
+    if not token: return None
+    try:
+        r = requests.get(
+            "https://api.search.brave.com/res/v1/web/search",
+            params={"q": query, "count": 3, "country": "br", "lang": "pt"},
+            headers={"Accept":"application/json","Accept-Encoding":"gzip",
+                     "X-Subscription-Token": token},
+            timeout=TIMEOUT)
+        if r.status_code == 200:
+            results = r.json().get("web",{}).get("results",[])
+            if results:
+                desc = results[0].get("description","")
+                if len(desc) > 30:
+                    return {"texto": desc[:500], "fonte": "Brave Search",
+                            "sucesso": True,
+                            "tempo_ms": int((time.time()-inicio)*1000)}
+    except Exception as e:
+        logger.warning(f"Brave: {e}")
+    return None
+
+def _tentar_ddg_instant(query, inicio):
+    try:
+        r = requests.get("https://api.duckduckgo.com/",
+            params={"q": query, "format": "json", "no_html": "1", "skip_disambig": "1"},
+            headers={"User-Agent": "ConsumidorBot/1.0"}, timeout=TIMEOUT)
+        if r.status_code == 200:
+            data  = r.json()
+            texto = (data.get("AbstractText") or data.get("Answer") or
+                     data.get("Definition") or "")
+            if len(texto) > 30:
+                return {"texto": texto[:500],
+                        "fonte": data.get("AbstractSource","DuckDuckGo"),
+                        "sucesso": True,
+                        "tempo_ms": int((time.time()-inicio)*1000)}
+    except Exception as e:
+        logger.warning(f"DDG instant: {e}")
+    return None
+
+def _tentar_ddg_html(query, inicio):
+    try:
+        r = requests.get("https://html.duckduckgo.com/html/", params={"q": query},
+            headers={"User-Agent": "Mozilla/5.0 (compatible; ConsumidorBot/1.0)",
+                     "Accept-Language": "pt-BR,pt;q=0.9"}, timeout=TIMEOUT)
+        if r.status_code != 200: return None
+        snippets = re.findall(r'class="result__snippet"[^>]*>(.*?)</a>', r.text, re.DOTALL)
+        if not snippets: return None
+        texto = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', snippets[0])).strip()
+        if len(texto) > 30:
+            return {"texto": texto[:400], "fonte": "DuckDuckGo",
+                    "sucesso": True,
+                    "tempo_ms": int((time.time()-inicio)*1000)}
+    except Exception as e:
+        logger.warning(f"DDG html: {e}")
+    return None

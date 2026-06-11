@@ -43,3 +43,35 @@ ATUALIZACOES = [
         "titulo": "Taxa Selic Atual",
     },
 ]
+
+def atualizar():
+    with open(KB_PATH, encoding="utf-8") as f:
+        kb = json.load(f)
+
+    dados = kb.setdefault("dados_atualizados", {})
+    atualizados = 0
+
+    for item in ATUALIZACOES:
+        logger.info(f"Buscando: {item['titulo']}...")
+        texto = _buscar_html(item["query"])
+        if texto and len(texto) > 40:
+            if item["chave"] in dados:
+                dados[item["chave"]]["conteudo_web"] = texto
+                dados[item["chave"]]["ultima_atualizacao"] = time.strftime("%Y-%m-%d")
+                atualizados += 1
+                logger.info(f"  Atualizado: {texto[:80]}...")
+            else:
+                logger.warning(f"  Chave '{item['chave']}' nao encontrada na KB")
+        else:
+            logger.warning(f"  Sem resultado para: {item['titulo']}")
+        time.sleep(1)
+
+    if atualizados > 0:
+        with open(KB_PATH, "w", encoding="utf-8") as f:
+            json.dump(kb, f, ensure_ascii=False, indent=2)
+        logger.info(f"KB salva com {atualizados} atualizacoes.")
+    else:
+        logger.info("Nenhuma atualizacao disponivel.")
+
+if __name__ == "__main__":
+    atualizar()

@@ -127,3 +127,36 @@ def chat():
     session.modified     = True
 
     return jsonify(resultado)
+
+@app.route("/reset", methods=["POST"])
+def reset():
+    for k in ("historico","contexto","stats","nome_agente"):
+        session.pop(k, None)
+    session.modified = True
+    return jsonify({"ok": True})
+
+@app.route("/agent", methods=["GET"])
+def agent_info():
+    nome = session.get("nome_agente") or random.choice(NOMES_AGENTE)
+    session["nome_agente"] = nome
+    return jsonify({"nome": nome})
+
+@app.route("/stats", methods=["GET"])
+def stats_route():
+    s = session.get("stats", {"total":0,"via_kb":0,"via_llm":0,"via_web":0,"fallback":0})
+    historico = session.get("historico", [])
+    total = s["total"] or 1
+    tempos = [i["llm_tempo_ms"] for i in historico
+              if i.get("usou_llm") and i.get("llm_tempo_ms")]
+    media_ms = int(sum(tempos)/len(tempos)) if tempos else 0
+    return jsonify({
+        "total_mensagens":    s["total"],
+        "respostas_via_base": s["via_kb"],
+        "respostas_via_llm":  s["via_llm"],
+        "respostas_via_web":  s["via_web"],
+        "respostas_fallback": s["fallback"],
+        "taxa_base_pct":      round(s["via_kb"] / total * 100, 1),
+        "taxa_llm_pct":       round(s["via_llm"] / total * 100, 1),
+        "taxa_web_pct":       round(s["via_web"] / total * 100, 1),
+        "tempo_medio_llm_ms": media_ms,
+    })

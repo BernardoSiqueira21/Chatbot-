@@ -270,3 +270,108 @@
         "cancelar telefone"
       ]
     },
+    "bacen": {
+      "nome": "Banco Central — Ouvidoria",
+      "descricao": "Regula bancos e instituições financeiras. Para problemas com bancos, financeiras, fintechs e meios de pagamento.",
+      "como_acionar": "registrabacen.bcb.gov.br ou ligue 145.",
+      "prazo_resposta": "Até 10 dias úteis",
+      "palavras_chave": [
+        "banco",
+        "financeira",
+        "emprestimo bancario",
+        "cartao credito banco",
+        "fintech",
+        "pix problema",
+        "transferencia",
+        "conta bancaria",
+        "banco digital"
+      ]
+    }
+  },
+  "fluxos_acao": {
+    "produto_com_defeito": {
+      "titulo": "Produto com defeito — Art. 18 CDC",
+      "passos": [
+        "1. Fotografe o defeito e guarde a nota fiscal",
+        "2. Contate a empresa por escrito e registre o protocolo",
+        "3. A empresa tem 30 dias para resolver (Art. 18)",
+        "4. Não resolveu? Escolha: troca, reembolso ou desconto",
+        "5. Recusou? consumidor.gov.br ou Procon"
+      ],
+      "palavras_chave": [
+        "defeito",
+        "produto quebrado",
+        "garantia",
+        "nao funciona",
+        "conserto"
+      ]
+    },
+    "compra_online_arrependimento": {
+      "titulo": "Arrependimento online — Art. 49 CDC",
+      "passos": [
+        "1. Verifique: ainda está dentro dos 7 dias do recebimento?",
+        "2. Contate a empresa por escrito mencionando o Art. 49 CDC",
+        "3. O frete de devolução é por conta da empresa",
+        "4. Reembolso integral obrigatório (incluindo frete que você pagou)",
+        "5. Recusou? consumidor.gov.br ou Procon"
+      ],
+      "palavras_chave": [
+        "arrependimento",
+        "compra online",
+        "7 dias",
+        "desistir",
+        "cancelar internet"
+      ]
+    },
+    "atraso_entrega": {
+      "titulo": "Entrega atrasada — Art. 35 CDC",
+      "passos": [
+        "1. Anote os dias de atraso e o prazo prometido",
+        "2. Contate a empresa por escrito e registre protocolo",
+        "3. Suas opções (Art. 35): entrega imediata, novo prazo ou cancelamento com reembolso",
+        "4. Guarde todos os protocolos",
+        "5. Não resolveu? consumidor.gov.br"
+      ],
+      "palavras_chave": [
+        "atraso",
+        "entrega atrasada",
+        "pedido atrasado",
+        "nao chegou",
+        "prazo entrega"
+      ]
+    },
+    "cobranca_indevida": {
+      "titulo": "Cobrança indevida — Art. 42 CDC",
+      "passos": [
+        "1. Reúna provas: extrato, fatura, comprovante",
+        "2. Contate a empresa por escrito contestando",
+        "3. Se for cartão: acione a operadora (chargeback)",
+        "4. Cobrança duplicada? CDC garante devolução em dobro (Art. 42)",
+        "5. Não resolveu? Procon ou consumidor.gov.br"
+      ],
+      "palavras_chave": [
+        "cobranca indevida",
+        "cobrado errado",
+        "duplicado",
+        "estorno",
+        "devolucao em dobro"
+      ]
+    },
+    "empresa_negou": {
+      "titulo": "Empresa recusou resolver — Sequência",
+      "passos": [
+        "1. Documente a negativa: protocolo, e-mail, data",
+        "2. Tente a ouvidoria da empresa",
+        "3. consumidor.gov.br — prazo de 10 dias para resposta",
+        "4. Procon do seu estado",
+        "5. Juizado Especial Cível (até 20 salários mínimos, sem advogado)"
+      ],
+      "palavras_chave": [
+        "empresa negou",
+        "nao resolveram",
+        "recusaram",
+        "procon",
+        "justica",
+        "nao quiseram"
+      ]
+    },

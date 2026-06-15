@@ -23,10 +23,13 @@ function toggleTheme() { applyTheme(getTheme() === "light" ? "dark" : "light"); 
 applyTheme(getTheme());
 
 // ===== AGENT =====
-function getNome() {
-    let n = localStorage.getItem(NOME_KEY);
-    if (!n) { n = NOMES[Math.floor(Math.random()*NOMES.length)]; localStorage.setItem(NOME_KEY, n); }
+function sortearNome() {
+    const n = NOMES[Math.floor(Math.random()*NOMES.length)];
+    localStorage.setItem(NOME_KEY, n);
     return n;
+}
+function getNome() {
+    return localStorage.getItem(NOME_KEY) || sortearNome();
 }
 function getSaudacao() { return SAUDACOES[Math.floor(Math.random()*SAUDACOES.length)].replace("{nome}", getNome()); }
 
@@ -339,7 +342,8 @@ function usarExemplo(text) {
 
 function clearChat() {
     fetch("/reset", {method:"POST"}).catch(()=>{});
-    localStorage.removeItem(STORAGE_KEY); 
+    localStorage.removeItem(STORAGE_KEY);
+    sortearNome();   // novo atendente a cada conversa nova
     renderInitial(); 
     
     const panel = document.getElementById("stats-panel");
@@ -347,6 +351,10 @@ function clearChat() {
         panel.style.display = "none";
         panel.innerHTML = "";
     }
+}
+
+if (sendBtn) {
+    sendBtn.addEventListener("click", sendMessage);
 }
 
 if (clearBtn) {

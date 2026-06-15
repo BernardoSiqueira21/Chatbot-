@@ -49,7 +49,6 @@ PRAZOS_CDC = [
 
 def _extrair_data(texto):
     """Extrai a primeira data encontrada no texto."""
-    # DD/MM/AAAA ou DD/MM/AA
     m = re.search(r'\b(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})\b', texto)
     if m:
         d, mo, a = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -59,7 +58,6 @@ def _extrair_data(texto):
         except ValueError:
             return None
 
-    # "dia X de mês" por extenso
     meses = {"janeiro":1,"fevereiro":2,"março":3,"marco":3,"abril":4,"maio":5,
              "junho":6,"julho":7,"agosto":8,"setembro":9,"outubro":10,
              "novembro":11,"dezembro":12}
@@ -129,21 +127,18 @@ def montar_prompt_prazos(contexto, historico, mensagem_usuario):
     if not _detectar_intencao_prazo(mensagem_usuario):
         return False, None, None
 
-    # Tenta extrair data
     data = _extrair_data(mensagem_usuario)
 
-    # Se não encontrou na mensagem, busca no histórico
     if not data:
         for item in reversed(historico or []):
             data = _extrair_data(item.get("usuario",""))
             if data: break
 
-    # Se não encontrou no histórico, busca no contexto do caso
     if not data and contexto.get("caso",{}).get("data_evento"):
         data = _extrair_data(contexto["caso"]["data_evento"])
 
     if not data:
-        return True, None, None  # é calculadora mas sem data
+        return True, None, None 
 
     resultado = calcular_prazos(data, contexto)
     return True, data, resultado
@@ -155,14 +150,13 @@ def formatar_prazos_para_llm(resultado, contexto=None):
         ""
     ]
     for p in resultado["prazos"]:
-        if p["tipo"] == "anos": continue  # prescrição judicial — mostra separado
+        if p["tipo"] == "anos": continue  
         emoji = "✅" if p["status"] == "ok" else "⚠️" if p["status"] == "urgente" else "❌"
         if p["status"] == "vencido":
             linhas.append(f"{emoji} {p['nome']} ({p['artigo']}): VENCIDO há {abs(p['restante'])} dia(s)")
         else:
             linhas.append(f"{emoji} {p['nome']} ({p['artigo']}): {p['restante']} dia(s) restante(s)")
 
-    # Prescrição judicial separada
     prescricao = next((p for p in resultado["prazos"] if p["tipo"] == "anos"), None)
     if prescricao:
         linhas.append(f"\n⚖️  {prescricao['nome']} ({prescricao['artigo']}): "

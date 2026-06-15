@@ -144,7 +144,6 @@ RELACIONADOS = {
     "banco_digital":         ["cobranca_indevida","cancelamento","procon"],
 }
 
-# ── Prompts para o LLM ────────────────────────────────────────────────────────
 def _classificar_primeira_msg(mensagem):
     """
     Classifica se a primeira mensagem é:
@@ -155,7 +154,6 @@ def _classificar_primeira_msg(mensagem):
     mn  = "".join(c for c in __import__('unicodedata').normalize("NFD", m)
                   if __import__('unicodedata').category(c) != "Mn")
 
-    # Saudações puras explícitas
     saudacoes_puras = {
         "oi","ola","olá","bom dia","boa tarde","boa noite","hello","hi","hey",
         "eai","e ai","tudo bem","tudo bom","oi!","olá!","bom dia!","boa tarde!",
@@ -163,9 +161,8 @@ def _classificar_primeira_msg(mensagem):
     if m in saudacoes_puras:
         return "saudacao"
 
-    # Indicadores de consulta direta — mesmo com ≤2 palavras
     indicadores_diretos = [
-        r'\bartigo\b', r'\bart\b', r'\d{2,}',      # artigo, art, número
+        r'\bartigo\b', r'\bart\b', r'\d{2,}',
         r'\bdefeito\b', r'\bgarantia\b', r'\bcdc\b',
         r'\bprocon\b', r'\bjuros\b', r'\bdolar\b',
         r'\bplano\b', r'\bsaude\b', r'\bseguros?\b',
@@ -178,11 +175,9 @@ def _classificar_primeira_msg(mensagem):
     if any(_re.search(p, mn) for p in indicadores_diretos):
         return "direta"
 
-    # Mensagem com mais de 2 palavras = direta
     if len(m.split()) > 2:
         return "direta"
 
-    # 1-2 palavras sem indicador = saudação (ex: "oi tudo", "bom dia")
     return "saudacao"
 
 def _instrucao_saudacao(mensagem, primeira_mensagem):
@@ -204,7 +199,6 @@ def _instrucao_saudacao(mensagem, primeira_mensagem):
             "Do NOT answer any question yet — just greet and invite.\n\n"
         )
     else:
-        # Pergunta direta na primeira mensagem — responde direto, sem apresentação forçada
         return (
             "FIRST INTERACTION: Answer the question directly and naturally. "
             "You may briefly mention your name at the end if it flows naturally, "
@@ -213,7 +207,6 @@ def _instrucao_saudacao(mensagem, primeira_mensagem):
 
 def _prompt_kb(conteudo_kb, followup="", primeira_mensagem=False, mensagem="", kb_score=1.0):
     intro = _instrucao_saudacao(mensagem, primeira_mensagem)
-    # Aviso EXPLÍCITO quando o match é apenas parcial (0.65-1.0) — força LLM a checar relevância
     aviso_match_parcial = ""
     if 0.65 <= kb_score < 1.0:
         aviso_match_parcial = (
@@ -304,7 +297,6 @@ def _prompt_livre(primeira_mensagem=False, mensagem=""):
     base = anti_alucinacao + (intro or "")
     return base if base else None
 
-# ── Anti-loop ─────────────────────────────────────────────────────────────────
 def _detectar_loop(mensagem, historico):
     if len(historico) < 3:
         return False
@@ -322,7 +314,6 @@ def _detectar_loop(mensagem, historico):
             return True
     return False
 
-# ── Roteamento ────────────────────────────────────────────────────────────────
 def _validar_relevancia_kb(mensagem, resultado_kb, kb_score):
     """
     Anti-alucinação: verifica se a KB recuperada realmente cobre a pergunta.
@@ -331,14 +322,11 @@ def _validar_relevancia_kb(mensagem, resultado_kb, kb_score):
     """
     if not resultado_kb or kb_score < 0.65:
         return False
-    if kb_score >= 1.0:  # Match forte — confiar
+    if kb_score >= 1.0:
         return True
 
-    # Match médio (0.65-1.0): verifica se a pergunta tem palavras-chave
-    # que indicam pedido por dados ESPECÍFICOS não cobertos pelo artigo recuperado
     import re as _re
     mn = mensagem.lower()
-    # Pedidos por dados específicos que artigos genéricos do CDC não respondem
     pedidos_dados_especificos = [
         r'\bquem\s+(criou|inventou|escreveu)\b',
         r'\bquanto\s+(custa|cobra|cobram|paga)\b',
@@ -352,33 +340,31 @@ def _validar_relevancia_kb(mensagem, resultado_kb, kb_score):
     ]
     for padrao in pedidos_dados_especificos:
         if _re.search(padrao, mn):
-            # Esse tipo de pergunta raramente é coberto por artigo do CDC
-            # Verifica se o conteúdo da KB tem palavras da pergunta
             conteudo = (resultado_kb.get('texto','') + ' ' +
                         resultado_kb.get('resumo','')).lower()
             palavras_pergunta = [w for w in mn.split()
                                  if len(w) > 4 and w not in
                                  ('cdc','codigo','consumidor','quem','quanto','qual','como','onde')]
             matches = sum(1 for p in palavras_pergunta if p in conteudo)
-            if matches < 2:  # KB não tem as palavras da pergunta
+            if matches < 2:  
                 return False
     return True
 
 def _determinar_rota(mensagem, resultado_kb, kb_score, artigo_explicito, dado_web, intencao):
-    # Artigo explícito ("artigo 49") sempre é confiável
     if artigo_explicito is not None:
         tem_kb = True
     else:
-        # Senão, valida relevância para evitar match parcial fraco
         tem_kb = kb_score >= LIMIAR_KB and _validar_relevancia_kb(mensagem, resultado_kb, kb_score)
 
     tem_web      = dado_web is not None and dado_web.get("sucesso")
     precisa_web  = precisa_busca_web(mensagem)
 
-    # Off-scope: tema claramente fora do CDC e sem dado web relevante
     try:
-        from chatbot.websearch import esta_fora_do_escopo
-        if esta_fora_do_escopo(mensagem) and not tem_kb and not tem_web:
+        from chatbot.websearch import esta_fora_do_escopo, detectar_pressao_emocional
+        fora = esta_fora_do_escopo(mensagem)
+        if fora and detectar_pressao_emocional(mensagem) and not tem_kb:
+            return "off_scope"
+        if fora and not tem_kb and not tem_web:
             return "off_scope"
     except Exception:
         pass
@@ -386,10 +372,8 @@ def _determinar_rota(mensagem, resultado_kb, kb_score, artigo_explicito, dado_we
     if tem_kb and tem_web:   return "kb_web_llm"
     if tem_kb:               return "kb_pura"
     if precisa_web:          return "llm_web"
-    # Sem KB e sem web: rota com instrução anti-alucinação reforçada
     return "llm_livre"
 
-# ── Função principal ──────────────────────────────────────────────────────────
 def processar_mensagem(mensagem, historico, contexto):
     try:
         mensagem = str(mensagem or "").strip()[:800]
@@ -415,7 +399,6 @@ def processar_mensagem(mensagem, historico, contexto):
     if revelar:
         contexto["revelado"] = True
 
-    # ── Gerador de reclamação ──────────────────────────────────────────────────
     try:
         é_reclamacao, prompt_reclamacao = montar_prompt_reclamacao(contexto, historico, mensagem)
         if é_reclamacao and prompt_reclamacao:
@@ -430,7 +413,6 @@ def processar_mensagem(mensagem, historico, contexto):
     except Exception as e:
         logger.warning(f"Gerador reclamação: {e}")
 
-    # ── Calculadora de prazos ──────────────────────────────────────────────────
     try:
         é_prazo, data_encontrada, resultado_prazo = montar_prompt_prazos(
             contexto, historico, mensagem)
@@ -458,10 +440,8 @@ def processar_mensagem(mensagem, historico, contexto):
     except Exception as e:
         logger.warning(f"Calculadora prazos: {e}")
 
-    # ── Saudação na primeira mensagem ─────────────────────────────────────────
     eh_primeira_mensagem = len(historico) == 0
 
-    # ── Anti-loop ─────────────────────────────────────────────────────────────
     try:
         if _detectar_loop(mensagem, historico):
             r_loop = consultar_llm(
@@ -483,7 +463,6 @@ def processar_mensagem(mensagem, historico, contexto):
     except Exception as e:
         logger.error(f"Anti-loop erro: {e}")
 
-    # ── Web search com validação dupla e cache ────────────────────────────────
     dado_web = None
     try:
         if precisa_busca_web(mensagem):
@@ -494,7 +473,6 @@ def processar_mensagem(mensagem, historico, contexto):
         logger.warning(f"Web search erro: {e}")
         dado_web = None
 
-    # ── Busca KB ──────────────────────────────────────────────────────────────
     resultado_kb = None
     kb_score     = 0.0
     artigo_explicito = None
@@ -506,7 +484,6 @@ def processar_mensagem(mensagem, historico, contexto):
     except Exception as e:
         logger.error(f"KB erro: {e}")
 
-    # ── Intenção ──────────────────────────────────────────────────────────────
     intencao, confianca, palavras, entidades = "desconhecida", 0, [], {}
     try:
         intencao, confianca, palavras, entidades = identificar_intencao(mensagem)
@@ -515,8 +492,6 @@ def processar_mensagem(mensagem, historico, contexto):
             intencao = ultima
     except Exception as e:
         logger.error(f"NLP erro: {e}")
-
-    # ── Rota ──────────────────────────────────────────────────────────────────
     try:
         rota = _determinar_rota(mensagem, resultado_kb, kb_score,
                                  artigo_explicito, dado_web, intencao)
@@ -538,16 +513,24 @@ def processar_mensagem(mensagem, historico, contexto):
         + "\n"
     ) if (tom_usuario != "neutro" or caso_resumo) else ""
 
-    # ── Execução da rota ──────────────────────────────────────────────────────
     try:
         if rota == "off_scope":
-            # Se houve trocas antes, deixa o LLM redirecionar com referência ao tema discutido
-            # Caso contrário, escolhe uma variação curta e bem-humorada
             caso_anterior = contexto.get("caso", {})
             tem_historico = len(historico) > 0 and caso_anterior
 
+            try:
+                from chatbot.websearch import detectar_pressao_emocional
+                sob_pressao = detectar_pressao_emocional(mensagem)
+            except Exception:
+                sob_pressao = False
+
             if tem_historico:
-                # LLM redireciona naturalmente, lembrando do caso aberto
+                instrucao_pressao = (
+                    "\nIMPORTANT: The user is using emotional pressure or insistence to make "
+                    "you answer an off-scope question. Stay warm and acknowledge their feelings, "
+                    "but DO NOT give in and DO NOT answer the off-scope topic. Hold the boundary "
+                    "kindly but firmly. Never say 'just this once' or 'since you insist'.\n"
+                ) if sob_pressao else ""
                 prompt_redirect = (
                     f"{caso_header}"
                     "USER ASKED SOMETHING OFF-TOPIC (outside Brazilian Consumer Law / CDC scope). "
@@ -555,6 +538,7 @@ def processar_mensagem(mensagem, historico, contexto):
                     "remind the user of what was being discussed and offer to continue. "
                     "Be warm, brief (2 sentences max), and natural — not robotic. "
                     "Vary your phrasing — never use the same opening twice. "
+                    + instrucao_pressao +
                     "Examples of good redirects:\n"
                     "- 'Olha, esse assunto foge um pouco da minha praia — sou especialista em direito "
                     "  do consumidor. Mas voltando ao seu caso da [empresa], onde paramos?'\n"
@@ -570,7 +554,6 @@ def processar_mensagem(mensagem, historico, contexto):
                 else:
                     resposta_final = _redirect_off_scope_variado(caso_anterior)
             else:
-                # Sem histórico: variação aleatória curta
                 resposta_final = _redirect_off_scope_variado(None)
             fonte = "off_scope_redirect"
 
@@ -630,7 +613,7 @@ def processar_mensagem(mensagem, historico, contexto):
                 resposta_final = conteudo_kb + "\n\n" + dado_web["texto"]
                 fonte = "base_conhecimento_fallback"
 
-        else:  # llm_livre
+        else:
             ctx_livre = None
             if caso_header or eh_primeira_mensagem:
                 ctx_livre = caso_header + (_prompt_livre(eh_primeira_mensagem, mensagem) or "")
@@ -654,7 +637,6 @@ def processar_mensagem(mensagem, historico, contexto):
         resposta_final = _sem_dados()
         fonte = "erro_interno"
 
-    # ── Monta resultado ───────────────────────────────────────────────────────
     try:
         relacionados = [{"tag": t, "label": ROTULOS.get(t, t.replace("_"," "))}
                         for t in RELACIONADOS.get(intencao, [])]
@@ -678,7 +660,6 @@ def processar_mensagem(mensagem, historico, contexto):
         dado_web=dado_web,
     )
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
 def _resultado(mensagem, intencao, resposta, fonte, kb_score, resultado_kb,
                usou_llm, llm_ms, usou_web, contexto, relacionados, dado_web=None):
     agora_ts = datetime.datetime.now()
@@ -793,7 +774,6 @@ _PEDIDOS_REFORMULAR = [
     "Não captei direito. Conta de novo, mas com mais contexto?",
 ]
 
-# ── Respostas variadas para off-scope (não engessar) ──────────────────────────
 _OFF_SCOPE_VARIACOES_SEM_CASO = [
     "Esse assunto foge da minha área — sou especialista em direito do consumidor. "
     "Mas se você tiver alguma dúvida sobre compra, contrato, garantia ou cobrança, "
@@ -836,14 +816,12 @@ def _fallback_inteligente(resultado_kb, kb_score, intencao, contexto):
     Prioridade: KB parcial > fluxo de ação > dica de órgão > pedir reformulação.
     """
     try:
-        # Se KB tem algo relevante (mesmo abaixo do limiar)
         if resultado_kb and kb_score > 0.25:
             conteudo = _montar_kb(resultado_kb)
             if conteudo:
                 aviso = random.choice(_AVISOS_INSTABILIDADE)
                 return f"{aviso}\n\n{conteudo}"
 
-        # Se tem intenção reconhecida, sugere o próximo passo
         sugestoes = {
             "garantia":             "Produto com defeito: registre a reclamação no consumidor.gov.br e exija reparo em 30 dias (Art. 18 CDC).",
             "cobranca_indevida":    "Cobrança indevida: conteste com o fornecedor por escrito e guarde o protocolo. Valor cobrado a mais: devolução em dobro (Art. 42 CDC).",
@@ -855,7 +833,6 @@ def _fallback_inteligente(resultado_kb, kb_score, intencao, contexto):
         if intencao in sugestoes:
             return f"Tive uma instabilidade momentânea, mas posso adiantar:\n\n{sugestoes[intencao]}"
 
-        # Fallback final — pool de variações
         return random.choice(_PEDIDOS_REFORMULAR)
     except Exception:
         return "Pode reformular sua pergunta?"

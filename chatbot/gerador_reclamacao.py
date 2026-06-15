@@ -1,6 +1,3 @@
-"""
-gerador_reclamacao.py — Gera texto formal de reclamação baseado no contexto do caso
-"""
 import datetime
 
 def _detectar_intencao_reclamacao(mensagem):
@@ -31,13 +28,11 @@ def _artigo_aplicavel(intencao):
     return mapa.get(intencao, ("Art. 6 CDC", "violação dos direitos do consumidor"))
 
 def gerar_reclamacao(contexto, historico, mensagem_usuario):
-    """Gera prompt para o LLM criar texto formal de reclamação."""
     caso   = contexto.get("caso", {})
     intencao = contexto.get("ultima_intencao", "desconhecida")
     artigo, motivo = _artigo_aplicavel(intencao)
     hoje = datetime.date.today().strftime("%d/%m/%Y")
 
-    # Extrai informações do histórico para complementar
     info_adicional = []
     for item in (historico or [])[-8:]:
         u = item.get("usuario","")
@@ -77,7 +72,6 @@ INSTRUÇÕES PARA O TEXTO:
 Gere APENAS o texto da reclamação, sem explicações adicionais."""
 
 def montar_prompt_reclamacao(contexto, historico, mensagem_usuario):
-    """Retorna (é_reclamação, prompt_para_llm)"""
     if not _detectar_intencao_reclamacao(mensagem_usuario):
         return False, None
     prompt = gerar_reclamacao(contexto, historico, mensagem_usuario)

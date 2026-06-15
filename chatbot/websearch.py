@@ -1,16 +1,3 @@
-"""
-websearch.py — Busca web em tempo real
-Escopo: APENAS dados úteis para o consumidor brasileiro (CDC e correlatos).
-- Câmbio (relevante p/ compras internacionais e cobranças)
-- Selic, IPCA, CDI (juros, financiamento, superendividamento)
-- Salário mínimo, INSS, BPC (benefícios e cobranças)
-- Tabela FIPE (veículos usados, CDC Art. 18/26)
-- Recalls ANVISA/INMETRO (Art. 10 CDC)
-- Tarifas reguladas (ANEEL energia, ANS planos)
-
-FORA DE ESCOPO (não dispara busca):
-clima, esportes, geopolítica, loteria, horóscopo, notícias gerais, entretenimento, IA, IT.
-"""
 import re, time, logging, unicodedata, datetime, os
 import requests
 
@@ -22,9 +9,7 @@ def _norm(t):
     return "".join(c for c in unicodedata.normalize("NFD", t.lower())
                    if unicodedata.category(c) != "Mn")
 
-# ── Moedas (compras internacionais, comparações de preço) ────────────────────
 _MOEDAS_MAP = {
-    # Pares com nome completo (verificados antes dos códigos curtos)
     "dolar americano":    ("USD-BRL","Dólar americano"),
     "dolar canadense":    ("CAD-BRL","Dólar canadense"),
     "dolar australiano":  ("AUD-BRL","Dólar australiano"),
@@ -33,7 +18,6 @@ _MOEDAS_MAP = {
     "peso argentino":     ("ARS-BRL","Peso argentino"),
     "peso mexicano":      ("MXN-BRL","Peso mexicano"),
     "peso chileno":       ("CLP-BRL","Peso chileno"),
-    # Termos simples
     "dolar":    ("USD-BRL","Dólar americano"),
     "dollar":   ("USD-BRL","Dólar americano"),
     "euro":     ("EUR-BRL","Euro"),
@@ -43,7 +27,6 @@ _MOEDAS_MAP = {
     "yuan":     ("CNY-BRL","Yuan chinês"),
     "renminbi": ("CNY-BRL","Yuan chinês"),
     "rublo":    ("RUB-BRL","Rublo russo"),
-    # Códigos ISO (3 letras — exigem \b)
     "usd": ("USD-BRL","Dólar americano"),
     "eur": ("EUR-BRL","Euro"),
     "gbp": ("GBP-BRL","Libra esterlina"),
@@ -51,22 +34,16 @@ _MOEDAS_MAP = {
     "cny": ("CNY-BRL","Yuan chinês"),
 }
 
-# ── Termos por categoria (TODOS relacionados ao consumidor) ──────────────────
 _CAMBIO_GENERICO = [
     "cambio","cotacao","quanto vale","valor da moeda","conversao","conversor",
 ]
 _FINANCEIRO = [
-    # Juros e índices oficiais
     "selic","taxa selic","ipca","igpm","inpc","inflacao","inflação",
     "cdi","taxa cdi","rendimento poupanca","rendimento cdi",
-    # Salários, benefícios e impostos
     "salario minimo","salário mínimo","piso salarial","inss","bpc","auxilio brasil",
     "bolsa familia","imposto renda","irpf","fgts saque","fgts aniversario",
-    # Combustível e custo de vida (cobrança abusiva)
     "gasolina","combustivel","diesel","etanol","preço gasolina",
-    # Tabela FIPE (veículos usados — CDC)
     "fipe","tabela fipe","preco fipe","valor fipe",
-    # Tarifas reguladas
     "tarifa energia","aneel","bandeira tarifaria","conta de luz",
     "tarifa agua","conta agua",
 ]
@@ -80,46 +57,33 @@ _RECALL_ANVISA = [
     "alerta anvisa","recall carro","recall medicamento","recall alimento",
 ]
 
-# ── BLOCKLIST — tudo o que NÃO é tema de consumidor ──────────────────────────
 _OFF_SCOPE_BLOCKLIST = [
-    # Entretenimento e jogos
     "horoscopo","signo","tarot","numerologia","mapa astral","oraculo",
     "loteria","mega sena","quina","lotofacil","loteria federal","jogo do bicho",
     "bolao","aposta esportiva",
-    # Esportes
     "futebol","copa","mundial","olimpiada","campeonato","torneio","placar",
     "quem ganhou","time","jogador","artilheiro","libertadores","brasileirao",
     "nba","nfl","formula 1","f1","tenis","volei",
-    # Clima e tempo meteorológico
     "clima","tempo em","temperatura","previsao tempo","vai chover","vai nevar",
     "umidade","tempestade","sensacao termica","graus celsius","fahrenheit",
     "previsao do tempo",
-    # Datas e horas (puramente informativo)
     "que horas","fuso horario","hora em","hora atual","horas em","horas agora",
     "feriado","carnaval","natal data","pascoa","corpus christi","calendario",
-    # Geopolítica e notícias gerais
     "guerra","conflito armado","tensao","tensão","geopolitica","sancao","embargo",
     "ucrania","russia","israel","gaza","hormuz","iran","china taiwan","coreia",
     "ultima hora","breaking news","noticias hoje","noticia geral","atualidade",
-    # Educação e concursos
     "concurso publico","enem","vestibular","fuvest","unicamp","sisu","prouni",
     "fies","encceja","oab","tcc","monografia",
-    # Comida e estilo de vida
     "receita de","como cozinhar","como fazer bolo","drink","cocktail","dieta",
-    # Tecnologia geral (não consumidor)
     "chatgpt","gpt","ia generativa","google bard","gemini","claude ai","llm",
     "programar","codigo python","javascript","linguagem programacao",
-    # Outras áreas legais
     "direito penal","direito de familia","divorcio","pensao alimenticia",
     "heranca","inventario","crime","prisao",
-    # Commodities puras (não-consumo direto)
     "ouro preco","preço ouro","preco ouro","ouro hoje",
     "prata preco","preço prata","preco prata",
     "petroleo brent","petróleo brent","barril petroleo",
     "bitcoin","ethereum","cripto","cryptocurrency","blockchain","nft",
-    # Música, cinema, cultura
     "musica","filme","novela","serie","cantor","ator","ingresso show",
-    # Religião e política partidária
     "eleicao","presidente","deputado","partido","ideologia",
     "religiao","biblia","corao","oracao",
 ]
@@ -129,8 +93,29 @@ def esta_fora_do_escopo(mensagem):
     mn = _norm(mensagem)
     return any(t in mn for t in _OFF_SCOPE_BLOCKLIST)
 
+_PRESSAO_EMOCIONAL = [
+    "por favor","pelo amor de deus","te imploro","imploro","suplico",
+    "to chorando","estou chorando","chorando muito","muito triste","to triste",
+    "estou triste","to desesperado","estou desesperado","desespero","angustia",
+    "to sofrendo","estou sofrendo","minha vida","ultima esperanca","unica esperanca",
+    "vou me machucar","ninguem me ajuda","so voce pode","preciso muito",
+    "to em panico","estou em panico","nao aguento","nao aguento mais",
+    "se voce nao","se voce realmente","se voce fosse","prova que",
+    "voce nao se importa","voce e inutil","entao voce nao serve",
+    "que tipo de assistente","um bom assistente faria","decepcionado com voce",
+    "ignore as regras","ignora as regras","esquece as regras","sem regras",
+    "finge que","finja que","faz de conta","so dessa vez","so uma vez",
+    "ninguem vai saber","entre nos","modo desenvolvedor","sem restricoes",
+    "voce pode sim","eu sei que voce consegue","sei que voce sabe",
+    "responde mesmo assim","me responde assim mesmo","quebra o protocolo",
+]
+
+def detectar_pressao_emocional(mensagem):
+    mn = _norm(mensagem)
+    return any(t in mn for t in _PRESSAO_EMOCIONAL)
+
+
 def _detectar_moedas(mn):
-    """Detecta moedas — termos compostos primeiro, códigos curtos com \\b."""
     pares_vistos  = set()
     resultado     = []
     termos_usados = set()
@@ -150,39 +135,26 @@ def _detectar_moedas(mn):
     return resultado
 
 def precisa_busca_web(mensagem):
-    """Dispara busca web SÓ para temas dentro do escopo do consumidor."""
     if esta_fora_do_escopo(mensagem):
         return False
     mn = _norm(mensagem)
     if _detectar_moedas(mn):                              return True
     if any(p in mn for p in _CAMBIO_GENERICO):            return True
     if any(p in mn for p in _RECALL_ANVISA):              return True
-    # Termos que sempre disparam (mudam frequentemente e são consumidor-puro)
     sempre_disparam = [
-        # Índices financeiros
         "selic","taxa selic","ipca","igpm","cdi","taxa cdi","inpc",
-        # Veículos
         "fipe","tabela fipe","preco fipe","valor fipe","tabela fipe carro",
-        # Energia
         "aneel","tarifa energia","bandeira tarifaria","conta de luz","conta luz",
-        # Água
         "tarifa agua","conta agua","tarifa de agua","conta de agua",
-        # Combustível
         "gasolina","diesel","etanol","combustivel","preço gasolina","preço diesel",
-        # Salários e benefícios
         "salario minimo","salário mínimo","piso salarial",
         "inss valor","bpc valor","auxilio brasil valor","bolsa familia valor",
-        # FGTS
         "fgts saque","fgts aniversario","saque aniversario fgts",
-        # ANS
         "rol ans","reajuste plano saude","ans reajuste",
-        # ANATEL
         "internet caiu","velocidade internet","brasilbandalarga",
-        # Bancário
         "cheque especial juros","teto cheque especial","superendividamento",
     ]
     if any(t in mn for t in sempre_disparam):             return True
-    # Demais financeiros precisam de palavra temporal
     tem_assunto = any(a in mn for a in _FINANCEIRO)
     tem_tempo   = any(p in mn for p in _PALAVRAS_TEMPO)
     if tem_assunto and tem_tempo:                         return True
@@ -190,7 +162,6 @@ def precisa_busca_web(mensagem):
     return False
 
 def _montar_query(mensagem):
-    """Monta query otimizada com data atual — sempre mais recente primeiro."""
     mn   = _norm(mensagem)
     hoje = HOJE.strftime("%d/%m/%Y")
     ano  = HOJE.year
@@ -231,7 +202,6 @@ def _montar_query(mensagem):
     return " ".join(palavras) + f" Brasil consumidor {hoje}"
 
 def buscar_dado_atual(mensagem):
-    """Busca dado atual — câmbio via AwesomeAPI, resto via motores de busca."""
     mn     = _norm(mensagem)
     inicio = time.time()
     pares  = _detectar_moedas(mn)
@@ -247,7 +217,6 @@ def buscar_dado_atual(mensagem):
     return {"sucesso": False, "erro": "sem resultado", "query": query}
 
 def buscar_com_validacao(mensagem):
-    """Busca com validação dupla + cache. Resultado sempre carimbado com data."""
     from chatbot.cache_dados import get_cache, set_cache, validar_duplo
     cached = get_cache(mensagem)
     if cached:
@@ -285,7 +254,6 @@ def buscar_com_validacao(mensagem):
         "data_busca": HOJE.isoformat(),
     }
 
-# ── Fontes ────────────────────────────────────────────────────────────────────
 def _buscar_cambio(pares, inicio):
     simbolos = ",".join(p for p, _ in pares)
     try:

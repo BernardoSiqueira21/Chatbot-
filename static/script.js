@@ -23,10 +23,13 @@ function toggleTheme() { applyTheme(getTheme() === "light" ? "dark" : "light"); 
 applyTheme(getTheme());
 
 // ===== AGENT =====
-function getNome() {
-    let n = localStorage.getItem(NOME_KEY);
-    if (!n) { n = NOMES[Math.floor(Math.random()*NOMES.length)]; localStorage.setItem(NOME_KEY, n); }
+function sortearNome() {
+    const n = NOMES[Math.floor(Math.random()*NOMES.length)];
+    localStorage.setItem(NOME_KEY, n);
     return n;
+}
+function getNome() {
+    return localStorage.getItem(NOME_KEY) || sortearNome();
 }
 function getSaudacao() { return SAUDACOES[Math.floor(Math.random()*SAUDACOES.length)].replace("{nome}", getNome()); }
 
@@ -93,13 +96,11 @@ function makeMessageGroup(text, type, data) {
     const bubble = document.createElement("div");
     bubble.className = `bubble ${type}-bubble`;
     
-    // Contêiner de texto com suporte a colapso estrutural
     const bubbleText = document.createElement("div");
     bubbleText.className = "bubble-text";
     bubbleText.innerHTML = text.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/_(.+?)_/g,"<em>$1</em>").replace(/\n/g,"<br>");
     bubble.appendChild(bubbleText);
 
-    // Regra dinâmina de colapso de texto longo (> 380 caracteres)
     if (text.length > 380) {
         bubbleText.classList.add("collapsed");
         const toggleBtn = document.createElement("button");
@@ -121,7 +122,6 @@ function makeMessageGroup(text, type, data) {
     
     body.appendChild(bubble);
     
-    // Barra inferior de ações (Badges + Copiar)
     const actionsRow = document.createElement("div");
     actionsRow.className = "msg-actions";
     
@@ -130,7 +130,6 @@ function makeMessageGroup(text, type, data) {
         if (badge) actionsRow.appendChild(badge);
     }
     
-    // Botão nativo de cópia rápida
     const copyBtn = document.createElement("button");
     copyBtn.className = "action-btn";
     copyBtn.type = "button";
@@ -268,7 +267,6 @@ async function atualizarStats() {
         const s = await res.json();
         const panel = document.getElementById("stats-panel");
         
-        // Regra restrita: Só aparece no DOM e fica visível se a contagem for maior que zero
         if (panel && s.total_mensagens > 0) {
             panel.style.display = "flex";
             panel.innerHTML = `
@@ -307,8 +305,7 @@ async function sendMessage() {
     sending = true; 
     sendBtn.disabled = true;
     addUserMessage(msg);
-    
-    // Reseta o textarea para o tamanho base padrão (1 linha)
+
     userInput.value = ""; 
     userInput.style.height = "auto";
     
@@ -345,10 +342,10 @@ function usarExemplo(text) {
 
 function clearChat() {
     fetch("/reset", {method:"POST"}).catch(()=>{});
-    localStorage.removeItem(STORAGE_KEY); 
+    localStorage.removeItem(STORAGE_KEY);
+    sortearNome();
     renderInitial(); 
     
-    // Zera os registros visualmente no cliente e oculta o painel imediatamente
     const panel = document.getElementById("stats-panel");
     if (panel) {
         panel.style.display = "none";
@@ -356,7 +353,10 @@ function clearChat() {
     }
 }
 
-// Listener do botão de nova conversa
+if (sendBtn) {
+    sendBtn.addEventListener("click", sendMessage);
+}
+
 if (clearBtn) {
     clearBtn.addEventListener("click", clearChat);
 }
@@ -368,7 +368,6 @@ userInput.addEventListener("input", function() {
 });
 
 userInput.addEventListener("keydown", e => {
-    // Enter envia a mensagem normalmente, Shift + Enter injeta quebra de linha nativa
     if(e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
         sendMessage();

@@ -1,324 +1,382 @@
 // ===== CONSTANTS =====
-const STORAGE_KEY   = "cbot_historico_v2";
+const STORAGE_KEY   = "cbot_historico_minimal";
 const NOME_KEY      = "cbot_nome_atendente";
 const THEME_KEY     = "cbot_theme";
 
-const NOMES = [
-    "Marina", "Camila", "Juliana", "Fernanda", "Patricia",
-    "Amanda", "Beatriz", "Larissa", "Gabriela", "Aline",
-    "Carolina", "Natalia", "Renata", "Bianca", "Vanessa"
-];
-
+const NOMES = ["Marina", "Camila", "Juliana", "Fernanda", "Patricia"];
 const SAUDACOES = [
-    "Olá! Sou {nome} e vou te orientar sobre questões do Código de Defesa do Consumidor. Me conta o que aconteceu.",
-    "Oi! Aqui é a {nome}. Pode me descrever o seu caso com calma — eu acompanho cada detalhe.",
-    "Olá! Sou a {nome}. Estou aqui para te ajudar a entender seus direitos como consumidor. O que aconteceu?",
-    "Oi, tudo bem? Sou a {nome}. Me explica o que está acontecendo no seu caso que eu te oriento por partes.",
-    "Olá! Sou a {nome}. Me diz com suas palavras o que aconteceu — pode ser breve mesmo, depois a gente detalha.",
+    "Olá! Sou a {nome}. Como posso ajudar você com questões de Defesa do Consumidor hoje?",
+    "Oi! Aqui é a {nome}. Me conte o seu problema para que eu possa orientá-lo.",
 ];
 
 // ===== DOM =====
-const chatBox    = document.getElementById("chat-box");
-const userInput  = document.getElementById("user-input");
-const sendBtn    = document.getElementById("send-button");
-const clearBtn   = document.getElementById("clear-button");
-const agentName  = document.getElementById("agent-name");
+const chatBox   = document.getElementById("chat-box");
+const userInput = document.getElementById("user-input");
+const sendBtn   = document.getElementById("send-button");
+const clearBtn  = document.getElementById("clear-button");
+const agentName = document.getElementById("agent-name");
 
 // ===== THEME =====
-function getTheme() {
-    return localStorage.getItem(THEME_KEY) || "light";
-}
-
-function applyTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem(THEME_KEY, theme);
-}
-
-function toggleTheme() {
-    const current = getTheme();
-    applyTheme(current === "light" ? "dark" : "light");
-}
-
+function getTheme() { return localStorage.getItem(THEME_KEY) || "light"; }
+function applyTheme(t) { document.documentElement.setAttribute("data-theme", t); localStorage.setItem(THEME_KEY, t); }
+function toggleTheme() { applyTheme(getTheme() === "light" ? "dark" : "light"); }
 applyTheme(getTheme());
 
 // ===== AGENT =====
-function getNome() {
-    let n = localStorage.getItem(NOME_KEY);
-    if (!n) {
-        n = NOMES[Math.floor(Math.random() * NOMES.length)];
-        localStorage.setItem(NOME_KEY, n);
-    }
+function sortearNome() {
+    const n = NOMES[Math.floor(Math.random()*NOMES.length)];
+    localStorage.setItem(NOME_KEY, n);
     return n;
 }
-
-function getSaudacao() {
-    const s = SAUDACOES[Math.floor(Math.random() * SAUDACOES.length)];
-    return s.replace("{nome}", getNome());
+function getNome() {
+    return localStorage.getItem(NOME_KEY) || sortearNome();
 }
+function getSaudacao() { return SAUDACOES[Math.floor(Math.random()*SAUDACOES.length)].replace("{nome}", getNome()); }
 
 // ===== HELPERS =====
-function scrollBottom(smooth = true) {
-    chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: smooth ? "smooth" : "instant" });
+function scrollBottom(smooth=true) { 
+    chatBox.parentElement.scrollTo({top:chatBox.parentElement.scrollHeight, behavior:smooth?"smooth":"instant"}); 
 }
-
-function saveHistory() {
-    try { localStorage.setItem(STORAGE_KEY, chatBox.innerHTML); } catch(e) {}
-}
-
-function formatTime() {
-    return new Date().toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
-}
+function saveHistory() { try { localStorage.setItem(STORAGE_KEY, chatBox.innerHTML); } catch(e){} }
 
 // ===== AVATAR =====
-function makeBotAvatar() {
-    const d = document.createElement("div");
-    d.className = "msg-avatar bot-avatar";
-    d.textContent = getNome().charAt(0);
-    return d;
+function makeBotAvatar() { 
+    const d = document.createElement("div"); 
+    d.className = "msg-avatar bot-avatar"; 
+    d.textContent = getNome().charAt(0); 
+    return d; 
 }
 
-function makeUserAvatar() {
-    const d = document.createElement("div");
-    d.className = "msg-avatar user-avatar";
-    d.textContent = "Eu";
-    return d;
+// ===== BADGE KB / LLM / WEB / TIMESTAMP =====
+function makeFonteBadge(data) {
+    if (!data || !data.fonte || data.fonte === "sistema" || data.fonte === "anti_loop") return null;
+    const badge = document.createElement("div");
+    badge.className = "fonte-badge";
+
+    let icone = "📚", rotulo = "Base", extra = "";
+
+    if (data.usou_web) {
+        icone = "🌐";
+        rotulo = "Tempo real";
+        if (data.dado_web && data.dado_web.confianca === "alta") extra = " ✓✓";
+    } else if (data.fonte === "calculadora_prazos") {
+        icone = "🗓️"; rotulo = "Calculadora";
+    } else if (data.fonte === "gerador_reclamacao") {
+        icone = "✍️"; rotulo = "Reclamação";
+    } else if (data.usou_llm && !data.fonte.includes("base_conhecimento")) {
+        icone = "⚡"; rotulo = "LLM";
+    } else if (data.fonte.includes("base_conhecimento")) {
+        icone = "📚"; rotulo = "Base CDC";
+        if (data.kb_resultado && data.kb_resultado.artigo) {
+            extra = ` · Art. ${data.kb_resultado.artigo}`;
+        }
+    }
+
+    badge.textContent = `${icone} ${rotulo}${extra}`;
+
+    if (data.timestamp) {
+        const ts = document.createElement("span");
+        ts.className = "badge-tempo";
+        ts.textContent = data.timestamp.split(" ")[1] || data.timestamp;
+        badge.appendChild(ts);
+    }
+    return badge;
 }
 
 // ===== MESSAGE BUILDER =====
-function makeMessageGroup(text, type) {
+function makeMessageGroup(text, type, data) {
     const group = document.createElement("div");
     group.className = `message-group ${type}`;
-
-    const avatar = type === "bot" ? makeBotAvatar() : makeUserAvatar();
-
+    
+    if (type === "bot") group.appendChild(makeBotAvatar());
+    
     const body = document.createElement("div");
     body.className = "msg-body";
-
-    const author = document.createElement("div");
-    author.className = "msg-author";
-    author.textContent = type === "bot" ? getNome() : "Você";
-
+    
     const bubble = document.createElement("div");
     bubble.className = `bubble ${type}-bubble`;
-    bubble.innerHTML = text.replace(/\n/g, "<br>");
+    
+    const bubbleText = document.createElement("div");
+    bubbleText.className = "bubble-text";
+    bubbleText.innerHTML = text.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/_(.+?)_/g,"<em>$1</em>").replace(/\n/g,"<br>");
+    bubble.appendChild(bubbleText);
 
-    body.appendChild(author);
+    if (text.length > 380) {
+        bubbleText.classList.add("collapsed");
+        const toggleBtn = document.createElement("button");
+        toggleBtn.className = "toggle-expand-btn";
+        toggleBtn.textContent = "... mostrar mais";
+        toggleBtn.type = "button";
+        toggleBtn.onclick = () => {
+            if (bubbleText.classList.contains("collapsed")) {
+                bubbleText.classList.remove("collapsed");
+                toggleBtn.textContent = "Mostrar menos";
+            } else {
+                bubbleText.classList.add("collapsed");
+                toggleBtn.textContent = "... mostrar mais";
+            }
+            scrollBottom(true);
+        };
+        bubble.appendChild(toggleBtn);
+    }
+    
     body.appendChild(bubble);
-    group.appendChild(avatar);
+    
+    const actionsRow = document.createElement("div");
+    actionsRow.className = "msg-actions";
+    
+    if (type === "bot" && data) {
+        const badge = makeFonteBadge(data);
+        if (badge) actionsRow.appendChild(badge);
+    }
+    
+    const copyBtn = document.createElement("button");
+    copyBtn.className = "action-btn";
+    copyBtn.type = "button";
+    copyBtn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> <span>Copiar</span>`;
+    copyBtn.onclick = () => {
+        navigator.clipboard.writeText(text).then(() => {
+            const txtSpan = copyBtn.querySelector("span");
+            txtSpan.textContent = "Copiado!";
+            setTimeout(() => { txtSpan.textContent = "Copiar"; }, 1800);
+        }).catch(()=>{});
+    };
+    
+    actionsRow.appendChild(copyBtn);
+    body.appendChild(actionsRow);
     group.appendChild(body);
+    
     return group;
 }
 
 // ===== CHIPS =====
-function makeChipsSection(items, type, title) {
+function makeChipsSection(items) {
     if (!items || items.length === 0) return null;
-
     const section = document.createElement("div");
     section.className = "chips-section";
-
-    const label = document.createElement("div");
-    label.className = "chips-title";
-    label.textContent = title;
-    section.appendChild(label);
-
-    const row = document.createElement("div");
-    row.className = "chips-row";
-
+    
     items.forEach(item => {
-        const texto = typeof item === "string" ? item : "Quero saber sobre " + item.label;
+        const texto = typeof item === "string" ? item : item.label;
         const btn = document.createElement("button");
-        btn.className = `chip ${type === "question" ? "chip-question" : "chip-topic"}`;
-        btn.textContent = typeof item === "string" ? item : item.label;
-        btn.dataset.texto = texto;
+        btn.className = "chip";
+        btn.textContent = texto;
+        btn.dataset.texto = typeof item === "string" ? item : "Quero saber sobre "+item.label;
         btn.type = "button";
-        btn.onclick = () => usarExemplo(texto);
-        row.appendChild(btn);
+        btn.onclick = () => usarExemplo(btn.dataset.texto);
+        section.appendChild(btn);
     });
-
-    section.appendChild(row);
     return section;
 }
 
-function reconectarChips() {
-    chatBox.querySelectorAll(".chip[data-texto]").forEach(chip => {
-        chip.onclick = () => usarExemplo(chip.dataset.texto);
+function reconectarChips() { 
+    chatBox.querySelectorAll(".chip").forEach(c => { c.onclick = () => usarExemplo(c.dataset.texto); }); 
+    chatBox.querySelectorAll(".toggle-expand-btn").forEach(btn => {
+        const txt = btn.previousSibling;
+        btn.onclick = () => {
+            if (txt.classList.contains("collapsed")) {
+                txt.classList.remove("collapsed");
+                btn.textContent = "Mostrar menos";
+            } else {
+                txt.classList.add("collapsed");
+                btn.textContent = "... mostrar mais";
+            }
+            scrollBottom(true);
+        };
     });
 }
 
-// ===== TYPING INDICATOR =====
+// ===== TYPING =====
 function showTyping() {
     const group = document.createElement("div");
     group.className = "message-group bot";
     group.id = "typing-indicator";
-
-    const avatar = makeBotAvatar();
-
+    group.appendChild(makeBotAvatar());
+    
     const body = document.createElement("div");
     body.className = "msg-body";
-
+    
     const bubble = document.createElement("div");
     bubble.className = "bubble bot-bubble typing-indicator";
     bubble.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
-
+    
     body.appendChild(bubble);
-    group.appendChild(avatar);
     group.appendChild(body);
     chatBox.appendChild(group);
     scrollBottom();
 }
 
-function hideTyping() {
-    const el = document.getElementById("typing-indicator");
-    if (el) el.remove();
+function hideTyping() { 
+    const el = document.getElementById("typing-indicator"); 
+    if(el) el.remove(); 
 }
 
 // ===== ADD MESSAGES =====
 function addBotMessage(data) {
-    const group = makeMessageGroup(data.resposta || "Entendi. Pode continuar.", "bot");
-    chatBox.appendChild(group);
-
-    if (data.dicas && data.dicas.length > 0) {
-        const chips = makeChipsSection(data.dicas, "question", "Dúvidas comuns sobre este tema");
-        if (chips) chatBox.appendChild(chips);
+    chatBox.appendChild(makeMessageGroup(data.resposta || "Entendi.", "bot", data));
+    
+    let chipsData = [];
+    if (data.dicas) chipsData = chipsData.concat(data.dicas);
+    if (data.relacionados) chipsData = chipsData.concat(data.relacionados);
+    
+    if (chipsData.length > 0) { 
+        const c = makeChipsSection(chipsData.slice(0, 4));
+        if(c) chatBox.appendChild(c); 
     }
-
-    if (data.relacionados && data.relacionados.length > 0) {
-        const chips = makeChipsSection(data.relacionados, "topic", "Temas relacionados");
-        if (chips) chatBox.appendChild(chips);
-    }
-
+    
     scrollBottom();
     saveHistory();
 }
 
-function addUserMessage(text) {
-    const group = makeMessageGroup(text, "user");
-    chatBox.appendChild(group);
-    scrollBottom();
-    saveHistory();
+function addUserMessage(text) { 
+    chatBox.appendChild(makeMessageGroup(text, "user")); 
+    scrollBottom(); 
+    saveHistory(); 
 }
 
-// ===== INITIAL MESSAGE =====
+// ===== INITIAL =====
 function renderInitial() {
     chatBox.innerHTML = "";
-
-    // Date divider
-    const divider = document.createElement("div");
-    divider.className = "date-divider";
-    divider.innerHTML = `<span>Hoje, ${formatTime()}</span>`;
-    chatBox.appendChild(divider);
-
-    // Greeting
-    const group = makeMessageGroup(getSaudacao(), "bot");
-    chatBox.appendChild(group);
-
-    // Initial chips
-    const starterChips = [
-        "Produto com defeito, e agora?",
-        "Tive um problema com entrega",
-        "Me cobraram um valor errado",
-        "Quero cancelar uma compra online",
-        "A loja não quer trocar",
-        "Quero conhecer meus direitos",
-    ];
-    const chips = makeChipsSection(starterChips, "question", "Por onde quer começar?");
+    chatBox.appendChild(makeMessageGroup(getSaudacao(), "bot", null));
+    
+    const chips = makeChipsSection([
+        "Produto com defeito",
+        "Atraso na entrega",
+        "Cobrança indevida",
+        "Arrependimento de compra"
+    ]);
     if (chips) chatBox.appendChild(chips);
-
+    
     scrollBottom(false);
     saveHistory();
 }
 
 function loadHistory() {
-    try {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-            chatBox.innerHTML = saved;
-            reconectarChips();
-            scrollBottom(false);
-        } else {
-            renderInitial();
-        }
-    } catch(e) {
-        renderInitial();
+    try { 
+        const s = localStorage.getItem(STORAGE_KEY); 
+        if(s) { chatBox.innerHTML = s; reconectarChips(); scrollBottom(false); } 
+        else { renderInitial(); } 
     }
+    catch(e) { renderInitial(); }
+}
+
+// ===== STATS MONITOR =====
+async function atualizarStats() {
+    try {
+        const res = await fetch("/stats");
+        if (!res.ok) return;
+        const s = await res.json();
+        const panel = document.getElementById("stats-panel");
+        
+        if (panel && s.total_mensagens > 0) {
+            panel.style.display = "flex";
+            panel.innerHTML = `
+                <div class="stat-row">
+                    <span class="stat-label">Mensagens</span>
+                    <span class="stat-value">${s.total_mensagens}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">📚 Base</span>
+                    <span class="stat-value">${s.taxa_base_pct}%</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">⚡ LLM</span>
+                    <span class="stat-value">${s.taxa_llm_pct}%</span>
+                </div>
+                ${s.tempo_medio_llm_ms > 0 ? `
+                <div class="stat-row">
+                    <span class="stat-label">⏱ Avg</span>
+                    <span class="stat-value">${s.tempo_medio_llm_ms}ms</span>
+                </div>` : ''}
+            `;
+        } else if (panel) {
+            panel.style.display = "none";
+            panel.innerHTML = "";
+        }
+    } catch(e) {}
 }
 
 // ===== SEND =====
 let sending = false;
-
 async function sendMessage() {
     if (sending) return;
     const msg = (userInput.value || "").trim();
     if (!msg) return;
-
-    sending = true;
+    
+    sending = true; 
     sendBtn.disabled = true;
-
     addUserMessage(msg);
-    userInput.value = "";
-    userInput.focus();
 
-    // Human-like delay: random between 600ms and 1400ms
-    const delay = 600 + Math.random() * 800;
-    await new Promise(r => setTimeout(r, 250));
+    userInput.value = ""; 
+    userInput.style.height = "auto";
+    
     showTyping();
-    await new Promise(r => setTimeout(r, delay));
-
+    
     try {
         const res = await fetch("/chat", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ mensagem: msg })
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({mensagem:msg})
         });
-
-        let data;
-        try { data = await res.json(); }
-        catch(e) { data = { resposta: "Desculpe, houve um problema ao processar. Pode tentar novamente?" }; }
-
+        let data; 
+        try { data = await res.json(); } catch(e) { data = {resposta:"Erro ao processar a resposta."}; }
+        
         hideTyping();
-
-        if (data && data.resposta) {
-            addBotMessage(data);
-        } else {
-            addBotMessage({ resposta: "Desculpe, ocorreu um erro. Pode tentar novamente?" });
-        }
+        addBotMessage(data || {resposta:"Desculpe, ocorreu um erro na comunicação."});
+        atualizarStats();
+        
     } catch(err) {
         hideTyping();
-        addBotMessage({ resposta: "Não foi possível conectar. Verifique sua conexão e tente novamente." });
-    } finally {
-        sending = false;
+        addBotMessage({resposta:"Não foi possível conectar. Verifique sua conexão com a internet."});
+    } finally { 
+        sending = false; 
         sendBtn.disabled = false;
+        userInput.focus();
     }
 }
 
-function usarExemplo(text) {
-    if (!text || sending) return;
-    userInput.value = text;
-    sendMessage();
+function usarExemplo(text) { 
+    if(!text || sending) return; 
+    userInput.value = text; 
+    sendMessage(); 
 }
 
-// ===== CLEAR =====
 function clearChat() {
-    fetch("/reset", { method: "POST" }).catch(() => {});
+    fetch("/reset", {method:"POST"}).catch(()=>{});
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.removeItem(NOME_KEY);
-    if (agentName) agentName.textContent = getNome() + " · Atendente virtual";
-    renderInitial();
+    sortearNome();
+    renderInitial(); 
+    
+    const panel = document.getElementById("stats-panel");
+    if (panel) {
+        panel.style.display = "none";
+        panel.innerHTML = "";
+    }
 }
 
-// ===== EVENTS =====
-sendBtn.addEventListener("click", sendMessage);
-clearBtn.addEventListener("click", clearChat);
+if (sendBtn) {
+    sendBtn.addEventListener("click", sendMessage);
+}
+
+if (clearBtn) {
+    clearBtn.addEventListener("click", clearChat);
+}
+
+// ===== INPUT DYNAMIC RESIZE & KEYS =====
+userInput.addEventListener("input", function() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight - 4) + "px";
+});
 
 userInput.addEventListener("keydown", e => {
-    if (e.key === "Enter" && !e.shiftKey) {
+    if(e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
         sendMessage();
     }
 });
 
 // ===== INIT =====
-window.addEventListener("load", () => {
-    if (agentName) agentName.textContent = getNome() + " · Atendente virtual";
-    loadHistory();
+window.addEventListener("load", () => { 
+    if(agentName) agentName.textContent = "ConsumidorBot"; 
+    loadHistory(); 
+    atualizarStats();
 });

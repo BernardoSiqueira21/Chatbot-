@@ -1,0 +1,3443 @@
+{
+  "versao": "4.0",
+  "nome": "Código de Defesa do Consumidor — Base Completa",
+  "lei": "Lei n.º 8.078, de 11 de setembro de 1990",
+  "artigos": {
+    "art1": {
+      "numero": 1,
+      "titulo": "Norma de Ordem Pública",
+      "texto": "O CDC estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social. Não pode ser afastado por contrato.",
+      "resumo": "O CDC é norma de ordem pública — não pode ser afastado por contrato ou acordo entre partes.",
+      "palavras_chave": [
+        "cdc",
+        "codigo de defesa",
+        "lei do consumidor",
+        "norma",
+        "ordem publica",
+        "lei 8078"
+      ],
+      "prazos": {}
+    },
+    "art2": {
+      "numero": 2,
+      "titulo": "Definição de Consumidor",
+      "texto": "Consumidor é toda pessoa física ou jurídica que adquire ou utiliza produto ou serviço como destinatário final. Equipara-se a consumidor a coletividade de pessoas que haja intervindo nas relações de consumo.",
+      "resumo": "Consumidor é quem adquire produto ou serviço como destinatário final, podendo ser pessoa física ou jurídica.",
+      "palavras_chave": [
+        "consumidor",
+        "quem e consumidor",
+        "pessoa fisica",
+        "destinatario final",
+        "sou consumidor"
+      ],
+      "prazos": {}
+    },
+    "art3": {
+      "numero": 3,
+      "titulo": "Definição de Fornecedor",
+      "texto": "Fornecedor é toda pessoa física ou jurídica, pública ou privada, que desenvolve atividade de produção, montagem, criação, construção, importação, exportação, distribuição ou comercialização de produtos ou prestação de serviços.",
+      "resumo": "Fornecedor é qualquer empresa ou pessoa que vende produtos ou presta serviços — inclui fabricante, importador, revendedor.",
+      "palavras_chave": [
+        "fornecedor",
+        "empresa",
+        "loja",
+        "fabricante",
+        "vendedor",
+        "importador",
+        "quem e responsavel"
+      ],
+      "prazos": {}
+    },
+    "art4": {
+      "numero": 4,
+      "titulo": "Política Nacional das Relações de Consumo",
+      "texto": "A Política Nacional das Relações de Consumo tem por objetivo o atendimento das necessidades dos consumidores, o respeito à sua dignidade, saúde e segurança, a proteção de seus interesses econômicos, a melhoria da sua qualidade de vida, bem como a transparência e harmonia das relações de consumo.",
+      "resumo": "Princípios da política de proteção: dignidade, segurança, transparência e harmonia nas relações de consumo.",
+      "palavras_chave": [
+        "politica nacional",
+        "principios",
+        "dignidade consumidor",
+        "transparencia",
+        "harmonia"
+      ],
+      "prazos": {}
+    },
+    "art6": {
+      "numero": 6,
+      "titulo": "Direitos Básicos do Consumidor",
+      "texto": "São direitos básicos do consumidor: I — proteção da vida, saúde e segurança; II — educação sobre consumo; III — informação adequada e clara sobre produtos e serviços; IV — proteção contra publicidade enganosa e abusiva; V — modificação de cláusulas contratuais desproporcionais; VI — prevenção e reparação de danos; VII — acesso aos órgãos judiciários e administrativos; VIII — facilitação da defesa dos direitos; X — adequada e eficaz prestação dos serviços públicos.",
+      "resumo": "Seus direitos básicos: informação clara, proteção contra propaganda enganosa, reparação de danos e acesso à justiça.",
+      "palavras_chave": [
+        "direitos basicos",
+        "direitos do consumidor",
+        "meus direitos",
+        "o que posso exigir",
+        "direitos fundamentais",
+        "cdc",
+        "codigo de defesa",
+        "quais meus direitos"
+      ],
+      "prazos": {}
+    },
+    "art7": {
+      "numero": 7,
+      "titulo": "Direitos Previstos em Outras Normas",
+      "texto": "Os direitos previstos no CDC não excluem outros decorrentes de tratados ou convenções internacionais, legislação interna ordinária, de regulamentos expedidos pelas autoridades administrativas competentes, bem como dos que derivem dos princípios gerais do direito.",
+      "resumo": "Os direitos do CDC somam-se a outros direitos previstos em leis específicas — o consumidor pode acumular proteções.",
+      "palavras_chave": [
+        "outros direitos",
+        "tratados",
+        "normas",
+        "legislacao",
+        "protecao adicional"
+      ],
+      "prazos": {}
+    },
+    "art8": {
+      "numero": 8,
+      "titulo": "Segurança dos Produtos e Serviços",
+      "texto": "Os produtos e serviços colocados no mercado de consumo não acarretarão riscos à saúde ou segurança dos consumidores, exceto os considerados normais e previsíveis em decorrência de sua natureza e fruição.",
+      "resumo": "Produtos e serviços devem ser seguros. O fornecedor é responsável por qualquer risco à saúde ou segurança.",
+      "palavras_chave": [
+        "seguranca produto",
+        "risco saude",
+        "produto perigoso",
+        "produto inseguro",
+        "acidente produto"
+      ],
+      "prazos": {}
+    },
+    "art9": {
+      "numero": 9,
+      "titulo": "Informação sobre Periculosidade",
+      "texto": "O fornecedor de produtos e serviços potencialmente nocivos ou perigosos à saúde ou segurança deverá informar, de maneira ostensiva e adequada, a respeito da sua nocividade ou periculosidade.",
+      "resumo": "Produtos perigosos devem ter aviso claro e ostensivo sobre os riscos — a empresa é obrigada a informar.",
+      "palavras_chave": [
+        "produto perigoso",
+        "aviso perigo",
+        "informacao risco",
+        "nocivo",
+        "periculosidade"
+      ],
+      "prazos": {}
+    },
+    "art10": {
+      "numero": 10,
+      "titulo": "Recall — Retirada de Produtos do Mercado",
+      "texto": "O fornecedor não poderá colocar no mercado de consumo produto ou serviço que sabe ou deveria saber apresentar alto grau de nocividade ou periculosidade à saúde ou segurança. Deve comunicar às autoridades e aos consumidores e proceder à retirada imediata do produto do mercado (recall).",
+      "resumo": "Recall: empresa deve retirar do mercado produto perigoso e comunicar consumidores imediatamente.",
+      "palavras_chave": [
+        "recall",
+        "retirada produto",
+        "produto nocivo",
+        "produto danoso",
+        "alto risco",
+        "comunicacao perigo"
+      ],
+      "prazos": {}
+    },
+    "art12": {
+      "numero": 12,
+      "titulo": "Responsabilidade pelo Fato do Produto — Acidente de Consumo",
+      "texto": "O fabricante, o produtor, o construtor, nacional ou estrangeiro, e o importador respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem, fórmulas, manipulação, apresentação ou acondicionamento de seus produtos, bem como por informações insuficientes ou inadequadas sobre sua utilização e riscos.",
+      "resumo": "Acidente causado por produto: fabricante e importador respondem sem necessidade de provar culpa — responsabilidade objetiva.",
+      "palavras_chave": [
+        "acidente produto",
+        "dano produto",
+        "lesao produto",
+        "produto causou dano",
+        "responsabilidade fabricante",
+        "indenizacao produto",
+        "me machuquei",
+        "produto me feriu"
+      ],
+      "prazos": {}
+    },
+    "art13": {
+      "numero": 13,
+      "titulo": "Responsabilidade Solidária — Comerciante",
+      "texto": "O comerciante é igualmente responsável quando: I — o fabricante não puder ser identificado; II — o produto for fornecido sem identificação clara do fabricante; III — não conservar adequadamente os produtos perigosos ou de controle.",
+      "resumo": "Loja também é responsável se o fabricante não puder ser identificado ou o produto não tiver identificação.",
+      "palavras_chave": [
+        "comerciante responsavel",
+        "loja responsavel",
+        "fabricante nao identificado",
+        "responsabilidade loja",
+        "quem paga o dano"
+      ],
+      "prazos": {}
+    },
+    "art14": {
+      "numero": 14,
+      "titulo": "Responsabilidade pelo Fato do Serviço",
+      "texto": "O fornecedor de serviços responde, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos relativos à prestação dos serviços, bem como por informações insuficientes ou inadequadas sobre sua fruição e riscos.",
+      "resumo": "Serviço que causou dano: prestador responde sem necessidade de provar culpa — responsabilidade objetiva.",
+      "palavras_chave": [
+        "servico causou dano",
+        "acidente servico",
+        "dano servico",
+        "responsabilidade prestador",
+        "servico me prejudicou",
+        "me prejudicaram"
+      ],
+      "prazos": {}
+    },
+    "art17": {
+      "numero": 17,
+      "titulo": "Equiparação — Vítimas do Acidente de Consumo",
+      "texto": "Para os efeitos desta Seção, equiparam-se aos consumidores todas as vítimas do evento, mesmo que não sejam os compradores do produto ou serviço.",
+      "resumo": "Terceiros que foram prejudicados por acidente de consumo também têm os mesmos direitos do consumidor.",
+      "palavras_chave": [
+        "terceiro vitima",
+        "nao comprei mas fui prejudicado",
+        "vitima acidente",
+        "bystander",
+        "passante prejudicado"
+      ],
+      "prazos": {}
+    },
+    "art18": {
+      "numero": 18,
+      "titulo": "Vícios de Qualidade — Produtos",
+      "texto": "Os fornecedores respondem solidariamente pelos vícios de qualidade que tornem o produto impróprio ao consumo ou lhes diminuam o valor. Não sendo sanado no prazo de 30 dias, o consumidor pode exigir: I — substituição do produto; II — restituição da quantia paga; III — abatimento proporcional do preço.",
+      "resumo": "Produto com defeito: empresa tem 30 dias para resolver. Se não resolver, você escolhe: troca, reembolso ou desconto.",
+      "palavras_chave": [
+        "defeito",
+        "vicio",
+        "produto com defeito",
+        "produto quebrado",
+        "garantia",
+        "troca",
+        "conserto",
+        "produto ruim",
+        "nao funciona",
+        "veio quebrado",
+        "apresentou problema",
+        "esta com defeito",
+        "parou de funcionar",
+        "celular parou",
+        "nao liga",
+        "vem com defeito",
+        "produto danificado",
+        "produto estragado",
+        "veio danificado",
+        "produto falhou",
+        "quebrou logo",
+        "defeito de fabricacao",
+        "problemas no produto",
+        "quero reembolso",
+        "quero dinheiro de volta",
+        "ressarcimento",
+        "reembolso garantia",
+        "quebrou",
+        "parou de funcionar",
+        "nao liga",
+        "vicio oculto",
+        "apresentou defeito",
+        "com problema",
+        "veio com vicio",
+        "esta quebrado",
+        "veio quebrado",
+        "nao funciona direito",
+        "parou de funcionar",
+        "com defeito de fabricacao",
+        "veio errado",
+        "produto ruim"
+      ],
+      "prazos": {
+        "prazo_resolucao_empresa_dias": 30
+      },
+      "opcoes": [
+        "substituição do produto",
+        "restituição do valor pago",
+        "abatimento proporcional do preço"
+      ]
+    },
+    "art19": {
+      "numero": 19,
+      "titulo": "Vícios de Quantidade",
+      "texto": "Os fornecedores respondem pelos vícios de quantidade do produto sempre que seu conteúdo líquido for inferior às indicações constantes do recipiente, da embalagem, rotulagem ou de mensagem publicitária.",
+      "resumo": "Se o produto veio com quantidade menor que a anunciada (peso, volume, unidades), você tem direito de reclamar.",
+      "palavras_chave": [
+        "quantidade errada",
+        "peso errado",
+        "menos do que anunciado",
+        "conteudo inferior",
+        "embalagem errada",
+        "produto incompleto",
+        "faltou item",
+        "faltaram pecas"
+      ],
+      "prazos": {}
+    },
+    "art20": {
+      "numero": 20,
+      "titulo": "Vícios de Qualidade — Serviços",
+      "texto": "O fornecedor de serviços responde pelos vícios de qualidade que os tornem impróprios ao consumo ou lhes diminuam o valor. O consumidor pode exigir: I — reexecução dos serviços sem custo; II — restituição da quantia paga; III — abatimento proporcional do preço.",
+      "resumo": "Serviço com defeito ou mal executado: exija reexecução gratuita, reembolso ou desconto.",
+      "palavras_chave": [
+        "servico com problema",
+        "servico ruim",
+        "servico mal feito",
+        "servico incompleto",
+        "nao fizeram direito",
+        "cobrou e fez errado",
+        "tecnico nao resolveu",
+        "servico errado",
+        "resultado diferente"
+      ],
+      "prazos": {},
+      "opcoes": [
+        "reexecução gratuita do serviço",
+        "restituição do valor pago",
+        "abatimento proporcional do preço"
+      ]
+    },
+    "art21": {
+      "numero": 21,
+      "titulo": "Reparação — Reexecução por Terceiro",
+      "texto": "No fornecimento de serviços que tenham por objetivo a reparação de qualquer produto, considerar-se-á implícita a obrigação do fornecedor de empregar componentes de reposição originais adequados e novos, ou que mantenham as especificações técnicas do fabricante, salvo, quanto a estes últimos, autorização em contrário do consumidor.",
+      "resumo": "Ao consertar produto, a empresa deve usar peças originais ou equivalentes — não pode usar peças inadequadas sem avisar.",
+      "palavras_chave": [
+        "conserto",
+        "reparo",
+        "assistencia tecnica",
+        "peca original",
+        "peca reposicao",
+        "tecnico",
+        "manutencao"
+      ],
+      "prazos": {}
+    },
+    "art22": {
+      "numero": 22,
+      "titulo": "Serviços Essenciais — Continuidade",
+      "texto": "Os órgãos públicos, por si ou suas empresas, concessionárias, permissionárias ou sob qualquer outra forma de empreendimento, são obrigados a fornecer serviços adequados, eficientes, seguros e, quanto aos essenciais, contínuos.",
+      "resumo": "Serviços essenciais (água, luz, gás, telefone) não podem ser interrompidos de forma abusiva.",
+      "palavras_chave": [
+        "luz cortada",
+        "agua cortada",
+        "gas cortado",
+        "internet cortada",
+        "servico essencial",
+        "corte indevido",
+        "concessionaria",
+        "servico publico"
+      ],
+      "prazos": {}
+    },
+    "art23": {
+      "numero": 23,
+      "titulo": "Ignorância sobre Vício — Irrelevância",
+      "texto": "A ignorância do fornecedor sobre os vícios de qualidade por inadequação dos produtos e serviços não o exime de responsabilidade.",
+      "resumo": "A empresa não pode alegar que 'não sabia do defeito' para se eximir de responsabilidade.",
+      "palavras_chave": [
+        "empresa nao sabia",
+        "nao sabia do defeito",
+        "ignorancia fornecedor",
+        "desconhecia problema"
+      ],
+      "prazos": {}
+    },
+    "art24": {
+      "numero": 24,
+      "titulo": "Garantia Legal — Independência de Termo",
+      "texto": "A garantia legal de adequação do produto ou serviço independe de termo expresso, vedada a exoneração contratual do fornecedor.",
+      "resumo": "A garantia legal existe independentemente de contrato ou termo escrito — a empresa não pode se isentar dela contratualmente.",
+      "palavras_chave": [
+        "garantia legal",
+        "garantia obrigatoria",
+        "garantia independe",
+        "sem garantia escrita",
+        "termo garantia"
+      ],
+      "prazos": {}
+    },
+    "art25": {
+      "numero": 25,
+      "titulo": "Vedação de Cláusula de Não Indenizar",
+      "texto": "É vedada a estipulação contratual de cláusula que impossibilite, exonere ou atenue a obrigação de indenizar prevista nesta e nas seções anteriores.",
+      "resumo": "Cláusulas que tentam isentar a empresa de indenizar são nulas — não valem mesmo que você tenha assinado.",
+      "palavras_chave": [
+        "clausula nao indenizar",
+        "empresa nao indeniza",
+        "contrato sem indenizacao",
+        "clausula isencao",
+        "sem direito a indenizacao"
+      ],
+      "prazos": {}
+    },
+    "art26": {
+      "numero": 26,
+      "titulo": "Prazo de Decadência — Reclamação de Vícios",
+      "texto": "O direito de reclamar pelos vícios aparentes ou de fácil constatação caduca em: I — 30 dias para produtos e serviços não duráveis; II — 90 dias para produtos e serviços duráveis. O prazo inicia na entrega do produto. A reclamação ao fornecedor obsta a decadência.",
+      "resumo": "Prazo para reclamar: 30 dias (não duráveis) ou 90 dias (duráveis) a partir do defeito. Reclamar por escrito interrompe o prazo.",
+      "palavras_chave": [
+        "prazo",
+        "prazo para reclamar",
+        "quanto tempo tenho",
+        "prazo de garantia",
+        "decadencia",
+        "ja passou o prazo",
+        "ainda posso reclamar",
+        "tempo para reclamar",
+        "prazo venceu",
+        "expirou prazo"
+      ],
+      "prazos": {
+        "nao_duraveis_dias": 30,
+        "duraveis_dias": 90
+      }
+    },
+    "art27": {
+      "numero": 27,
+      "titulo": "Prescrição — Ação Judicial por Danos",
+      "texto": "Prescreve em 5 anos a pretensão à reparação pelos danos causados por fato do produto ou do serviço, contados a partir do conhecimento do dano e de sua autoria.",
+      "resumo": "Você tem 5 anos para entrar com ação judicial por danos causados por produto ou serviço.",
+      "palavras_chave": [
+        "prescricao",
+        "prazo judicial",
+        "5 anos",
+        "prazo para processar",
+        "acao judicial",
+        "prazo para entrar na justica",
+        "processar empresa",
+        "quanto tempo tenho para processar"
+      ],
+      "prazos": {
+        "prescricao_anos": 5
+      }
+    },
+    "art28": {
+      "numero": 28,
+      "titulo": "Desconsideração da Personalidade Jurídica",
+      "texto": "O juiz poderá desconsiderar a personalidade jurídica da sociedade quando, em detrimento do consumidor, houver abuso de direito, excesso de poder, infração da lei, fato ou ato ilícito ou violação dos estatutos ou contrato social.",
+      "resumo": "Em casos graves, o juiz pode responsabilizar pessoalmente os sócios da empresa para proteger o consumidor.",
+      "palavras_chave": [
+        "desconsideracao",
+        "empresa faliu",
+        "empresa fechou",
+        "socio responsavel",
+        "patrimonio socio",
+        "empresa sem dinheiro"
+      ],
+      "prazos": {}
+    },
+    "art30": {
+      "numero": 30,
+      "titulo": "Força Vinculante da Oferta",
+      "texto": "Toda informação ou publicidade veiculada por qualquer meio de comunicação obriga o fornecedor que a fizer veicular e integra o contrato celebrado.",
+      "resumo": "O que foi anunciado obriga a empresa — preço, prazo e condições do anúncio têm força de contrato.",
+      "palavras_chave": [
+        "oferta",
+        "anuncio",
+        "publicidade",
+        "propaganda",
+        "o que foi anunciado",
+        "o que estava no site",
+        "preco anunciado",
+        "empresa tem que cumprir",
+        "oferta vincula",
+        "preco errado",
+        "anuncio diferente"
+      ],
+      "prazos": {}
+    },
+    "art31": {
+      "numero": 31,
+      "titulo": "Informações Obrigatórias na Oferta",
+      "texto": "A oferta e apresentação de produtos ou serviços devem assegurar informações corretas, claras, precisas, ostensivas e em língua portuguesa sobre características, qualidades, quantidade, composição, preço, garantia, prazos de validade e origem.",
+      "resumo": "A empresa deve informar claramente: características, preço, quantidade, prazo de validade, garantia e origem do produto.",
+      "palavras_chave": [
+        "informacao produto",
+        "falta informacao",
+        "embalagem sem informacao",
+        "preco nao informado",
+        "composicao",
+        "ingredientes",
+        "validade",
+        "origem"
+      ],
+      "prazos": {}
+    },
+    "art32": {
+      "numero": 32,
+      "titulo": "Responsabilidade pela Oferta — Fabricante e Importador",
+      "texto": "Os fabricantes e importadores deverão assegurar a oferta de componentes e peças de reposição enquanto não cessar a fabricação ou importação do produto.",
+      "resumo": "Fabricante deve garantir peças de reposição enquanto fabricar o produto — não pode deixar o consumidor sem assistência.",
+      "palavras_chave": [
+        "peca reposicao",
+        "componente",
+        "fabricante peca",
+        "importador peca",
+        "assistencia tecnica",
+        "nao tem peca"
+      ],
+      "prazos": {}
+    },
+    "art33": {
+      "numero": 33,
+      "titulo": "Oferta por Reembolso Postal ou Domicílio",
+      "texto": "Em caso de oferta ou venda por reembolso postal, deve constar o nome do fabricante e endereço no produto, embalagem ou publicidade.",
+      "resumo": "Vendas por reembolso postal ou domicílio devem identificar claramente o vendedor.",
+      "palavras_chave": [
+        "reembolso postal",
+        "venda domicilio",
+        "entrega domicilio",
+        "correios",
+        "venda pelo correio"
+      ],
+      "prazos": {}
+    },
+    "art35": {
+      "numero": 35,
+      "titulo": "Descumprimento da Oferta — Opções do Consumidor",
+      "texto": "Se o fornecedor recusar cumprimento à oferta, o consumidor pode: I — exigir o cumprimento forçado nos termos da oferta; II — aceitar produto ou serviço equivalente; III — rescindir o contrato com restituição do valor pago atualizado.",
+      "resumo": "Empresa não cumpriu o que anunciou: exija cumprimento, aceite equivalente ou cancele com reembolso corrigido.",
+      "palavras_chave": [
+        "empresa nao cumpriu",
+        "nao honraram",
+        "propaganda enganosa",
+        "produto diferente do anunciado",
+        "empresa recusou",
+        "atraso entrega",
+        "entrega atrasou",
+        "pedido atrasado",
+        "nao entregaram no prazo",
+        "prazo entrega",
+        "entrega nao chegou",
+        "pedido sumiu",
+        "rastreio parado",
+        "nao chegou",
+        "meu pedido",
+        "produto nao chegou",
+        "nao recebi",
+        "prazo vencido",
+        "atraso na entrega",
+        "atrasou entrega",
+        "entrega atrasada",
+        "nao entregaram",
+        "pedido atrasado",
+        "prazo entrega venceu",
+        "atraso no pedido",
+        "demorando para entregar"
+      ],
+      "prazos": {},
+      "opcoes": [
+        "exigir cumprimento da oferta",
+        "aceitar produto/serviço equivalente",
+        "cancelar com reembolso atualizado"
+      ]
+    },
+    "art36": {
+      "numero": 36,
+      "titulo": "Identificação de Publicidade",
+      "texto": "A publicidade deve ser veiculada de tal forma que o consumidor, fácil e imediatamente, a identifique como tal.",
+      "resumo": "Publicidade deve ser claramente identificada como tal — conteúdo pago que pareça editorial é prática enganosa.",
+      "palavras_chave": [
+        "publicidade velada",
+        "publi",
+        "publipost",
+        "influencer",
+        "propaganda disfarçada",
+        "anuncio disfarçado",
+        "conteudo patrocinado"
+      ],
+      "prazos": {}
+    },
+    "art37": {
+      "numero": 37,
+      "titulo": "Publicidade Enganosa e Abusiva",
+      "texto": "É proibida toda publicidade enganosa ou abusiva. É enganosa qualquer modalidade de informação ou comunicação de caráter publicitário, inteira ou parcialmente falsa, ou que omita dado essencial. É abusiva a publicidade que explora o medo, a superstição, discrimine, incite violência ou aproveite da inexperiência da criança.",
+      "resumo": "Proibida: publicidade enganosa (falsa ou que omite dado importante) e publicidade abusiva (medo, criança, discriminação).",
+      "palavras_chave": [
+        "publicidade enganosa",
+        "propaganda enganosa",
+        "anuncio falso",
+        "publicidade abusiva",
+        "propaganda abusiva",
+        "enganaram com propaganda",
+        "anuncio mentiroso",
+        "publicidade crianca",
+        "propaganda medo"
+      ],
+      "prazos": {}
+    },
+    "art38": {
+      "numero": 38,
+      "titulo": "Ônus da Prova — Publicidade",
+      "texto": "O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina.",
+      "resumo": "Na publicidade, a empresa deve provar que o anúncio é verdadeiro — não é o consumidor que precisa provar que é falso.",
+      "palavras_chave": [
+        "prova publicidade",
+        "empresa prova",
+        "onus prova",
+        "anuncio verdadeiro",
+        "empresa deve provar"
+      ],
+      "prazos": {}
+    },
+    "art39": {
+      "numero": 39,
+      "titulo": "Práticas Abusivas",
+      "texto": "É vedado: I — venda casada; II — recusar atendimento; III — enviar produto não solicitado; IV — prevalecer da fraqueza do consumidor; V — exigir vantagem excessiva; VI — executar serviço sem orçamento prévio; VII — repassar informação depreciativa sobre consumidor; VIII — colocar produto em desacordo com normas; IX — recusar venda mediante pronto pagamento; X — elevar preços sem justa causa.",
+      "resumo": "Práticas proibidas: venda casada, produto não solicitado, serviço sem orçamento, recusa de venda, elevação injustificada de preço.",
+      "palavras_chave": [
+        "pratica abusiva",
+        "empresa abusiva",
+        "venda casada",
+        "produto nao solicitado",
+        "cobrou sem orcamento",
+        "recusou vender",
+        "exigiu condicao",
+        "abuso",
+        "preco elevado sem motivo"
+      ],
+      "prazos": {}
+    },
+    "art40": {
+      "numero": 40,
+      "titulo": "Orçamento Prévio — Serviços",
+      "texto": "O fornecedor de serviço será obrigado a entregar ao consumidor orçamento prévio discriminando o valor da mão-de-obra, dos materiais e equipamentos, condições de pagamento, datas de início e término, e outros dados pertinentes.",
+      "resumo": "Serviço: empresa obrigatoriamente deve entregar orçamento antes de executar — valor, prazo e condições detalhados.",
+      "palavras_chave": [
+        "orcamento",
+        "orcamento previo",
+        "cobrou sem orcamento",
+        "valor servico",
+        "cobrou mais que combinado",
+        "preco diferente",
+        "quanto vai custar",
+        "precificacao servico"
+      ],
+      "prazos": {}
+    },
+    "art41": {
+      "numero": 41,
+      "titulo": "Reajuste de Preço — Serviços",
+      "texto": "No caso de recusa ou demora do orçamento, ou caso o consumidor não o aceite, as despesas realizadas só podem ser cobradas se o consumidor as tiver previamente autorizado.",
+      "resumo": "Se o consumidor não aprovação orçamento, empresa não pode cobrar pelo trabalho realizado sem autorização.",
+      "palavras_chave": [
+        "nao aprovei orcamento",
+        "nao autorizei",
+        "cobrou sem autorizacao",
+        "realizou servico sem autorizar",
+        "fez sem permissao"
+      ],
+      "prazos": {}
+    },
+    "art42": {
+      "numero": 42,
+      "titulo": "Cobrança de Dívidas — Vedações e Repetição do Indébito",
+      "texto": "Na cobrança de débitos, o consumidor não será exposto a ridículo, nem submetido a constrangimento ou ameaça. O consumidor cobrado em quantia indevida tem direito à repetição do indébito por valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros legais, salvo engano justificável.",
+      "resumo": "Cobrança indevida: direito à devolução em dobro do valor cobrado a mais (salvo engano justificável). Vedadas ameaças e constrangimentos.",
+      "palavras_chave": [
+        "cobranca indevida",
+        "cobrado errado",
+        "cobrado a mais",
+        "cobrado duas vezes",
+        "cobraram errado",
+        "cobraram indevido",
+        "me cobraram",
+        "cobrança duplicada",
+        "devolucao em dobro",
+        "valor indevido",
+        "estorno",
+        "cobranca abusiva",
+        "me ameacaram cobrando",
+        "cobraram sem autorizacao",
+        "cobrança indevida",
+        "pagamento indevido",
+        "pagamento duplicado",
+        "cobrado incorreto"
+      ],
+      "prazos": {},
+      "direitos": [
+        "devolução em dobro do excesso cobrado",
+        "correção monetária e juros legais"
+      ]
+    },
+    "art43": {
+      "numero": 43,
+      "titulo": "Cadastro de Consumidor — SPC, Serasa",
+      "texto": "O consumidor terá acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, bem como sobre as respectivas fontes. O consumidor inadimplente deve ser comunicado por escrito quando seu nome for inscrito em cadastro de inadimplência.",
+      "resumo": "Você tem direito de saber e corrigir o que está nos cadastros negativos (SPC, Serasa). Empresa deve avisar antes de negativar.",
+      "palavras_chave": [
+        "spc",
+        "serasa",
+        "nome sujo",
+        "negativado",
+        "cadastro inadimplente",
+        "restricao credito",
+        "nome negativado",
+        "inscricao spc",
+        "inscricao serasa",
+        "retificacao cadastro"
+      ],
+      "prazos": {}
+    },
+    "art44": {
+      "numero": 44,
+      "titulo": "Cadastros de Reclamações Fundamentadas",
+      "texto": "Os órgãos públicos de defesa do consumidor manterão cadastros atualizados de reclamações fundamentadas contra fornecedores de produtos e serviços.",
+      "resumo": "Procon e órgãos de defesa mantêm cadastro público de empresas com reclamações — você pode consultar antes de comprar.",
+      "palavras_chave": [
+        "cadastro empresa",
+        "reclamacao empresa",
+        "empresa ruim",
+        "historico empresa",
+        "procon cadastro"
+      ],
+      "prazos": {}
+    },
+    "art46": {
+      "numero": 46,
+      "titulo": "Contratos — Ciência do Consumidor",
+      "texto": "Os contratos não obrigarão os consumidores se não lhes for dada a oportunidade de tomar conhecimento prévio de seu conteúdo, ou se os respectivos instrumentos forem redigidos de modo a dificultar a compreensão.",
+      "resumo": "Contrato com letras miúdas ou linguagem confusa não obriga o consumidor se ele não teve chance de ler antes.",
+      "palavras_chave": [
+        "contrato",
+        "nao li o contrato",
+        "nao sabia das condicoes",
+        "contrato confuso",
+        "letra pequena",
+        "letras miudas",
+        "nao entendi contrato",
+        "contrato em outra lingua",
+        "clausula escondida"
+      ],
+      "prazos": {}
+    },
+    "art47": {
+      "numero": 47,
+      "titulo": "Interpretação Favorável ao Consumidor",
+      "texto": "As cláusulas contratuais serão interpretadas de maneira mais favorável ao consumidor.",
+      "resumo": "Em caso de dúvida sobre cláusula contratual, a interpretação é sempre a mais favorável ao consumidor — 'in dubio pro consumidor'.",
+      "palavras_chave": [
+        "interpretacao contrato",
+        "clausula confusa",
+        "dubio pro consumidor",
+        "interpretacao favoravel",
+        "clausula ambigua",
+        "dupla interpretacao"
+      ],
+      "prazos": {}
+    },
+    "art48": {
+      "numero": 48,
+      "titulo": "Obrigatoriedade da Oferta — Contrato Escrito",
+      "texto": "As declarações de vontade constantes de escritos particulares, recibos e pré-contratos relativos às relações de consumo vinculam o fornecedor.",
+      "resumo": "Recibos, pré-contratos e qualquer escrito do fornecedor obrigam a empresa — vale como compromisso contratual.",
+      "palavras_chave": [
+        "recibo",
+        "pre-contrato",
+        "escrito",
+        "compromisso",
+        "proposta escrita",
+        "declaracao escrita"
+      ],
+      "prazos": {}
+    },
+    "art49": {
+      "numero": 49,
+      "titulo": "Direito de Arrependimento — Compras fora do Estabelecimento",
+      "texto": "O consumidor pode desistir do contrato em 7 dias a contar do recebimento do produto, em compras fora do estabelecimento (online, telefone, domicílio). Os valores pagos serão devolvidos imediatamente e integralmente, incluindo frete.",
+      "resumo": "Compra online ou por telefone: 7 dias para desistir após receber. Reembolso integral obrigatório, inclusive frete de envio.",
+      "palavras_chave": [
+        "arrependimento",
+        "compra online",
+        "7 dias",
+        "desistir",
+        "cancelar compra",
+        "nao quero mais",
+        "comprei pela internet",
+        "comprei no site",
+        "comprei pelo app",
+        "direito de arrependimento",
+        "devolver sem defeito",
+        "desistir da compra",
+        "compra a distancia",
+        "compra por telefone",
+        "quero devolver",
+        "devolver compra",
+        "cancelar pedido online",
+        "arrependido da compra",
+        "me arrependi",
+        "cancelar compra",
+        "quero cancelar",
+        "desistir da compra",
+        "nao quero mais",
+        "comprei e nao quero",
+        "arrependimento compra",
+        "devolucao sem defeito",
+        "nao gostei do produto",
+        "mudei de ideia",
+        "devolver produto sem defeito"
+      ],
+      "prazos": {
+        "arrependimento_dias": 7
+      }
+    },
+    "art50": {
+      "numero": 50,
+      "titulo": "Garantia Contratual — Complemento da Legal",
+      "texto": "A garantia contratual é complementar à legal e será conferida mediante termo escrito. O termo de garantia ou equivalente deve ser padronizado e esclarecer de maneira adequada em que consiste a garantia, bem como a forma, o prazo e o lugar em que pode ser exercitada.",
+      "resumo": "A garantia da fabricante (ex: 1 ano) é adicional à garantia legal do CDC — você tem as duas ao mesmo tempo.",
+      "palavras_chave": [
+        "garantia fabricante",
+        "garantia contratual",
+        "garantia estendida",
+        "prazo garantia",
+        "termo garantia",
+        "certificado garantia",
+        "garantia expirou mas"
+      ],
+      "prazos": {}
+    },
+    "art51": {
+      "numero": 51,
+      "titulo": "Cláusulas Abusivas — Nulidade Automática",
+      "texto": "São nulas de pleno direito cláusulas que: I — impossibilitem, exonerem ou atenuem a responsabilidade do fornecedor; II — subtraiam ao consumidor a opção de reembolso; IV — estabeleçam obrigações abusivas ou coloquem o consumidor em desvantagem exagerada; VI — invertam o ônus da prova em prejuízo do consumidor; XI — autorizem cancelamento unilateral sem igual direito ao consumidor; XII — obriguem ressarcimento sem reciprocidade.",
+      "resumo": "Cláusulas abusivas são nulas automaticamente — mesmo assinadas, não têm validade legal.",
+      "palavras_chave": [
+        "clausula abusiva",
+        "contrato abusivo",
+        "clausula nula",
+        "condicao abusiva",
+        "contrato ilegal",
+        "letras miudas",
+        "nao li o contrato",
+        "assinei sem saber",
+        "contrato prejudicial",
+        "clausula invalida"
+      ],
+      "prazos": {}
+    },
+    "art52": {
+      "numero": 52,
+      "titulo": "Crédito ao Consumidor — Informações Obrigatórias",
+      "texto": "No fornecimento de crédito ou financiamento, o fornecedor deve informar: preço em moeda nacional; montante dos juros e taxa efetiva anual; acréscimos legais; número e periodicidade das prestações; soma total a pagar, com e sem financiamento.",
+      "resumo": "Financiamento ou crédito: empresa deve informar CET, taxa de juros, número de parcelas e valor total — antes de assinar.",
+      "palavras_chave": [
+        "credito",
+        "financiamento",
+        "parcelamento",
+        "juros",
+        "taxa de juros",
+        "prestacoes",
+        "nao informaram os juros",
+        "cet",
+        "custo efetivo",
+        "emprestimo",
+        "fgts"
+      ],
+      "prazos": {}
+    },
+    "art53": {
+      "numero": 53,
+      "titulo": "Cláusula de Decaimento — Proibição",
+      "texto": "Nos contratos de compra e venda de móveis ou imóveis mediante pagamento em prestações, bem como nas alienações fiduciárias em garantia, consideram-se nulas de pleno direito as cláusulas que estabeleçam a perda total das prestações pagas em benefício do credor.",
+      "resumo": "Proibida cláusula que faz o consumidor perder tudo que pagou se cancelar contrato de parcelamento (ex: consórcio, imóvel).",
+      "palavras_chave": [
+        "perder prestacoes",
+        "perdi o que paguei",
+        "clausula decaimento",
+        "consorcio",
+        "imovel",
+        "financiamento cancelado",
+        "perda total",
+        "restituicao parcelas"
+      ],
+      "prazos": {}
+    },
+    "art54": {
+      "numero": 54,
+      "titulo": "Contrato de Adesão — Regras",
+      "texto": "Contrato de adesão é aquele estabelecido unilateralmente pelo fornecedor, sem que o consumidor possa discutir ou modificar seu conteúdo. Os contratos devem ser redigidos em termos claros com fonte mínima 12, de modo a facilitar a compreensão.",
+      "resumo": "Contratos de adesão (padrões) devem ter fonte mínima 12 e linguagem clara — cláusulas escondidas não valem.",
+      "palavras_chave": [
+        "contrato de adesao",
+        "nao pude negociar",
+        "contrato padrao",
+        "fonte pequena",
+        "letra miuda contrato",
+        "contrato imposto"
+      ],
+      "prazos": {}
+    },
+    "art55": {
+      "numero": 55,
+      "titulo": "Normas de Defesa do Consumidor — Fiscalização",
+      "texto": "A União, os Estados e o Distrito Federal, em caráter concorrente e nas suas respectivas áreas de atuação administrativa, baixarão normas relativas à produção, industrialização, distribuição e consumo de produtos e serviços.",
+      "resumo": "A fiscalização do consumo é feita pela União, Estados e DF — há atuação em todos os níveis de governo.",
+      "palavras_chave": [
+        "fiscalizacao",
+        "inmetro",
+        "anvisa",
+        "orgao regulador",
+        "norma tecnica",
+        "producao",
+        "industrializacao"
+      ],
+      "prazos": {}
+    },
+    "art56": {
+      "numero": 56,
+      "titulo": "Sanções Administrativas",
+      "texto": "As infrações das normas de defesa do consumidor ficam sujeitas a: I — multa; II — apreensão do produto; III — inutilização do produto; IV — cassação do registro; V — proibição de fabricação; VI — suspensão de fornecimento; VII — suspensão temporária de atividade; VIII — revogação de concessão ou permissão; IX — cassação de licença; X — interdição; XI — intervenção administrativa; XII — imposição de contrapropaganda.",
+      "resumo": "Empresas que violam o CDC podem ser multadas, ter produtos apreendidos ou atividade suspensa.",
+      "palavras_chave": [
+        "sancao",
+        "multa empresa",
+        "punicao empresa",
+        "penalidade",
+        "apreensao",
+        "interdição empresa"
+      ],
+      "prazos": {}
+    },
+    "art57": {
+      "numero": 57,
+      "titulo": "Multa — Critérios",
+      "texto": "A pena de multa, graduada de acordo com a gravidade da infração, a vantagem auferida e a condição econômica do fornecedor, será aplicada mediante procedimento administrativo, revertendo para o Fundo de que trata a Lei n.º 7.347/85.",
+      "resumo": "Multa administrativa considera: gravidade, lucro obtido e porte econômico da empresa.",
+      "palavras_chave": [
+        "multa procon",
+        "multa administrativa",
+        "valor multa",
+        "penalidade empresa",
+        "sancao empresa"
+      ],
+      "prazos": {}
+    },
+    "art71": {
+      "numero": 71,
+      "titulo": "Cobrança Vexatória — Crime",
+      "texto": "Utilizar, na cobrança de dívidas, de ameaça, coação, constrangimento físico ou moral, afirmações falsas incorretas ou enganosas, ou qualquer outro procedimento que exponha o consumidor, injustificadamente, a ridículo ou interfira com seu trabalho, descanso ou lazer: Pena — detenção de três meses a um ano e multa.",
+      "resumo": "Cobrança com ameaça, constrangimento ou assédio é CRIME — pena de até 1 ano de detenção.",
+      "palavras_chave": [
+        "cobranca com ameaca",
+        "ameaca pagamento",
+        "constrangimento cobranca",
+        "me constrangeram",
+        "cobranca abusiva",
+        "crime cobranca",
+        "ligacao ameacando",
+        "assedio cobranca"
+      ],
+      "prazos": {}
+    },
+    "art72": {
+      "numero": 72,
+      "titulo": "Recusa de Atendimento — Crime",
+      "texto": "Impedir ou dificultar o acesso do consumidor às informações que sobre ele constem em cadastros, banco de dados, fichas e registros: Pena — detenção de seis meses a um ano ou multa.",
+      "resumo": "Empresa que impede consumidor de ver seu cadastro comete crime — pena de até 1 ano.",
+      "palavras_chave": [
+        "acesso cadastro",
+        "negar informacao",
+        "impedir consulta",
+        "nao mostram cadastro",
+        "dados consumidor",
+        "direito informacao"
+      ],
+      "prazos": {}
+    },
+    "art73": {
+      "numero": 73,
+      "titulo": "Correção de Informações — Crime",
+      "texto": "Deixar de corrigir imediatamente informação sobre consumidor constante de cadastro, banco de dados, fichas ou registros que sabe ou deveria saber ser inexata: Pena — detenção de um a seis meses ou multa.",
+      "resumo": "Não corrigir informação errada em cadastro (Serasa, SPC) quando comunicado é crime.",
+      "palavras_chave": [
+        "corrigir serasa",
+        "corrigir spc",
+        "informacao errada cadastro",
+        "dado incorreto",
+        "retificacao",
+        "nome sujo errado",
+        "negativacao errada"
+      ],
+      "prazos": {}
+    },
+    "art101": {
+      "numero": 101,
+      "titulo": "Ação Civil — Legitimidade",
+      "texto": "Na ação de responsabilidade civil do fornecedor de produtos e serviços, sem prejuízo do disposto nos Capítulos I e II deste Título, serão observadas as normas do Código de Processo Civil e, quanto à legitimidade para propor a ação: I — no caso de acidente de consumo, são legitimados a propor a ação o consumidor ou seus herdeiros ou sucessores.",
+      "resumo": "Em acidente de consumo, o consumidor ou seus herdeiros podem propor ação civil contra o fornecedor.",
+      "palavras_chave": [
+        "acao civil",
+        "processo",
+        "entrar na justica",
+        "propor acao",
+        "herdeiros",
+        "sucessores",
+        "legitimidade"
+      ],
+      "prazos": {}
+    },
+    "art104": {
+      "numero": 104,
+      "titulo": "Coisa Julgada — Ações Coletivas",
+      "texto": "As ações coletivas não induzem litispendência para as ações individuais, mas os efeitos da coisa julgada erga omnes ou ultra partes não beneficiarão os autores das ações individuais, se não for requerida sua suspensão no prazo de trinta dias.",
+      "resumo": "Ação coletiva e ação individual podem correr juntas. O consumidor pode pedir suspensão da individual para aproveitar a coletiva.",
+      "palavras_chave": [
+        "acao coletiva",
+        "class action",
+        "acao individual",
+        "litispendencia",
+        "suspensao acao",
+        "grupo consumidores"
+      ],
+      "prazos": {}
+    },
+    "art5": {
+      "numero": 5,
+      "titulo": "Instrumentos de Defesa do Consumidor",
+      "texto": "Para a execução da Política Nacional das Relações de Consumo, contará o poder público com os seguintes instrumentos: manutenção de assistência jurídica, integral e gratuita para o consumidor carente; instituição de Promotorias de Justiça de Defesa do Consumidor; criação de delegacias de polícia especializadas no atendimento de consumidores vítimas de infrações penais de consumo; criação de Juizados Especiais de Pequenas Causas e Varas Especializadas para a solução de litígios de consumo; concessão de estímulos à criação e desenvolvimento das Associações de Defesa do Consumidor.",
+      "resumo": "O Estado deve garantir ao consumidor: assistência jurídica gratuita, Procon, delegacias especializadas, Juizados Especiais e apoio a associações de defesa.",
+      "palavras_chave": [
+        "assistencia juridica gratuita",
+        "procon",
+        "delegacia consumidor",
+        "juizado especial",
+        "associacao defesa consumidor",
+        "instrumentos defesa"
+      ],
+      "prazos": {}
+    },
+    "art11": {
+      "numero": 11,
+      "titulo": "Decadência — Vício Oculto",
+      "texto": "O prazo decadencial da reclamação começa a fluir a partir do momento em que ficar evidenciado o defeito no caso dos vícios ocultos.",
+      "resumo": "Para defeitos ocultos (que só aparecem depois), o prazo de 30 ou 90 dias começa a contar a partir do momento em que o vício foi descoberto, não da compra.",
+      "palavras_chave": [
+        "vicio oculto",
+        "defeito oculto",
+        "prazo vicio oculto",
+        "defeito apareceu depois",
+        "defeito demorou aparecer",
+        "prazo comeca quando descobriu"
+      ],
+      "prazos": {}
+    },
+    "art15": {
+      "numero": 15,
+      "titulo": "Vício de Quantidade — Pesagem na Presença do Consumidor",
+      "texto": "Os produtos ou serviços destinados ao público em geral, quando fornecidos coletivamente, deverão ser pesados ou medidos na presença do consumidor, salvo quando o produto já estiver embalado.",
+      "resumo": "Produtos vendidos a granel devem ser pesados ou medidos na frente do consumidor.",
+      "palavras_chave": [
+        "pesagem",
+        "medida",
+        "peso",
+        "balanca",
+        "granel",
+        "pesado na frente",
+        "medir produto"
+      ],
+      "prazos": {}
+    },
+    "art16": {
+      "numero": 16,
+      "titulo": "Vício de Quantidade — Recipientes e Embalagens",
+      "texto": "Os fornecedores de produtos e serviços que, posteriormente à introdução destes no mercado de consumo, tiverem conhecimento de sua periculosidade, deverão comunicar o fato imediatamente às autoridades competentes e aos consumidores, mediante anúncios publicitários.",
+      "resumo": "Se o fornecedor descobrir perigo no produto após lançá-lo, deve comunicar imediatamente as autoridades e os consumidores.",
+      "palavras_chave": [
+        "comunicar perigo",
+        "produto perigoso mercado",
+        "aviso posterior",
+        "recall comunicado",
+        "perigo descoberto depois"
+      ],
+      "prazos": {}
+    },
+    "art29": {
+      "numero": 29,
+      "titulo": "Consumidor Equiparado — Práticas Comerciais",
+      "texto": "Para os fins deste Capítulo e do seguinte, equiparam-se aos consumidores todas as pessoas determináveis ou não, expostas às práticas nele previstas.",
+      "resumo": "Mesmo quem ainda não comprou mas está exposto a práticas comerciais (publicidade, oferta) tem proteção do CDC.",
+      "palavras_chave": [
+        "consumidor equiparado",
+        "exposto propaganda",
+        "potencial consumidor",
+        "nao comprei mas fui atingido",
+        "publicidade me afetou"
+      ],
+      "prazos": {}
+    },
+    "art34": {
+      "numero": 34,
+      "titulo": "Solidariedade do Fornecedor — Representantes",
+      "texto": "O fornecedor do produto ou serviço é solidariamente responsável pelos atos de seus prepostos ou representantes autônomos.",
+      "resumo": "A empresa responde pelos atos dos seus vendedores, representantes e funcionários — mesmo que sejam autônomos.",
+      "palavras_chave": [
+        "vendedor autonomo",
+        "representante empresa",
+        "preposto",
+        "funcionario empresa responsavel",
+        "vendedor externo",
+        "corretor responsavel"
+      ],
+      "prazos": {}
+    },
+    "art45": {
+      "numero": 45,
+      "titulo": "Contratos — Vigência e Inserção de Cláusulas",
+      "texto": "O Ministério da Justiça expedirá normas de caráter geral, dispondo sobre contratos de adesão, bem como sobre cláusulas abusivas que estabeleçam obrigações consideradas iníquas, abusivas, que coloquem o consumidor em desvantagem exagerada.",
+      "resumo": "O governo pode regulamentar contratos de adesão e proibir cláusulas abusivas por normas administrativas.",
+      "palavras_chave": [
+        "norma contrato",
+        "regulamentacao contrato",
+        "ministerio justica contrato",
+        "norma clausula abusiva"
+      ],
+      "prazos": {}
+    },
+    "art58": {
+      "numero": 58,
+      "titulo": "Crime — Omissão de Dizeres Obrigatórios",
+      "texto": "Deixar de comunicar à autoridade competente e aos consumidores a nocividade ou periculosidade de produtos cujo conhecimento seja posterior à sua colocação no mercado: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Empresa que descobre perigo no produto e não avisa comete CRIME — pena de até 2 anos de detenção.",
+      "palavras_chave": [
+        "crime omissao",
+        "empresa nao avisou perigo",
+        "omitiu informacao perigo",
+        "crime fornecedor",
+        "escondeu perigo produto"
+      ],
+      "prazos": {}
+    },
+    "art59": {
+      "numero": 59,
+      "titulo": "Crime — Reincidência e Agravantes",
+      "texto": "As penas de detenção e multa do crime de omissão de comunicação de periculosidade poderão ser aumentadas de um terço até a metade quando a infração for cometida por empresa ou profissional que atue em setor regulamentado.",
+      "resumo": "Penas maiores quando o crime é cometido por empresa de setor regulamentado (banco, plano de saúde, etc.).",
+      "palavras_chave": [
+        "pena maior empresa",
+        "agravante empresa regulamentada",
+        "crime empresa banco",
+        "setor regulamentado crime"
+      ],
+      "prazos": {}
+    },
+    "art60": {
+      "numero": 60,
+      "titulo": "Crime — Contrapropaganda",
+      "texto": "A imposição de contrapropaganda será cominada quando o fornecedor incorrer na prática de publicidade enganosa ou abusiva, nos termos do art. 37 e de acordo com o art. 56, inciso XII. A contrapropaganda será divulgada pelo responsável da mesma forma, frequência e dimensão e, preferencialmente, no mesmo veículo, local, espaço e horário, de forma capaz de desfazer o malefício da publicidade enganosa.",
+      "resumo": "Empresa que fizer propaganda enganosa pode ser obrigada a fazer contrapropaganda: desfazer o engano no mesmo espaço, horário e veículo.",
+      "palavras_chave": [
+        "contrapropaganda",
+        "desfazer propaganda enganosa",
+        "retratacao publicidade",
+        "corrigir anuncio falso",
+        "obrigado retratar"
+      ],
+      "prazos": {}
+    },
+    "art61": {
+      "numero": 61,
+      "titulo": "Crime — Penas de Detenção (Quadro Geral)",
+      "texto": "Constituem crimes contra as relações de consumo previstas neste Código, sem prejuízo do disposto no Código Penal e leis especiais, as condutas tipificadas nos artigos seguintes.",
+      "resumo": "As condutas previstas nos artigos seguintes são crimes contra as relações de consumo — além de punições administrativas.",
+      "palavras_chave": [
+        "crime consumo",
+        "crime fornecedor",
+        "infração penal consumo",
+        "conduta criminosa fornecedor"
+      ],
+      "prazos": {}
+    },
+    "art62": {
+      "numero": 62,
+      "titulo": "Crime — Venda de Produto Irregular",
+      "texto": "Comercializar produtos ou serviços que, por determinação judicial ou administrativa, foram retirados do mercado, ou cuja fabricação, distribuição ou venda seja proibida: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Vender produto que foi retirado do mercado por determinação judicial ou administrativa é CRIME.",
+      "palavras_chave": [
+        "venda produto proibido",
+        "produto retirado mercado",
+        "vender produto ilegal",
+        "produto proibido venda"
+      ],
+      "prazos": {}
+    },
+    "art63": {
+      "numero": 63,
+      "titulo": "Crime — Omissão de Comunicação de Periculosidade",
+      "texto": "Omitir dizeres ou sinais ostensivos sobre a nocividade ou periculosidade de produtos, nas embalagens, nos invólucros, nos recipientes ou na publicidade: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Não colocar avisos de perigo na embalagem do produto é CRIME — pena de até 2 anos.",
+      "palavras_chave": [
+        "embalagem sem aviso",
+        "falta aviso perigo embalagem",
+        "produto sem sinalizacao risco",
+        "omitiu aviso perigo"
+      ],
+      "prazos": {}
+    },
+    "art64": {
+      "numero": 64,
+      "titulo": "Crime — Não Atendimento de Recall",
+      "texto": "Deixar de comunicar à autoridade competente e aos consumidores a nocividade ou periculosidade de produtos cujo conhecimento seja posterior à sua colocação no mercado: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Empresa que não faz recall quando descobre produto perigoso comete CRIME.",
+      "palavras_chave": [
+        "nao fez recall",
+        "recall nao realizado",
+        "empresa ignorou perigo",
+        "produto perigoso sem recall",
+        "omitiu recall"
+      ],
+      "prazos": {}
+    },
+    "art65": {
+      "numero": 65,
+      "titulo": "Crime — Execução de Serviço Perigoso",
+      "texto": "Executar serviço de alto grau de periculosidade, contrariando determinação de autoridade competente: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Prestar serviço perigoso contrariando autoridade competente é CRIME.",
+      "palavras_chave": [
+        "servico perigoso",
+        "executou servico proibido",
+        "servico de risco autoridade",
+        "servico irregular perigoso"
+      ],
+      "prazos": {}
+    },
+    "art66": {
+      "numero": 66,
+      "titulo": "Crime — Informação Falsa ou Enganosa",
+      "texto": "Fazer afirmação falsa ou enganosa, ou omitir informação relevante sobre a natureza, característica, qualidade, quantidade, segurança, desempenho, durabilidade, preço ou garantia de produtos ou serviços: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Mentir ou omitir informação relevante sobre produto ou serviço é CRIME — pena de até 1 ano.",
+      "palavras_chave": [
+        "informacao falsa produto",
+        "mentiu sobre produto",
+        "omitiu informacao produto",
+        "enganou sobre qualidade",
+        "informacao enganosa produto crime"
+      ],
+      "prazos": {}
+    },
+    "art67": {
+      "numero": 67,
+      "titulo": "Crime — Publicidade Enganosa (Pena)",
+      "texto": "Fazer ou promover publicidade que sabe ou deveria saber ser enganosa ou abusiva: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Fazer propaganda sabendo que é enganosa é CRIME — pena de até 1 ano de detenção.",
+      "palavras_chave": [
+        "propaganda enganosa crime",
+        "publicidade enganosa crime",
+        "anuncio mentiroso crime",
+        "crime publicidade enganosa"
+      ],
+      "prazos": {}
+    },
+    "art68": {
+      "numero": 68,
+      "titulo": "Crime — Publicidade Abusiva (Pena)",
+      "texto": "Fazer ou promover publicidade que sabe ou deveria saber ser abusiva, nos termos do § 2° do art. 37: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Fazer propaganda abusiva (explorando medo, criança, discriminação) é CRIME.",
+      "palavras_chave": [
+        "publicidade abusiva crime",
+        "propaganda abusiva crime",
+        "anuncio abusivo crime",
+        "crime propaganda crianca"
+      ],
+      "prazos": {}
+    },
+    "art69": {
+      "numero": 69,
+      "titulo": "Crime — Omissão de Informação Relevante",
+      "texto": "Deixar de organizar dados fáticos, técnicos e científicos que dão base à publicidade: Pena — Detenção de um a seis meses ou multa.",
+      "resumo": "Empresa que não mantém comprovação dos dados usados em publicidade comete crime.",
+      "palavras_chave": [
+        "sem comprovacao publicidade",
+        "dados publicidade",
+        "base cientifica anuncio",
+        "empresa nao prova anuncio"
+      ],
+      "prazos": {}
+    },
+    "art70": {
+      "numero": 70,
+      "titulo": "Crime — Emprego de Peça Usada sem Informação",
+      "texto": "Empregar na reparação de produtos, peça ou componente de reposição usado, sem autorização do consumidor: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Usar peça usada no conserto sem avisar o consumidor é CRIME — pena de até 1 ano.",
+      "palavras_chave": [
+        "peca usada sem avisar",
+        "componente usado sem autorizacao",
+        "assistencia tecnica peca usada",
+        "trocou por peca velha",
+        "colocou peca usada crime"
+      ],
+      "prazos": {}
+    },
+    "art74": {
+      "numero": 74,
+      "titulo": "Descumprimento de Medidas Administrativas",
+      "texto": "Deixar de entregar ao consumidor o termo de garantia adequadamente preenchido e com especificação clara de seu conteúdo: Pena — Detenção de um a seis meses ou multa.",
+      "resumo": "Não entregar o termo de garantia preenchido corretamente ao consumidor é crime.",
+      "palavras_chave": [
+        "termo garantia nao entregue",
+        "garantia sem preenchimento",
+        "nao deram termo garantia",
+        "certificado garantia incorreto"
+      ],
+      "prazos": {}
+    },
+    "art75": {
+      "numero": 75,
+      "titulo": "Sanções Penais — Pessoas Jurídicas",
+      "texto": "Quem, de qualquer forma, concorrer para os crimes referidos neste código, incide nas penas a esses cominadas na medida de sua culpabilidade, bem como o diretor, administrador ou gerente da pessoa jurídica que promover, permitir ou por qualquer modo aprovar o fornecimento, oferta, exposição à venda ou manutenção em depósito de produtos ou a oferta e prestação de serviços nas condições por eles proibidas.",
+      "resumo": "Diretores e gerentes também podem ser responsabilizados criminalmente pelos crimes do CDC praticados pela empresa.",
+      "palavras_chave": [
+        "diretor responsavel crime",
+        "gerente responsavel",
+        "socio responsavel crime",
+        "pessoa fisica responsavel empresa crime"
+      ],
+      "prazos": {}
+    },
+    "art76": {
+      "numero": 76,
+      "titulo": "Agravantes — Crimes de Consumo",
+      "texto": "São circunstâncias agravantes dos crimes tipificados neste código, entre outras: serem cometidos em época de grave crise econômica ou por ocasião de calamidade; ocasionarem grave dano individual ou coletivo; dissimularem-se na aparência de contrato de consumo; serem praticados em detrimento de operário ou rurícola; atingirem pessoas idosas, portadoras de deficiência mental, interditadas ou, ainda, minores.",
+      "resumo": "Crimes contra idosos, pessoas com deficiência, crianças ou em crise econômica têm penas agravadas.",
+      "palavras_chave": [
+        "agravante crime consumo",
+        "crime contra idoso",
+        "crime contra criança",
+        "pena maior idoso",
+        "crime deficiencia mental",
+        "agravante consumidor vulneravel"
+      ],
+      "prazos": {}
+    },
+    "art77": {
+      "numero": 77,
+      "titulo": "Pena de Multa — Critérios",
+      "texto": "A pena pecuniária prevista nesta Seção será fixada em dias-multa, correspondente ao mínimo e ao máximo de dias de duração da pena privativa de liberdade cominada ao crime. Na individualização desta multa, o juiz observará o disposto no art. 60, §1° do Código Penal.",
+      "resumo": "O valor da multa criminal é calculado em dias-multa conforme o Código Penal.",
+      "palavras_chave": [
+        "multa criminal",
+        "dias multa",
+        "calculo multa crime",
+        "pena pecuniaria crime consumo"
+      ],
+      "prazos": {}
+    },
+    "art78": {
+      "numero": 78,
+      "titulo": "Penas Restritivas de Direitos",
+      "texto": "Além das penas privativas de liberdade e de multa, podem ser impostas, cumulativa ou alternadamente, observado o disposto nos arts. 44 a 47 do Código Penal: I — a interdição temporária de direitos; II — a publicação em órgãos de comunicação de grande circulação ou audiência, às expensas do condenado, de extrato de sentença condenatória, ou de atos jurídicos que causem dano ao consumidor; III — a convocação de grupos de consumidores lesados.",
+      "resumo": "Além de prisão e multa, condenados por crimes do CDC podem ser obrigados a publicar a sentença em jornais e convocar consumidores lesados.",
+      "palavras_chave": [
+        "publicar sentenca",
+        "interdição direitos",
+        "convocar consumidores",
+        "pena alternativa crime",
+        "publicacao jornal condenacao"
+      ],
+      "prazos": {}
+    },
+    "art79": {
+      "numero": 79,
+      "titulo": "Ação Penal",
+      "texto": "Para os fins deste Código, a ação penal é pública incondicionada.",
+      "resumo": "Os crimes do CDC são de ação penal pública incondicionada — o Ministério Público pode agir independentemente de queixa da vítima.",
+      "palavras_chave": [
+        "acao penal",
+        "ministerio publico",
+        "denuncia crime consumo",
+        "acao penal publica",
+        "mp pode agir sem vítima"
+      ],
+      "prazos": {}
+    },
+    "art80": {
+      "numero": 80,
+      "titulo": "Responsabilidade pelo Produto — Ação Regressiva",
+      "texto": "No processo penal atinente aos crimes previstos neste código, bem como a outros crimes e contravenções que envolvam relações de consumo, poderão intervir, como assistentes do Ministério Público, os legitimados indicados no art. 82, inciso III e IV, aos quais também é facultado propor ação penal subsidiária, se a denúncia não for oferecida no prazo legal.",
+      "resumo": "Associações de defesa do consumidor podem atuar como assistentes do MP em processos criminais e propor ação penal subsidiária.",
+      "palavras_chave": [
+        "associacao consumidor mp",
+        "assistente ministerio publico",
+        "acao penal subsidiaria",
+        "procon acao penal",
+        "associacao intervir processo"
+      ],
+      "prazos": {}
+    },
+    "art81": {
+      "numero": 81,
+      "titulo": "Defesa Coletiva — Direitos Difusos, Coletivos e Individuais Homogêneos",
+      "texto": "A defesa dos interesses e direitos dos consumidores e das vítimas poderá ser exercida em juízo individualmente, ou a título coletivo. A defesa coletiva será exercida quando se tratar de: I — interesses ou direitos difusos (indetermináveis, ligados por circunstância de fato); II — interesses ou direitos coletivos (grupo determinável, ligados por relação jurídica base); III — interesses ou direitos individuais homogêneos (origem comum).",
+      "resumo": "Consumidores podem se unir em ações coletivas: direitos difusos (todos afetados), coletivos (grupo determinado) ou individuais homogêneos (mesma origem).",
+      "palavras_chave": [
+        "acao coletiva consumidor",
+        "direito difuso",
+        "direito coletivo",
+        "acao coletiva",
+        "grupo consumidores prejudicados",
+        "acao grupo",
+        "class action"
+      ],
+      "prazos": {}
+    },
+    "art82": {
+      "numero": 82,
+      "titulo": "Legitimados para Ação Coletiva",
+      "texto": "Para os fins do art. 81, parágrafo único, são legitimados concorrentemente: I — o Ministério Público; II — a União, os Estados, os Municípios e o Distrito Federal; III — as entidades e órgãos da Administração Pública, direta ou indireta, ainda que sem personalidade jurídica, especificamente destinados à defesa dos interesses e direitos protegidos por este código; IV — as associações legalmente constituídas há pelo menos um ano e que incluam entre seus fins institucionais a defesa dos interesses e direitos protegidos por este código.",
+      "resumo": "Podem entrar com ação coletiva: MP, governo (União, estados, municípios), Procon e associações de consumidores com mais de 1 ano.",
+      "palavras_chave": [
+        "quem pode acao coletiva",
+        "ministerio publico acao",
+        "procon acao judicial",
+        "associacao acao consumidor",
+        "legitimidade acao coletiva"
+      ],
+      "prazos": {}
+    },
+    "art83": {
+      "numero": 83,
+      "titulo": "Espécies de Ações para Defesa do Consumidor",
+      "texto": "Para a defesa dos direitos e interesses protegidos por este código são admissíveis todas as espécies de ações capazes de propiciar sua adequada e efetiva tutela.",
+      "resumo": "O consumidor pode usar qualquer tipo de ação judicial para defender seus direitos — não há limitação de espécie processual.",
+      "palavras_chave": [
+        "tipos de acao",
+        "qualquer acao judicial",
+        "acoes cabíveis",
+        "acao adequada consumidor",
+        "tutela jurisdicional"
+      ],
+      "prazos": {}
+    },
+    "art84": {
+      "numero": 84,
+      "titulo": "Tutela Específica — Obrigação de Fazer ou Não Fazer",
+      "texto": "Na ação que tenha por objeto o cumprimento da obrigação de fazer ou não fazer, o juiz concederá a tutela específica da obrigação ou determinará providências que assegurem o resultado prático equivalente ao do adimplemento. § 3° Sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente.",
+      "resumo": "O juiz pode conceder liminar para obrigar empresa a fazer ou parar algo — tutela específica e urgente.",
+      "palavras_chave": [
+        "tutela especifica",
+        "liminar",
+        "obrigacao fazer",
+        "obrigacao nao fazer",
+        "acao cumprimento",
+        "medida urgente judicial"
+      ],
+      "prazos": {}
+    },
+    "art85": {
+      "numero": 85,
+      "titulo": "Ações Coletivas — Desconsideração da Personalidade Jurídica",
+      "texto": "Nas ações coletivas de que trata este código não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas, nem condenação da associação autora, salvo comprovada má-fé, em honorários de advogados, custas e despesas processuais.",
+      "resumo": "Ações coletivas são gratuitas para as associações — sem custas antecipadas nem honorários, exceto má-fé.",
+      "palavras_chave": [
+        "acao coletiva gratuita",
+        "sem custas acao coletiva",
+        "honorarios acao coletiva",
+        "associacao sem custas"
+      ],
+      "prazos": {}
+    },
+    "art86": {
+      "numero": 86,
+      "titulo": "Ações Coletivas — Comunicação",
+      "texto": "Nas ações coletivas de que trata este código, a sentença fará coisa julgada erga omnes, nos casos dos incisos I e II do parágrafo único do art. 81, e ultra partes, no caso do inciso III, apenas no plano coletivo.",
+      "resumo": "A sentença de ação coletiva vale para todos os afetados (erga omnes) em direitos difusos e coletivos.",
+      "palavras_chave": [
+        "coisa julgada coletiva",
+        "sentenca coletiva vale para todos",
+        "erga omnes",
+        "decisao coletiva beneficia todos"
+      ],
+      "prazos": {}
+    },
+    "art87": {
+      "numero": 87,
+      "titulo": "Ações Coletivas — Fundo de Reconstituição",
+      "texto": "Nas ações coletivas de que trata este código não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas.",
+      "resumo": "Ações coletivas de consumidores são isentas de custas e despesas antecipadas.",
+      "palavras_chave": [
+        "isencao custas coletiva",
+        "sem taxa acao coletiva",
+        "acao gratuita consumidor"
+      ],
+      "prazos": {}
+    },
+    "art88": {
+      "numero": 88,
+      "titulo": "Litispendência — Ações Individuais e Coletivas",
+      "texto": "Na hipótese do art. 13, parágrafo único deste código, a ação de regresso poderá ser ajuizada em processo autônomo, facultada a possibilidade de prosseguir-se nos mesmos autos, vedada a denunciação da lide.",
+      "resumo": "O fornecedor pode cobrar de terceiro responsável em ação separada — vedada a denunciação da lide no processo do consumidor.",
+      "palavras_chave": [
+        "acao regressiva",
+        "litispendencia",
+        "denunciacao lide",
+        "acao individual coletiva",
+        "processo autonomo regressivo"
+      ],
+      "prazos": {}
+    },
+    "art89": {
+      "numero": 89,
+      "titulo": "Coisa Julgada — Ações Coletivas",
+      "texto": "Nos casos de dano ambiental, a ação coletiva é cabível para a reparação dos danos individualmente sofridos, cabendo ao Ministério Público promovê-la.",
+      "resumo": "O MP pode promover ação coletiva para reparar danos ambientais que afetaram consumidores individualmente.",
+      "palavras_chave": [
+        "dano ambiental consumidor",
+        "mp acao ambiental",
+        "reparacao coletiva ambiental",
+        "acao mp dano"
+      ],
+      "prazos": {}
+    },
+    "art90": {
+      "numero": 90,
+      "titulo": "Aplicação do Código de Processo Civil",
+      "texto": "Aplicam-se às ações previstas neste título as normas do Código de Processo Civil e da Lei n° 7.347, de 24 de julho de 1985, inclusive no que respeita ao inquérito civil, naquilo que não contrariar suas disposições.",
+      "resumo": "As ações coletivas de consumidores seguem as regras do CPC e da Lei da Ação Civil Pública.",
+      "palavras_chave": [
+        "codigo processo civil",
+        "lei acao civil publica",
+        "inquérito civil",
+        "normas processuais consumidor"
+      ],
+      "prazos": {}
+    },
+    "art91": {
+      "numero": 91,
+      "titulo": "Ações Coletivas — Legitimidade Ativa",
+      "texto": "Os legitimados de que trata o art. 82 poderão propor, em nome próprio e no interesse das vítimas ou seus sucessores, ação civil coletiva de responsabilidade pelos danos individualmente sofridos, de acordo com o disposto nos artigos seguintes.",
+      "resumo": "MP e associações podem propor ação coletiva para reparar danos individuais sofridos por vários consumidores.",
+      "palavras_chave": [
+        "acao civil coletiva",
+        "responsabilidade danos coletivos",
+        "acao nome proprio consumidor",
+        "representacao coletiva"
+      ],
+      "prazos": {}
+    },
+    "art92": {
+      "numero": 92,
+      "titulo": "Competência — Ações Coletivas",
+      "texto": "O foro competente para a propositura da ação será aquele onde ocorreu ou deva ocorrer o dano, quando de âmbito local.",
+      "resumo": "A ação coletiva deve ser proposta no foro onde ocorreu o dano.",
+      "palavras_chave": [
+        "foro competente",
+        "onde entrar com acao",
+        "competencia territorial",
+        "local do dano",
+        "onde processar empresa"
+      ],
+      "prazos": {}
+    },
+    "art93": {
+      "numero": 93,
+      "titulo": "Competência Nacional — Danos de Âmbito Nacional",
+      "texto": "Ressalvada a competência da Justiça Federal, é competente para a causa a justiça local: I — no foro do lugar onde ocorreu ou deva ocorrer o dano, quando de âmbito local; II — no foro da Capital do Estado ou no do Distrito Federal, para os danos de âmbito nacional ou regional.",
+      "resumo": "Para danos nacionais ou regionais, a ação é proposta na capital do estado ou no DF.",
+      "palavras_chave": [
+        "dano nacional",
+        "capital estado acao",
+        "justiça federal consumidor",
+        "foro nacional",
+        "competencia nacional"
+      ],
+      "prazos": {}
+    },
+    "art94": {
+      "numero": 94,
+      "titulo": "Litisconsortes — Ações Coletivas",
+      "texto": "Proposta a ação, será publicado edital no órgão oficial, a fim de que os interessados possam intervir no processo como litisconsortes, sem prejuízo de ampla divulgação pelos meios de comunicação social por parte dos órgãos de defesa do consumidor.",
+      "resumo": "Ao propor ação coletiva, deve-se publicar edital para que outros consumidores possam participar.",
+      "palavras_chave": [
+        "edital acao coletiva",
+        "participar acao coletiva",
+        "litisconsorte",
+        "intervir processo coletivo",
+        "integrar acao grupo"
+      ],
+      "prazos": {}
+    },
+    "art95": {
+      "numero": 95,
+      "titulo": "Liquidação — Condenação Genérica",
+      "texto": "Em caso de procedência do pedido, a condenação será genérica, fixando a responsabilidade do réu pelos danos causados.",
+      "resumo": "Na ação coletiva, a condenação inicial é genérica — cada consumidor depois liquida o seu valor específico.",
+      "palavras_chave": [
+        "condenacao generica",
+        "liquidacao sentenca",
+        "valor dano individual",
+        "quantificar dano",
+        "sentenca generica coletiva"
+      ],
+      "prazos": {}
+    },
+    "art96": {
+      "numero": 96,
+      "titulo": "Liquidação — Prazo para Habilitação",
+      "texto": "Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347, de 24 de julho de 1985 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento.",
+      "resumo": "Indenizações individuais têm preferência no pagamento em relação às coletivas.",
+      "palavras_chave": [
+        "preferencia pagamento",
+        "credito individual coletivo",
+        "prioridade indenizacao",
+        "ordem pagamento sentenca"
+      ],
+      "prazos": {}
+    },
+    "art97": {
+      "numero": 97,
+      "titulo": "Liquidação e Execução — Legitimidade",
+      "texto": "A liquidação e a execução de sentença poderão ser promovidas pela vítima e seus sucessores, assim como pelos legitimados de que trata o art. 82.",
+      "resumo": "A vítima, seus herdeiros, MP e associações podem executar a sentença coletiva.",
+      "palavras_chave": [
+        "executar sentenca",
+        "liquidar sentenca",
+        "cumprimento sentenca coletiva",
+        "herdeiro executar sentenca"
+      ],
+      "prazos": {}
+    },
+    "art98": {
+      "numero": 98,
+      "titulo": "Execução — Prazo de Habilitação dos Interessados",
+      "texto": "A execução poderá ser coletiva, sendo promovida pelos legitimados de que trata o art. 82, abrangendo as vítimas cujas indenizações já tiveram sido fixadas em sentença de liquidação, sem prejuízo do ajuizamento de outras execuções. § 2° A execução nas ações coletivas a que se refere o inciso III do parágrafo único do art. 81 far-se-á pelo valor da indenização devida ao consumidor, acrescido de correção monetária.",
+      "resumo": "A execução coletiva pode ser promovida por todos os legitimados, com correção monetária dos valores.",
+      "palavras_chave": [
+        "execucao coletiva",
+        "correcao monetaria sentenca",
+        "valor atualizado indenizacao",
+        "execucao grupo consumidores"
+      ],
+      "prazos": {}
+    },
+    "art99": {
+      "numero": 99,
+      "titulo": "Fundo de Reconstituição dos Bens Lesados",
+      "texto": "Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347/85 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento. O produto da indenização devida aos consumidores fica destinado ao fundo criado pela Lei n.° 7.347/85.",
+      "resumo": "Quando não há consumidores identificados para receber, o dinheiro vai para o Fundo de Defesa de Direitos Difusos.",
+      "palavras_chave": [
+        "fundo defesa",
+        "dinheiro fundo",
+        "lei 7347",
+        "fundo difuso",
+        "dinheiro coletivo fundo"
+      ],
+      "prazos": {}
+    },
+    "art100": {
+      "numero": 100,
+      "titulo": "Destinação do Produto da Condenação",
+      "texto": "Decorrido o prazo de um ano sem habilitação de interessados em número compatível com a gravidade do dano, poderão os legitimados do art. 82 promover a liquidação e execução da indenização devida.",
+      "resumo": "Se após 1 ano poucos consumidores se habilitarem, os legitimados (MP, associações) podem executar a condenação pelo valor total.",
+      "palavras_chave": [
+        "prazo habilitacao",
+        "um ano execucao",
+        "poucos habilitados",
+        "execucao total indenizacao",
+        "fundo remanescente"
+      ],
+      "prazos": {
+        "habilitacao_anos": 1
+      }
+    },
+    "art102": {
+      "numero": 102,
+      "titulo": "Prescrição — Ação Coletiva",
+      "texto": "Os legitimados a agir na forma deste código poderão propor ação de caráter coletivo para tutelar interesses individuais homogêneos.",
+      "resumo": "MP e associações podem propor ação coletiva para proteger interesses individuais semelhantes de múltiplos consumidores.",
+      "palavras_chave": [
+        "acao coletiva interesses homogeneos",
+        "tutela coletiva",
+        "grupo mesmos direitos",
+        "interesses homogeneos"
+      ],
+      "prazos": {}
+    },
+    "art103": {
+      "numero": 103,
+      "titulo": "Efeitos da Coisa Julgada nas Ações Coletivas",
+      "texto": "Nas ações coletivas de que trata este código, a sentença fará coisa julgada: I — erga omnes, exceto se o pedido for julgado improcedente por insuficiência de provas, hipótese em que qualquer legitimado poderá intentar outra ação, com idêntico fundamento valendo-se de nova prova (difusos); II — ultra partes (coletivos); III — erga omnes, apenas para beneficiar as vítimas (individuais homogêneos). § 3° Os efeitos da coisa julgada erga omnes não prejudicarão os interesses e direitos individuais dos integrantes da coletividade.",
+      "resumo": "A sentença coletiva beneficia todos mas nunca prejudica o consumidor individualmente — ele ainda pode entrar com ação própria.",
+      "palavras_chave": [
+        "coisa julgada nao prejudica individual",
+        "acao individual apos coletiva",
+        "sentenca coletiva beneficio",
+        "erga omnes beneficio"
+      ],
+      "prazos": {}
+    },
+    "art105": {
+      "numero": 105,
+      "titulo": "Sistema Nacional de Defesa do Consumidor — SNDC",
+      "texto": "Integram o Sistema Nacional de Defesa do Consumidor (SNDC), os órgãos federais, estaduais, do Distrito Federal e municipais e as entidades privadas de defesa do consumidor.",
+      "resumo": "O SNDC é formado por todos os Procons, Senacon, órgãos governamentais e associações privadas de defesa do consumidor.",
+      "palavras_chave": [
+        "sndc",
+        "sistema nacional defesa consumidor",
+        "orgaos defesa",
+        "procon federal",
+        "senacon",
+        "sistema defesa"
+      ],
+      "prazos": {}
+    },
+    "art106": {
+      "numero": 106,
+      "titulo": "Atribuições do DPDC (Senacon)",
+      "texto": "O Departamento Nacional de Defesa do Consumidor, da Secretaria Nacional de Direito Econômico, tem as seguintes atribuições: planejar, elaborar, propor, coordenar e executar a política nacional de proteção ao consumidor; receber, analisar, avaliar e encaminhar consultas, denúncias ou sugestões presentadas por entidades representativas ou pessoas jurídicas de direito público ou privado; prestar aos consumidores orientação permanente sobre seus direitos e garantias; informar, conscientizar e motivar o consumidor.",
+      "resumo": "A Senacon (antiga DPDC) coordena a política nacional do consumidor, recebe denúncias e orienta consumidores.",
+      "palavras_chave": [
+        "senacon",
+        "dpdc",
+        "politica nacional consumidor",
+        "orgao federal consumidor",
+        "secretaria consumidor",
+        "receber denuncia federal"
+      ],
+      "prazos": {}
+    },
+    "art107": {
+      "numero": 107,
+      "titulo": "Convenções Coletivas de Consumo",
+      "texto": "As entidades civis de consumidores e as associações de fornecedores ou sindicatos de categoria econômica podem regular, por convenção escrita, relações de consumo que tenham por objeto estabelecer condições relativas ao preço, à qualidade, à quantidade, à garantia e características de produtos e serviços, bem como à reclamação e composição do conflito de consumo.",
+      "resumo": "Associações de consumidores e de empresas podem firmar convenções coletivas regulando condições de venda, preço e resolução de conflitos.",
+      "palavras_chave": [
+        "convencao coletiva consumo",
+        "acordo consumidores empresas",
+        "regulamento setorial",
+        "norma setor convenio"
+      ],
+      "prazos": {}
+    },
+    "art108": {
+      "numero": 108,
+      "titulo": "Registro de Convenções Coletivas",
+      "texto": "As convenções coletivas de consumo serão registradas no cartório de títulos e documentos e comunicadas ao DPDC.",
+      "resumo": "Convenções coletivas de consumo devem ser registradas em cartório e comunicadas à Senacon.",
+      "palavras_chave": [
+        "registro convenção",
+        "cartório convenção consumo",
+        "registro acordo consumo"
+      ],
+      "prazos": {}
+    },
+    "art109": {
+      "numero": 109,
+      "titulo": "Serviços Públicos — Aplicação do CDC",
+      "texto": "Tratando-se de relação jurídica envolvendo serviço público, mediante ato ou omissão causador de dano ao consumidor, há responsabilidade objetiva do Estado.",
+      "resumo": "O Estado responde objetivamente (sem necessidade de provar culpa) por danos causados por serviços públicos ao consumidor.",
+      "palavras_chave": [
+        "responsabilidade estado",
+        "servico publico dano",
+        "governo indenizar",
+        "estado responsavel dano",
+        "prefeitura indenizacao",
+        "governo dano consumidor"
+      ],
+      "prazos": {}
+    },
+    "art110": {
+      "numero": 110,
+      "titulo": "Alteração do Código Penal — Usura",
+      "texto": "Acrescente-se o seguinte inciso IV ao art. 1° da Lei n° 7.492, de 16 de junho de 1986: IV — Obter, mediante fraude, financiamento em instituição financeira.",
+      "resumo": "Alteração do Código Penal relacionada a fraudes financeiras com impacto em consumidores.",
+      "palavras_chave": [
+        "fraude financiamento",
+        "fraude banco",
+        "obter credito fraude",
+        "financiamento fraudulento"
+      ],
+      "prazos": {}
+    },
+    "art111": {
+      "numero": 111,
+      "titulo": "Alteração do Código de Processo Civil",
+      "texto": "O inciso II do art. 275 do Código de Processo Civil passa a ter a seguinte redação, acrescentando-se-lhe o inciso III: III — nas causas de valor até 20 (vinte) salários mínimos.",
+      "resumo": "Confirmação do rito sumário no CPC para causas de consumo até 20 salários mínimos.",
+      "palavras_chave": [
+        "rito sumario",
+        "20 salarios minimos",
+        "juizado especial civel",
+        "causa pequeno valor",
+        "processo simplificado"
+      ],
+      "prazos": {}
+    },
+    "art112": {
+      "numero": 112,
+      "titulo": "Alteração da Lei de Ação Civil Pública",
+      "texto": "O § 3° do art. 5° da Lei n° 7.347, de 24 de julho de 1985, passa a ter a seguinte redação: § 3° Em caso de desistência infundada ou abandono da ação por associação legitimada, o Ministério Público ou outro legitimado assumirá a titularidade ativa.",
+      "resumo": "Se uma associação desistir da ação coletiva sem motivo, o MP ou outra entidade assume.",
+      "palavras_chave": [
+        "desistencia acao coletiva",
+        "mp assume acao",
+        "associacao desistiu",
+        "outro legitimado assume"
+      ],
+      "prazos": {}
+    },
+    "art113": {
+      "numero": 113,
+      "titulo": "Acréscimo à Lei de Ação Civil Pública",
+      "texto": "Acrescente-se os seguintes §§ 4°, 5° e 6° ao art. 5.° da Lei n.° 7.347, de 24 de julho de 1985.",
+      "resumo": "Ampliação das hipóteses de ação civil pública para incluir proteção ao consumidor.",
+      "palavras_chave": [
+        "acao civil publica consumidor",
+        "lei 7347 consumidor",
+        "ampliacao acao civil"
+      ],
+      "prazos": {}
+    },
+    "art114": {
+      "numero": 114,
+      "titulo": "Alteração da Lei dos Juizados Especiais",
+      "texto": "O art. 2° da Lei n° 7.244, de 7 de novembro de 1984, passa a ter a seguinte redação: Art. 2° — As causas de valor até vinte salários mínimos serão processadas e julgadas pelo Juizado Especial de Pequenas Causas, desde que não sejam de natureza alimentar, falimentar, fiscal, de interesse da Fazenda Pública, nem se refiram a acidente do trabalho, a resíduos e ao estado e capacidade das pessoas, ainda que de cunho patrimonial.",
+      "resumo": "Causas de consumo até 20 salários mínimos vão ao Juizado Especial — processo gratuito e sem advogado.",
+      "palavras_chave": [
+        "juizado especial",
+        "pequenas causas",
+        "20 salarios minimos",
+        "sem advogado processo",
+        "processo gratuito consumidor"
+      ],
+      "prazos": {}
+    },
+    "art115": {
+      "numero": 115,
+      "titulo": "Revogações",
+      "texto": "Revogam-se: — O art. 2° do Decreto-lei n° 2.182, de 23 de novembro de 1984; — Os arts. 22 e 23 do Decreto-lei n° 986, de 21 de outubro de 1969.",
+      "resumo": "Artigo de revogação de normas anteriores incompatíveis com o CDC.",
+      "palavras_chave": [
+        "revogacao norma",
+        "lei anterior revogada",
+        "decreto revogado cdc"
+      ],
+      "prazos": {}
+    },
+    "art116": {
+      "numero": 116,
+      "titulo": "Vigência",
+      "texto": "Este Código entrará em vigor noventa dias após sua publicação.",
+      "resumo": "O CDC entrou em vigor 90 dias após publicação em setembro de 1990.",
+      "palavras_chave": [
+        "vigencia cdc",
+        "quando entrou vigor",
+        "data vigencia lei",
+        "noventa dias publicacao"
+      ],
+      "prazos": {}
+    },
+    "art117": {
+      "numero": 117,
+      "titulo": "Acréscimo à Lei de Ação Civil Pública — Meio Ambiente",
+      "texto": "Acrescente-se à Lei 7.347/85 o seguinte dispositivo, renumerando-se o atual parágrafo único como §1°.",
+      "resumo": "Ampliação da ação civil pública para incluir defesa do consumidor junto ao meio ambiente.",
+      "palavras_chave": [
+        "acao civil publica",
+        "lei 7347",
+        "meio ambiente consumidor",
+        "ampliacao lei"
+      ],
+      "prazos": {}
+    },
+    "art118": {
+      "numero": 118,
+      "titulo": "Normas de Transição",
+      "texto": "As normas de defesa do consumidor ora instituídas não se aplicam às relações jurídicas já constituídas definitivamente antes de sua vigência.",
+      "resumo": "O CDC não se aplica retroativamente a contratos já concluídos antes de sua entrada em vigor.",
+      "palavras_chave": [
+        "retroatividade cdc",
+        "contrato antigo",
+        "aplicacao retroativa",
+        "antes do cdc",
+        "norma transicao"
+      ],
+      "prazos": {}
+    },
+    "art119": {
+      "numero": 119,
+      "titulo": "Sanção — Promulgação",
+      "texto": "Esta lei foi sancionada pelo Presidente da República Fernando Collor de Mello em 11 de setembro de 1990.",
+      "resumo": "O CDC foi sancionado em 11 de setembro de 1990.",
+      "palavras_chave": [
+        "sancao cdc",
+        "promulgacao lei",
+        "data cdc",
+        "lei 8078 1990",
+        "setembro 1990",
+        "criacao cdc"
+      ],
+      "prazos": {}
+    }
+  },
+  "orgaos_defesa": {
+    "procon": {
+      "nome": "Procon",
+      "descricao": "Órgão estadual/municipal de proteção ao consumidor. Media conflitos, aplica multas e sanciona empresas. Presente em todos os estados.",
+      "como_acionar": "Site do Procon do seu estado ou presencialmente. Leve: documentos do caso, nota fiscal, protocolos de atendimento.",
+      "prazo_resposta": "Variável por estado",
+      "palavras_chave": [
+        "procon",
+        "orgao de defesa",
+        "reclamar formalmente",
+        "denuncia",
+        "sancao",
+        "onde reclamar",
+        "acionar procon",
+        "registrar procon",
+        "ir ao procon",
+        "como usar procon",
+        "procon online",
+        "procon sp",
+        "procon rj",
+        "abrir reclamacao procon"
+      ]
+    },
+    "consumidor_gov": {
+      "nome": "consumidor.gov.br",
+      "descricao": "Plataforma federal de resolução de conflitos. Empresas cadastradas têm prazo para responder publicamente. Respostas são públicas e auditáveis.",
+      "como_acionar": "consumidor.gov.br — crie conta com CPF, localize a empresa e registre a reclamação. Prazo de resposta: até 10 dias úteis.",
+      "prazo_resposta": "Até 10 dias úteis",
+      "palavras_chave": [
+        "consumidor gov",
+        "plataforma governo",
+        "reclamar online",
+        "consumidorgov",
+        "onde reclamar online",
+        "site reclamacao"
+      ]
+    },
+    "juizado_especial": {
+      "nome": "Juizado Especial Cível (JEC)",
+      "descricao": "Processo gratuito sem advogado para valores até 20 salários mínimos. Mais rápido que justiça comum. Acima de 20 SM, advogado obrigatório.",
+      "como_acionar": "JEC mais próximo com: CPF, RG, endereço da empresa, documentos do caso, descrição do pedido e valor estimado.",
+      "prazo_resposta": "Processo mais rápido que justiça comum",
+      "palavras_chave": [
+        "juizado especial",
+        "pequenas causas",
+        "processar",
+        "sem advogado",
+        "dano moral",
+        "jec",
+        "entrar na justica",
+        "processo judicial",
+        "acao judicial"
+      ]
+    },
+    "ans": {
+      "nome": "ANS — Agência Nacional de Saúde Suplementar",
+      "descricao": "Regula planos de saúde. Acionar quando o plano nega cobertura prevista no Rol de Procedimentos ou descredencia médico/hospital.",
+      "como_acionar": "0800 701 9656 ou ans.gov.br. Leve: contrato, carteirinha e negativa por escrito.",
+      "prazo_resposta": "Varia por tipo de reclamação",
+      "palavras_chave": [
+        "plano de saude",
+        "convenio medico",
+        "ans",
+        "negativa cobertura",
+        "plano negou",
+        "descredenciamento",
+        "rol procedimentos",
+        "plano negou",
+        "plano de saude negou",
+        "convenio negou cobertura",
+        "seguro saude negou",
+        "plano recusou",
+        "cobertura negada plano"
+      ]
+    },
+    "anac": {
+      "nome": "ANAC — Agência Nacional de Aviação Civil",
+      "descricao": "Regula aviação civil. Para problemas com voos, bagagens, cancelamentos, overbooking e atrasos.",
+      "como_acionar": "anac.gov.br ou ligue 163.",
+      "prazo_resposta": "Varia",
+      "palavras_chave": [
+        "voo",
+        "aviao",
+        "companhia aerea",
+        "bagagem",
+        "voo cancelado",
+        "voo atrasado",
+        "overbooking",
+        "anac",
+        "atraso voo",
+        "extravio bagagem"
+      ]
+    },
+    "anatel": {
+      "nome": "ANATEL — Agência Nacional de Telecomunicações",
+      "descricao": "Regula telefonia, internet e TV por assinatura. Acionar para problemas de qualidade, cobranças indevidas ou cancelamento de serviço.",
+      "como_acionar": "anatel.gov.br ou ligue 1331.",
+      "prazo_resposta": "Varia",
+      "palavras_chave": [
+        "telefone",
+        "internet",
+        "banda larga",
+        "tv a cabo",
+        "operadora",
+        "anatel",
+        "sinal ruim",
+        "internet lenta",
+        "cobrado internet",
+        "cancelar telefone"
+      ]
+    },
+    "bacen": {
+      "nome": "Banco Central — Ouvidoria",
+      "descricao": "Regula bancos e instituições financeiras. Para problemas com bancos, financeiras, fintechs e meios de pagamento.",
+      "como_acionar": "registrabacen.bcb.gov.br ou ligue 145.",
+      "prazo_resposta": "Até 10 dias úteis",
+      "palavras_chave": [
+        "banco",
+        "financeira",
+        "emprestimo bancario",
+        "cartao credito banco",
+        "fintech",
+        "pix problema",
+        "transferencia",
+        "conta bancaria",
+        "banco digital"
+      ]
+    }
+  },
+  "fluxos_acao": {
+    "produto_com_defeito": {
+      "titulo": "Produto com defeito — Art. 18 CDC",
+      "passos": [
+        "1. Fotografe o defeito e guarde a nota fiscal",
+        "2. Contate a empresa por escrito e registre o protocolo",
+        "3. A empresa tem 30 dias para resolver (Art. 18)",
+        "4. Não resolveu? Escolha: troca, reembolso ou desconto",
+        "5. Recusou? consumidor.gov.br ou Procon"
+      ],
+      "palavras_chave": [
+        "defeito",
+        "produto quebrado",
+        "garantia",
+        "nao funciona",
+        "conserto"
+      ]
+    },
+    "compra_online_arrependimento": {
+      "titulo": "Arrependimento online — Art. 49 CDC",
+      "passos": [
+        "1. Verifique: ainda está dentro dos 7 dias do recebimento?",
+        "2. Contate a empresa por escrito mencionando o Art. 49 CDC",
+        "3. O frete de devolução é por conta da empresa",
+        "4. Reembolso integral obrigatório (incluindo frete que você pagou)",
+        "5. Recusou? consumidor.gov.br ou Procon"
+      ],
+      "palavras_chave": [
+        "arrependimento",
+        "compra online",
+        "7 dias",
+        "desistir",
+        "cancelar internet"
+      ]
+    },
+    "atraso_entrega": {
+      "titulo": "Entrega atrasada — Art. 35 CDC",
+      "passos": [
+        "1. Anote os dias de atraso e o prazo prometido",
+        "2. Contate a empresa por escrito e registre protocolo",
+        "3. Suas opções (Art. 35): entrega imediata, novo prazo ou cancelamento com reembolso",
+        "4. Guarde todos os protocolos",
+        "5. Não resolveu? consumidor.gov.br"
+      ],
+      "palavras_chave": [
+        "atraso",
+        "entrega atrasada",
+        "pedido atrasado",
+        "nao chegou",
+        "prazo entrega"
+      ]
+    },
+    "cobranca_indevida": {
+      "titulo": "Cobrança indevida — Art. 42 CDC",
+      "passos": [
+        "1. Reúna provas: extrato, fatura, comprovante",
+        "2. Contate a empresa por escrito contestando",
+        "3. Se for cartão: acione a operadora (chargeback)",
+        "4. Cobrança duplicada? CDC garante devolução em dobro (Art. 42)",
+        "5. Não resolveu? Procon ou consumidor.gov.br"
+      ],
+      "palavras_chave": [
+        "cobranca indevida",
+        "cobrado errado",
+        "duplicado",
+        "estorno",
+        "devolucao em dobro"
+      ]
+    },
+    "empresa_negou": {
+      "titulo": "Empresa recusou resolver — Sequência",
+      "passos": [
+        "1. Documente a negativa: protocolo, e-mail, data",
+        "2. Tente a ouvidoria da empresa",
+        "3. consumidor.gov.br — prazo de 10 dias para resposta",
+        "4. Procon do seu estado",
+        "5. Juizado Especial Cível (até 20 salários mínimos, sem advogado)"
+      ],
+      "palavras_chave": [
+        "empresa negou",
+        "nao resolveram",
+        "recusaram",
+        "procon",
+        "justica",
+        "nao quiseram"
+      ]
+    },
+    "nome_sujo_indevido": {
+      "titulo": "Nome negativado indevidamente — Art. 43 CDC",
+      "passos": [
+        "1. Verifique o que consta em Serasa/SPC (você tem direito de consultar grátis)",
+        "2. Se a dívida não é sua: contate a empresa que negativou por escrito",
+        "3. Prazo para retirada: imediato após quitação ou comprovação de erro",
+        "4. A empresa deve avisar antes de negativar — se não avisou, é dano moral",
+        "5. Não retirou? Procon ou Juizado Especial com pedido de dano moral"
+      ],
+      "palavras_chave": [
+        "nome sujo",
+        "serasa",
+        "spc",
+        "negativado",
+        "restricao",
+        "nome indevido"
+      ]
+    },
+    "plano_saude_negativa": {
+      "titulo": "Plano de saúde negou cobertura — ANS",
+      "passos": [
+        "1. Solicite a negativa por escrito da operadora",
+        "2. Verifique se o procedimento consta no Rol de Procedimentos da ANS",
+        "3. Carências máximas legais: urgência 24h, consultas 30 dias, internação 180 dias, parto 300 dias",
+        "4. Acione a ANS: 0800 701 9656 ou ans.gov.br",
+        "5. Urgência: plano tem 3 dias úteis para responder — se negar, busque liminar (Defensoria Pública)"
+      ],
+      "palavras_chave": [
+        "plano de saude",
+        "negou cobertura",
+        "ans",
+        "convenio",
+        "rol procedimentos",
+        "plano negou",
+        "plano saude negou",
+        "convenio negou",
+        "plano nao cobre",
+        "negativa plano",
+        "recusaram plano",
+        "plano recusou",
+        "carencia plano",
+        "carência plano",
+        "prazo carencia",
+        "carencia convenio"
+      ]
+    },
+    "compra_marketplace": {
+      "titulo": "Problema em marketplace — Fluxo",
+      "passos": [
+        "1. Abra disputa diretamente na plataforma (Mercado Livre, Shopee, etc.)",
+        "2. Guarde prints de toda a conversa e do anúncio original",
+        "3. Se a plataforma não resolver: consumidor.gov.br (prazo de resposta: 10 dias)",
+        "4. Plataforma e vendedor respondem solidariamente pelo CDC",
+        "5. Procon ou Juizado Especial se necessário"
+      ],
+      "palavras_chave": [
+        "marketplace",
+        "shopee",
+        "mercado livre",
+        "amazon",
+        "plataforma",
+        "vendedor sumiu"
+      ]
+    },
+    "lgpd_exercer_direitos": {
+      "titulo": "Exercer direitos LGPD — Fluxo",
+      "passos": [
+        "1. Acesse o site da empresa → procure 'Privacidade', 'Meus Dados' ou 'LGPD'",
+        "2. Faça a solicitação formal (exclusão, correção, acesso aos dados)",
+        "3. Prazo para resposta: 15 dias",
+        "4. Sem resposta: denuncie à ANPD (gov.br/anpd)",
+        "5. Dano por vazamento: busque indenização no Juizado Especial"
+      ],
+      "palavras_chave": [
+        "lgpd",
+        "dados pessoais",
+        "excluir dados",
+        "vazamento",
+        "privacidade",
+        "anpd"
+      ]
+    },
+    "consignado_fraude": {
+      "titulo": "Empréstimo consignado não autorizado — Fluxo",
+      "passos": [
+        "1. Bloqueie a margem consignável no banco imediatamente",
+        "2. Registre Boletim de Ocorrência (B.O.)",
+        "3. Acione o INSS (135) se for beneficiário",
+        "4. Comunique o Banco Central (145)",
+        "5. Procon ou Juizado Especial para cancelamento e restituição"
+      ],
+      "palavras_chave": [
+        "consignado fraude",
+        "emprestimo nao autorizado",
+        "descontaram sem autorizar",
+        "golpe consignado"
+      ]
+    }
+  },
+  "prazos_resumidos": {
+    "arrependimento_online": {
+      "prazo": "7 dias corridos",
+      "art": "Art. 49"
+    },
+    "reclamar_produto_nao_duravel": {
+      "prazo": "30 dias",
+      "art": "Art. 26, I"
+    },
+    "reclamar_produto_duravel": {
+      "prazo": "90 dias",
+      "art": "Art. 26, II"
+    },
+    "empresa_resolver_defeito": {
+      "prazo": "30 dias",
+      "art": "Art. 18 § 1°"
+    },
+    "prescricao_judicial": {
+      "prazo": "5 anos",
+      "art": "Art. 27"
+    },
+    "sac_resposta": {
+      "prazo": "5 dias úteis",
+      "art": "Decreto 6.523/2008"
+    },
+    "ans_urgencia": {
+      "prazo": "3 dias úteis",
+      "art": "RN ANS 259/2011"
+    },
+    "negativacao_aviso": {
+      "prazo": "Antes da inscrição",
+      "art": "Art. 43 § 2°"
+    }
+  },
+  "dados_atualizados": {
+    "cartao_credito_juros": {
+      "titulo": "Juros do Rotativo do Cartão de Crédito — Regras 2026",
+      "conteudo": "JUROS DO ROTATIVO DO CARTÃO DE CRÉDITO (dados de 2026):\n\nTAXA COBRADA: Os juros do rotativo chegam a 435,9% ao ano em média (fevereiro/2026, Banco Central). É uma das modalidades de crédito mais caras do mercado.\n\nTETO DA DÍVIDA (proteção legal): Pela regulação vigente, a soma de juros e encargos NÃO PODE ultrapassar 100% do valor principal original. Ou seja: uma dívida de R$ 1.000 nunca pode gerar saldo devedor superior a R$ 2.000 (dívida original + juros). Isso evita que a dívida cresça indefinidamente.\n\nPRAZO: O rotativo dura apenas 30 dias. Se não for quitado, o banco é obrigado a transferir o saldo para parcelamento com taxas menores.\n\nALTERNATIVA: Parcelamento da fatura (~200,2% ao ano) é mais barato que o rotativo, mas cuidado com acúmulo de parcelas.\n\nPara comparar taxas por banco: Banco Central do Brasil — bcb.gov.br (ferramenta de taxas de juros).",
+      "vigencia": "2026 (dados BC fevereiro/2026)",
+      "fonte": "Banco Central do Brasil + Agência Brasil + Valor Econômico (2026)",
+      "palavras_chave": [
+        "juros rotativo",
+        "rotativo cartao",
+        "limite juros cartao",
+        "taxa cartao credito",
+        "juros maximo cartao",
+        "cartao juros alto",
+        "quanto cobram juros cartao",
+        "juro cartao",
+        "porcentagem juros cartao",
+        "150 por cento",
+        "150%",
+        "e 150",
+        "juros 150",
+        "teto 150",
+        "100 por cento juros",
+        "juros credito rotativo",
+        "fatura cartao juros",
+        "encargos cartao",
+        "teto juros",
+        "limite juros",
+        "maximo juros cartao",
+        "qual o teto dos juros",
+        "qual o limite dos juros",
+        "quanto pode cobrar de juros",
+        "juros pode passar de",
+        "ate quanto vai a divida",
+        "divida pode dobrar",
+        "banco cobrar juros cartao",
+        "lei desenrola",
+        "14690",
+        "5171",
+        "cmn 5171",
+        "juros cartao lei"
+      ]
+    },
+    "taxa_selic": {
+      "titulo": "Taxa Selic — Referência para Juros e Correção",
+      "conteudo": "A taxa Selic é a taxa básica de juros da economia brasileira, definida pelo Copom (Comitê de Política Monetária do Banco Central). Ela serve de referência para financiamentos, empréstimos e correção de valores. Consulte o valor atual em bcb.gov.br — a Selic é revisada a cada 45 dias aproximadamente.",
+      "fonte": "Banco Central do Brasil",
+      "palavras_chave": [
+        "selic",
+        "taxa basica",
+        "taxa juros brasil",
+        "copom",
+        "banco central juros"
+      ]
+    },
+    "salario_minimo_2025": {
+      "titulo": "Salário Mínimo 2026",
+      "conteudo": "O salário mínimo em 2026 é de R$ 1.621,00, em vigor desde 1º de janeiro de 2026 (aumento de 6,79% em relação aos R$ 1.518 de 2025). Esse valor é a base para aposentadorias do INSS, BPC, seguro-desemprego e outros benefícios. Para o Juizado Especial Cível: causas até 20 salários mínimos (R$ 32.420,00) podem ser movidas sem advogado.",
+      "vigencia": "1º de janeiro de 2026",
+      "fonte": "Diário Oficial da União, 24/12/2025",
+      "palavras_chave": [
+        "salario minimo",
+        "salário mínimo",
+        "piso salarial",
+        "salario minimo 2026",
+        "valor minimo",
+        "1621",
+        "quanto ganha minimo",
+        "salario base",
+        "piso nacional",
+        "juizado especial valor",
+        "valor salario"
+      ]
+    },
+    "pix_limites": {
+      "titulo": "Pix — Limites e Proteção ao Consumidor",
+      "conteudo": "O Pix é regulado pelo Banco Central. Em casos de fraude (golpe do Pix), o consumidor deve: 1) Registrar boletim de ocorrência imediatamente; 2) Comunicar o banco em até 80 minutos para tentativa de bloqueio via Mecanismo Especial de Devolução (MED); 3) O banco tem até 7 dias úteis para analisar e responder. O banco não é obrigado a devolver valores em golpes onde o próprio cliente autorizou a transferência (engenharia social), mas pode devolver por política interna.",
+      "fonte": "Resolução BCB 1/2020 e atualizações 2024",
+      "palavras_chave": [
+        "golpe pix",
+        "fraude pix",
+        "pix fraude",
+        "devolucao pix",
+        "transferencia pix errada",
+        "med pix",
+        "mecanismo devolucao pix",
+        "cai em golpe pix",
+        "transferi errado pix",
+        "pix roubado",
+        "fui enganado pix",
+        "pix indevido",
+        "mandei pix errado",
+        "pix enviado errado",
+        "cai no golpe pix",
+        "pix errado"
+      ]
+    },
+    "superendividamento": {
+      "titulo": "Lei do Superendividamento — Lei 14.181/2021",
+      "conteudo": "A Lei 14.181/2021 (que alterou o CDC) protege consumidores superendividados — aqueles que não conseguem pagar suas dívidas sem comprometer o mínimo existencial (alimentação, saúde, moradia). Direitos: renegociação de todas as dívidas em um único processo judicial; preservação do mínimo existencial; proibição de práticas abusivas de crédito; vedação de publicidade de crédito irresponsável.",
+      "vigencia": "Julho de 2021 em diante",
+      "fonte": "Lei 14.181/2021",
+      "palavras_chave": [
+        "superendividado",
+        "superendividamento",
+        "nao consigo pagar dividas",
+        "dividas demais",
+        "muitas dividas acumuladas",
+        "renegociar todas dividas",
+        "lei superendividamento",
+        "minimo existencial divida",
+        "endividado demais",
+        "sem conseguir pagar divida",
+        "devendo demais",
+        "nao tenho como pagar dividas",
+        "divida acima do limite",
+        "dividas me sufocando"
+      ]
+    },
+    "seguro_dpvat_2025": {
+      "titulo": "DPVAT — Seguro de Trânsito",
+      "conteudo": "O DPVAT (Seguro de Danos Pessoais Causados por Veículos Automotores de Vias Terrestres) foi extinto em 2020 e substituído pelo SPVAT (Sistema de Proteção por Morte e Invalidez no Trânsito) em 2024, administrado pela Caixa Seguradora. Cobre: morte (R$ 13.500), invalidez permanente (até R$ 13.500) e despesas médicas (até R$ 2.700). Para acionar: caixa.gov.br/seguradora.",
+      "fonte": "Lei 14.744/2023",
+      "palavras_chave": [
+        "dpvat",
+        "spvat",
+        "seguro transito",
+        "acidente carro",
+        "indenizacao acidente",
+        "seguro obrigatorio",
+        "atropelamento indenizacao"
+      ]
+    },
+    "cobranca_abusiva_2024": {
+      "titulo": "Práticas Abusivas de Cobrança — Atualização 2024",
+      "conteudo": "Além das vedações do Art. 42 do CDC, a Resolução CMN 4.949/2021 (atualizada em 2024) proíbe: mensagens de cobrança fora do horário das 8h às 20h; contato com terceiros sobre a dívida (exceto para localizar o devedor); exposição em redes sociais; ameaças. Reclamações: Procon, consumidor.gov.br ou Banco Central (para instituições financeiras).",
+      "fonte": "Art. 42 CDC + Resolução CMN 4.949/2021",
+      "palavras_chave": [
+        "ligacao cobranca",
+        "horario cobranca",
+        "ligam fora hora",
+        "cobranca fora horario",
+        "mensagem cobranca noite",
+        "assedio cobranca",
+        "me ligam todo dia cobrando",
+        "cobranca abusiva",
+        "me perturbam cobrando",
+        "ligacoes cobranca"
+      ]
+    },
+    "ecommerce_direitos": {
+      "titulo": "Direitos do Consumidor em E-commerce",
+      "conteudo": "O e-commerce no Brasil é regulado pelo Decreto 7.962/2013 (Lei do E-commerce) e pelo CDC.\n\nDireitos garantidos:\n• Arrependimento em 7 dias após recebimento sem precisar justificar (Art. 49 CDC)\n• Frete de devolução por conta da loja\n• Informações claras sobre produto, preço, prazo e empresa\n• CNPJ, endereço e telefone do vendedor obrigatórios no site\n• Confirmação da compra por e-mail obrigatória\n• Reembolso integral em até 10 dias úteis após cancelamento\n\nMarketplace: a plataforma (Mercado Livre, Shopee, Amazon) responde solidariamente com o vendedor quando há problemas com o produto.",
+      "palavras_chave": [
+        "ecommerce",
+        "e-commerce",
+        "compra online",
+        "loja virtual",
+        "marketplace",
+        "shopee",
+        "mercado livre",
+        "amazon",
+        "americanas",
+        "direitos compra online",
+        "decreto 7962",
+        "lei ecommerce",
+        "loja online",
+        "shopee defeito",
+        "shopee problema",
+        "aliexpress defeito",
+        "shein devolucao",
+        "loja virtual problema",
+        "site online defeito",
+        "compra site",
+        "pedido site"
+      ],
+      "fonte": "Decreto 7.962/2013 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "marketplace_responsabilidade": {
+      "titulo": "Responsabilidade do Marketplace (Mercado Livre, Shopee, etc.)",
+      "conteudo": "Decisão do STJ (REsp 1.744.213): o marketplace responde solidariamente com o vendedor quando: não verifica adequadamente os vendedores; produto é defeituoso ou não entregue; vendedor some ou não resolve o problema.\n\nO consumidor pode acionar diretamente a plataforma (Mercado Livre, Shopee, Amazon, Magalu, etc.) mesmo que o vendedor seja um terceiro.\n\nComo acionar: abra disputa na própria plataforma. Se não resolver: consumidor.gov.br ou Procon.",
+      "palavras_chave": [
+        "marketplace responsavel",
+        "mercado livre responsabilidade",
+        "shopee problema",
+        "vendedor sumiu marketplace",
+        "plataforma responsavel",
+        "amazon problema",
+        "magalu responsavel",
+        "comprei no marketplace",
+        "vendedor terceiro",
+        "shopee responsavel",
+        "aliexpress responsavel",
+        "shein responsavel",
+        "mercado livre problema vendedor",
+        "amazon vendedor terceiro",
+        "plataforma responsavel",
+        "quem responde marketplace"
+      ],
+      "fonte": "STJ — REsp 1.744.213 + CDC Art. 3°",
+      "vigencia": "Jurisprudência consolidada"
+    },
+    "taxa_cdi": {
+      "titulo": "CDI — Taxa e Investimentos",
+      "conteudo": "O CDI (Certificado de Depósito Interbancário) é a taxa de referência para investimentos de renda fixa no Brasil. Geralmente fica muito próxima à Selic.\n\nUsada como base para: CDBs, LCIs, LCAs, fundos DI, poupança e outros.\nValor atual: consulte o site da B3 (b3.com.br) ou do Banco Central (bcb.gov.br).\n\nConsumidor: ao contratar investimento, peça a taxa em % do CDI. Quanto mais perto de 100% do CDI (ou acima), melhor o rendimento.",
+      "palavras_chave": [
+        "cdi",
+        "taxa cdi",
+        "rendimento cdi",
+        "investimento cdi",
+        "porcentagem cdi",
+        "cdb",
+        "lci",
+        "lca",
+        "renda fixa",
+        "quanto rende",
+        "rendimento investimento"
+      ],
+      "fonte": "B3 / Banco Central do Brasil",
+      "vigencia": "Atualizado diariamente"
+    },
+    "financiamento_carro_imovel": {
+      "titulo": "Financiamento de Carro e Imóvel — Direitos do Consumidor",
+      "conteudo": "FINANCIAMENTO DE CARRO:\n• Você pode quitar antecipadamente com desconto proporcional dos juros (Art. 52 CDC)\n• Busque o CET (Custo Efetivo Total) antes de assinar — obrigatório por lei\n• Taxa de cadastro abusiva pode ser contestada no Procon\n• O bem pode ser retomado se houver inadimplência, mas com processo judicial\n\nFINANCIAMENTO IMOBILIÁRIO:\n• Tabela SAC ou Price devem ser explicadas claramente\n• FGTS pode ser usado para entrada, amortização ou quitação\n• Distrato: comprador pode desistir e tem direito a restituição de pelo menos 75% do valor pago (Lei 13.786/2018 — Lei do Distrato Imobiliário)\n• Atraso na entrega do imóvel: multa de 1% ao mês sobre o valor pago",
+      "palavras_chave": [
+        "financiamento carro",
+        "financiar carro",
+        "parcela carro",
+        "cdc veiculo",
+        "financiamento imovel",
+        "financiar imovel",
+        "parcela imovel",
+        "distrato imovel",
+        "quitar financiamento",
+        "amortizar",
+        "cet financiamento",
+        "tabela price",
+        "tabela sac",
+        "fgts imovel",
+        "fgts compra",
+        "fgts financiamento"
+      ],
+      "fonte": "CDC Art. 52 + Lei 13.786/2018",
+      "vigencia": "Em vigor"
+    },
+    "seguro_consumidor": {
+      "titulo": "Seguros — Direitos do Consumidor",
+      "conteudo": "Seguros são regulados pela SUSEP (Superintendência de Seguros Privados) e pelo CDC.\n\nDIREITOS BÁSICOS:\n• Prazo máximo para pagamento de sinistro: 30 dias após entrega da documentação\n• Seguradora não pode negar sinistro sem justificativa fundamentada por escrito\n• Carência deve estar no contrato de forma clara\n• Cancelamento: consumidor pode cancelar a qualquer tempo com restituição proporcional\n\nSEGURO AUTO: em caso de negativa de cobertura indevida, acione a SUSEP (0800 021 8484) ou o Procon.\n\nSEGURO DE VIDA: beneficiários têm 1 ano para acionar após o sinistro.",
+      "palavras_chave": [
+        "seguro",
+        "seguros",
+        "seguradora",
+        "sinistro",
+        "cobertura seguro",
+        "seguro auto",
+        "seguro vida",
+        "seguro residencial",
+        "susep",
+        "negou sinistro",
+        "prazo sinistro",
+        "cancelar seguro",
+        "restituicao seguro",
+        "carencia seguro"
+      ],
+      "fonte": "SUSEP + CDC",
+      "vigencia": "Em vigor"
+    },
+    "trabalho_direitos_basicos": {
+      "titulo": "Direitos Trabalhistas Básicos — CLT",
+      "conteudo": "Principais direitos pela CLT (Consolidação das Leis do Trabalho):\n\n• Salário mínimo nacional (2026: R$ 1.621,00)\n• 13° salário: pago até 20/12 (2ª parcela)\n• Férias: 30 dias após 12 meses + 1/3 adicional\n• FGTS: 8% do salário depositado mensalmente\n• Demissão sem justa causa: aviso prévio + multa de 40% do FGTS\n• Hora extra: mínimo 50% acima do valor normal\n• Licença maternidade: 120 dias (ou 180 no Programa Empresa Cidadã)\n• Licença paternidade: 5 dias (ou 20 no Programa Empresa Cidadã)\n\nDenúncias trabalhistas: MTE (Ministério do Trabalho) — trabalho.gov.br",
+      "palavras_chave": [
+        "direitos trabalhistas",
+        "clt",
+        "ferias",
+        "13 salario",
+        "decimo terceiro",
+        "fgts demissao",
+        "aviso previo",
+        "hora extra",
+        "licenca maternidade",
+        "licenca paternidade",
+        "rescisao",
+        "demissao",
+        "justa causa",
+        "sem justa causa",
+        "trabalhista",
+        "mte",
+        "ministerio trabalho"
+      ],
+      "fonte": "CLT — Decreto-Lei 5.452/1943 (atualizado)",
+      "vigencia": "Atualizado 2026 — salário mínimo R$ 1.621"
+    },
+    "imposto_consumidor": {
+      "titulo": "Impostos que o Consumidor Paga — Nota Fiscal e NF-e",
+      "conteudo": "IMPOSTOS NO PREÇO DO PRODUTO:\n• ICMS: imposto estadual sobre circulação de mercadorias (7% a 25%)\n• IPI: imposto federal sobre produtos industrializados\n• PIS/Cofins: contribuições federais embutidas no preço\n\nNOTA FISCAL:\n• Obrigatória em toda venda — recuse a compra sem NF\n• Guardar a NF é fundamental para garantia, troca e reclamação\n• NF-e (eletrônica): você pode pedir por e-mail ou imprimir o DANFE\n• Consumidor pode consultar NF pelo site da Receita Federal (nfe.fazenda.gov.br)\n\nNOTA FISCAL PAULISTA / ESTADUAIS:\n• Alguns estados devolvem parte do ICMS para quem informa CPF na nota\n• SP: notafiscalsp.fazenda.sp.gov.br — participe e concorra a prêmios",
+      "palavras_chave": [
+        "nota fiscal",
+        "nf-e",
+        "imposto produto",
+        "icms",
+        "ipi",
+        "pis cofins",
+        "nota fiscal paulista",
+        "cpf na nota",
+        "sem nota fiscal",
+        "nao deram nota",
+        "danfe",
+        "receita federal nota",
+        "imposto consumidor",
+        "tributo produto"
+      ],
+      "fonte": "Receita Federal + SEFAZ",
+      "vigencia": "Em vigor"
+    },
+    "plano_saude_regras": {
+      "titulo": "Plano de Saúde — Regras e Direitos (ANS)",
+      "conteudo": "CARÊNCIAS (prazos máximos legais — ANS):\n• Urgência/emergência: máximo 24 horas de carência\n• Consultas e exames simples: máximo 30 dias de carência\n• Internação eletiva: máximo 180 dias de carência\n• Partos: máximo 300 dias de carência\n• Doenças preexistentes: máximo 24 meses de carência\n\nROL DE PROCEDIMENTOS (ANS):\n• Lista obrigatória atualizada pela ANS — plano deve cobrir tudo nela\n• Negativa de procedimento do Rol: acione a ANS (0800 701 9656 ou ans.gov.br)\n\nREAJUSTE:\n• Planos individuais: reajuste anual definido pela ANS\n• Planos coletivos: reajuste negociado — verifique o contrato\n\nPORTABILIDADE: troca de plano sem nova carência se já cumpriu a carência original.\n\nSE O PLANO NEGOU COBERTURA:\n1. Solicite a negativa por escrito\n2. Verifique se o procedimento está no Rol da ANS\n3. Acione a ANS: 0800 701 9656 ou ans.gov.br\n4. Casos urgentes: busque liminar judicial (Defensoria Pública ou advogado)",
+      "palavras_chave": [
+        "plano saude carencia",
+        "carencia plano",
+        "ans procedimento",
+        "rol ans",
+        "plano negou",
+        "negativa plano",
+        "reajuste plano",
+        "portabilidade plano",
+        "mudar de plano",
+        "convenio medico",
+        "plano saude regras",
+        "urgencia plano",
+        "emergencia plano",
+        "internacao plano",
+        "exame plano",
+        "carencia plano saude",
+        "regras plano",
+        "cobertura plano",
+        "procedimento coberto",
+        "portabilidade plano saude",
+        "reajuste plano individual"
+      ],
+      "fonte": "ANS — Agência Nacional de Saúde Suplementar",
+      "vigencia": "Rol ANS atualizado 2024 (vigente)"
+    },
+    "medicamento_generico": {
+      "titulo": "Medicamentos — Genérico, Similar e Referência",
+      "conteudo": "TIPOS DE MEDICAMENTO:\n• Referência (original): primeiro a ser registrado, mais caro\n• Genérico: mesmo princípio ativo, mesma eficácia, menor preço — identificado pela tarja amarela\n• Similar: mesmo princípio ativo, mas pode ter excipientes diferentes\n\nDIREITO DE SUBSTITUIÇÃO:\n• O farmacêutico pode substituir por genérico, salvo se o médico vedar expressamente\n• O consumidor pode exigir o genérico mesmo que a receita indique o nome comercial\n\nPREÇO MÁXIMO:\n• Regulado pela CMED (Câmara de Regulação do Mercado de Medicamentos)\n• Consulte o preço máximo em anvisa.gov.br/cmed\n\nRECALL DE MEDICAMENTO: a ANVISA divulga recalls em anvisa.gov.br",
+      "palavras_chave": [
+        "medicamento generico",
+        "remedio generico",
+        "generico similar",
+        "farmacia substituir",
+        "troca remedio",
+        "preco remedio",
+        "preco medicamento",
+        "cmed",
+        "anvisa medicamento",
+        "recall medicamento",
+        "remedio referencia",
+        "principio ativo"
+      ],
+      "fonte": "ANVISA + CMED",
+      "vigencia": "Em vigor"
+    },
+    "anatel_direitos": {
+      "titulo": "Telecomunicações — Direitos do Consumidor (ANATEL)",
+      "conteudo": "INTERNET E TELEFONIA — DIREITOS GARANTIDOS:\n• Velocidade mínima da internet: 80% da velocidade contratada (Resolução ANATEL 574)\n• Instalação: prazo máximo de 7 dias úteis para serviço residencial\n• Atendimento via SAC gratuito 24h/7 dias\n• Cancelamento imediato: empresa tem até 2 dias úteis para confirmar\n• Portabilidade numérica: você pode manter seu número ao trocar de operadora\n\nCOBRANÇAS:\n• Cobrança por serviço não solicitado é vedada\n• Cobrança por serviço interrompido pode ser contestada\n• Franquia de dados zerada: operadora deve avisar quando restar 20% e ao zerar\n\nCOMO RECLAMAR:\n• SAC da operadora → consumidor.gov.br → ANATEL (1331 ou anatel.gov.br)",
+      "palavras_chave": [
+        "internet lenta",
+        "velocidade internet",
+        "franquia dados",
+        "dados zerados",
+        "portabilidade numero",
+        "mudar operadora",
+        "cancelar internet",
+        "cancelar telefone",
+        "cobrança indevida operadora",
+        "anatel reclamar",
+        "tim problema",
+        "claro problema",
+        "vivo problema",
+        "oi problema",
+        "internet nao funciona",
+        "sinal ruim"
+      ],
+      "fonte": "ANATEL — Resolução 574 e demais normas",
+      "vigencia": "Em vigor"
+    },
+    "negativacao_serasa_spc": {
+      "titulo": "Negativação SPC/Serasa — Direitos e Como Resolver",
+      "conteudo": "ANTES DE NEGATIVAR:\n• A empresa DEVE avisar o consumidor por carta antes de incluir o nome (Art. 43 CDC)\n• Sem aviso prévio: negativação é ilegal → direito a indenização por dano moral\n\nPRAZO MÁXIMO DE NEGATIVAÇÃO:\n• 5 anos — após isso, a dívida some automaticamente do cadastro\n• Prescrição da dívida não apaga, mas a negativação caduca\n\nCOMO LIMPAR O NOME:\n1. Negocie direto com a empresa credora\n2. Serasa Limpa Nome (serasalimpanome.com.br) — negociação online\n3. Feirão Serasa — evento periódico com descontos de até 99%\n4. Após pagamento: empresa tem 5 dias úteis para retirar a negativação\n\nCONSULTA GRATUITA: cpf.serasa.com.br ou spcbrasil.org.br\n\nSe a dívida não é sua: conteste diretamente no Serasa/SPC e acione o Procon.",
+      "palavras_chave": [
+        "nome sujo",
+        "negativado",
+        "serasa",
+        "spc",
+        "limpar nome",
+        "tirar nome sujo",
+        "restricao credito",
+        "consultar cpf",
+        "score serasa",
+        "score spc",
+        "negativacao indevida",
+        "nome negativado indevido",
+        "prazo negativacao",
+        "5 anos divida",
+        "divida sumiu",
+        "limpa nome",
+        "feirao serasa"
+      ],
+      "fonte": "Art. 43 CDC + Lei 8.078/1990",
+      "vigencia": "Em vigor — Serasa Limpa Nome disponível"
+    },
+    "emprestimo_consignado": {
+      "titulo": "Empréstimo Consignado — Regras e Proteção",
+      "conteudo": "O empréstimo consignado desconta as parcelas diretamente do salário/benefício.\n\nLIMITES LEGAIS:\n• Margem consignável: máximo 45% do salário líquido\n  - 35% para empréstimos em geral\n  - 10% exclusivo para cartão de crédito consignado\n• Aposentados INSS: mesmas regras — margem de 45%\n\nDIREITOS:\n• Empréstimo sem autorização expressa é ilegal — denuncie ao Banco Central (145)\n• Portabilidade: você pode transferir o consignado para banco com taxa menor\n• Quitação antecipada: direito garantido com desconto proporcional dos juros\n\nFRAUDES:\n• Golpes comuns: empréstimo em nome de idoso sem consentimento\n• Se não autorizou: bloqueie no banco, registre B.O. e acione o INSS (135)",
+      "palavras_chave": [
+        "emprestimo consignado",
+        "consignado",
+        "margem consignavel",
+        "desconto salario",
+        "desconto beneficio",
+        "consignado inss",
+        "portabilidade consignado",
+        "consignado sem autorizar",
+        "fraude consignado",
+        "golpe consignado",
+        "limite consignado",
+        "margem 35",
+        "inss consignado"
+      ],
+      "fonte": "Resolução BCB + Lei 10.820/2003",
+      "vigencia": "Margem 45% em vigor"
+    },
+    "lgpd_consumidor": {
+      "titulo": "LGPD — Proteção de Dados do Consumidor",
+      "conteudo": "A LGPD (Lei Geral de Proteção de Dados — Lei 13.709/2018) garante ao consumidor:\n\nDIREITOS:\n• Saber quais dados a empresa tem sobre você\n• Pedir correção de dados incorretos\n• Pedir exclusão dos seus dados (direito ao esquecimento)\n• Revogar consentimento a qualquer momento\n• Ser informado sobre vazamento de dados\n\nCOMO EXERCER:\n1. Acesse o site/app da empresa e procure 'Privacidade' ou 'Meus Dados'\n2. Envie solicitação formal por escrito\n3. Prazo para resposta: 15 dias\n\nDENÚNCIAS: ANPD (Autoridade Nacional de Proteção de Dados) — gov.br/anpd\n\nVAZAMENTO DE DADOS: a empresa deve comunicar a ANPD e os titulares afetados em prazo razoável. Consumidor prejudicado pode buscar indenização.",
+      "palavras_chave": [
+        "lgpd",
+        "dados pessoais",
+        "privacidade",
+        "protecao dados",
+        "meus dados",
+        "excluir meus dados",
+        "vazamento dados",
+        "anpd",
+        "direito esquecimento",
+        "revogar consentimento",
+        "lei dados",
+        "gdpr brasil",
+        "informacao vazou",
+        "empresa tem meus dados",
+        "cookies",
+        "consentimento dados"
+      ],
+      "fonte": "Lei 13.709/2018 (LGPD) — ANPD",
+      "vigencia": "Em vigor desde setembro/2020"
+    },
+    "custo_vida_brasil": {
+      "titulo": "Custo de Vida no Brasil — Referências 2026",
+      "conteudo": "REFERÊNCIAS ECONÔMICAS 2026:\n• Salário mínimo: R$ 1.621,00\n• Teto INSS: R$ 7.786,02 (aposentadoria máxima)\n• Cesta básica (São Paulo, média): R$ 750 a R$ 850 (varia por cidade)\n• Aluguel médio capital: varia muito por região\n\nBENEFÍCIOS SOCIAIS 2026:\n• Bolsa Família: R$ 600 base + R$ 150 por criança de 0-6 anos\n• BPC (pessoa com deficiência ou idoso acima de 65 anos): R$ 1.621\n• Seguro-desemprego: varia de R$ 1.621 a R$ 2.230 (calculado sobre salário)\n\nÍNDICES:\n• IPCA (inflação oficial): consulte ibge.gov.br\n• IGP-M (aluguel): consulte fgv.br",
+      "palavras_chave": [
+        "custo de vida",
+        "cesta basica",
+        "bolsa familia valor",
+        "bpc valor 2026",
+        "seguro desemprego",
+        "teto inss",
+        "aposentadoria maxima",
+        "beneficio social",
+        "renda minima",
+        "auxilio governo",
+        "salario minimo 2026",
+        "1621"
+      ],
+      "fonte": "IBGE + MPS + Governo Federal (2026)",
+      "vigencia": "2026"
+    },
+    "compra_internacional": {
+      "titulo": "Compras Internacionais — Direitos e Impostos",
+      "conteudo": "IMPOSTOS EM COMPRAS INTERNACIONAIS:\n• Compras até US$ 50 de lojas estrangeiras (Shopee, Shein, AliExpress) com benefício fiscal: alíquota de 20% de imposto federal\n• Acima de US$ 50 até US$ 3.000: imposto de importação de 60% + ICMS estadual\n• Acima de US$ 3.000: importação formal — procure despachante\n\nPRAZO DE ENTREGA:\n• Compras internacionais não têm prazo legal fixo\n• O prazo informado pelo vendedor é vinculante (Art. 30 CDC)\n• Atraso: cancele e exija reembolso\n\nARREPENDIMENTO:\n• O direito de 7 dias vale para compras internacionais entregues no Brasil\n• Plataformas internacionais que atuam no Brasil devem cumprir o CDC\n\nRETENÇÃO NA ALFÂNDEGA:\n• Rastreie via Correios (correios.com.br)\n• Se retido: pague o imposto indicado pelo Correios ou conteste se indevido",
+      "palavras_chave": [
+        "compra internacional",
+        "shopee",
+        "shein",
+        "aliexpress",
+        "importacao",
+        "alfandega",
+        "imposto importacao",
+        "retido alfandega",
+        "compra exterior",
+        "site internacional",
+        "us 50",
+        "dolares produto",
+        "taxa importacao",
+        "produto importado",
+        "fora do pais"
+      ],
+      "fonte": "Receita Federal + CDC",
+      "vigencia": "Regras de 2024 em vigor (revisão periódica)"
+    },
+    "garantia_estendida": {
+      "titulo": "Garantia Estendida vs Garantia Legal CDC",
+      "conteudo": "GARANTIA LEGAL (CDC — obrigatória e gratuita):\n• Produtos não duráveis: 30 dias para reclamar vícios (Art. 26, I)\n• Produtos duráveis: 90 dias para reclamar vícios (Art. 26, II)\n• Vícios ocultos: prazo conta a partir da descoberta (Art. 26, §3°)\n• Empresa tem 30 dias para resolver — se não resolver: troca, reembolso ou desconto\n\nGARANTIA CONTRATUAL (fabricante — adicional à legal):\n• Complementa a legal, nunca a substitui (Art. 50 CDC)\n• Ex: fabricante dá 1 ano → você tem 90 dias legais + 1 ano da fabricante\n\nGARANTIA ESTENDIDA (produto adicional pago — seguro):\n• Regulada pela SUSEP — é um seguro, não uma garantia do CDC\n• Leia o contrato: prazo de carência, o que cobre, franquia\n• Geralmente vale para defeitos elétricos/mecânicos após garantia do fabricante\n• Vale a pena avaliar o custo vs probabilidade de defeito do produto específico",
+      "palavras_chave": [
+        "garantia estendida",
+        "garantia legal",
+        "garantia fabricante",
+        "garantia contratual",
+        "garantia adicional",
+        "venceu garantia",
+        "fora garantia",
+        "ainda na garantia",
+        "prazo garantia",
+        "certificado garantia",
+        "garantia expirou"
+      ],
+      "fonte": "Art. 18, 24, 26, 50 CDC + SUSEP",
+      "vigencia": "Em vigor"
+    },
+    "assistencia_tecnica_direitos": {
+      "titulo": "Assistência Técnica — Direitos do Consumidor",
+      "conteudo": "DIREITOS NA ASSISTÊNCIA TÉCNICA (Art. 21 CDC):\n• Orçamento prévio obrigatório antes do reparo (Art. 40 CDC)\n• Peças de reposição devem ser originais ou equivalentes — sem autorização não podem usar peças usadas (crime — Art. 70 CDC)\n• Prazo de garantia no reparo: 90 dias para o serviço executado\n• Laudo técnico por escrito ao devolver o produto\n\nSE A ASSISTÊNCIA NÃO RESOLVER EM 30 DIAS:\nVocê pode exigir (Art. 18 § 1° CDC):\n• Substituição do produto por outro da mesma espécie\n• Restituição do valor pago corrigido\n• Abatimento proporcional do preço\n\nAUTORIZADA vs NÃO AUTORIZADA:\n• Assistência autorizada: mantém garantia do fabricante\n• Não autorizada: pode perder garantia — verifique o contrato",
+      "palavras_chave": [
+        "assistencia tecnica",
+        "autorizada",
+        "conserto",
+        "reparo",
+        "tecnico",
+        "mandei consertar",
+        "peca original",
+        "peca usada",
+        "orcamento reparo",
+        "laudo tecnico",
+        "garantia conserto",
+        "assistencia demorou",
+        "nao resolveram assistencia"
+      ],
+      "fonte": "Art. 21, 40, 70 CDC",
+      "vigencia": "Em vigor"
+    },
+    "dano_moral_consumidor": {
+      "titulo": "Dano Moral nas Relações de Consumo",
+      "conteudo": "O dano moral é cabível quando o consumidor sofre além do prejuízo material:\nconstrangimento, abalo emocional, humilhação ou lesão à honra/imagem.\n\nSITUAÇÕES TÍPICAS QUE GERAM DANO MORAL:\n• Negativação indevida no SPC/Serasa sem aviso prévio (Art. 43 CDC)\n• Cobrança vexatória ou com ameaça (Art. 42 CDC — crime no Art. 71 CDC)\n• Produto que causou lesão física\n• Fraude ou golpe documentado praticado por fornecedor\n• Serviço essencial cortado ilegalmente (água, luz, internet)\n\nCOMO REQUERER:\n• Juizado Especial Cível: até 40 salários mínimos (R$ 64.840) sem advogado\n• Acima disso: comarca cível comum com advogado\n• Prazo: 5 anos (Art. 27 CDC)\n\nVALORES MÉDIOS (orientativos — variam por juiz e gravidade):\n• Negativação indevida: R$ 3.000 a R$ 10.000\n• Cobrança vexatória: R$ 2.000 a R$ 8.000\n• Produto com lesão física: R$ 5.000 a R$ 50.000+",
+      "palavras_chave": [
+        "dano moral",
+        "danos morais",
+        "indenizacao moral",
+        "sofrimento",
+        "constrangimento",
+        "humilhacao",
+        "quanto vale dano moral",
+        "posso pedir dano moral",
+        "valor indenizacao",
+        "acao indenizatoria",
+        "processo dano moral"
+      ],
+      "fonte": "Art. 6, 42, 43 CDC + Código Civil + jurisprudência STJ",
+      "vigencia": "Valores orientativos 2026"
+    },
+    "recall_produto": {
+      "titulo": "Recall — Direitos e Obrigações",
+      "conteudo": "RECALL (Art. 10 CDC) — O fornecedor DEVE retirar produto perigoso e comunicar consumidores.\n\nDIREITOS DO CONSUMIDOR:\n• Correção do defeito GRATUITA — a empresa não pode cobrar nada\n• Substituição por produto equivalente (se não puder ser corrigido)\n• Restituição do valor pago (se preferir)\n• Não há prazo para acionar o fabricante em caso de recall\n\nCOMO VERIFICAR RECALLS ATIVOS:\n• Veículos: gov.br/denatran ou site da montadora\n• Medicamentos e alimentos: anvisa.gov.br\n• Eletrodomésticos e brinquedos: inmetro.gov.br\n• Site ou app do próprio fabricante\n\nSE A EMPRESA NÃO CUMPRIR:\nDenuncie ao Procon e ao SENACON (consumidor.gov.br).\nNão cumprir recall é CRIME (Art. 64 CDC) — pena de até 2 anos de detenção.",
+      "palavras_chave": [
+        "recall",
+        "produto recolhido",
+        "retirada mercado",
+        "alerta produto",
+        "produto perigoso",
+        "recall gratuito",
+        "conserto recall",
+        "recall carro",
+        "anvisa alerta",
+        "inmetro recall",
+        "recall aceitar",
+        "recall obrigatorio",
+        "recall produto",
+        "recall direitos",
+        "como funciona recall",
+        "direito recall",
+        "fabricante recall",
+        "recall obrigacoes",
+        "recall empresa",
+        "comunicado recall"
+      ],
+      "fonte": "Art. 10, 64 CDC + ANVISA + INMETRO",
+      "vigencia": "Em vigor"
+    },
+    "streaming_cancelamento": {
+      "titulo": "Streaming — Cancelamento, Reembolso e Cobranças",
+      "conteudo": "STREAMING (Netflix, Spotify, Disney+, Globoplay, etc.):\n\nCANCELAMENTO:\n• Você pode cancelar a qualquer momento, sem multa (Art. 49 CDC)\n• Período em curso: você usa até o fim do ciclo já pago\n• Plataforma é obrigada a oferecer o cancelamento de forma simples — pelo mesmo canal de adesão\n\nCOBRANÇA INDEVIDA:\n• Cobrança após cancelamento: devolução em DOBRO (Art. 42 § único CDC)\n• Renovação automática sem aviso: pode ser contestada\n• Aumento de preço sem comunicação prévia de 30 dias: ilegal\n\nTESTE GRÁTIS QUE VIROU COBRADO:\n• Plataforma deve avisar antes do fim do período gratuito\n• Sem aviso, primeira cobrança pode ser contestada\n\nSE NÃO CONSEGUIR CANCELAR:\n1. Bloqueie o pagamento no cartão (banco/operadora)\n2. Reclamação no consumidor.gov.br\n3. Procon ou Juizado Especial",
+      "palavras_chave": [
+        "streaming",
+        "netflix",
+        "spotify",
+        "disney plus",
+        "globoplay",
+        "amazon prime",
+        "hbo max",
+        "paramount",
+        "apple tv",
+        "deezer",
+        "youtube premium",
+        "crunchyroll",
+        "cancelar streaming",
+        "cobranca streaming",
+        "assinatura streaming",
+        "cobraram apos cancelar"
+      ],
+      "fonte": "Art. 42, 49 CDC",
+      "vigencia": "Em vigor"
+    },
+    "veiculo_usado": {
+      "titulo": "Veículo Usado — Direitos do Consumidor",
+      "conteudo": "COMPRA DE VEÍCULO USADO:\n\nDE CONCESSIONÁRIA OU LOJA (relação de consumo — CDC aplica):\n• Garantia mínima de 90 dias (Art. 26 CDC — produto durável)\n• Vícios ocultos descobertos depois: prazo conta da descoberta (Art. 26 §3°)\n• Loja deve informar todos os defeitos conhecidos antes da venda (Art. 31)\n• Vício oculto pode dar direito a troca, reembolso ou abatimento (Art. 18)\n\nDE PARTICULAR (não é relação de consumo — Código Civil aplica):\n• Vício oculto: 1 ano para reclamar (Art. 445 CC)\n• Vícios aparentes devem ser apontados na vistoria\n• Recomendado: contrato escrito + laudo de avaliação\n\nCUIDADOS:\n• Histórico no DETRAN (multas, financiamentos, sinistros)\n• Vistoria cautelar antes da compra\n• Verificar se está alienado a banco/financeira\n\nPROBLEMAS COMUNS:\n• Quilometragem adulterada: fraude (Art. 7 CDC + Código Penal)\n• Veículo com restrição não informada: direito a desfazer o negócio",
+      "palavras_chave": [
+        "veiculo usado",
+        "carro usado",
+        "moto usada",
+        "seminovo",
+        "semi-novo",
+        "concessionaria usado",
+        "loja de carros",
+        "vicio oculto carro",
+        "defeito carro usado",
+        "quilometragem adulterada",
+        "carro batido",
+        "carro alienado",
+        "detran historico",
+        "vistoria veicular",
+        "laudo cautelar"
+      ],
+      "fonte": "Art. 18, 26, 31 CDC + Art. 445 Código Civil",
+      "vigencia": "Em vigor"
+    },
+    "locacao_imovel": {
+      "titulo": "Locação Residencial — Lei do Inquilinato",
+      "conteudo": "LOCAÇÃO RESIDENCIAL (Lei 8.245/1991 — Lei do Inquilinato):\n\nREAJUSTE DE ALUGUEL:\n• Mínimo 12 meses entre reajustes (Art. 17 e 18)\n• Índice mais usado: IGP-M (FGV) ou IPCA (IBGE)\n• Reajuste deve ser previsto em contrato\n\nRESCISÃO DE CONTRATO:\n• Pelo inquilino: a qualquer tempo, com multa proporcional ao tempo restante\n• Pelo proprietário: só após 30 meses, ou em situações específicas\n• Denúncia vazia: avisar 30 dias antes\n\nBENFEITORIAS:\n• Necessárias (reparos urgentes): direito a indenização\n• Úteis (autorizadas): direito a indenização ou retenção\n• Voluptuárias (estéticas não autorizadas): sem indenização\n\nFIANÇA E CAUÇÃO:\n• 3 modalidades: fiador, caução (até 3 aluguéis) ou seguro fiança\n• Devolução da caução: 60 dias após desocupação\n\nCONFLITOS:\n• Vara cível (não é relação de consumo, mas CDC pode ser aplicado por extensão)\n• Mediação extrajudicial recomendada antes de processo",
+      "palavras_chave": [
+        "aluguel",
+        "locacao",
+        "inquilino",
+        "locador",
+        "contrato de aluguel",
+        "lei do inquilinato",
+        "reajuste aluguel",
+        "igp-m aluguel",
+        "rescisao aluguel",
+        "cauçao",
+        "caucao aluguel",
+        "fiador",
+        "seguro fianca",
+        "benfeitoria",
+        "despejo",
+        "desocupacao",
+        "30 meses",
+        "denuncia vazia",
+        "aluguel atrasado"
+      ],
+      "fonte": "Lei 8.245/1991 (Lei do Inquilinato) + CDC por analogia",
+      "vigencia": "Em vigor"
+    },
+    "direitos_idoso_consumidor": {
+      "titulo": "Direitos do Idoso como Consumidor",
+      "conteudo": "IDOSOS (60+ anos) — proteção do CDC + Estatuto do Idoso (Lei 10.741/2003):\n\nPROTEÇÕES ESPECIAIS:\n• Atendimento prioritário em todos os serviços (bancos, supermercados, comércio)\n• Filas separadas ou prioridade em filas únicas\n• Plano de saúde: vedada discriminação por idade ou reajuste abusivo (STJ Súmula 632)\n• Reajustes de plano: critérios diferenciados para idosos\n\nEMPRÉSTIMO CONSIGNADO INSS:\n• Margem máxima: 45% do benefício\n• Vedação a venda casada (ex: cartão de crédito junto)\n• Crime de golpes contra idoso: pena aumentada (Art. 96 Estatuto do Idoso)\n\nVENDA POR TELEFONE / DOMICÍLIO:\n• Direito de arrependimento de 7 dias (Art. 49 CDC)\n• Empresa não pode insistir após recusa\n• Idoso vulnerável: contrato pode ser anulado por falta de discernimento\n\nPUBLICIDADE:\n• É abusivo (Art. 37 §2° CDC) explorar a vulnerabilidade do idoso\n• Letras miúdas em contratos: nulas se prejudicarem o idoso\n\nDENÚNCIAS:\n• Procon, Ministério Público, Delegacia do Idoso, Disque 100",
+      "palavras_chave": [
+        "idoso",
+        "idosa",
+        "terceira idade",
+        "60 anos",
+        "aposentado",
+        "aposentada",
+        "estatuto do idoso",
+        "atendimento prioritario",
+        "consignado idoso",
+        "golpe contra idoso",
+        "plano saude idoso",
+        "reajuste idoso",
+        "venda casada idoso",
+        "discriminacao idade"
+      ],
+      "fonte": "Lei 10.741/2003 (Estatuto do Idoso) + CDC",
+      "vigencia": "Em vigor"
+    },
+    "ead_curso_online": {
+      "titulo": "Cursos EAD e Online — Direitos do Aluno",
+      "conteudo": "EDUCAÇÃO A DISTÂNCIA E CURSOS ONLINE:\n\nREGULAÇÃO:\n• MEC: cursos de graduação e pós-graduação reconhecidos\n• Cursos livres: não precisam de reconhecimento mas devem cumprir o contrato\n• Verifique se a instituição está cadastrada em emec.mec.gov.br\n\nDIREITOS NO CONTRATO:\n• Arrependimento: 7 dias para cursos contratados pela internet (Art. 49 CDC)\n• Plano de ensino completo e cronograma devem ser informados antes da matrícula\n• Diploma só pode ser cobrado pelo custo de emissão\n\nCANCELAMENTO DE MATRÍCULA:\n• Pode cancelar a qualquer momento\n• Multa: máximo 10% das parcelas remanescentes (jurisprudência STJ)\n• Mensalidades não pagas durante o curso: cobrança proporcional ao usufruído\n\nDIPLOMA NÃO ENTREGUE:\n• Após conclusão, instituição tem prazo razoável (60 dias) para entregar\n• Não entrega: descumprimento contratual — pode pedir reembolso ou ação judicial\n\nPROBLEMAS COMUNS:\n• Curso encerrado durante andamento: instituição deve garantir conclusão ou reembolso\n• Qualidade abaixo do prometido: caracteriza vício do serviço (Art. 20 CDC)",
+      "palavras_chave": [
+        "ead",
+        "curso ead",
+        "curso online",
+        "educacao a distancia",
+        "faculdade ead",
+        "universidade online",
+        "unopar",
+        "estacio ead",
+        "graduacao online",
+        "mestrado online",
+        "diploma nao chegou",
+        "cancelar matricula",
+        "trancar faculdade",
+        "curso encerrou",
+        "mec emec",
+        "curso livre",
+        "instituicao ensino"
+      ],
+      "fonte": "Art. 20, 49 CDC + MEC",
+      "vigencia": "Em vigor"
+    },
+    "academia_servicos": {
+      "titulo": "Academia, Personal e Serviços de Saúde — Direitos",
+      "conteudo": "ACADEMIA / PERSONAL TRAINER (Art. 20 CDC — vício do serviço):\n\nCANCELAMENTO DE PLANO:\n• Pode cancelar a qualquer momento\n• Multa: máxima de 30% das parcelas remanescentes (jurisprudência)\n• Cancelamento por motivo de saúde: SEM multa (com atestado)\n• Mudança de cidade: SEM multa (com comprovante)\n\nACADEMIA FECHADA SEM AVISO:\n• Direito a reembolso integral do valor pago não usufruído\n• Empresa deve informar com antecedência mínima de 30 dias\n• Sem aviso: dano moral cabível\n\nTREINO INADEQUADO OU LESÃO:\n• Personal e academia respondem objetivamente por lesões causadas por má orientação (Art. 14 CDC)\n• Anamnese e avaliação física são obrigatórias\n• Direito a indenização por danos materiais e morais\n\nSERVIÇOS ESTÉTICOS (estética, salão, depilação):\n• Resultado prometido na publicidade integra o contrato (Art. 30 CDC)\n• Resultado diferente do prometido: refazer ou reembolso\n• Lesão estética: indenização + ações cíveis\n\nPROCEDIMENTOS:\n• Sempre exigir contrato escrito\n• Guardar fotos antes/depois\n• Atestados médicos para questões de saúde",
+      "palavras_chave": [
+        "academia",
+        "personal trainer",
+        "gym",
+        "fitness",
+        "musculacao",
+        "crossfit",
+        "smartfit",
+        "bio ritmo",
+        "selfit",
+        "bluefit",
+        "cancelar academia",
+        "multa academia",
+        "academia fechou",
+        "personal",
+        "servico estetico",
+        "estetica",
+        "salao de beleza",
+        "depilacao",
+        "procedimento estetico",
+        "lesao academia"
+      ],
+      "fonte": "Art. 14, 20, 30 CDC",
+      "vigencia": "Em vigor"
+    },
+    "banco_digital": {
+      "titulo": "Bancos Digitais — Direitos e Problemas Comuns",
+      "conteudo": "BANCOS DIGITAIS (Nubank, Inter, C6, PicPay, Mercado Pago, etc.):\n\nMesmo sendo digitais, são regulados pelo Banco Central e seguem o CDC.\n\nENCERRAMENTO DE CONTA UNILATERAL:\n• Banco PODE encerrar conta com aviso prévio de 30 dias\n• Deve informar motivo se solicitado\n• Saldo deve ser disponibilizado para saque/transferência\n• Encerramento sem motivo e sem aviso: dano moral cabível\n\nBLOQUEIO DE CONTA:\n• Suspeita de fraude: banco pode bloquear preventivamente\n• Deve informar o consumidor e dar caminho para esclarecer\n• Bloqueio prolongado sem justificativa: ação judicial\n\nPIX — PROBLEMAS:\n• Pix errado por sua culpa: banco pode mediar mas não é obrigado a reverter\n• Pix por fraude: MED (Mecanismo Especial de Devolução) — banco tem que tentar devolver\n• Limite Pix: você pode aumentar/diminuir pelo app (após análise)\n\nATENDIMENTO:\n• Banco digital DEVE ter canal de atendimento humano para problemas\n• SAC obrigatório por lei (Decreto 11.034/2022)\n• 4 horas de espera é demora abusiva\n\nDENÚNCIAS:\n• Banco Central: 145 ou registrabacen.bcb.gov.br\n• Procon ou Juizado Especial",
+      "palavras_chave": [
+        "nubank",
+        "inter",
+        "c6",
+        "picpay",
+        "mercado pago",
+        "pagseguro",
+        "banco digital",
+        "encerramento conta",
+        "bloqueio conta",
+        "conta bloqueada",
+        "pix errado",
+        "pix fraude",
+        "med pix",
+        "atendimento banco digital",
+        "banco fechou minha conta",
+        "limite pix",
+        "banco digital encerrou",
+        "banco fechou conta",
+        "encerramento unilateral",
+        "banco bloqueou conta",
+        "conta bloqueada banco"
+      ],
+      "fonte": "Resoluções BCB + CDC + Decreto 11.034/2022",
+      "vigencia": "Em vigor"
+    },
+    "aneel_tarifa_energia": {
+      "titulo": "Energia Elétrica — ANEEL e Direitos do Consumidor",
+      "conteudo": "REGULAÇÃO: ANEEL (Agência Nacional de Energia Elétrica) + CDC.\n\nBANDEIRAS TARIFÁRIAS (2026):\n• Verde: sem acréscimo\n• Amarela: +R$ 1,885/100 kWh\n• Vermelha 1: +R$ 4,463/100 kWh\n• Vermelha 2: +R$ 7,877/100 kWh\nValores reajustados periodicamente pela ANEEL.\n\nDIREITOS:\n• Corte só com aviso prévio mínimo de 15 dias\n• Religação até 24h em zona urbana, 48h em zona rural\n• Cobrança indevida: devolução em dobro (Art. 42 CDC)\n• Tarifa Social: até 65% de desconto para baixa renda (CadÚnico)\n\nRECLAMAÇÕES:\n1. Distribuidora (canal próprio + protocolo)\n2. Não resolveu em 5 dias úteis → ANEEL (167 ou aneel.gov.br)\n3. consumidor.gov.br ou Procon\n4. Juizado Especial até 40 SM (R$ 64.840)",
+      "palavras_chave": [
+        "energia eletrica",
+        "conta de luz",
+        "tarifa energia",
+        "aneel",
+        "bandeira tarifaria",
+        "religação energia",
+        "corte de luz",
+        "tarifa social",
+        "cemig",
+        "enel",
+        "light",
+        "celesc",
+        "copel",
+        "cosern",
+        "cobranca conta luz"
+      ],
+      "fonte": "ANEEL + Art. 22, 42 CDC",
+      "vigencia": "2026"
+    },
+    "saneamento_agua_esgoto": {
+      "titulo": "Água e Esgoto — Saneamento Básico",
+      "conteudo": "REGULAÇÃO: ANA (Agência Nacional de Águas) + agências estaduais + CDC.\n\nDIREITOS BÁSICOS:\n• Continuidade do serviço: corte só com aviso prévio de 30 dias\n• Religação em até 24h após pagamento\n• Tarifa social para baixa renda (CadÚnico)\n• Vazamento na rede pública: não pode cobrar do consumidor\n\nVAZAMENTO INTERNO:\n• Empresa deve calcular média dos últimos 12 meses\n• Cobrança apenas do excesso comprovado\n• Direito a parcelamento\n\nPRINCIPAIS COMPANHIAS:\nSabesp (SP), Cedae (RJ), Copasa (MG), Embasa (BA), Caesb (DF), Sanepar (PR).\n\nRECLAMAÇÕES:\n1. Companhia (protocolo escrito)\n2. Agência reguladora estadual\n3. Procon ou Juizado Especial\n4. Indenização por dano moral se houve constrangimento",
+      "palavras_chave": [
+        "agua",
+        "saneamento",
+        "sabesp",
+        "cedae",
+        "copasa",
+        "conta de agua",
+        "tarifa agua",
+        "esgoto",
+        "vazamento agua",
+        "corte agua",
+        "religação agua",
+        "cobranca agua",
+        "ana agencia agua"
+      ],
+      "fonte": "Lei 11.445/2007 + ANA + CDC",
+      "vigencia": "Em vigor"
+    },
+    "internet_provedor": {
+      "titulo": "Internet e Banda Larga — Direitos",
+      "conteudo": "REGULAÇÃO: ANATEL + Marco Civil da Internet (Lei 12.965/2014) + CDC.\n\nVELOCIDADE CONTRATADA:\n• Operadora deve entregar no mínimo 80% da velocidade contratada (média mensal)\n• Velocidade instantânea mínima: 40% do contratado\n• Se não cumprir: pode pedir desconto, troca de plano ou cancelamento sem multa\n\nPROBLEMAS COMUNS:\n• Internet caindo: 24h sem solução = direito ao desconto proporcional\n• Velocidade abaixo do contratado: comprovação via brasilbandalarga.com.br\n• Cobrança após cancelamento: devolução em dobro (Art. 42 CDC)\n\nCANCELAMENTO:\n• Sem multa se já cumpriu fidelidade (12 meses)\n• Sem multa se a operadora descumpriu o contrato\n• Sem multa em caso de mudança para área sem cobertura\n\nRECLAMAÇÕES:\n1. Operadora (protocolo obrigatório)\n2. ANATEL: 1331 ou anatel.gov.br (resposta em 5 dias úteis)\n3. consumidor.gov.br\n4. Juizado Especial",
+      "palavras_chave": [
+        "internet",
+        "banda larga",
+        "provedor",
+        "velocidade internet",
+        "internet lenta",
+        "internet caiu",
+        "fibra optica",
+        "claro net",
+        "vivo fibra",
+        "oi fibra",
+        "tim fibra",
+        "wifi nao funciona",
+        "cancelar internet",
+        "franquia dados",
+        "marco civil internet"
+      ],
+      "fonte": "Marco Civil + ANATEL Res. 632/2014 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "compras_redes_sociais": {
+      "titulo": "Compras em Redes Sociais — Direitos e Riscos",
+      "conteudo": "Compras pelo Instagram, WhatsApp, TikTok e Facebook seguem o CDC integralmente.\n\nDIREITOS GARANTIDOS:\n• Arrependimento: 7 dias (Art. 49 CDC) — vale para compras fora do estabelecimento\n• Garantia legal: 30 dias (não duráveis) ou 90 dias (duráveis)\n• Vendedor deve identificar-se: CPF/CNPJ, nome, endereço (Art. 31 CDC)\n• Direito de receber o produto anunciado, no prazo prometido\n\nDIFICULDADES PRÁTICAS:\n• Vendedor informal: sem CNPJ, mais difícil rastrear\n• Sem nota fiscal: dificulta provar valor pago\n• Comprovantes essenciais: prints da conversa, anúncio, comprovante de pagamento\n\nGOLPES COMUNS:\n• Perfis falsos imitando lojas conhecidas\n• Promoção 'imperdível' com link suspeito\n• Pagamento via Pix sem entrega\n\nSE FOR GOLPE:\n1. Registre B.O. (boletim de ocorrência online)\n2. Notifique seu banco (MED do Pix em até 72h)\n3. Denuncie o perfil à plataforma\n4. consumidor.gov.br + ação no Juizado Especial",
+      "palavras_chave": [
+        "instagram compra",
+        "whatsapp business",
+        "tiktok shop",
+        "facebook marketplace",
+        "comprei pelas redes",
+        "vendedor instagram",
+        "golpe instagram",
+        "perfil falso loja",
+        "compra rede social",
+        "loja whatsapp",
+        "compra pelo direct",
+        "compra instagram",
+        "compras instagram",
+        "compras pelo insta",
+        "comprei insta",
+        "compra rede",
+        "compra direct",
+        "loja online instagram"
+      ],
+      "fonte": "Art. 31, 49 CDC + Marco Civil",
+      "vigencia": "Em vigor"
+    },
+    "pix_golpes": {
+      "titulo": "Pix — Golpes e Mecanismo de Devolução (MED)",
+      "conteudo": "REGULAÇÃO: Banco Central + CDC.\n\nMED — MECANISMO ESPECIAL DE DEVOLUÇÃO:\n• Vítima tem 80 dias para solicitar a devolução ao banco\n• Banco recebedor tem 7 dias para devolver se ainda houver saldo na conta do golpista\n• Funciona em golpes, fraudes ou falha operacional dos bancos\n• NÃO funciona se a vítima fez o Pix conscientemente e depois se arrependeu\n\nGOLPES COMUNS:\n• Falsa central de banco pedindo Pix\n• WhatsApp clonado de parente pedindo dinheiro\n• Boleto/QR Code falso\n• Falsa vaga de emprego cobrando 'taxa'\n\nCOMO PROCEDER:\n1. Abra o app do banco AGORA e acione 'Contestar' / 'Reclamar' / 'MED'\n2. Registre B.O. (online em vários estados)\n3. Notifique o BACEN: registrabacen.bcb.gov.br\n4. Banco respondeu negativo? Vá ao Juizado Especial\n\nRESPONSABILIDADE DOS BANCOS (STJ Súmula 479):\nBancos respondem objetivamente por fraudes — atuação esperada de segurança.",
+      "palavras_chave": [
+        "pix golpe",
+        "pix fraude",
+        "golpe pix",
+        "caí no golpe pix",
+        "pix errado",
+        "pix para desconhecido",
+        "whatsapp clonado pix",
+        "falsa central pix",
+        "med pix",
+        "mecanismo especial devolução",
+        "pix nao chegou",
+        "contestar pix"
+      ],
+      "fonte": "BCB Resolução 6/2020 + Súmula 479 STJ + CDC",
+      "vigencia": "2026"
+    },
+    "phishing_golpes_online": {
+      "titulo": "Phishing e Golpes Online",
+      "conteudo": "Phishing: tentativa de fraude via mensagem falsa para roubar dados/dinheiro.\n\nGOLPES MAIS COMUNS:\n• Link falso que imita banco, loja ou governo\n• 'Sua conta foi bloqueada' / 'Atualize seus dados'\n• Falsa notificação de prêmio ou Bolsa Família\n• Falsa Receita Federal cobrando imposto\n• Vagas de emprego pedindo 'taxa de cadastro'\n\nCOMO IDENTIFICAR:\n• URL suspeita (banc0.com.br em vez de banco.com.br)\n• Pressão por urgência ('só hoje', 'última oportunidade')\n• Erros de português ou design tosco\n• Pedido de senha ou código por SMS/WhatsApp\n\nSE CAIU NO GOLPE:\n1. Notifique o banco IMEDIATAMENTE (telefone, app, agência)\n2. Troque todas as senhas (banco, e-mail, redes)\n3. Registre B.O. (delegacia ou online)\n4. Negative o CPF se houve uso indevido (SPC/Serasa)\n5. Notifique ANPD se vazamento de dados (gov.br/anpd)\n6. Juizado Especial: indenização por danos morais e materiais\n\nRESPONSABILIDADE DAS EMPRESAS:\nBancos e plataformas têm responsabilidade objetiva (STJ Súmula 479).",
+      "palavras_chave": [
+        "phishing",
+        "golpe virtual",
+        "golpe online",
+        "link falso",
+        "banco falso",
+        "site falso",
+        "clonaram meu cartao",
+        "cartao clonado",
+        "fraude internet",
+        "golpe email",
+        "golpe sms",
+        "falsa receita federal",
+        "golpe whatsapp"
+      ],
+      "fonte": "Súmula 479 STJ + LGPD + CDC",
+      "vigencia": "Em vigor"
+    },
+    "aviacao_anac": {
+      "titulo": "Voo Cancelado, Atrasado ou Overbooking — Direitos ANAC",
+      "conteudo": "REGULAÇÃO: ANAC Resolução 400/2016 + CDC.\n\nATRASO OU CANCELAMENTO — ASSISTÊNCIA OBRIGATÓRIA:\n• Atraso > 1 hora: comunicação gratuita (telefone, internet)\n• Atraso > 2 horas: alimentação (voucher)\n• Atraso > 4 horas: acomodação em hotel (se necessário pernoite) + transporte\n\nALÉM DA ASSISTÊNCIA, VOCÊ TEM 3 OPÇÕES:\n1. Reacomodação em outro voo da mesma cia (sem custo)\n2. Reembolso integral do valor pago\n3. Execução por outra modalidade (ônibus, por exemplo)\n\nOVERBOOKING (preterição de embarque):\n• Companhia deve oferecer compensação financeira\n• Voos domésticos: indenização mínima de 250 DES (~R$ 1.700)\n• Voos internacionais: 500 DES (~R$ 3.400)\n\nEXTRAVIO DE BAGAGEM:\n• Doméstico: companhia tem 7 dias para entregar; depois, indenização integral\n• Internacional: 21 dias\n• Direito a kit emergencial enquanto aguarda\n\nDANO MORAL:\nCabível em casos graves: perda de compromisso, longa espera sem assistência.",
+      "palavras_chave": [
+        "voo cancelado",
+        "voo atrasado",
+        "companhia aerea",
+        "gol latam azul",
+        "overbooking",
+        "preterição embarque",
+        "bagagem extraviada",
+        "mala perdida",
+        "reembolso passagem",
+        "anac",
+        "cancelamento voo",
+        "passagem aerea problema",
+        "atraso voo"
+      ],
+      "fonte": "ANAC Resolução 400/2016 + Art. 14 CDC",
+      "vigencia": "Em vigor"
+    },
+    "uber_99_apps_mobilidade": {
+      "titulo": "Apps de Mobilidade (Uber, 99, etc.) — Direitos",
+      "conteudo": "Apps de transporte são fornecedores no CDC (Art. 3°) — respondem por falhas.\n\nCOBRANÇA INDEVIDA:\n• Cobrança duplicada: contestar pelo app, depois cartão\n• Tarifa dinâmica excessiva: registrar antes de embarcar\n• Cobrança após cancelamento: devolução em dobro (Art. 42 CDC)\n\nCANCELAMENTO PELO MOTORISTA:\n• Sem custo se motorista cancela após 2 minutos = direito a reembolso\n• App pode cobrar taxa se passageiro cancela após 5 min\n\nPROBLEMAS DURANTE A CORRIDA:\n• Motorista agressivo, rota errada, recusa de passageiro: registrar no app\n• Acidente: app responde solidariamente (Art. 14 CDC)\n• Objetos esquecidos: app tem dever de auxiliar na devolução\n\nDELIVERY (iFood, Rappi):\n• Entrega não chegou: reembolso integral pelo app\n• Produto errado/estragado: foto + reclamação imediata\n• Cobrança de gorjeta sem aviso: ilegal\n\nESCALONAMENTO:\n1. App (canal de ajuda + protocolo)\n2. consumidor.gov.br (resposta em 10 dias)\n3. Procon ou Juizado Especial",
+      "palavras_chave": [
+        "uber",
+        "99 transporte",
+        "cabify",
+        "ifood",
+        "rappi",
+        "app mobilidade",
+        "cobranca uber",
+        "motorista cancelou",
+        "tarifa dinamica",
+        "corrida cancelada",
+        "delivery problema",
+        "ifood nao entregou",
+        "app de transporte"
+      ],
+      "fonte": "Art. 3, 14, 42 CDC",
+      "vigencia": "Em vigor"
+    },
+    "transporte_terrestre": {
+      "titulo": "Transporte Interestadual e Municipal — Direitos",
+      "conteudo": "REGULAÇÃO: ANTT (interestadual) + agências municipais + CDC.\n\nATRASO OU CANCELAMENTO:\n• Atraso > 1 hora: empresa deve informar e oferecer alternativa\n• Cancelamento: reembolso integral OU outra viagem sem custo\n• Ônibus quebra na estrada: empresa providencia outro\n\nBAGAGEM:\n• Direito a 30 kg sem custo extra (bagageiro) + 5 kg de mão\n• Empresa responde por extravio/danos — indenização integral\n• Declaração de valor recomendada para itens caros\n\nPASSAGEM:\n• Reembolso até 3h antes da viagem: 95% do valor\n• Não embarcou: 12 meses para usar o crédito\n• Idoso (60+): 2 vagas gratuitas por veículo (Lei 10.741)\n• Jovem (15-29) baixa renda: passe livre interestadual\n\nRECLAMAÇÕES:\n1. Empresa (protocolo)\n2. ANTT: 166 ou antt.gov.br (interestadual)\n3. Agência municipal (urbano)\n4. Procon ou Juizado Especial",
+      "palavras_chave": [
+        "onibus",
+        "viagao",
+        "onibus interestadual",
+        "passagem onibus",
+        "antt",
+        "atraso onibus",
+        "onibus cancelado",
+        "bagagem onibus",
+        "rodoviaria",
+        "tarifa onibus",
+        "viacao cometa",
+        "viacao 1001",
+        "gontijo"
+      ],
+      "fonte": "ANTT + Lei 10.741 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "compra_imovel_construtora": {
+      "titulo": "Compra de Imóvel na Planta — Construtora",
+      "conteudo": "REGULAÇÃO: Lei 13.786/2018 (Lei do Distrato) + CDC.\n\nATRASO DE OBRA:\n• Tolerância contratual: até 180 dias (sem multa)\n• Atraso além: multa mensal sobre o valor pago + lucros cessantes\n• Direito a rescindir sem multa + devolução integral corrigida\n\nDISTRATO PELO COMPRADOR:\n• Construtora pode reter até 25% (ou 50% no patrimônio de afetação)\n• Devolução em até 30 dias após habite-se OU 180 dias se não houver\n• Inclui valores pagos + correção pelo INCC\n\nVÍCIOS NA OBRA:\n• Garantia de 5 anos para problemas estruturais (Código Civil Art. 618)\n• Garantia legal CDC (90 dias) para vícios aparentes\n• Vícios ocultos: 90 dias da descoberta\n\nENTREGA DIFERENTE DO PROMETIDO:\n• Metragem menor: redução proporcional do preço\n• Material inferior: reparação ou substituição\n• Área comum diferente do memorial: ação por publicidade enganosa\n\nESCALONAMENTO:\n1. Construtora (notificação extrajudicial)\n2. CRECI (se houve corretor envolvido)\n3. Procon ou Juizado Especial até 40 SM\n4. Vara Cível para valores acima",
+      "palavras_chave": [
+        "imovel planta",
+        "construtora",
+        "atraso obra",
+        "distrato",
+        "habite-se",
+        "incc",
+        "atraso entrega imovel",
+        "imovel novo defeito",
+        "apartamento na planta",
+        "lei do distrato",
+        "mrv",
+        "cyrela",
+        "tenda",
+        "direcional"
+      ],
+      "fonte": "Lei 13.786/2018 + Art. 618 CC + CDC",
+      "vigencia": "Em vigor"
+    },
+    "condominio_taxas": {
+      "titulo": "Condomínio — Cobrança e Direitos",
+      "conteudo": "REGULAÇÃO: Lei 4.591/1964 + Código Civil + Convenção do condomínio.\n\nCOBRANÇAS:\n• Taxa condominial obrigatória — não pode recusar pagamento por descontentamento\n• Multa por atraso: máximo 2% do valor (Código Civil Art. 1.336)\n• Juros de mora: máximo 1% ao mês\n• Não há mais cobrança vexatória — proibido afixar lista de inadimplentes\n\nMULTAS POR INFRAÇÃO:\n• Devem estar previstas na convenção ou regulamento\n• Máximo 5x o valor da taxa condominial\n• Reincidência: até 10x\n• Direito de defesa em assembleia\n\nOBRAS NO CONDOMÍNIO:\n• Obra emergencial (estrutural, vazamento): síndico decide\n• Obra útil/voluptuária: aprovação em assembleia\n• Rateio: por fração ideal (regra geral) ou igualitário (se convenção definir)\n\nCOBRANÇA INDEVIDA:\n• Valor diferente do aprovado em assembleia\n• Multa sem previsão na convenção\n• Cobrança após pagamento: devolução em dobro (Art. 42 CDC)\n\nRECLAMAÇÕES:\n1. Síndico (formal, por escrito)\n2. Assembleia (convocação extraordinária com 1/4 do condomínio)\n3. Vara Cível",
+      "palavras_chave": [
+        "condominio",
+        "taxa condominio",
+        "sindico",
+        "cota condominial",
+        "multa condominio",
+        "assembleia condominio",
+        "convenção condominio",
+        "rateio condominio",
+        "obra condominio",
+        "inadimplencia condominio",
+        "cobranca condominio"
+      ],
+      "fonte": "Lei 4.591/1964 + CC Art. 1.331-1.358 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "medicos_clinicas_estetica": {
+      "titulo": "Clínicas, Médicos e Estética — Responsabilidade",
+      "conteudo": "Médicos: obrigação de meio (não de resultado) — Art. 14 §4° CDC.\nClínicas estéticas em procedimentos puramente estéticos: obrigação de resultado.\n\nERRO MÉDICO:\n• Médico responde se comprovada culpa (imperícia, imprudência, negligência)\n• Hospital responde objetivamente pelos serviços (Art. 14 CDC)\n• Direito a prontuário médico completo (Resolução CFM 1.638/2002)\n\nESTÉTICA (procedimentos estéticos):\n• Resultado prometido em propaganda integra o contrato (Art. 30 CDC)\n• Resultado diferente: refazer, abater preço ou reembolso\n• Sequela ou dano: indenização integral\n\nCONSENTIMENTO INFORMADO:\n• Termo escrito obrigatório explicando riscos\n• Sem termo = presunção de falha\n\nDENÚNCIA AO CRM:\n• Por má conduta ou imperícia\n• Não substitui ação cível por indenização\n\nRECLAMAÇÕES:\n1. Estabelecimento (registrar formalmente)\n2. CRM/COREN do estado (denúncia ética)\n3. ANVISA (se produto/equipamento)\n4. Procon ou Vara Cível",
+      "palavras_chave": [
+        "erro medico",
+        "negligencia medica",
+        "clinica estetica",
+        "procedimento estetico",
+        "harmonizacao facial",
+        "botox",
+        "preenchimento",
+        "cirurgia plastica",
+        "crm denuncia",
+        "consentimento informado",
+        "prontuario medico",
+        "hospital responsabilidade"
+      ],
+      "fonte": "Art. 14, 30 CDC + CFM + CC",
+      "vigencia": "Em vigor"
+    },
+    "home_care_idoso": {
+      "titulo": "Home Care e Casas de Repouso — Direitos do Idoso",
+      "conteudo": "REGULAÇÃO: ANVISA + Estatuto do Idoso + CDC.\n\nPLANO DE SAÚDE — HOME CARE:\n• ANS reconhece home care quando medicamente indicado\n• Recusa indevida: STJ confirma direito (Súmula 302 ANS)\n• Liminar judicial em até 24h em casos urgentes\n\nCASA DE REPOUSO (ILPI — Instituição de Longa Permanência):\n• Cadastro obrigatório na Vigilância Sanitária\n• Contrato escrito com regras claras\n• Direito de visita livre (família)\n• Atendimento médico, alimentação e higiene adequados\n\nSINAIS DE ABUSO:\n• Marcas físicas inexplicadas\n• Mudança brusca de comportamento\n• Restrição de visitas\n• Cobranças extras não previstas\n• Medicação errada/em excesso\n\nDENÚNCIA:\n1. Disque 100 (anônimo)\n2. Delegacia do Idoso\n3. Ministério Público\n4. Procon (cobranças abusivas)\n5. Vigilância Sanitária (instalações)\n\nINDENIZAÇÃO:\nMaus tratos a idoso = pena agravada + dano moral e material.",
+      "palavras_chave": [
+        "home care",
+        "casa de repouso",
+        "ilpi",
+        "idoso casa repouso",
+        "cuidador idoso",
+        "ans home care",
+        "abuso idoso",
+        "disque 100",
+        "estatuto do idoso",
+        "negligencia idoso",
+        "asilo",
+        "instituicao longa permanencia"
+      ],
+      "fonte": "Lei 10.741 + ANS Súmula 302 + CDC + ANVISA",
+      "vigencia": "Em vigor"
+    },
+    "escola_particular": {
+      "titulo": "Escola Particular — Anuidade e Direitos",
+      "conteudo": "REGULAÇÃO: Lei 9.870/1999 (Lei das Anuidades Escolares) + CDC.\n\nANUIDADE:\n• Reajuste anual com base em planilha de custos (não-arbitrário)\n• Escola deve divulgar com 45 dias de antecedência\n• Pagamento à vista: direito a desconto (geralmente 5-10%)\n\nTRANSFERÊNCIA E CANCELAMENTO:\n• A qualquer momento, sem multa\n• Mensalidades em aberto: cobrança proporcional ao usufruído\n• Documentos (histórico, transferência): entrega em até 30 dias\n• Escola NÃO pode reter documentos por dívida\n\nMATERIAL DIDÁTICO:\n• Não pode ser obrigatório como condição de matrícula\n• Família pode comprar onde quiser\n• Lista deve ser entregue com antecedência\n\nPROBLEMAS:\n• Recusa de matrícula por inadimplência: SÓ se ano letivo encerrou\n• Reajuste sem planilha: contestar no Procon\n• Bullying: escola tem responsabilidade objetiva\n\nRECLAMAÇÕES:\n1. Direção da escola (formal)\n2. Secretaria Estadual de Educação\n3. Procon ou Juizado Especial",
+      "palavras_chave": [
+        "escola particular",
+        "anuidade escolar",
+        "mensalidade escola",
+        "reajuste escola",
+        "transferencia escolar",
+        "cancelar matricula escolar",
+        "historico escolar",
+        "material didatico",
+        "bullying escola",
+        "colegio particular",
+        "matricula escola",
+        "escola anuidade",
+        "anuidade escolar 2026",
+        "mensalidade escola particular",
+        "anuidade colegio",
+        "reajuste escola particular"
+      ],
+      "fonte": "Lei 9.870/1999 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "pcd_acessibilidade": {
+      "titulo": "Pessoa com Deficiência — Direitos do Consumidor",
+      "conteudo": "REGULAÇÃO: Lei Brasileira de Inclusão (Lei 13.146/2015) + CDC.\n\nACESSIBILIDADE OBRIGATÓRIA:\n• Estabelecimentos comerciais: rampa, banheiro adaptado, vagas reservadas\n• Sites e apps: leitura por leitor de tela, contraste, navegação por teclado\n• Bancos: prioridade no atendimento, ATM com áudio para PCD visual\n• Sem acessibilidade = discriminação (Art. 6° CDC)\n\nISENÇÕES E DESCONTOS:\n• IPI e ICMS na compra de veículo (PCD física, mental, visual ou autista)\n• IPVA: isenção em vários estados\n• Tarifas especiais em transporte público (Bilhete Único)\n• Plano de saúde: cobertura obrigatória para terapias\n\nDIREITOS NO ATENDIMENTO:\n• Atendimento prioritário em todos os estabelecimentos\n• Acompanhante em filas para PCD com mobilidade reduzida\n• Cão-guia: acesso a qualquer estabelecimento (Lei 11.126/2005)\n\nDISCRIMINAÇÃO:\n• Recusa de serviço/produto = crime (Art. 88 LBI)\n• Indenização por dano moral + multa\n\nRECLAMAÇÕES:\n1. Estabelecimento (protocolo)\n2. Ministério Público — Promotoria PCD\n3. Procon\n4. Juizado Especial",
+      "palavras_chave": [
+        "pcd",
+        "pessoa com deficiencia",
+        "deficiente",
+        "cadeirante",
+        "acessibilidade",
+        "lbi",
+        "lei brasileira inclusao",
+        "cão-guia",
+        "cao guia",
+        "autista direito",
+        "deficiencia visual",
+        "atendimento prioritario",
+        "isenção pcd",
+        "ipi pcd"
+      ],
+      "fonte": "Lei 13.146/2015 (LBI) + CDC",
+      "vigencia": "Em vigor"
+    },
+    "publicidade_infantil": {
+      "titulo": "Publicidade Dirigida a Crianças — Abusividade",
+      "conteudo": "REGULAÇÃO: Art. 37 §2° CDC + Resolução CONANDA 163/2014 + ECA.\n\nÉ ABUSIVA toda publicidade que:\n• Se aproveite da deficiência de julgamento da criança\n• Use linguagem infantil, personagens infantis ou celebridades infantis para vender\n• Use desenhos animados, músicas infantis, brincadeiras\n• Anuncie em horários ou meios direcionados a crianças\n• Promova competição ou pressão para consumo\n\nCASOS CLÁSSICOS:\n• Comerciais com mascotes em horário infantil\n• Brindes em alimentos não-saudáveis (STJ confirma abusividade)\n• Marketing escolar (panfletos em escolas)\n\nMULTAS:\n• Procon: multas de R$ 1.000 a R$ 12 milhões\n• Dano moral coletivo em ação civil pública\n\nDIREITO DOS PAIS:\n• Contestar compra feita por criança sem autorização\n• Pedir reembolso de compras online em jogos\n• Bloquear cartão se houve uso por menor\n\nDENÚNCIAS:\n1. CONAR (autorregulamentação)\n2. Procon\n3. Ministério Público (ação civil pública)\n4. SENACON",
+      "palavras_chave": [
+        "publicidade infantil",
+        "propaganda crianca",
+        "abusiva crianca",
+        "conar",
+        "conanda",
+        "compra crianca",
+        "filho comprou",
+        "jogo cobrou crianca",
+        "marketing infantil",
+        "crianca anuncio",
+        "mascote crianca"
+      ],
+      "fonte": "Art. 37 §2° CDC + Res. CONANDA 163/2014",
+      "vigencia": "Em vigor"
+    },
+    "funeraria_plano_funerario": {
+      "titulo": "Funerárias e Planos Funerários",
+      "conteudo": "REGULAÇÃO: SUSEP (planos) + CDC + legislações municipais.\n\nFUNERÁRIA — DIREITOS NO ATENDIMENTO:\n• Orçamento por escrito ANTES do serviço (Art. 40 CDC)\n• Preços claros (não pode aumentar 'na hora da dor')\n• Liberdade de escolher a funerária (hospital NÃO pode obrigar uma específica)\n• Sem nota fiscal = abuso\n\nPLANO FUNERÁRIO:\n• É um seguro — fiscalizado pela SUSEP\n• Carência máxima: 24 meses para serviços plenos\n• Cancelamento sem multa após pagar todas as carências\n• Mudança de cidade: portabilidade obrigatória\n\nPROBLEMAS COMUNS:\n• Empresa fechou: associados têm direito a outro plano (SUSEP exige garantia)\n• Cobrança após cancelamento: devolução em dobro\n• Aumento abusivo: contestável\n• Serviço inferior ao contratado: dano moral cabível\n\nESCALONAMENTO:\n1. Empresa (carta com aviso de recebimento)\n2. SUSEP: 0800 021 8484 (planos)\n3. Procon (serviços funerários)\n4. Vigilância Sanitária (instalações)\n5. Juizado Especial",
+      "palavras_chave": [
+        "funeraria",
+        "plano funerario",
+        "velorio",
+        "sepultamento",
+        "cremacao",
+        "memorial",
+        "grupo zelo",
+        "aliana",
+        "plano assistencia funeral",
+        "funeral",
+        "carencia funeraria",
+        "cancelar plano funeral"
+      ],
+      "fonte": "SUSEP + CDC + Lei 11.795/2008",
+      "vigencia": "Em vigor"
+    },
+    "cheque_especial": {
+      "titulo": "Cheque Especial — Juros e Regras",
+      "conteudo": "REGULAÇÃO: Banco Central + CDC.\n\nTETO DE JUROS (Res. CMN 4.765/2019):\n• Máximo 8% ao mês (151% ao ano) — vigente desde 2020\n• Anteriormente era livre: chegava a 12-15% ao mês\n• Cobrança acima do teto: ilegal — devolução em dobro\n\nTARIFA DE LIMITE NÃO UTILIZADO:\n• Banco pode cobrar 0,25% mensal sobre limite acima de R$ 500\n• Tarifa só sobre o excedente (até R$ 500 sempre gratuito)\n\nPORTABILIDADE:\n• Pode transferir dívida para outro banco com juros menores\n• Banco original não pode dificultar nem cobrar taxa\n• Novo banco quita a dívida e cliente paga ao novo\n\nSUPERENDIVIDAMENTO (Lei 14.181/2021):\n• Direito ao plano de pagamento em até 5 anos\n• Preservação do mínimo existencial (25% da renda)\n• Audiência de conciliação obrigatória\n\nPROBLEMAS:\n• Banco cobrou acima do teto: contestar BACEN + Procon\n• Cobrança vexatória: dano moral (Art. 42 CDC)\n• Inscrição em SPC indevida: indenização\n\nESCALONAMENTO:\n1. Ouvidoria do banco (resposta em 10 dias)\n2. BACEN: 145 ou registrabacen.bcb.gov.br\n3. Procon ou Juizado Especial",
+      "palavras_chave": [
+        "cheque especial",
+        "juros cheque especial",
+        "limite cheque especial",
+        "teto cheque especial",
+        "tarifa cheque especial",
+        "portabilidade dividas",
+        "superendividado",
+        "superendividamento lei",
+        "plano pagamento dividas"
+      ],
+      "fonte": "Res. CMN 4.765/2019 + Lei 14.181/2021 + CDC",
+      "vigencia": "2026"
+    },
+    "cartao_alimentacao_vr": {
+      "titulo": "Vale Refeição e Alimentação (VR/VA) — Direitos",
+      "conteudo": "REGULAÇÃO: Lei 14.442/2022 (Lei do PAT) + CDC.\n\nREGRAS DESDE 2023:\n• Liberdade do trabalhador escolher a operadora\n• Portabilidade obrigatória entre operadoras (Alelo, VR, Sodexo, etc.)\n• Interoperabilidade: cartão de uma marca aceito em qualquer credenciado\n• Empresa não pode obrigar uso de operadora específica\n\nTAXAS COBRADAS DO COMERCIANTE:\n• Não podem ser repassadas ao consumidor\n• Restaurante cobrar 'taxa' por usar VR: ilegal\n• Preço diferente para VR vs dinheiro: vedado\n\nVALIDADE DO SALDO:\n• Mínimo 180 dias após o crédito\n• Operadora deve avisar antes da expiração\n• Saldo expirado sem aviso: pode contestar\n\nCARTÃO BLOQUEADO/PERDIDO:\n• Operadora deve emitir 2ª via em até 48h\n• Sem cobrança da 1ª 2ª via no ano\n\nPROBLEMAS:\n• Restaurante recusa cartão: denuncie ao Procon\n• Operadora cobra taxa indevida: BACEN + Procon\n• Saldo sumido: contestar imediatamente (prazo 90 dias)\n\nESCALONAMENTO:\n1. Operadora (protocolo)\n2. Ministério do Trabalho\n3. Procon ou Juizado Especial",
+      "palavras_chave": [
+        "vale refeicao",
+        "vale alimentacao",
+        "vr",
+        "va",
+        "alelo",
+        "sodexo",
+        "ticket",
+        "pat",
+        "cartao alimentacao",
+        "cartao refeicao",
+        "portabilidade vr",
+        "saldo vr",
+        "restaurante recusou vr"
+      ],
+      "fonte": "Lei 14.442/2022 + CDC",
+      "vigencia": "Em vigor"
+    },
+    "eventos_show_cancelados": {
+      "titulo": "Shows e Eventos Cancelados — Reembolso",
+      "conteudo": "Eventos pagos (shows, festivais, peças, esportes) seguem o CDC.\n\nEVENTO CANCELADO:\n• Reembolso integral em até 30 dias (Art. 35 CDC)\n• Inclui taxa de conveniência e taxa de entrega\n• Sem desconto, sem 'voucher obrigatório'\n• Recusa do organizador = devolução em dobro\n\nEVENTO REMARCADO:\n• Consumidor escolhe: ir na nova data OU reembolso integral\n• Mudança de local sem anúncio prévio: direito a reembolso\n• Sem ônus do consumidor para reagendar\n\nEVENTO REALIZADO ABAIXO DO PROMETIDO:\n• Atração principal não veio: abatimento proporcional ou reembolso\n• Infraestrutura precária (banheiro, segurança): dano moral cabível\n• Tumulto, lesões: organizador responde objetivamente (Art. 14)\n\nPROBLEMAS COM PLATAFORMA (Sympla, Ticketmaster, Eventim):\n• Plataforma responde solidariamente com o organizador\n• Não pode descumprir transferindo culpa\n\nINGRESSO MEIA-ENTRADA:\n• Estudante (até 29 anos), idoso, PCD, jovem baixa renda têm direito\n• Limite de 40% dos ingressos disponíveis\n\nESCALONAMENTO:\n1. Organizador/plataforma (formal)\n2. consumidor.gov.br\n3. Juizado Especial até 40 SM",
+      "palavras_chave": [
+        "show cancelado",
+        "evento cancelado",
+        "festival cancelado",
+        "ingresso reembolso",
+        "sympla",
+        "ticketmaster",
+        "eventim",
+        "ingresso show",
+        "reembolso evento",
+        "evento adiado",
+        "atracao nao veio",
+        "meia entrada"
+      ],
+      "fonte": "Art. 14, 35 CDC + Lei 12.933/2013 (meia)",
+      "vigencia": "Em vigor"
+    },
+    "venda_casada": {
+      "titulo": "Venda Casada — Prática Abusiva",
+      "conteudo": "REGULAÇÃO: Art. 39 I CDC.\n\nO QUE É:\nCondicionar a venda de um produto/serviço à aquisição de outro, ou exigir\nlimites quantitativos sem justa causa.\n\nEXEMPLOS CLÁSSICOS:\n• Banco que exige seguro para liberar empréstimo\n• Cinema que proíbe entrar com comida comprada fora\n• Loja que só vende geladeira com garantia estendida\n• Faculdade que exige material didático específico\n• Curso que cobra 'taxa de matrícula' obrigatória\n• Banco que exige conta-corrente para conceder consignado\n\nEXCEÇÕES LEGAIS:\n• Banco pode exigir seguro proporcional ao prazo do empréstimo\n• Estabelecimento pode definir limite por questão de logística (se claro e razoável)\n\nCOMO REAGIR:\n• Recuse e exija por escrito a recusa do estabelecimento\n• Registre tudo (vídeo, áudio, prints)\n• Multa para empresa pode ser alta (Procon)\n\nDENÚNCIAS:\n1. Procon (multa direta)\n2. consumidor.gov.br\n3. Ministério Público (ação civil pública)\n4. Indenização por dano moral em ação individual",
+      "palavras_chave": [
+        "venda casada",
+        "obrigaram comprar",
+        "exigiu comprar",
+        "condicionado a",
+        "so vende com",
+        "banco exige seguro",
+        "cinema proibe comida",
+        "tying",
+        "art 39 cdc",
+        "exigencia abusiva"
+      ],
+      "fonte": "Art. 39 I CDC",
+      "vigencia": "Em vigor"
+    },
+    "contrato_adesao": {
+      "titulo": "Contrato de Adesão e Cláusulas Abusivas",
+      "conteudo": "REGULAÇÃO: Art. 51 e 54 CDC.\n\nCONTRATO DE ADESÃO:\nAquele cujas cláusulas foram aprovadas previamente pela autoridade competente\nou estabelecidas unilateralmente pelo fornecedor. O consumidor só pode aceitar\nou recusar como um todo (planos, financiamentos, seguros).\n\nDIREITOS DO CONSUMIDOR (Art. 54):\n• Cláusulas redigidas com clareza\n• Cláusulas restritivas em destaque (negrito, sublinhado)\n• Caracteres legíveis (mínimo corpo 12)\n• Direito a cópia do contrato\n• Tempo razoável para análise (não 'assina logo')\n\nCLÁUSULAS NULAS DE PLENO DIREITO (Art. 51):\n• Que isentem o fornecedor de responsabilidade\n• Que transfiram exclusivamente ao consumidor o ônus da prova\n• Que estabeleçam obrigações iníquas, abusivas\n• Que coloquem o consumidor em desvantagem exagerada\n• Foro de eleição que dificulte o acesso (consumidor pode escolher o seu)\n• Renúncia antecipada a direitos\n\nCOMO AGIR:\n• Assinar 'sob protesto' não é necessário, mas pode ajudar\n• Solicitar revisão no Procon\n• Ação de revisão contratual no Juizado/Vara Cível\n• Inversão do ônus da prova (Art. 6° VIII)\n\nEXEMPLOS DE CLÁUSULAS ABUSIVAS COMUNS:\n• Multa rescisória superior a 10% no caso do consumidor\n• Renovação automática sem aviso\n• Limitação de reembolso\n• Cobrança de taxas escondidas",
+      "palavras_chave": [
+        "contrato adesao",
+        "clausula abusiva",
+        "contrato banco",
+        "leia o contrato",
+        "letras miudas",
+        "art 51 cdc",
+        "art 54 cdc",
+        "clausula nula",
+        "contrato seguro",
+        "contrato plano",
+        "revisao contrato",
+        "direito clareza contrato"
+      ],
+      "fonte": "Art. 51, 54 CDC",
+      "vigencia": "Em vigor"
+    }
+  }
+}

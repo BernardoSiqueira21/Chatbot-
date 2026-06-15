@@ -1,114 +1,158 @@
-# Chatbot-
-Trabalho de chat bot da matéria Inteligência Artificial e machine learning 
-​Título do Projeto: Chatbot Educativo de Defesa do Consumidor
+# ConsumidorBot — Chatbot de Defesa do Consumidor com Arquitetura Híbrida
 
-Descrição:
+**Trabalho Final — Inteligência Artificial e Machine Learning**
+**UniAcademia — Centro Universitário | 7º Período**
 
-Este projeto consiste no desenvolvimento de um chatbot temático com interface web interativa, focado em orientar os usuários de forma prática sobre os direitos básicos do consumidor. Utilizando a biblioteca NLTK em Python para o Processamento de Linguagem Natural (PLN), o sistema é capaz de interpretar desabafos e dúvidas comuns do dia a dia , como problemas com garantias, atrasos em entregas, propagandas enganosas e o direito de arrependimento em compras online.
-​A aplicação adota uma arquitetura moderna, com o back-end em Python atuando como uma API para processar a intenção da mensagem e o front-end garantindo uma experiência de conversa fluida no navegador. O objetivo principal é identificar as necessidades do usuário a partir da linguagem natural e entregar orientações claras e focadas na resolução do problema de consumo, mantendo a linguagem simples e acessível.
+**Autores:** Bernardo Siqueira, Lucas Barra, Lucas Mello, Mateus Ramos e Thiago Prata
+**Professor:** Tassio Ferenzini Martins Sirqueira
 
-Grupo: Bernardo Souza Siqueira, Mateus Ramos Vieira, Lucas Barra Machado, Lucas Pereira Mello, Thiago Prata de Figueredo
+---
 
-# Chatbot Educativo de Defesa do Consumidor
+## Sobre o Projeto
 
-Chatbot temático com interface web, baseado no **Código de Defesa do Consumidor (CDC — Lei 8.078/90)**.
+Chatbot especializado em orientações sobre o **Código de Defesa do Consumidor (CDC — Lei nº 8.078/1990)**.
 
-Desenvolvido com **Python + Flask + NLTK**, com:
-- Memória de contexto (suporta 40+ interações contínuas)
-- NLP com tokenização, stemming, stopwords e identificação de intenções
-- Base de conhecimento ampla (18+ intenções cobrindo direitos do CDC)
-- Interface web responsiva e moderna
-- Respostas contextuais baseadas na última interação
+A arquitetura híbrida combina:
+
+- **NLTK** para pré-processamento e classificação de intenções (tokenização, stemming, remoção de stopwords)
+- **Base de conhecimento estruturada** (JSON) com intenções curadas, palavras-chave e respostas verificadas
+- **LLM open-source** (LLaMA via Groq) como mecanismo de *fallback* para perguntas não cobertas pela base
+
+A proposta equilibra **confiabilidade** (respostas da base são rastreáveis e verificadas) com **cobertura** (o LLM garante que o usuário raramente fique sem resposta).
+
+---
+
+## Fluxo de Decisão
+
+```
+Usuário envia mensagem
+        |
+   [Pipeline PLN — NLTK]
+   Tokenização → RSLPStemmer → Remoção de Stopwords
+        |
+   Pontuação de Intenção (similaridade léxica)
+   Normalizada por √(nº de palavras-chave)
+        |
+   Score >= LIMIAR_CONFIANÇA?
+   /              \
+ SIM              NÃO
+  |                |
+Resposta         [LLM Fallback]
+da Base          LLaMA (llama-3.1-70b-versatile)
+(JSON curado)    via Groq API
+        \              /
+         Resposta ao usuário
+         (+ indicação de origem: base | llm)
+```
 
 ---
 
 ## Estrutura do Projeto
 
 ```
-chatbot_consumidor/
-├── app.py                  # Servidor Flask
-├── requirements.txt        # Dependências
-├── README.md
+consumidorbot/
+├── app.py                      # Flask: rotas REST e orquestração da lógica
+├── requirements.txt
+├── .env.example                # Configuração de variáveis de ambiente
 ├── chatbot/
 │   ├── __init__.py
-│   ├── intents.json        # Base de conhecimento
-│   ├── nlp.py              # Processamento de Linguagem Natural (NLTK)
-│   ├── memory.py           # Gestão de contexto e memória
-│   └── service.py          # Lógica de resposta
-├── templates/
-│   └── index.html          # Interface web
-└── static/
-    ├── style.css
-    └── script.js
+│   ├── agent.py                # Lógica central: roteamento KB → LLM
+│   ├── nlp.py                  # Pipeline PLN com NLTK (tokenização, stemming, stopwords)
+│   ├── llm.py                  # Integração com Groq (LLaMA)
+│   ├── memory.py               # Histórico e contexto conversacional
+│   ├── intents.json            # Base de intenções com palavras-chave e respostas curadas
+│   └── knowledge_base.json     # Base estruturada: artigos do CDC, fluxos, órgãos
+├── static/
+│   ├── script.js               # Front-end com badge de origem (base/LLM) e estatísticas
+│   └── style.css
+└── templates/
+    └── index.html
 ```
 
 ---
 
-## Como Executar
+## Instalação e Uso
 
-### 1. Pré-requisitos
-- Python 3.8 ou superior instalado
-- pip disponível no terminal
-
-### 2. Instalar dependências
 ```bash
+# 1. Clone o repositório e instale as dependências
 pip install -r requirements.txt
-```
 
-### 3. Executar
-```bash
+# 2. Configure a chave da API do Groq
+cp .env.example .env
+# Edite .env e adicione sua GROQ_API_KEY
+
+# 3. Execute
 python app.py
-```
 
-### 4. Acessar no navegador
+# Acesse: http://localhost:5000
 ```
-http://127.0.0.1:5000
-```
-
-Os downloads do NLTK (punkt, stopwords, rslp) são feitos automaticamente na primeira execução.
 
 ---
 
-## Funcionalidades
+## Modelo LLM
 
-O chatbot cobre os seguintes temas:
+| Atributo       | Valor                            |
+|----------------|----------------------------------|
+| **Modelo**     | `llama-3.1-70b-versatile`        |
+| **Plataforma** | [Groq](https://groq.com)         |
+| **Temperatura**| 0.3                              |
+| **Max tokens** | 256                              |
 
-| Intenção | Descrição |
-|---|---|
-| Garantia/Defeito | Produtos com defeito, garantia legal e contratual |
-| Troca/Devolução | Direitos de troca e políticas comerciais |
-| Atraso na Entrega | Direitos quando a entrega não chega no prazo |
-| Arrependimento | Direito de cancelamento em compras online (7 dias) |
-| Propaganda Enganosa | Publicidade falsa ou indutora ao erro |
-| Cobrança Indevida | Cobranças duplicadas ou não autorizadas |
-| SAC/Atendimento | Atendimento deficiente e formalização de reclamações |
-| Procon/Juizado | Como e onde registrar reclamações formais |
-| Serviço Não Prestado | Serviços incompletos ou não realizados |
-| Contrato Abusivo | Cláusulas abusivas e nulidade pelo CDC |
-| Produto Não Entregue | Produto extraviado ou nunca entregue |
-| Plano de Saúde | Negativas de cobertura e ANS |
-| Banco/Financeiro | Cobranças bancárias, fraudes e Bacen |
-| Telefonia/Internet | Problemas com operadoras e Anatel |
-| Venda Casada | Prática abusiva proibida pelo CDC |
-| Dano Moral | Indenização por constrangimento |
-| Negativação Indevida | SPC/Serasa indevido e direitos |
-| Direitos Básicos | Resumo do CDC e direitos fundamentais |
+**Justificativa da escolha:**
+
+- Modelo aberto, sem dependência de provedores proprietários
+- Excelente relação qualidade/parâmetros, superando modelos maiores em diversos benchmarks
+- Já alinhado para seguir instruções (instruction tuning + RLHF), dispensando ajustes adicionais
+- Acesso via Groq com latência competitiva para inferência remota
 
 ---
 
-## Uso do NLTK
+## API — Rotas REST
 
-O sistema utiliza:
-- `word_tokenize` com idioma português para tokenização
-- `stopwords` em português para remoção de palavras irrelevantes
-- `RSLPStemmer` para stemming (radicalização de palavras)
-- Normalização com remoção de acentos via `unicodedata`
+| Método | Rota          | Função                                        |
+|--------|---------------|-----------------------------------------------|
+| GET    | `/`           | Serve a interface de conversação              |
+| POST   | `/chat`       | Recebe a mensagem e devolve resposta + origem |
+| GET    | `/interacoes` | Lista as intenções disponíveis na base        |
+| GET    | `/health`     | Verifica disponibilidade do serviço           |
+| POST   | `/reset`      | Limpa o histórico da conversa                 |
+| GET    | `/historico`  | Retorna o histórico da sessão                 |
+| GET    | `/stats`      | Métricas de uso (respostas por origem)        |
+| POST   | `/feedback`   | Registra avaliação do usuário sobre a resposta|
 
 ---
 
-## Tecnologias
+## Métricas de Desempenho
 
-- **Python 3.8+**
-- **Flask 3.0.2** — servidor web e API
-- **NLTK 3.8.1** — processamento de linguagem natural
-- **HTML5 + CSS3 + JavaScript** — interface web responsiva
+| Indicador                   | Valor         |
+|-----------------------------|---------------|
+| Respostas resolvidas pela base | ~60%       |
+| Respostas via LLM (fallback)   | ~40%       |
+| Tempo médio — base          | < 50 ms       |
+| Tempo médio — LLM (Groq)    | ~40 s         |
+| Rotas REST expostas         | 8             |
+
+---
+
+## Tecnologias de PLN Utilizadas
+
+| Técnica                   | Biblioteca / Implementação | Uso                                        |
+|---------------------------|----------------------------|--------------------------------------------|
+| Tokenização               | NLTK `word_tokenize`       | Segmenta o texto em tokens                 |
+| Stemming                  | NLTK `RSLPStemmer`         | Reduz palavras ao radical em português     |
+| Remoção de stopwords      | NLTK corpus (`pt-BR`)      | Descarta termos sem valor semântico        |
+| Pontuação de intenção     | Implementação própria      | Similaridade léxica normalizada por √(n)  |
+| Geração de linguagem      | Transformer (LLaMA / Groq) | Respostas para perguntas fora da base      |
+
+---
+
+## Stack Tecnológico
+
+- **Flask** — backend e API REST
+- **NLTK + RSLPStemmer** — processamento de linguagem natural em português
+- **Groq API** — acesso ao modelo LLaMA para geração de linguagem
+- **JSON** — base de conhecimento estruturada e versionável
+
+
+> **Aviso:** Este projeto tem fins exclusivamente acadêmicos e educativos.
+> As orientações fornecidas pelo ConsumidorBot **não substituem aconselhamento jurídico profissional**.

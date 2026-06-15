@@ -1,118 +1,158 @@
-# ConsumidorBot v2 — Chatbot de Direito do Consumidor com LLM
+# ConsumidorBot — Chatbot de Defesa do Consumidor com Arquitetura Híbrida
 
-**Trabalho Final — Processamento de Linguagem Natural**  
-Chatbot hibrido: Base de Conhecimento (NLTK) + LLM Fallback (Hugging Face)
+**Trabalho Final — Inteligência Artificial e Machine Learning**
+**UniAcademia — Centro Universitário | 7º Período**
+
+**Autores:** Bernardo Siqueira, Lucas Barra, Lucas Mello, Mateus Ramos e Thiago Prata
+**Professor:** Tassio Ferenzini Martins Sirqueira
 
 ---
 
 ## Sobre o Projeto
 
-Chatbot especializado em orientacoes sobre o **Codigo de Defesa do Consumidor (CDC - Lei 8.078/1990)**.
+Chatbot especializado em orientações sobre o **Código de Defesa do Consumidor (CDC — Lei nº 8.078/1990)**.
 
-A arquitetura hibrida combina:
-- **NLTK** para classificacao de intencoes e pre-processamento de texto
-- **Base de conhecimento estruturada** (JSON) com artigos do CDC, fluxos de acao e orgaos de defesa
-- **LLM open-source** (Mistral-7B-Instruct via Hugging Face) como fallback para perguntas nao cobertas pela base
+A arquitetura híbrida combina:
 
-## Fluxo de Decisao
+- **NLTK** para pré-processamento e classificação de intenções (tokenização, stemming, remoção de stopwords)
+- **Base de conhecimento estruturada** (JSON) com intenções curadas, palavras-chave e respostas verificadas
+- **LLM open-source** (LLaMA via Groq) como mecanismo de *fallback* para perguntas não cobertas pela base
+
+A proposta equilibra **confiabilidade** (respostas da base são rastreáveis e verificadas) com **cobertura** (o LLM garante que o usuário raramente fique sem resposta).
+
+---
+
+## Fluxo de Decisão
 
 ```
-Usuario envia mensagem
+Usuário envia mensagem
         |
-   [NLTK - NLP]
-   Tokenizacao, Stemming (RSLP), Stopwords
+   [Pipeline PLN — NLTK]
+   Tokenização → RSLPStemmer → Remoção de Stopwords
         |
-   Identificacao de intencao (intents.json)
+   Pontuação de Intenção (similaridade léxica)
+   Normalizada por √(nº de palavras-chave)
         |
-   Busca na Base de Conhecimento (knowledge_base.json)
-        |
-   Score KB >= 0.5?
-   /          \
- SIM          NAO
-  |            |
-Responde     [LLM Fallback]
-pela base    Mistral-7B-Instruct
-             (Hugging Face API)
+   Score >= LIMIAR_CONFIANÇA?
+   /              \
+ SIM              NÃO
+  |                |
+Resposta         [LLM Fallback]
+da Base          LLaMA (llama-3.1-70b-versatile)
+(JSON curado)    via Groq API
+        \              /
+         Resposta ao usuário
+         (+ indicação de origem: base | llm)
 ```
+
+---
 
 ## Estrutura do Projeto
 
 ```
-chatbot_final/
-├── app.py                      # Flask: rotas /chat, /stats, /health
+consumidorbot/
+├── app.py                      # Flask: rotas REST e orquestração da lógica
 ├── requirements.txt
-├── .env.example                # Configuracao de variaveis de ambiente
+├── .env.example                # Configuração de variáveis de ambiente
 ├── chatbot/
 │   ├── __init__.py
-│   ├── agent.py               # Logica central do agente (KB → LLM)
-│   ├── nlp.py                 # NLTK: tokenizacao, stemming, identificacao de intencao
-│   ├── llm.py                 # Integracao com Hugging Face (Mistral-7B)
-│   ├── memory.py              # Contexto e historico da conversa
-│   ├── intents.json           # Base de padroes e respostas (>30 intencoes)
-│   └── knowledge_base.json    # Base estruturada: artigos CDC, fluxos, orgaos
+│   ├── agent.py                # Lógica central: roteamento KB → LLM
+│   ├── nlp.py                  # Pipeline PLN com NLTK (tokenização, stemming, stopwords)
+│   ├── llm.py                  # Integração com Groq (LLaMA)
+│   ├── memory.py               # Histórico e contexto conversacional
+│   ├── intents.json            # Base de intenções com palavras-chave e respostas curadas
+│   └── knowledge_base.json     # Base estruturada: artigos do CDC, fluxos, órgãos
 ├── static/
-│   ├── script.js              # Frontend com badge KB/LLM e stats
+│   ├── script.js               # Front-end com badge de origem (base/LLM) e estatísticas
 │   └── style.css
 └── templates/
     └── index.html
 ```
 
-## Instalacao e Uso
+---
+
+## Instalação e Uso
 
 ```bash
-# 1. Clone e instale dependencias
+# 1. Clone o repositório e instale as dependências
 pip install -r requirements.txt
 
-# 2. Configure o token da Hugging Face (opcional mas recomendado)
+# 2. Configure a chave da API do Groq
 cp .env.example .env
-# Edite .env e adicione seu HF_TOKEN
+# Edite .env e adicione sua GROQ_API_KEY
 
 # 3. Execute
 python app.py
+
 # Acesse: http://localhost:5000
 ```
 
+---
+
 ## Modelo LLM
 
-**Modelo:** `mistralai/Mistral-7B-Instruct-v0.2`  
-**Plataforma:** https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2  
-**Acesso:** Hugging Face Inference API (gratuita com limites)
+| Atributo       | Valor                            |
+|----------------|----------------------------------|
+| **Modelo**     | `llama-3.1-70b-versatile`        |
+| **Plataforma** | [Groq](https://groq.com)         |
+| **Temperatura**| 0.3                              |
+| **Max tokens** | 256                              |
 
 **Justificativa da escolha:**
-- Modelo instrucional open-source de alta qualidade
-- Bom desempenho em portugues
-- Disponivel gratuitamente via HF Inference API
-- Tamanho adequado (7B params): bom balanco qualidade/velocidade
-- Formato de prompt padronizado ([INST])
 
-## API Endpoints
-
-| Rota | Metodo | Descricao |
-|------|--------|-----------|
-| `/` | GET | Interface web |
-| `/chat` | POST | Processar mensagem |
-| `/reset` | POST | Resetar sessao |
-| `/stats` | GET | Estatisticas de uso |
-| `/health` | GET | Status do LLM |
-
-## Tecnologias
-
-- **Flask** — servidor web
-- **NLTK** — tokenizacao, stopwords, stemming (RSLPStemmer)
-- **Hugging Face Inference API** — acesso ao LLM
-- **JSON** — base de conhecimento estruturada
-
-## Tecnologias NLP Utilizadas
-
-| Tecnica | Biblioteca | Uso |
-|---------|-----------|-----|
-| Tokenizacao | NLTK RegexpTokenizer | Divide texto em tokens |
-| Stopwords | NLTK corpus | Remove palavras irrelevantes |
-| Stemming | NLTK RSLPStemmer | Reduz palavras ao radical (pt-BR) |
-| Normalizacao Unicode | Python unicodedata | Remove acentos |
-| Correspondencia semantica | Implementacao propria | Matching por stems |
-| Transformers | Hugging Face | LLM para perguntas complexas |
+- Modelo aberto, sem dependência de provedores proprietários
+- Excelente relação qualidade/parâmetros, superando modelos maiores em diversos benchmarks
+- Já alinhado para seguir instruções (instruction tuning + RLHF), dispensando ajustes adicionais
+- Acesso via Groq com latência competitiva para inferência remota
 
 ---
 
-*Projeto academico — orientacao educativa, nao substitui advogado.*
+## API — Rotas REST
+
+| Método | Rota          | Função                                        |
+|--------|---------------|-----------------------------------------------|
+| GET    | `/`           | Serve a interface de conversação              |
+| POST   | `/chat`       | Recebe a mensagem e devolve resposta + origem |
+| GET    | `/interacoes` | Lista as intenções disponíveis na base        |
+| GET    | `/health`     | Verifica disponibilidade do serviço           |
+| POST   | `/reset`      | Limpa o histórico da conversa                 |
+| GET    | `/historico`  | Retorna o histórico da sessão                 |
+| GET    | `/stats`      | Métricas de uso (respostas por origem)        |
+| POST   | `/feedback`   | Registra avaliação do usuário sobre a resposta|
+
+---
+
+## Métricas de Desempenho
+
+| Indicador                   | Valor         |
+|-----------------------------|---------------|
+| Respostas resolvidas pela base | ~60%       |
+| Respostas via LLM (fallback)   | ~40%       |
+| Tempo médio — base          | < 50 ms       |
+| Tempo médio — LLM (Groq)    | ~40 s         |
+| Rotas REST expostas         | 8             |
+
+---
+
+## Tecnologias de PLN Utilizadas
+
+| Técnica                   | Biblioteca / Implementação | Uso                                        |
+|---------------------------|----------------------------|--------------------------------------------|
+| Tokenização               | NLTK `word_tokenize`       | Segmenta o texto em tokens                 |
+| Stemming                  | NLTK `RSLPStemmer`         | Reduz palavras ao radical em português     |
+| Remoção de stopwords      | NLTK corpus (`pt-BR`)      | Descarta termos sem valor semântico        |
+| Pontuação de intenção     | Implementação própria      | Similaridade léxica normalizada por √(n)  |
+| Geração de linguagem      | Transformer (LLaMA / Groq) | Respostas para perguntas fora da base      |
+
+---
+
+## Stack Tecnológico
+
+- **Flask** — backend e API REST
+- **NLTK + RSLPStemmer** — processamento de linguagem natural em português
+- **Groq API** — acesso ao modelo LLaMA para geração de linguagem
+- **JSON** — base de conhecimento estruturada e versionável
+
+
+> **Aviso:** Este projeto tem fins exclusivamente acadêmicos e educativos.
+> As orientações fornecidas pelo ConsumidorBot **não substituem aconselhamento jurídico profissional**.

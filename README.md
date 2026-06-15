@@ -1,114 +1,118 @@
-# Chatbot-
-Trabalho de chat bot da matéria Inteligência Artificial e machine learning 
-​Título do Projeto: Chatbot Educativo de Defesa do Consumidor
+# ConsumidorBot v2 — Chatbot de Direito do Consumidor com LLM
 
-Descrição:
-
-Este projeto consiste no desenvolvimento de um chatbot temático com interface web interativa, focado em orientar os usuários de forma prática sobre os direitos básicos do consumidor. Utilizando a biblioteca NLTK em Python para o Processamento de Linguagem Natural (PLN), o sistema é capaz de interpretar desabafos e dúvidas comuns do dia a dia , como problemas com garantias, atrasos em entregas, propagandas enganosas e o direito de arrependimento em compras online.
-​A aplicação adota uma arquitetura moderna, com o back-end em Python atuando como uma API para processar a intenção da mensagem e o front-end garantindo uma experiência de conversa fluida no navegador. O objetivo principal é identificar as necessidades do usuário a partir da linguagem natural e entregar orientações claras e focadas na resolução do problema de consumo, mantendo a linguagem simples e acessível.
-
-Grupo: Bernardo Souza Siqueira, Mateus Ramos Vieira, Lucas Barra Machado, Lucas Pereira Mello, Thiago Prata de Figueredo
-
-# Chatbot Educativo de Defesa do Consumidor
-
-Chatbot temático com interface web, baseado no **Código de Defesa do Consumidor (CDC — Lei 8.078/90)**.
-
-Desenvolvido com **Python + Flask + NLTK**, com:
-- Memória de contexto (suporta 40+ interações contínuas)
-- NLP com tokenização, stemming, stopwords e identificação de intenções
-- Base de conhecimento ampla (18+ intenções cobrindo direitos do CDC)
-- Interface web responsiva e moderna
-- Respostas contextuais baseadas na última interação
+**Trabalho Final — Processamento de Linguagem Natural**  
+Chatbot hibrido: Base de Conhecimento (NLTK) + LLM Fallback (Hugging Face)
 
 ---
+
+## Sobre o Projeto
+
+Chatbot especializado em orientacoes sobre o **Codigo de Defesa do Consumidor (CDC - Lei 8.078/1990)**.
+
+A arquitetura hibrida combina:
+- **NLTK** para classificacao de intencoes e pre-processamento de texto
+- **Base de conhecimento estruturada** (JSON) com artigos do CDC, fluxos de acao e orgaos de defesa
+- **LLM open-source** (Mistral-7B-Instruct via Hugging Face) como fallback para perguntas nao cobertas pela base
+
+## Fluxo de Decisao
+
+```
+Usuario envia mensagem
+        |
+   [NLTK - NLP]
+   Tokenizacao, Stemming (RSLP), Stopwords
+        |
+   Identificacao de intencao (intents.json)
+        |
+   Busca na Base de Conhecimento (knowledge_base.json)
+        |
+   Score KB >= 0.5?
+   /          \
+ SIM          NAO
+  |            |
+Responde     [LLM Fallback]
+pela base    Mistral-7B-Instruct
+             (Hugging Face API)
+```
 
 ## Estrutura do Projeto
 
 ```
-chatbot_consumidor/
-├── app.py                  # Servidor Flask
-├── requirements.txt        # Dependências
-├── README.md
+chatbot_final/
+├── app.py                      # Flask: rotas /chat, /stats, /health
+├── requirements.txt
+├── .env.example                # Configuracao de variaveis de ambiente
 ├── chatbot/
 │   ├── __init__.py
-│   ├── intents.json        # Base de conhecimento
-│   ├── nlp.py              # Processamento de Linguagem Natural (NLTK)
-│   ├── memory.py           # Gestão de contexto e memória
-│   └── service.py          # Lógica de resposta
-├── templates/
-│   └── index.html          # Interface web
-└── static/
-    ├── style.css
-    └── script.js
+│   ├── agent.py               # Logica central do agente (KB → LLM)
+│   ├── nlp.py                 # NLTK: tokenizacao, stemming, identificacao de intencao
+│   ├── llm.py                 # Integracao com Hugging Face (Mistral-7B)
+│   ├── memory.py              # Contexto e historico da conversa
+│   ├── intents.json           # Base de padroes e respostas (>30 intencoes)
+│   └── knowledge_base.json    # Base estruturada: artigos CDC, fluxos, orgaos
+├── static/
+│   ├── script.js              # Frontend com badge KB/LLM e stats
+│   └── style.css
+└── templates/
+    └── index.html
 ```
 
----
+## Instalacao e Uso
 
-## Como Executar
-
-### 1. Pré-requisitos
-- Python 3.8 ou superior instalado
-- pip disponível no terminal
-
-### 2. Instalar dependências
 ```bash
+# 1. Clone e instale dependencias
 pip install -r requirements.txt
-```
 
-### 3. Executar
-```bash
+# 2. Configure o token da Hugging Face (opcional mas recomendado)
+cp .env.example .env
+# Edite .env e adicione seu HF_TOKEN
+
+# 3. Execute
 python app.py
+# Acesse: http://localhost:5000
 ```
 
-### 4. Acessar no navegador
-```
-http://127.0.0.1:5000
-```
+## Modelo LLM
 
-Os downloads do NLTK (punkt, stopwords, rslp) são feitos automaticamente na primeira execução.
+**Modelo:** `mistralai/Mistral-7B-Instruct-v0.2`  
+**Plataforma:** https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2  
+**Acesso:** Hugging Face Inference API (gratuita com limites)
 
----
+**Justificativa da escolha:**
+- Modelo instrucional open-source de alta qualidade
+- Bom desempenho em portugues
+- Disponivel gratuitamente via HF Inference API
+- Tamanho adequado (7B params): bom balanco qualidade/velocidade
+- Formato de prompt padronizado ([INST])
 
-## Funcionalidades
+## API Endpoints
 
-O chatbot cobre os seguintes temas:
-
-| Intenção | Descrição |
-|---|---|
-| Garantia/Defeito | Produtos com defeito, garantia legal e contratual |
-| Troca/Devolução | Direitos de troca e políticas comerciais |
-| Atraso na Entrega | Direitos quando a entrega não chega no prazo |
-| Arrependimento | Direito de cancelamento em compras online (7 dias) |
-| Propaganda Enganosa | Publicidade falsa ou indutora ao erro |
-| Cobrança Indevida | Cobranças duplicadas ou não autorizadas |
-| SAC/Atendimento | Atendimento deficiente e formalização de reclamações |
-| Procon/Juizado | Como e onde registrar reclamações formais |
-| Serviço Não Prestado | Serviços incompletos ou não realizados |
-| Contrato Abusivo | Cláusulas abusivas e nulidade pelo CDC |
-| Produto Não Entregue | Produto extraviado ou nunca entregue |
-| Plano de Saúde | Negativas de cobertura e ANS |
-| Banco/Financeiro | Cobranças bancárias, fraudes e Bacen |
-| Telefonia/Internet | Problemas com operadoras e Anatel |
-| Venda Casada | Prática abusiva proibida pelo CDC |
-| Dano Moral | Indenização por constrangimento |
-| Negativação Indevida | SPC/Serasa indevido e direitos |
-| Direitos Básicos | Resumo do CDC e direitos fundamentais |
-
----
-
-## Uso do NLTK
-
-O sistema utiliza:
-- `word_tokenize` com idioma português para tokenização
-- `stopwords` em português para remoção de palavras irrelevantes
-- `RSLPStemmer` para stemming (radicalização de palavras)
-- Normalização com remoção de acentos via `unicodedata`
-
----
+| Rota | Metodo | Descricao |
+|------|--------|-----------|
+| `/` | GET | Interface web |
+| `/chat` | POST | Processar mensagem |
+| `/reset` | POST | Resetar sessao |
+| `/stats` | GET | Estatisticas de uso |
+| `/health` | GET | Status do LLM |
 
 ## Tecnologias
 
-- **Python 3.8+**
-- **Flask 3.0.2** — servidor web e API
-- **NLTK 3.8.1** — processamento de linguagem natural
-- **HTML5 + CSS3 + JavaScript** — interface web responsiva
+- **Flask** — servidor web
+- **NLTK** — tokenizacao, stopwords, stemming (RSLPStemmer)
+- **Hugging Face Inference API** — acesso ao LLM
+- **JSON** — base de conhecimento estruturada
+
+## Tecnologias NLP Utilizadas
+
+| Tecnica | Biblioteca | Uso |
+|---------|-----------|-----|
+| Tokenizacao | NLTK RegexpTokenizer | Divide texto em tokens |
+| Stopwords | NLTK corpus | Remove palavras irrelevantes |
+| Stemming | NLTK RSLPStemmer | Reduz palavras ao radical (pt-BR) |
+| Normalizacao Unicode | Python unicodedata | Remove acentos |
+| Correspondencia semantica | Implementacao propria | Matching por stems |
+| Transformers | Hugging Face | LLM para perguntas complexas |
+
+---
+
+*Projeto academico — orientacao educativa, nao substitui advogado.*

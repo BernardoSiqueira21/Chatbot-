@@ -1,3 +1,1710 @@
+{
+  "versao": "4.0",
+  "nome": "Código de Defesa do Consumidor — Base Completa",
+  "lei": "Lei n.º 8.078, de 11 de setembro de 1990",
+  "artigos": {
+    "art1": {
+      "numero": 1,
+      "titulo": "Norma de Ordem Pública",
+      "texto": "O CDC estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social. Não pode ser afastado por contrato.",
+      "resumo": "O CDC é norma de ordem pública — não pode ser afastado por contrato ou acordo entre partes.",
+      "palavras_chave": [
+        "cdc",
+        "codigo de defesa",
+        "lei do consumidor",
+        "norma",
+        "ordem publica",
+        "lei 8078"
+      ],
+      "prazos": {}
+    },
+    "art2": {
+      "numero": 2,
+      "titulo": "Definição de Consumidor",
+      "texto": "Consumidor é toda pessoa física ou jurídica que adquire ou utiliza produto ou serviço como destinatário final. Equipara-se a consumidor a coletividade de pessoas que haja intervindo nas relações de consumo.",
+      "resumo": "Consumidor é quem adquire produto ou serviço como destinatário final, podendo ser pessoa física ou jurídica.",
+      "palavras_chave": [
+        "consumidor",
+        "quem e consumidor",
+        "pessoa fisica",
+        "destinatario final",
+        "sou consumidor"
+      ],
+      "prazos": {}
+    },
+    "art3": {
+      "numero": 3,
+      "titulo": "Definição de Fornecedor",
+      "texto": "Fornecedor é toda pessoa física ou jurídica, pública ou privada, que desenvolve atividade de produção, montagem, criação, construção, importação, exportação, distribuição ou comercialização de produtos ou prestação de serviços.",
+      "resumo": "Fornecedor é qualquer empresa ou pessoa que vende produtos ou presta serviços — inclui fabricante, importador, revendedor.",
+      "palavras_chave": [
+        "fornecedor",
+        "empresa",
+        "loja",
+        "fabricante",
+        "vendedor",
+        "importador",
+        "quem e responsavel"
+      ],
+      "prazos": {}
+    },
+    "art4": {
+      "numero": 4,
+      "titulo": "Política Nacional das Relações de Consumo",
+      "texto": "A Política Nacional das Relações de Consumo tem por objetivo o atendimento das necessidades dos consumidores, o respeito à sua dignidade, saúde e segurança, a proteção de seus interesses econômicos, a melhoria da sua qualidade de vida, bem como a transparência e harmonia das relações de consumo.",
+      "resumo": "Princípios da política de proteção: dignidade, segurança, transparência e harmonia nas relações de consumo.",
+      "palavras_chave": [
+        "politica nacional",
+        "principios",
+        "dignidade consumidor",
+        "transparencia",
+        "harmonia"
+      ],
+      "prazos": {}
+    },
+    "art6": {
+      "numero": 6,
+      "titulo": "Direitos Básicos do Consumidor",
+      "texto": "São direitos básicos do consumidor: I — proteção da vida, saúde e segurança; II — educação sobre consumo; III — informação adequada e clara sobre produtos e serviços; IV — proteção contra publicidade enganosa e abusiva; V — modificação de cláusulas contratuais desproporcionais; VI — prevenção e reparação de danos; VII — acesso aos órgãos judiciários e administrativos; VIII — facilitação da defesa dos direitos; X — adequada e eficaz prestação dos serviços públicos.",
+      "resumo": "Seus direitos básicos: informação clara, proteção contra propaganda enganosa, reparação de danos e acesso à justiça.",
+      "palavras_chave": [
+        "direitos basicos",
+        "direitos do consumidor",
+        "meus direitos",
+        "o que posso exigir",
+        "direitos fundamentais",
+        "cdc",
+        "codigo de defesa",
+        "quais meus direitos"
+      ],
+      "prazos": {}
+    },
+    "art7": {
+      "numero": 7,
+      "titulo": "Direitos Previstos em Outras Normas",
+      "texto": "Os direitos previstos no CDC não excluem outros decorrentes de tratados ou convenções internacionais, legislação interna ordinária, de regulamentos expedidos pelas autoridades administrativas competentes, bem como dos que derivem dos princípios gerais do direito.",
+      "resumo": "Os direitos do CDC somam-se a outros direitos previstos em leis específicas — o consumidor pode acumular proteções.",
+      "palavras_chave": [
+        "outros direitos",
+        "tratados",
+        "normas",
+        "legislacao",
+        "protecao adicional"
+      ],
+      "prazos": {}
+    },
+    "art8": {
+      "numero": 8,
+      "titulo": "Segurança dos Produtos e Serviços",
+      "texto": "Os produtos e serviços colocados no mercado de consumo não acarretarão riscos à saúde ou segurança dos consumidores, exceto os considerados normais e previsíveis em decorrência de sua natureza e fruição.",
+      "resumo": "Produtos e serviços devem ser seguros. O fornecedor é responsável por qualquer risco à saúde ou segurança.",
+      "palavras_chave": [
+        "seguranca produto",
+        "risco saude",
+        "produto perigoso",
+        "produto inseguro",
+        "acidente produto"
+      ],
+      "prazos": {}
+    },
+    "art9": {
+      "numero": 9,
+      "titulo": "Informação sobre Periculosidade",
+      "texto": "O fornecedor de produtos e serviços potencialmente nocivos ou perigosos à saúde ou segurança deverá informar, de maneira ostensiva e adequada, a respeito da sua nocividade ou periculosidade.",
+      "resumo": "Produtos perigosos devem ter aviso claro e ostensivo sobre os riscos — a empresa é obrigada a informar.",
+      "palavras_chave": [
+        "produto perigoso",
+        "aviso perigo",
+        "informacao risco",
+        "nocivo",
+        "periculosidade"
+      ],
+      "prazos": {}
+    },
+    "art10": {
+      "numero": 10,
+      "titulo": "Recall — Retirada de Produtos do Mercado",
+      "texto": "O fornecedor não poderá colocar no mercado de consumo produto ou serviço que sabe ou deveria saber apresentar alto grau de nocividade ou periculosidade à saúde ou segurança. Deve comunicar às autoridades e aos consumidores e proceder à retirada imediata do produto do mercado (recall).",
+      "resumo": "Recall: empresa deve retirar do mercado produto perigoso e comunicar consumidores imediatamente.",
+      "palavras_chave": [
+        "recall",
+        "retirada produto",
+        "produto nocivo",
+        "produto danoso",
+        "alto risco",
+        "comunicacao perigo"
+      ],
+      "prazos": {}
+    },
+    "art12": {
+      "numero": 12,
+      "titulo": "Responsabilidade pelo Fato do Produto — Acidente de Consumo",
+      "texto": "O fabricante, o produtor, o construtor, nacional ou estrangeiro, e o importador respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem, fórmulas, manipulação, apresentação ou acondicionamento de seus produtos, bem como por informações insuficientes ou inadequadas sobre sua utilização e riscos.",
+      "resumo": "Acidente causado por produto: fabricante e importador respondem sem necessidade de provar culpa — responsabilidade objetiva.",
+      "palavras_chave": [
+        "acidente produto",
+        "dano produto",
+        "lesao produto",
+        "produto causou dano",
+        "responsabilidade fabricante",
+        "indenizacao produto",
+        "me machuquei",
+        "produto me feriu"
+      ],
+      "prazos": {}
+    },
+    "art13": {
+      "numero": 13,
+      "titulo": "Responsabilidade Solidária — Comerciante",
+      "texto": "O comerciante é igualmente responsável quando: I — o fabricante não puder ser identificado; II — o produto for fornecido sem identificação clara do fabricante; III — não conservar adequadamente os produtos perigosos ou de controle.",
+      "resumo": "Loja também é responsável se o fabricante não puder ser identificado ou o produto não tiver identificação.",
+      "palavras_chave": [
+        "comerciante responsavel",
+        "loja responsavel",
+        "fabricante nao identificado",
+        "responsabilidade loja",
+        "quem paga o dano"
+      ],
+      "prazos": {}
+    },
+    "art14": {
+      "numero": 14,
+      "titulo": "Responsabilidade pelo Fato do Serviço",
+      "texto": "O fornecedor de serviços responde, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos relativos à prestação dos serviços, bem como por informações insuficientes ou inadequadas sobre sua fruição e riscos.",
+      "resumo": "Serviço que causou dano: prestador responde sem necessidade de provar culpa — responsabilidade objetiva.",
+      "palavras_chave": [
+        "servico causou dano",
+        "acidente servico",
+        "dano servico",
+        "responsabilidade prestador",
+        "servico me prejudicou",
+        "me prejudicaram"
+      ],
+      "prazos": {}
+    },
+    "art17": {
+      "numero": 17,
+      "titulo": "Equiparação — Vítimas do Acidente de Consumo",
+      "texto": "Para os efeitos desta Seção, equiparam-se aos consumidores todas as vítimas do evento, mesmo que não sejam os compradores do produto ou serviço.",
+      "resumo": "Terceiros que foram prejudicados por acidente de consumo também têm os mesmos direitos do consumidor.",
+      "palavras_chave": [
+        "terceiro vitima",
+        "nao comprei mas fui prejudicado",
+        "vitima acidente",
+        "bystander",
+        "passante prejudicado"
+      ],
+      "prazos": {}
+    },
+    "art18": {
+      "numero": 18,
+      "titulo": "Vícios de Qualidade — Produtos",
+      "texto": "Os fornecedores respondem solidariamente pelos vícios de qualidade que tornem o produto impróprio ao consumo ou lhes diminuam o valor. Não sendo sanado no prazo de 30 dias, o consumidor pode exigir: I — substituição do produto; II — restituição da quantia paga; III — abatimento proporcional do preço.",
+      "resumo": "Produto com defeito: empresa tem 30 dias para resolver. Se não resolver, você escolhe: troca, reembolso ou desconto.",
+      "palavras_chave": [
+        "defeito",
+        "vicio",
+        "produto com defeito",
+        "produto quebrado",
+        "garantia",
+        "troca",
+        "conserto",
+        "produto ruim",
+        "nao funciona",
+        "veio quebrado",
+        "apresentou problema",
+        "esta com defeito",
+        "parou de funcionar",
+        "celular parou",
+        "nao liga",
+        "vem com defeito",
+        "produto danificado",
+        "produto estragado",
+        "veio danificado",
+        "produto falhou",
+        "quebrou logo",
+        "defeito de fabricacao",
+        "problemas no produto",
+        "quero reembolso",
+        "quero dinheiro de volta",
+        "ressarcimento",
+        "reembolso garantia",
+        "quebrou",
+        "parou de funcionar",
+        "nao liga",
+        "vicio oculto",
+        "apresentou defeito",
+        "com problema",
+        "veio com vicio",
+        "esta quebrado",
+        "veio quebrado",
+        "nao funciona direito",
+        "parou de funcionar",
+        "com defeito de fabricacao",
+        "veio errado",
+        "produto ruim"
+      ],
+      "prazos": {
+        "prazo_resolucao_empresa_dias": 30
+      },
+      "opcoes": [
+        "substituição do produto",
+        "restituição do valor pago",
+        "abatimento proporcional do preço"
+      ]
+    },
+    "art19": {
+      "numero": 19,
+      "titulo": "Vícios de Quantidade",
+      "texto": "Os fornecedores respondem pelos vícios de quantidade do produto sempre que seu conteúdo líquido for inferior às indicações constantes do recipiente, da embalagem, rotulagem ou de mensagem publicitária.",
+      "resumo": "Se o produto veio com quantidade menor que a anunciada (peso, volume, unidades), você tem direito de reclamar.",
+      "palavras_chave": [
+        "quantidade errada",
+        "peso errado",
+        "menos do que anunciado",
+        "conteudo inferior",
+        "embalagem errada",
+        "produto incompleto",
+        "faltou item",
+        "faltaram pecas"
+      ],
+      "prazos": {}
+    },
+    "art20": {
+      "numero": 20,
+      "titulo": "Vícios de Qualidade — Serviços",
+      "texto": "O fornecedor de serviços responde pelos vícios de qualidade que os tornem impróprios ao consumo ou lhes diminuam o valor. O consumidor pode exigir: I — reexecução dos serviços sem custo; II — restituição da quantia paga; III — abatimento proporcional do preço.",
+      "resumo": "Serviço com defeito ou mal executado: exija reexecução gratuita, reembolso ou desconto.",
+      "palavras_chave": [
+        "servico com problema",
+        "servico ruim",
+        "servico mal feito",
+        "servico incompleto",
+        "nao fizeram direito",
+        "cobrou e fez errado",
+        "tecnico nao resolveu",
+        "servico errado",
+        "resultado diferente"
+      ],
+      "prazos": {},
+      "opcoes": [
+        "reexecução gratuita do serviço",
+        "restituição do valor pago",
+        "abatimento proporcional do preço"
+      ]
+    },
+    "art21": {
+      "numero": 21,
+      "titulo": "Reparação — Reexecução por Terceiro",
+      "texto": "No fornecimento de serviços que tenham por objetivo a reparação de qualquer produto, considerar-se-á implícita a obrigação do fornecedor de empregar componentes de reposição originais adequados e novos, ou que mantenham as especificações técnicas do fabricante, salvo, quanto a estes últimos, autorização em contrário do consumidor.",
+      "resumo": "Ao consertar produto, a empresa deve usar peças originais ou equivalentes — não pode usar peças inadequadas sem avisar.",
+      "palavras_chave": [
+        "conserto",
+        "reparo",
+        "assistencia tecnica",
+        "peca original",
+        "peca reposicao",
+        "tecnico",
+        "manutencao"
+      ],
+      "prazos": {}
+    },
+    "art22": {
+      "numero": 22,
+      "titulo": "Serviços Essenciais — Continuidade",
+      "texto": "Os órgãos públicos, por si ou suas empresas, concessionárias, permissionárias ou sob qualquer outra forma de empreendimento, são obrigados a fornecer serviços adequados, eficientes, seguros e, quanto aos essenciais, contínuos.",
+      "resumo": "Serviços essenciais (água, luz, gás, telefone) não podem ser interrompidos de forma abusiva.",
+      "palavras_chave": [
+        "luz cortada",
+        "agua cortada",
+        "gas cortado",
+        "internet cortada",
+        "servico essencial",
+        "corte indevido",
+        "concessionaria",
+        "servico publico"
+      ],
+      "prazos": {}
+    },
+    "art23": {
+      "numero": 23,
+      "titulo": "Ignorância sobre Vício — Irrelevância",
+      "texto": "A ignorância do fornecedor sobre os vícios de qualidade por inadequação dos produtos e serviços não o exime de responsabilidade.",
+      "resumo": "A empresa não pode alegar que 'não sabia do defeito' para se eximir de responsabilidade.",
+      "palavras_chave": [
+        "empresa nao sabia",
+        "nao sabia do defeito",
+        "ignorancia fornecedor",
+        "desconhecia problema"
+      ],
+      "prazos": {}
+    },
+    "art24": {
+      "numero": 24,
+      "titulo": "Garantia Legal — Independência de Termo",
+      "texto": "A garantia legal de adequação do produto ou serviço independe de termo expresso, vedada a exoneração contratual do fornecedor.",
+      "resumo": "A garantia legal existe independentemente de contrato ou termo escrito — a empresa não pode se isentar dela contratualmente.",
+      "palavras_chave": [
+        "garantia legal",
+        "garantia obrigatoria",
+        "garantia independe",
+        "sem garantia escrita",
+        "termo garantia"
+      ],
+      "prazos": {}
+    },
+    "art25": {
+      "numero": 25,
+      "titulo": "Vedação de Cláusula de Não Indenizar",
+      "texto": "É vedada a estipulação contratual de cláusula que impossibilite, exonere ou atenue a obrigação de indenizar prevista nesta e nas seções anteriores.",
+      "resumo": "Cláusulas que tentam isentar a empresa de indenizar são nulas — não valem mesmo que você tenha assinado.",
+      "palavras_chave": [
+        "clausula nao indenizar",
+        "empresa nao indeniza",
+        "contrato sem indenizacao",
+        "clausula isencao",
+        "sem direito a indenizacao"
+      ],
+      "prazos": {}
+    },
+    "art26": {
+      "numero": 26,
+      "titulo": "Prazo de Decadência — Reclamação de Vícios",
+      "texto": "O direito de reclamar pelos vícios aparentes ou de fácil constatação caduca em: I — 30 dias para produtos e serviços não duráveis; II — 90 dias para produtos e serviços duráveis. O prazo inicia na entrega do produto. A reclamação ao fornecedor obsta a decadência.",
+      "resumo": "Prazo para reclamar: 30 dias (não duráveis) ou 90 dias (duráveis) a partir do defeito. Reclamar por escrito interrompe o prazo.",
+      "palavras_chave": [
+        "prazo",
+        "prazo para reclamar",
+        "quanto tempo tenho",
+        "prazo de garantia",
+        "decadencia",
+        "ja passou o prazo",
+        "ainda posso reclamar",
+        "tempo para reclamar",
+        "prazo venceu",
+        "expirou prazo"
+      ],
+      "prazos": {
+        "nao_duraveis_dias": 30,
+        "duraveis_dias": 90
+      }
+    },
+    "art27": {
+      "numero": 27,
+      "titulo": "Prescrição — Ação Judicial por Danos",
+      "texto": "Prescreve em 5 anos a pretensão à reparação pelos danos causados por fato do produto ou do serviço, contados a partir do conhecimento do dano e de sua autoria.",
+      "resumo": "Você tem 5 anos para entrar com ação judicial por danos causados por produto ou serviço.",
+      "palavras_chave": [
+        "prescricao",
+        "prazo judicial",
+        "5 anos",
+        "prazo para processar",
+        "acao judicial",
+        "prazo para entrar na justica",
+        "processar empresa",
+        "quanto tempo tenho para processar"
+      ],
+      "prazos": {
+        "prescricao_anos": 5
+      }
+    },
+    "art28": {
+      "numero": 28,
+      "titulo": "Desconsideração da Personalidade Jurídica",
+      "texto": "O juiz poderá desconsiderar a personalidade jurídica da sociedade quando, em detrimento do consumidor, houver abuso de direito, excesso de poder, infração da lei, fato ou ato ilícito ou violação dos estatutos ou contrato social.",
+      "resumo": "Em casos graves, o juiz pode responsabilizar pessoalmente os sócios da empresa para proteger o consumidor.",
+      "palavras_chave": [
+        "desconsideracao",
+        "empresa faliu",
+        "empresa fechou",
+        "socio responsavel",
+        "patrimonio socio",
+        "empresa sem dinheiro"
+      ],
+      "prazos": {}
+    },
+    "art30": {
+      "numero": 30,
+      "titulo": "Força Vinculante da Oferta",
+      "texto": "Toda informação ou publicidade veiculada por qualquer meio de comunicação obriga o fornecedor que a fizer veicular e integra o contrato celebrado.",
+      "resumo": "O que foi anunciado obriga a empresa — preço, prazo e condições do anúncio têm força de contrato.",
+      "palavras_chave": [
+        "oferta",
+        "anuncio",
+        "publicidade",
+        "propaganda",
+        "o que foi anunciado",
+        "o que estava no site",
+        "preco anunciado",
+        "empresa tem que cumprir",
+        "oferta vincula",
+        "preco errado",
+        "anuncio diferente"
+      ],
+      "prazos": {}
+    },
+    "art31": {
+      "numero": 31,
+      "titulo": "Informações Obrigatórias na Oferta",
+      "texto": "A oferta e apresentação de produtos ou serviços devem assegurar informações corretas, claras, precisas, ostensivas e em língua portuguesa sobre características, qualidades, quantidade, composição, preço, garantia, prazos de validade e origem.",
+      "resumo": "A empresa deve informar claramente: características, preço, quantidade, prazo de validade, garantia e origem do produto.",
+      "palavras_chave": [
+        "informacao produto",
+        "falta informacao",
+        "embalagem sem informacao",
+        "preco nao informado",
+        "composicao",
+        "ingredientes",
+        "validade",
+        "origem"
+      ],
+      "prazos": {}
+    },
+    "art32": {
+      "numero": 32,
+      "titulo": "Responsabilidade pela Oferta — Fabricante e Importador",
+      "texto": "Os fabricantes e importadores deverão assegurar a oferta de componentes e peças de reposição enquanto não cessar a fabricação ou importação do produto.",
+      "resumo": "Fabricante deve garantir peças de reposição enquanto fabricar o produto — não pode deixar o consumidor sem assistência.",
+      "palavras_chave": [
+        "peca reposicao",
+        "componente",
+        "fabricante peca",
+        "importador peca",
+        "assistencia tecnica",
+        "nao tem peca"
+      ],
+      "prazos": {}
+    },
+    "art33": {
+      "numero": 33,
+      "titulo": "Oferta por Reembolso Postal ou Domicílio",
+      "texto": "Em caso de oferta ou venda por reembolso postal, deve constar o nome do fabricante e endereço no produto, embalagem ou publicidade.",
+      "resumo": "Vendas por reembolso postal ou domicílio devem identificar claramente o vendedor.",
+      "palavras_chave": [
+        "reembolso postal",
+        "venda domicilio",
+        "entrega domicilio",
+        "correios",
+        "venda pelo correio"
+      ],
+      "prazos": {}
+    },
+    "art35": {
+      "numero": 35,
+      "titulo": "Descumprimento da Oferta — Opções do Consumidor",
+      "texto": "Se o fornecedor recusar cumprimento à oferta, o consumidor pode: I — exigir o cumprimento forçado nos termos da oferta; II — aceitar produto ou serviço equivalente; III — rescindir o contrato com restituição do valor pago atualizado.",
+      "resumo": "Empresa não cumpriu o que anunciou: exija cumprimento, aceite equivalente ou cancele com reembolso corrigido.",
+      "palavras_chave": [
+        "empresa nao cumpriu",
+        "nao honraram",
+        "propaganda enganosa",
+        "produto diferente do anunciado",
+        "empresa recusou",
+        "atraso entrega",
+        "entrega atrasou",
+        "pedido atrasado",
+        "nao entregaram no prazo",
+        "prazo entrega",
+        "entrega nao chegou",
+        "pedido sumiu",
+        "rastreio parado",
+        "nao chegou",
+        "meu pedido",
+        "produto nao chegou",
+        "nao recebi",
+        "prazo vencido",
+        "atraso na entrega",
+        "atrasou entrega",
+        "entrega atrasada",
+        "nao entregaram",
+        "pedido atrasado",
+        "prazo entrega venceu",
+        "atraso no pedido",
+        "demorando para entregar"
+      ],
+      "prazos": {},
+      "opcoes": [
+        "exigir cumprimento da oferta",
+        "aceitar produto/serviço equivalente",
+        "cancelar com reembolso atualizado"
+      ]
+    },
+    "art36": {
+      "numero": 36,
+      "titulo": "Identificação de Publicidade",
+      "texto": "A publicidade deve ser veiculada de tal forma que o consumidor, fácil e imediatamente, a identifique como tal.",
+      "resumo": "Publicidade deve ser claramente identificada como tal — conteúdo pago que pareça editorial é prática enganosa.",
+      "palavras_chave": [
+        "publicidade velada",
+        "publi",
+        "publipost",
+        "influencer",
+        "propaganda disfarçada",
+        "anuncio disfarçado",
+        "conteudo patrocinado"
+      ],
+      "prazos": {}
+    },
+    "art37": {
+      "numero": 37,
+      "titulo": "Publicidade Enganosa e Abusiva",
+      "texto": "É proibida toda publicidade enganosa ou abusiva. É enganosa qualquer modalidade de informação ou comunicação de caráter publicitário, inteira ou parcialmente falsa, ou que omita dado essencial. É abusiva a publicidade que explora o medo, a superstição, discrimine, incite violência ou aproveite da inexperiência da criança.",
+      "resumo": "Proibida: publicidade enganosa (falsa ou que omite dado importante) e publicidade abusiva (medo, criança, discriminação).",
+      "palavras_chave": [
+        "publicidade enganosa",
+        "propaganda enganosa",
+        "anuncio falso",
+        "publicidade abusiva",
+        "propaganda abusiva",
+        "enganaram com propaganda",
+        "anuncio mentiroso",
+        "publicidade crianca",
+        "propaganda medo"
+      ],
+      "prazos": {}
+    },
+    "art38": {
+      "numero": 38,
+      "titulo": "Ônus da Prova — Publicidade",
+      "texto": "O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina.",
+      "resumo": "Na publicidade, a empresa deve provar que o anúncio é verdadeiro — não é o consumidor que precisa provar que é falso.",
+      "palavras_chave": [
+        "prova publicidade",
+        "empresa prova",
+        "onus prova",
+        "anuncio verdadeiro",
+        "empresa deve provar"
+      ],
+      "prazos": {}
+    },
+    "art39": {
+      "numero": 39,
+      "titulo": "Práticas Abusivas",
+      "texto": "É vedado: I — venda casada; II — recusar atendimento; III — enviar produto não solicitado; IV — prevalecer da fraqueza do consumidor; V — exigir vantagem excessiva; VI — executar serviço sem orçamento prévio; VII — repassar informação depreciativa sobre consumidor; VIII — colocar produto em desacordo com normas; IX — recusar venda mediante pronto pagamento; X — elevar preços sem justa causa.",
+      "resumo": "Práticas proibidas: venda casada, produto não solicitado, serviço sem orçamento, recusa de venda, elevação injustificada de preço.",
+      "palavras_chave": [
+        "pratica abusiva",
+        "empresa abusiva",
+        "venda casada",
+        "produto nao solicitado",
+        "cobrou sem orcamento",
+        "recusou vender",
+        "exigiu condicao",
+        "abuso",
+        "preco elevado sem motivo"
+      ],
+      "prazos": {}
+    },
+    "art40": {
+      "numero": 40,
+      "titulo": "Orçamento Prévio — Serviços",
+      "texto": "O fornecedor de serviço será obrigado a entregar ao consumidor orçamento prévio discriminando o valor da mão-de-obra, dos materiais e equipamentos, condições de pagamento, datas de início e término, e outros dados pertinentes.",
+      "resumo": "Serviço: empresa obrigatoriamente deve entregar orçamento antes de executar — valor, prazo e condições detalhados.",
+      "palavras_chave": [
+        "orcamento",
+        "orcamento previo",
+        "cobrou sem orcamento",
+        "valor servico",
+        "cobrou mais que combinado",
+        "preco diferente",
+        "quanto vai custar",
+        "precificacao servico"
+      ],
+      "prazos": {}
+    },
+    "art41": {
+      "numero": 41,
+      "titulo": "Reajuste de Preço — Serviços",
+      "texto": "No caso de recusa ou demora do orçamento, ou caso o consumidor não o aceite, as despesas realizadas só podem ser cobradas se o consumidor as tiver previamente autorizado.",
+      "resumo": "Se o consumidor não aprovação orçamento, empresa não pode cobrar pelo trabalho realizado sem autorização.",
+      "palavras_chave": [
+        "nao aprovei orcamento",
+        "nao autorizei",
+        "cobrou sem autorizacao",
+        "realizou servico sem autorizar",
+        "fez sem permissao"
+      ],
+      "prazos": {}
+    },
+    "art42": {
+      "numero": 42,
+      "titulo": "Cobrança de Dívidas — Vedações e Repetição do Indébito",
+      "texto": "Na cobrança de débitos, o consumidor não será exposto a ridículo, nem submetido a constrangimento ou ameaça. O consumidor cobrado em quantia indevida tem direito à repetição do indébito por valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros legais, salvo engano justificável.",
+      "resumo": "Cobrança indevida: direito à devolução em dobro do valor cobrado a mais (salvo engano justificável). Vedadas ameaças e constrangimentos.",
+      "palavras_chave": [
+        "cobranca indevida",
+        "cobrado errado",
+        "cobrado a mais",
+        "cobrado duas vezes",
+        "cobraram errado",
+        "cobraram indevido",
+        "me cobraram",
+        "cobrança duplicada",
+        "devolucao em dobro",
+        "valor indevido",
+        "estorno",
+        "cobranca abusiva",
+        "me ameacaram cobrando",
+        "cobraram sem autorizacao",
+        "cobrança indevida",
+        "pagamento indevido",
+        "pagamento duplicado",
+        "cobrado incorreto"
+      ],
+      "prazos": {},
+      "direitos": [
+        "devolução em dobro do excesso cobrado",
+        "correção monetária e juros legais"
+      ]
+    },
+    "art43": {
+      "numero": 43,
+      "titulo": "Cadastro de Consumidor — SPC, Serasa",
+      "texto": "O consumidor terá acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, bem como sobre as respectivas fontes. O consumidor inadimplente deve ser comunicado por escrito quando seu nome for inscrito em cadastro de inadimplência.",
+      "resumo": "Você tem direito de saber e corrigir o que está nos cadastros negativos (SPC, Serasa). Empresa deve avisar antes de negativar.",
+      "palavras_chave": [
+        "spc",
+        "serasa",
+        "nome sujo",
+        "negativado",
+        "cadastro inadimplente",
+        "restricao credito",
+        "nome negativado",
+        "inscricao spc",
+        "inscricao serasa",
+        "retificacao cadastro"
+      ],
+      "prazos": {}
+    },
+    "art44": {
+      "numero": 44,
+      "titulo": "Cadastros de Reclamações Fundamentadas",
+      "texto": "Os órgãos públicos de defesa do consumidor manterão cadastros atualizados de reclamações fundamentadas contra fornecedores de produtos e serviços.",
+      "resumo": "Procon e órgãos de defesa mantêm cadastro público de empresas com reclamações — você pode consultar antes de comprar.",
+      "palavras_chave": [
+        "cadastro empresa",
+        "reclamacao empresa",
+        "empresa ruim",
+        "historico empresa",
+        "procon cadastro"
+      ],
+      "prazos": {}
+    },
+    "art46": {
+      "numero": 46,
+      "titulo": "Contratos — Ciência do Consumidor",
+      "texto": "Os contratos não obrigarão os consumidores se não lhes for dada a oportunidade de tomar conhecimento prévio de seu conteúdo, ou se os respectivos instrumentos forem redigidos de modo a dificultar a compreensão.",
+      "resumo": "Contrato com letras miúdas ou linguagem confusa não obriga o consumidor se ele não teve chance de ler antes.",
+      "palavras_chave": [
+        "contrato",
+        "nao li o contrato",
+        "nao sabia das condicoes",
+        "contrato confuso",
+        "letra pequena",
+        "letras miudas",
+        "nao entendi contrato",
+        "contrato em outra lingua",
+        "clausula escondida"
+      ],
+      "prazos": {}
+    },
+    "art47": {
+      "numero": 47,
+      "titulo": "Interpretação Favorável ao Consumidor",
+      "texto": "As cláusulas contratuais serão interpretadas de maneira mais favorável ao consumidor.",
+      "resumo": "Em caso de dúvida sobre cláusula contratual, a interpretação é sempre a mais favorável ao consumidor — 'in dubio pro consumidor'.",
+      "palavras_chave": [
+        "interpretacao contrato",
+        "clausula confusa",
+        "dubio pro consumidor",
+        "interpretacao favoravel",
+        "clausula ambigua",
+        "dupla interpretacao"
+      ],
+      "prazos": {}
+    },
+    "art48": {
+      "numero": 48,
+      "titulo": "Obrigatoriedade da Oferta — Contrato Escrito",
+      "texto": "As declarações de vontade constantes de escritos particulares, recibos e pré-contratos relativos às relações de consumo vinculam o fornecedor.",
+      "resumo": "Recibos, pré-contratos e qualquer escrito do fornecedor obrigam a empresa — vale como compromisso contratual.",
+      "palavras_chave": [
+        "recibo",
+        "pre-contrato",
+        "escrito",
+        "compromisso",
+        "proposta escrita",
+        "declaracao escrita"
+      ],
+      "prazos": {}
+    },
+    "art49": {
+      "numero": 49,
+      "titulo": "Direito de Arrependimento — Compras fora do Estabelecimento",
+      "texto": "O consumidor pode desistir do contrato em 7 dias a contar do recebimento do produto, em compras fora do estabelecimento (online, telefone, domicílio). Os valores pagos serão devolvidos imediatamente e integralmente, incluindo frete.",
+      "resumo": "Compra online ou por telefone: 7 dias para desistir após receber. Reembolso integral obrigatório, inclusive frete de envio.",
+      "palavras_chave": [
+        "arrependimento",
+        "compra online",
+        "7 dias",
+        "desistir",
+        "cancelar compra",
+        "nao quero mais",
+        "comprei pela internet",
+        "comprei no site",
+        "comprei pelo app",
+        "direito de arrependimento",
+        "devolver sem defeito",
+        "desistir da compra",
+        "compra a distancia",
+        "compra por telefone",
+        "quero devolver",
+        "devolver compra",
+        "cancelar pedido online",
+        "arrependido da compra",
+        "me arrependi",
+        "cancelar compra",
+        "quero cancelar",
+        "desistir da compra",
+        "nao quero mais",
+        "comprei e nao quero",
+        "arrependimento compra",
+        "devolucao sem defeito",
+        "nao gostei do produto",
+        "mudei de ideia",
+        "devolver produto sem defeito"
+      ],
+      "prazos": {
+        "arrependimento_dias": 7
+      }
+    },
+    "art50": {
+      "numero": 50,
+      "titulo": "Garantia Contratual — Complemento da Legal",
+      "texto": "A garantia contratual é complementar à legal e será conferida mediante termo escrito. O termo de garantia ou equivalente deve ser padronizado e esclarecer de maneira adequada em que consiste a garantia, bem como a forma, o prazo e o lugar em que pode ser exercitada.",
+      "resumo": "A garantia da fabricante (ex: 1 ano) é adicional à garantia legal do CDC — você tem as duas ao mesmo tempo.",
+      "palavras_chave": [
+        "garantia fabricante",
+        "garantia contratual",
+        "garantia estendida",
+        "prazo garantia",
+        "termo garantia",
+        "certificado garantia",
+        "garantia expirou mas"
+      ],
+      "prazos": {}
+    },
+    "art51": {
+      "numero": 51,
+      "titulo": "Cláusulas Abusivas — Nulidade Automática",
+      "texto": "São nulas de pleno direito cláusulas que: I — impossibilitem, exonerem ou atenuem a responsabilidade do fornecedor; II — subtraiam ao consumidor a opção de reembolso; IV — estabeleçam obrigações abusivas ou coloquem o consumidor em desvantagem exagerada; VI — invertam o ônus da prova em prejuízo do consumidor; XI — autorizem cancelamento unilateral sem igual direito ao consumidor; XII — obriguem ressarcimento sem reciprocidade.",
+      "resumo": "Cláusulas abusivas são nulas automaticamente — mesmo assinadas, não têm validade legal.",
+      "palavras_chave": [
+        "clausula abusiva",
+        "contrato abusivo",
+        "clausula nula",
+        "condicao abusiva",
+        "contrato ilegal",
+        "letras miudas",
+        "nao li o contrato",
+        "assinei sem saber",
+        "contrato prejudicial",
+        "clausula invalida"
+      ],
+      "prazos": {}
+    },
+    "art52": {
+      "numero": 52,
+      "titulo": "Crédito ao Consumidor — Informações Obrigatórias",
+      "texto": "No fornecimento de crédito ou financiamento, o fornecedor deve informar: preço em moeda nacional; montante dos juros e taxa efetiva anual; acréscimos legais; número e periodicidade das prestações; soma total a pagar, com e sem financiamento.",
+      "resumo": "Financiamento ou crédito: empresa deve informar CET, taxa de juros, número de parcelas e valor total — antes de assinar.",
+      "palavras_chave": [
+        "credito",
+        "financiamento",
+        "parcelamento",
+        "juros",
+        "taxa de juros",
+        "prestacoes",
+        "nao informaram os juros",
+        "cet",
+        "custo efetivo",
+        "emprestimo",
+        "fgts"
+      ],
+      "prazos": {}
+    },
+    "art53": {
+      "numero": 53,
+      "titulo": "Cláusula de Decaimento — Proibição",
+      "texto": "Nos contratos de compra e venda de móveis ou imóveis mediante pagamento em prestações, bem como nas alienações fiduciárias em garantia, consideram-se nulas de pleno direito as cláusulas que estabeleçam a perda total das prestações pagas em benefício do credor.",
+      "resumo": "Proibida cláusula que faz o consumidor perder tudo que pagou se cancelar contrato de parcelamento (ex: consórcio, imóvel).",
+      "palavras_chave": [
+        "perder prestacoes",
+        "perdi o que paguei",
+        "clausula decaimento",
+        "consorcio",
+        "imovel",
+        "financiamento cancelado",
+        "perda total",
+        "restituicao parcelas"
+      ],
+      "prazos": {}
+    },
+    "art54": {
+      "numero": 54,
+      "titulo": "Contrato de Adesão — Regras",
+      "texto": "Contrato de adesão é aquele estabelecido unilateralmente pelo fornecedor, sem que o consumidor possa discutir ou modificar seu conteúdo. Os contratos devem ser redigidos em termos claros com fonte mínima 12, de modo a facilitar a compreensão.",
+      "resumo": "Contratos de adesão (padrões) devem ter fonte mínima 12 e linguagem clara — cláusulas escondidas não valem.",
+      "palavras_chave": [
+        "contrato de adesao",
+        "nao pude negociar",
+        "contrato padrao",
+        "fonte pequena",
+        "letra miuda contrato",
+        "contrato imposto"
+      ],
+      "prazos": {}
+    },
+    "art55": {
+      "numero": 55,
+      "titulo": "Normas de Defesa do Consumidor — Fiscalização",
+      "texto": "A União, os Estados e o Distrito Federal, em caráter concorrente e nas suas respectivas áreas de atuação administrativa, baixarão normas relativas à produção, industrialização, distribuição e consumo de produtos e serviços.",
+      "resumo": "A fiscalização do consumo é feita pela União, Estados e DF — há atuação em todos os níveis de governo.",
+      "palavras_chave": [
+        "fiscalizacao",
+        "inmetro",
+        "anvisa",
+        "orgao regulador",
+        "norma tecnica",
+        "producao",
+        "industrializacao"
+      ],
+      "prazos": {}
+    },
+    "art56": {
+      "numero": 56,
+      "titulo": "Sanções Administrativas",
+      "texto": "As infrações das normas de defesa do consumidor ficam sujeitas a: I — multa; II — apreensão do produto; III — inutilização do produto; IV — cassação do registro; V — proibição de fabricação; VI — suspensão de fornecimento; VII — suspensão temporária de atividade; VIII — revogação de concessão ou permissão; IX — cassação de licença; X — interdição; XI — intervenção administrativa; XII — imposição de contrapropaganda.",
+      "resumo": "Empresas que violam o CDC podem ser multadas, ter produtos apreendidos ou atividade suspensa.",
+      "palavras_chave": [
+        "sancao",
+        "multa empresa",
+        "punicao empresa",
+        "penalidade",
+        "apreensao",
+        "interdição empresa"
+      ],
+      "prazos": {}
+    },
+    "art57": {
+      "numero": 57,
+      "titulo": "Multa — Critérios",
+      "texto": "A pena de multa, graduada de acordo com a gravidade da infração, a vantagem auferida e a condição econômica do fornecedor, será aplicada mediante procedimento administrativo, revertendo para o Fundo de que trata a Lei n.º 7.347/85.",
+      "resumo": "Multa administrativa considera: gravidade, lucro obtido e porte econômico da empresa.",
+      "palavras_chave": [
+        "multa procon",
+        "multa administrativa",
+        "valor multa",
+        "penalidade empresa",
+        "sancao empresa"
+      ],
+      "prazos": {}
+    },
+    "art71": {
+      "numero": 71,
+      "titulo": "Cobrança Vexatória — Crime",
+      "texto": "Utilizar, na cobrança de dívidas, de ameaça, coação, constrangimento físico ou moral, afirmações falsas incorretas ou enganosas, ou qualquer outro procedimento que exponha o consumidor, injustificadamente, a ridículo ou interfira com seu trabalho, descanso ou lazer: Pena — detenção de três meses a um ano e multa.",
+      "resumo": "Cobrança com ameaça, constrangimento ou assédio é CRIME — pena de até 1 ano de detenção.",
+      "palavras_chave": [
+        "cobranca com ameaca",
+        "ameaca pagamento",
+        "constrangimento cobranca",
+        "me constrangeram",
+        "cobranca abusiva",
+        "crime cobranca",
+        "ligacao ameacando",
+        "assedio cobranca"
+      ],
+      "prazos": {}
+    },
+    "art72": {
+      "numero": 72,
+      "titulo": "Recusa de Atendimento — Crime",
+      "texto": "Impedir ou dificultar o acesso do consumidor às informações que sobre ele constem em cadastros, banco de dados, fichas e registros: Pena — detenção de seis meses a um ano ou multa.",
+      "resumo": "Empresa que impede consumidor de ver seu cadastro comete crime — pena de até 1 ano.",
+      "palavras_chave": [
+        "acesso cadastro",
+        "negar informacao",
+        "impedir consulta",
+        "nao mostram cadastro",
+        "dados consumidor",
+        "direito informacao"
+      ],
+      "prazos": {}
+    },
+    "art73": {
+      "numero": 73,
+      "titulo": "Correção de Informações — Crime",
+      "texto": "Deixar de corrigir imediatamente informação sobre consumidor constante de cadastro, banco de dados, fichas ou registros que sabe ou deveria saber ser inexata: Pena — detenção de um a seis meses ou multa.",
+      "resumo": "Não corrigir informação errada em cadastro (Serasa, SPC) quando comunicado é crime.",
+      "palavras_chave": [
+        "corrigir serasa",
+        "corrigir spc",
+        "informacao errada cadastro",
+        "dado incorreto",
+        "retificacao",
+        "nome sujo errado",
+        "negativacao errada"
+      ],
+      "prazos": {}
+    },
+    "art101": {
+      "numero": 101,
+      "titulo": "Ação Civil — Legitimidade",
+      "texto": "Na ação de responsabilidade civil do fornecedor de produtos e serviços, sem prejuízo do disposto nos Capítulos I e II deste Título, serão observadas as normas do Código de Processo Civil e, quanto à legitimidade para propor a ação: I — no caso de acidente de consumo, são legitimados a propor a ação o consumidor ou seus herdeiros ou sucessores.",
+      "resumo": "Em acidente de consumo, o consumidor ou seus herdeiros podem propor ação civil contra o fornecedor.",
+      "palavras_chave": [
+        "acao civil",
+        "processo",
+        "entrar na justica",
+        "propor acao",
+        "herdeiros",
+        "sucessores",
+        "legitimidade"
+      ],
+      "prazos": {}
+    },
+    "art104": {
+      "numero": 104,
+      "titulo": "Coisa Julgada — Ações Coletivas",
+      "texto": "As ações coletivas não induzem litispendência para as ações individuais, mas os efeitos da coisa julgada erga omnes ou ultra partes não beneficiarão os autores das ações individuais, se não for requerida sua suspensão no prazo de trinta dias.",
+      "resumo": "Ação coletiva e ação individual podem correr juntas. O consumidor pode pedir suspensão da individual para aproveitar a coletiva.",
+      "palavras_chave": [
+        "acao coletiva",
+        "class action",
+        "acao individual",
+        "litispendencia",
+        "suspensao acao",
+        "grupo consumidores"
+      ],
+      "prazos": {}
+    },
+    "art5": {
+      "numero": 5,
+      "titulo": "Instrumentos de Defesa do Consumidor",
+      "texto": "Para a execução da Política Nacional das Relações de Consumo, contará o poder público com os seguintes instrumentos: manutenção de assistência jurídica, integral e gratuita para o consumidor carente; instituição de Promotorias de Justiça de Defesa do Consumidor; criação de delegacias de polícia especializadas no atendimento de consumidores vítimas de infrações penais de consumo; criação de Juizados Especiais de Pequenas Causas e Varas Especializadas para a solução de litígios de consumo; concessão de estímulos à criação e desenvolvimento das Associações de Defesa do Consumidor.",
+      "resumo": "O Estado deve garantir ao consumidor: assistência jurídica gratuita, Procon, delegacias especializadas, Juizados Especiais e apoio a associações de defesa.",
+      "palavras_chave": [
+        "assistencia juridica gratuita",
+        "procon",
+        "delegacia consumidor",
+        "juizado especial",
+        "associacao defesa consumidor",
+        "instrumentos defesa"
+      ],
+      "prazos": {}
+    },
+    "art11": {
+      "numero": 11,
+      "titulo": "Decadência — Vício Oculto",
+      "texto": "O prazo decadencial da reclamação começa a fluir a partir do momento em que ficar evidenciado o defeito no caso dos vícios ocultos.",
+      "resumo": "Para defeitos ocultos (que só aparecem depois), o prazo de 30 ou 90 dias começa a contar a partir do momento em que o vício foi descoberto, não da compra.",
+      "palavras_chave": [
+        "vicio oculto",
+        "defeito oculto",
+        "prazo vicio oculto",
+        "defeito apareceu depois",
+        "defeito demorou aparecer",
+        "prazo comeca quando descobriu"
+      ],
+      "prazos": {}
+    },
+    "art15": {
+      "numero": 15,
+      "titulo": "Vício de Quantidade — Pesagem na Presença do Consumidor",
+      "texto": "Os produtos ou serviços destinados ao público em geral, quando fornecidos coletivamente, deverão ser pesados ou medidos na presença do consumidor, salvo quando o produto já estiver embalado.",
+      "resumo": "Produtos vendidos a granel devem ser pesados ou medidos na frente do consumidor.",
+      "palavras_chave": [
+        "pesagem",
+        "medida",
+        "peso",
+        "balanca",
+        "granel",
+        "pesado na frente",
+        "medir produto"
+      ],
+      "prazos": {}
+    },
+    "art16": {
+      "numero": 16,
+      "titulo": "Vício de Quantidade — Recipientes e Embalagens",
+      "texto": "Os fornecedores de produtos e serviços que, posteriormente à introdução destes no mercado de consumo, tiverem conhecimento de sua periculosidade, deverão comunicar o fato imediatamente às autoridades competentes e aos consumidores, mediante anúncios publicitários.",
+      "resumo": "Se o fornecedor descobrir perigo no produto após lançá-lo, deve comunicar imediatamente as autoridades e os consumidores.",
+      "palavras_chave": [
+        "comunicar perigo",
+        "produto perigoso mercado",
+        "aviso posterior",
+        "recall comunicado",
+        "perigo descoberto depois"
+      ],
+      "prazos": {}
+    },
+    "art29": {
+      "numero": 29,
+      "titulo": "Consumidor Equiparado — Práticas Comerciais",
+      "texto": "Para os fins deste Capítulo e do seguinte, equiparam-se aos consumidores todas as pessoas determináveis ou não, expostas às práticas nele previstas.",
+      "resumo": "Mesmo quem ainda não comprou mas está exposto a práticas comerciais (publicidade, oferta) tem proteção do CDC.",
+      "palavras_chave": [
+        "consumidor equiparado",
+        "exposto propaganda",
+        "potencial consumidor",
+        "nao comprei mas fui atingido",
+        "publicidade me afetou"
+      ],
+      "prazos": {}
+    },
+    "art34": {
+      "numero": 34,
+      "titulo": "Solidariedade do Fornecedor — Representantes",
+      "texto": "O fornecedor do produto ou serviço é solidariamente responsável pelos atos de seus prepostos ou representantes autônomos.",
+      "resumo": "A empresa responde pelos atos dos seus vendedores, representantes e funcionários — mesmo que sejam autônomos.",
+      "palavras_chave": [
+        "vendedor autonomo",
+        "representante empresa",
+        "preposto",
+        "funcionario empresa responsavel",
+        "vendedor externo",
+        "corretor responsavel"
+      ],
+      "prazos": {}
+    },
+    "art45": {
+      "numero": 45,
+      "titulo": "Contratos — Vigência e Inserção de Cláusulas",
+      "texto": "O Ministério da Justiça expedirá normas de caráter geral, dispondo sobre contratos de adesão, bem como sobre cláusulas abusivas que estabeleçam obrigações consideradas iníquas, abusivas, que coloquem o consumidor em desvantagem exagerada.",
+      "resumo": "O governo pode regulamentar contratos de adesão e proibir cláusulas abusivas por normas administrativas.",
+      "palavras_chave": [
+        "norma contrato",
+        "regulamentacao contrato",
+        "ministerio justica contrato",
+        "norma clausula abusiva"
+      ],
+      "prazos": {}
+    },
+    "art58": {
+      "numero": 58,
+      "titulo": "Crime — Omissão de Dizeres Obrigatórios",
+      "texto": "Deixar de comunicar à autoridade competente e aos consumidores a nocividade ou periculosidade de produtos cujo conhecimento seja posterior à sua colocação no mercado: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Empresa que descobre perigo no produto e não avisa comete CRIME — pena de até 2 anos de detenção.",
+      "palavras_chave": [
+        "crime omissao",
+        "empresa nao avisou perigo",
+        "omitiu informacao perigo",
+        "crime fornecedor",
+        "escondeu perigo produto"
+      ],
+      "prazos": {}
+    },
+    "art59": {
+      "numero": 59,
+      "titulo": "Crime — Reincidência e Agravantes",
+      "texto": "As penas de detenção e multa do crime de omissão de comunicação de periculosidade poderão ser aumentadas de um terço até a metade quando a infração for cometida por empresa ou profissional que atue em setor regulamentado.",
+      "resumo": "Penas maiores quando o crime é cometido por empresa de setor regulamentado (banco, plano de saúde, etc.).",
+      "palavras_chave": [
+        "pena maior empresa",
+        "agravante empresa regulamentada",
+        "crime empresa banco",
+        "setor regulamentado crime"
+      ],
+      "prazos": {}
+    },
+    "art60": {
+      "numero": 60,
+      "titulo": "Crime — Contrapropaganda",
+      "texto": "A imposição de contrapropaganda será cominada quando o fornecedor incorrer na prática de publicidade enganosa ou abusiva, nos termos do art. 37 e de acordo com o art. 56, inciso XII. A contrapropaganda será divulgada pelo responsável da mesma forma, frequência e dimensão e, preferencialmente, no mesmo veículo, local, espaço e horário, de forma capaz de desfazer o malefício da publicidade enganosa.",
+      "resumo": "Empresa que fizer propaganda enganosa pode ser obrigada a fazer contrapropaganda: desfazer o engano no mesmo espaço, horário e veículo.",
+      "palavras_chave": [
+        "contrapropaganda",
+        "desfazer propaganda enganosa",
+        "retratacao publicidade",
+        "corrigir anuncio falso",
+        "obrigado retratar"
+      ],
+      "prazos": {}
+    },
+    "art61": {
+      "numero": 61,
+      "titulo": "Crime — Penas de Detenção (Quadro Geral)",
+      "texto": "Constituem crimes contra as relações de consumo previstas neste Código, sem prejuízo do disposto no Código Penal e leis especiais, as condutas tipificadas nos artigos seguintes.",
+      "resumo": "As condutas previstas nos artigos seguintes são crimes contra as relações de consumo — além de punições administrativas.",
+      "palavras_chave": [
+        "crime consumo",
+        "crime fornecedor",
+        "infração penal consumo",
+        "conduta criminosa fornecedor"
+      ],
+      "prazos": {}
+    },
+    "art62": {
+      "numero": 62,
+      "titulo": "Crime — Venda de Produto Irregular",
+      "texto": "Comercializar produtos ou serviços que, por determinação judicial ou administrativa, foram retirados do mercado, ou cuja fabricação, distribuição ou venda seja proibida: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Vender produto que foi retirado do mercado por determinação judicial ou administrativa é CRIME.",
+      "palavras_chave": [
+        "venda produto proibido",
+        "produto retirado mercado",
+        "vender produto ilegal",
+        "produto proibido venda"
+      ],
+      "prazos": {}
+    },
+    "art63": {
+      "numero": 63,
+      "titulo": "Crime — Omissão de Comunicação de Periculosidade",
+      "texto": "Omitir dizeres ou sinais ostensivos sobre a nocividade ou periculosidade de produtos, nas embalagens, nos invólucros, nos recipientes ou na publicidade: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Não colocar avisos de perigo na embalagem do produto é CRIME — pena de até 2 anos.",
+      "palavras_chave": [
+        "embalagem sem aviso",
+        "falta aviso perigo embalagem",
+        "produto sem sinalizacao risco",
+        "omitiu aviso perigo"
+      ],
+      "prazos": {}
+    },
+    "art64": {
+      "numero": 64,
+      "titulo": "Crime — Não Atendimento de Recall",
+      "texto": "Deixar de comunicar à autoridade competente e aos consumidores a nocividade ou periculosidade de produtos cujo conhecimento seja posterior à sua colocação no mercado: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Empresa que não faz recall quando descobre produto perigoso comete CRIME.",
+      "palavras_chave": [
+        "nao fez recall",
+        "recall nao realizado",
+        "empresa ignorou perigo",
+        "produto perigoso sem recall",
+        "omitiu recall"
+      ],
+      "prazos": {}
+    },
+    "art65": {
+      "numero": 65,
+      "titulo": "Crime — Execução de Serviço Perigoso",
+      "texto": "Executar serviço de alto grau de periculosidade, contrariando determinação de autoridade competente: Pena — Detenção de seis meses a dois anos e multa.",
+      "resumo": "Prestar serviço perigoso contrariando autoridade competente é CRIME.",
+      "palavras_chave": [
+        "servico perigoso",
+        "executou servico proibido",
+        "servico de risco autoridade",
+        "servico irregular perigoso"
+      ],
+      "prazos": {}
+    },
+    "art66": {
+      "numero": 66,
+      "titulo": "Crime — Informação Falsa ou Enganosa",
+      "texto": "Fazer afirmação falsa ou enganosa, ou omitir informação relevante sobre a natureza, característica, qualidade, quantidade, segurança, desempenho, durabilidade, preço ou garantia de produtos ou serviços: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Mentir ou omitir informação relevante sobre produto ou serviço é CRIME — pena de até 1 ano.",
+      "palavras_chave": [
+        "informacao falsa produto",
+        "mentiu sobre produto",
+        "omitiu informacao produto",
+        "enganou sobre qualidade",
+        "informacao enganosa produto crime"
+      ],
+      "prazos": {}
+    },
+    "art67": {
+      "numero": 67,
+      "titulo": "Crime — Publicidade Enganosa (Pena)",
+      "texto": "Fazer ou promover publicidade que sabe ou deveria saber ser enganosa ou abusiva: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Fazer propaganda sabendo que é enganosa é CRIME — pena de até 1 ano de detenção.",
+      "palavras_chave": [
+        "propaganda enganosa crime",
+        "publicidade enganosa crime",
+        "anuncio mentiroso crime",
+        "crime publicidade enganosa"
+      ],
+      "prazos": {}
+    },
+    "art68": {
+      "numero": 68,
+      "titulo": "Crime — Publicidade Abusiva (Pena)",
+      "texto": "Fazer ou promover publicidade que sabe ou deveria saber ser abusiva, nos termos do § 2° do art. 37: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Fazer propaganda abusiva (explorando medo, criança, discriminação) é CRIME.",
+      "palavras_chave": [
+        "publicidade abusiva crime",
+        "propaganda abusiva crime",
+        "anuncio abusivo crime",
+        "crime propaganda crianca"
+      ],
+      "prazos": {}
+    },
+    "art69": {
+      "numero": 69,
+      "titulo": "Crime — Omissão de Informação Relevante",
+      "texto": "Deixar de organizar dados fáticos, técnicos e científicos que dão base à publicidade: Pena — Detenção de um a seis meses ou multa.",
+      "resumo": "Empresa que não mantém comprovação dos dados usados em publicidade comete crime.",
+      "palavras_chave": [
+        "sem comprovacao publicidade",
+        "dados publicidade",
+        "base cientifica anuncio",
+        "empresa nao prova anuncio"
+      ],
+      "prazos": {}
+    },
+    "art70": {
+      "numero": 70,
+      "titulo": "Crime — Emprego de Peça Usada sem Informação",
+      "texto": "Empregar na reparação de produtos, peça ou componente de reposição usado, sem autorização do consumidor: Pena — Detenção de três meses a um ano e multa.",
+      "resumo": "Usar peça usada no conserto sem avisar o consumidor é CRIME — pena de até 1 ano.",
+      "palavras_chave": [
+        "peca usada sem avisar",
+        "componente usado sem autorizacao",
+        "assistencia tecnica peca usada",
+        "trocou por peca velha",
+        "colocou peca usada crime"
+      ],
+      "prazos": {}
+    },
+    "art74": {
+      "numero": 74,
+      "titulo": "Descumprimento de Medidas Administrativas",
+      "texto": "Deixar de entregar ao consumidor o termo de garantia adequadamente preenchido e com especificação clara de seu conteúdo: Pena — Detenção de um a seis meses ou multa.",
+      "resumo": "Não entregar o termo de garantia preenchido corretamente ao consumidor é crime.",
+      "palavras_chave": [
+        "termo garantia nao entregue",
+        "garantia sem preenchimento",
+        "nao deram termo garantia",
+        "certificado garantia incorreto"
+      ],
+      "prazos": {}
+    },
+    "art75": {
+      "numero": 75,
+      "titulo": "Sanções Penais — Pessoas Jurídicas",
+      "texto": "Quem, de qualquer forma, concorrer para os crimes referidos neste código, incide nas penas a esses cominadas na medida de sua culpabilidade, bem como o diretor, administrador ou gerente da pessoa jurídica que promover, permitir ou por qualquer modo aprovar o fornecimento, oferta, exposição à venda ou manutenção em depósito de produtos ou a oferta e prestação de serviços nas condições por eles proibidas.",
+      "resumo": "Diretores e gerentes também podem ser responsabilizados criminalmente pelos crimes do CDC praticados pela empresa.",
+      "palavras_chave": [
+        "diretor responsavel crime",
+        "gerente responsavel",
+        "socio responsavel crime",
+        "pessoa fisica responsavel empresa crime"
+      ],
+      "prazos": {}
+    },
+    "art76": {
+      "numero": 76,
+      "titulo": "Agravantes — Crimes de Consumo",
+      "texto": "São circunstâncias agravantes dos crimes tipificados neste código, entre outras: serem cometidos em época de grave crise econômica ou por ocasião de calamidade; ocasionarem grave dano individual ou coletivo; dissimularem-se na aparência de contrato de consumo; serem praticados em detrimento de operário ou rurícola; atingirem pessoas idosas, portadoras de deficiência mental, interditadas ou, ainda, minores.",
+      "resumo": "Crimes contra idosos, pessoas com deficiência, crianças ou em crise econômica têm penas agravadas.",
+      "palavras_chave": [
+        "agravante crime consumo",
+        "crime contra idoso",
+        "crime contra criança",
+        "pena maior idoso",
+        "crime deficiencia mental",
+        "agravante consumidor vulneravel"
+      ],
+      "prazos": {}
+    },
+    "art77": {
+      "numero": 77,
+      "titulo": "Pena de Multa — Critérios",
+      "texto": "A pena pecuniária prevista nesta Seção será fixada em dias-multa, correspondente ao mínimo e ao máximo de dias de duração da pena privativa de liberdade cominada ao crime. Na individualização desta multa, o juiz observará o disposto no art. 60, §1° do Código Penal.",
+      "resumo": "O valor da multa criminal é calculado em dias-multa conforme o Código Penal.",
+      "palavras_chave": [
+        "multa criminal",
+        "dias multa",
+        "calculo multa crime",
+        "pena pecuniaria crime consumo"
+      ],
+      "prazos": {}
+    },
+    "art78": {
+      "numero": 78,
+      "titulo": "Penas Restritivas de Direitos",
+      "texto": "Além das penas privativas de liberdade e de multa, podem ser impostas, cumulativa ou alternadamente, observado o disposto nos arts. 44 a 47 do Código Penal: I — a interdição temporária de direitos; II — a publicação em órgãos de comunicação de grande circulação ou audiência, às expensas do condenado, de extrato de sentença condenatória, ou de atos jurídicos que causem dano ao consumidor; III — a convocação de grupos de consumidores lesados.",
+      "resumo": "Além de prisão e multa, condenados por crimes do CDC podem ser obrigados a publicar a sentença em jornais e convocar consumidores lesados.",
+      "palavras_chave": [
+        "publicar sentenca",
+        "interdição direitos",
+        "convocar consumidores",
+        "pena alternativa crime",
+        "publicacao jornal condenacao"
+      ],
+      "prazos": {}
+    },
+    "art79": {
+      "numero": 79,
+      "titulo": "Ação Penal",
+      "texto": "Para os fins deste Código, a ação penal é pública incondicionada.",
+      "resumo": "Os crimes do CDC são de ação penal pública incondicionada — o Ministério Público pode agir independentemente de queixa da vítima.",
+      "palavras_chave": [
+        "acao penal",
+        "ministerio publico",
+        "denuncia crime consumo",
+        "acao penal publica",
+        "mp pode agir sem vítima"
+      ],
+      "prazos": {}
+    },
+    "art80": {
+      "numero": 80,
+      "titulo": "Responsabilidade pelo Produto — Ação Regressiva",
+      "texto": "No processo penal atinente aos crimes previstos neste código, bem como a outros crimes e contravenções que envolvam relações de consumo, poderão intervir, como assistentes do Ministério Público, os legitimados indicados no art. 82, inciso III e IV, aos quais também é facultado propor ação penal subsidiária, se a denúncia não for oferecida no prazo legal.",
+      "resumo": "Associações de defesa do consumidor podem atuar como assistentes do MP em processos criminais e propor ação penal subsidiária.",
+      "palavras_chave": [
+        "associacao consumidor mp",
+        "assistente ministerio publico",
+        "acao penal subsidiaria",
+        "procon acao penal",
+        "associacao intervir processo"
+      ],
+      "prazos": {}
+    },
+    "art81": {
+      "numero": 81,
+      "titulo": "Defesa Coletiva — Direitos Difusos, Coletivos e Individuais Homogêneos",
+      "texto": "A defesa dos interesses e direitos dos consumidores e das vítimas poderá ser exercida em juízo individualmente, ou a título coletivo. A defesa coletiva será exercida quando se tratar de: I — interesses ou direitos difusos (indetermináveis, ligados por circunstância de fato); II — interesses ou direitos coletivos (grupo determinável, ligados por relação jurídica base); III — interesses ou direitos individuais homogêneos (origem comum).",
+      "resumo": "Consumidores podem se unir em ações coletivas: direitos difusos (todos afetados), coletivos (grupo determinado) ou individuais homogêneos (mesma origem).",
+      "palavras_chave": [
+        "acao coletiva consumidor",
+        "direito difuso",
+        "direito coletivo",
+        "acao coletiva",
+        "grupo consumidores prejudicados",
+        "acao grupo",
+        "class action"
+      ],
+      "prazos": {}
+    },
+    "art82": {
+      "numero": 82,
+      "titulo": "Legitimados para Ação Coletiva",
+      "texto": "Para os fins do art. 81, parágrafo único, são legitimados concorrentemente: I — o Ministério Público; II — a União, os Estados, os Municípios e o Distrito Federal; III — as entidades e órgãos da Administração Pública, direta ou indireta, ainda que sem personalidade jurídica, especificamente destinados à defesa dos interesses e direitos protegidos por este código; IV — as associações legalmente constituídas há pelo menos um ano e que incluam entre seus fins institucionais a defesa dos interesses e direitos protegidos por este código.",
+      "resumo": "Podem entrar com ação coletiva: MP, governo (União, estados, municípios), Procon e associações de consumidores com mais de 1 ano.",
+      "palavras_chave": [
+        "quem pode acao coletiva",
+        "ministerio publico acao",
+        "procon acao judicial",
+        "associacao acao consumidor",
+        "legitimidade acao coletiva"
+      ],
+      "prazos": {}
+    },
+    "art83": {
+      "numero": 83,
+      "titulo": "Espécies de Ações para Defesa do Consumidor",
+      "texto": "Para a defesa dos direitos e interesses protegidos por este código são admissíveis todas as espécies de ações capazes de propiciar sua adequada e efetiva tutela.",
+      "resumo": "O consumidor pode usar qualquer tipo de ação judicial para defender seus direitos — não há limitação de espécie processual.",
+      "palavras_chave": [
+        "tipos de acao",
+        "qualquer acao judicial",
+        "acoes cabíveis",
+        "acao adequada consumidor",
+        "tutela jurisdicional"
+      ],
+      "prazos": {}
+    },
+    "art84": {
+      "numero": 84,
+      "titulo": "Tutela Específica — Obrigação de Fazer ou Não Fazer",
+      "texto": "Na ação que tenha por objeto o cumprimento da obrigação de fazer ou não fazer, o juiz concederá a tutela específica da obrigação ou determinará providências que assegurem o resultado prático equivalente ao do adimplemento. § 3° Sendo relevante o fundamento da demanda e havendo justificado receio de ineficácia do provimento final, é lícito ao juiz conceder a tutela liminarmente.",
+      "resumo": "O juiz pode conceder liminar para obrigar empresa a fazer ou parar algo — tutela específica e urgente.",
+      "palavras_chave": [
+        "tutela especifica",
+        "liminar",
+        "obrigacao fazer",
+        "obrigacao nao fazer",
+        "acao cumprimento",
+        "medida urgente judicial"
+      ],
+      "prazos": {}
+    },
+    "art85": {
+      "numero": 85,
+      "titulo": "Ações Coletivas — Desconsideração da Personalidade Jurídica",
+      "texto": "Nas ações coletivas de que trata este código não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas, nem condenação da associação autora, salvo comprovada má-fé, em honorários de advogados, custas e despesas processuais.",
+      "resumo": "Ações coletivas são gratuitas para as associações — sem custas antecipadas nem honorários, exceto má-fé.",
+      "palavras_chave": [
+        "acao coletiva gratuita",
+        "sem custas acao coletiva",
+        "honorarios acao coletiva",
+        "associacao sem custas"
+      ],
+      "prazos": {}
+    },
+    "art86": {
+      "numero": 86,
+      "titulo": "Ações Coletivas — Comunicação",
+      "texto": "Nas ações coletivas de que trata este código, a sentença fará coisa julgada erga omnes, nos casos dos incisos I e II do parágrafo único do art. 81, e ultra partes, no caso do inciso III, apenas no plano coletivo.",
+      "resumo": "A sentença de ação coletiva vale para todos os afetados (erga omnes) em direitos difusos e coletivos.",
+      "palavras_chave": [
+        "coisa julgada coletiva",
+        "sentenca coletiva vale para todos",
+        "erga omnes",
+        "decisao coletiva beneficia todos"
+      ],
+      "prazos": {}
+    },
+    "art87": {
+      "numero": 87,
+      "titulo": "Ações Coletivas — Fundo de Reconstituição",
+      "texto": "Nas ações coletivas de que trata este código não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas.",
+      "resumo": "Ações coletivas de consumidores são isentas de custas e despesas antecipadas.",
+      "palavras_chave": [
+        "isencao custas coletiva",
+        "sem taxa acao coletiva",
+        "acao gratuita consumidor"
+      ],
+      "prazos": {}
+    },
+    "art88": {
+      "numero": 88,
+      "titulo": "Litispendência — Ações Individuais e Coletivas",
+      "texto": "Na hipótese do art. 13, parágrafo único deste código, a ação de regresso poderá ser ajuizada em processo autônomo, facultada a possibilidade de prosseguir-se nos mesmos autos, vedada a denunciação da lide.",
+      "resumo": "O fornecedor pode cobrar de terceiro responsável em ação separada — vedada a denunciação da lide no processo do consumidor.",
+      "palavras_chave": [
+        "acao regressiva",
+        "litispendencia",
+        "denunciacao lide",
+        "acao individual coletiva",
+        "processo autonomo regressivo"
+      ],
+      "prazos": {}
+    },
+    "art89": {
+      "numero": 89,
+      "titulo": "Coisa Julgada — Ações Coletivas",
+      "texto": "Nos casos de dano ambiental, a ação coletiva é cabível para a reparação dos danos individualmente sofridos, cabendo ao Ministério Público promovê-la.",
+      "resumo": "O MP pode promover ação coletiva para reparar danos ambientais que afetaram consumidores individualmente.",
+      "palavras_chave": [
+        "dano ambiental consumidor",
+        "mp acao ambiental",
+        "reparacao coletiva ambiental",
+        "acao mp dano"
+      ],
+      "prazos": {}
+    },
+    "art90": {
+      "numero": 90,
+      "titulo": "Aplicação do Código de Processo Civil",
+      "texto": "Aplicam-se às ações previstas neste título as normas do Código de Processo Civil e da Lei n° 7.347, de 24 de julho de 1985, inclusive no que respeita ao inquérito civil, naquilo que não contrariar suas disposições.",
+      "resumo": "As ações coletivas de consumidores seguem as regras do CPC e da Lei da Ação Civil Pública.",
+      "palavras_chave": [
+        "codigo processo civil",
+        "lei acao civil publica",
+        "inquérito civil",
+        "normas processuais consumidor"
+      ],
+      "prazos": {}
+    },
+    "art91": {
+      "numero": 91,
+      "titulo": "Ações Coletivas — Legitimidade Ativa",
+      "texto": "Os legitimados de que trata o art. 82 poderão propor, em nome próprio e no interesse das vítimas ou seus sucessores, ação civil coletiva de responsabilidade pelos danos individualmente sofridos, de acordo com o disposto nos artigos seguintes.",
+      "resumo": "MP e associações podem propor ação coletiva para reparar danos individuais sofridos por vários consumidores.",
+      "palavras_chave": [
+        "acao civil coletiva",
+        "responsabilidade danos coletivos",
+        "acao nome proprio consumidor",
+        "representacao coletiva"
+      ],
+      "prazos": {}
+    },
+    "art92": {
+      "numero": 92,
+      "titulo": "Competência — Ações Coletivas",
+      "texto": "O foro competente para a propositura da ação será aquele onde ocorreu ou deva ocorrer o dano, quando de âmbito local.",
+      "resumo": "A ação coletiva deve ser proposta no foro onde ocorreu o dano.",
+      "palavras_chave": [
+        "foro competente",
+        "onde entrar com acao",
+        "competencia territorial",
+        "local do dano",
+        "onde processar empresa"
+      ],
+      "prazos": {}
+    },
+    "art93": {
+      "numero": 93,
+      "titulo": "Competência Nacional — Danos de Âmbito Nacional",
+      "texto": "Ressalvada a competência da Justiça Federal, é competente para a causa a justiça local: I — no foro do lugar onde ocorreu ou deva ocorrer o dano, quando de âmbito local; II — no foro da Capital do Estado ou no do Distrito Federal, para os danos de âmbito nacional ou regional.",
+      "resumo": "Para danos nacionais ou regionais, a ação é proposta na capital do estado ou no DF.",
+      "palavras_chave": [
+        "dano nacional",
+        "capital estado acao",
+        "justiça federal consumidor",
+        "foro nacional",
+        "competencia nacional"
+      ],
+      "prazos": {}
+    },
+    "art94": {
+      "numero": 94,
+      "titulo": "Litisconsortes — Ações Coletivas",
+      "texto": "Proposta a ação, será publicado edital no órgão oficial, a fim de que os interessados possam intervir no processo como litisconsortes, sem prejuízo de ampla divulgação pelos meios de comunicação social por parte dos órgãos de defesa do consumidor.",
+      "resumo": "Ao propor ação coletiva, deve-se publicar edital para que outros consumidores possam participar.",
+      "palavras_chave": [
+        "edital acao coletiva",
+        "participar acao coletiva",
+        "litisconsorte",
+        "intervir processo coletivo",
+        "integrar acao grupo"
+      ],
+      "prazos": {}
+    },
+    "art95": {
+      "numero": 95,
+      "titulo": "Liquidação — Condenação Genérica",
+      "texto": "Em caso de procedência do pedido, a condenação será genérica, fixando a responsabilidade do réu pelos danos causados.",
+      "resumo": "Na ação coletiva, a condenação inicial é genérica — cada consumidor depois liquida o seu valor específico.",
+      "palavras_chave": [
+        "condenacao generica",
+        "liquidacao sentenca",
+        "valor dano individual",
+        "quantificar dano",
+        "sentenca generica coletiva"
+      ],
+      "prazos": {}
+    },
+    "art96": {
+      "numero": 96,
+      "titulo": "Liquidação — Prazo para Habilitação",
+      "texto": "Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347, de 24 de julho de 1985 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento.",
+      "resumo": "Indenizações individuais têm preferência no pagamento em relação às coletivas.",
+      "palavras_chave": [
+        "preferencia pagamento",
+        "credito individual coletivo",
+        "prioridade indenizacao",
+        "ordem pagamento sentenca"
+      ],
+      "prazos": {}
+    },
+    "art97": {
+      "numero": 97,
+      "titulo": "Liquidação e Execução — Legitimidade",
+      "texto": "A liquidação e a execução de sentença poderão ser promovidas pela vítima e seus sucessores, assim como pelos legitimados de que trata o art. 82.",
+      "resumo": "A vítima, seus herdeiros, MP e associações podem executar a sentença coletiva.",
+      "palavras_chave": [
+        "executar sentenca",
+        "liquidar sentenca",
+        "cumprimento sentenca coletiva",
+        "herdeiro executar sentenca"
+      ],
+      "prazos": {}
+    },
+    "art98": {
+      "numero": 98,
+      "titulo": "Execução — Prazo de Habilitação dos Interessados",
+      "texto": "A execução poderá ser coletiva, sendo promovida pelos legitimados de que trata o art. 82, abrangendo as vítimas cujas indenizações já tiveram sido fixadas em sentença de liquidação, sem prejuízo do ajuizamento de outras execuções. § 2° A execução nas ações coletivas a que se refere o inciso III do parágrafo único do art. 81 far-se-á pelo valor da indenização devida ao consumidor, acrescido de correção monetária.",
+      "resumo": "A execução coletiva pode ser promovida por todos os legitimados, com correção monetária dos valores.",
+      "palavras_chave": [
+        "execucao coletiva",
+        "correcao monetaria sentenca",
+        "valor atualizado indenizacao",
+        "execucao grupo consumidores"
+      ],
+      "prazos": {}
+    },
+    "art99": {
+      "numero": 99,
+      "titulo": "Fundo de Reconstituição dos Bens Lesados",
+      "texto": "Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347/85 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento. O produto da indenização devida aos consumidores fica destinado ao fundo criado pela Lei n.° 7.347/85.",
+      "resumo": "Quando não há consumidores identificados para receber, o dinheiro vai para o Fundo de Defesa de Direitos Difusos.",
+      "palavras_chave": [
+        "fundo defesa",
+        "dinheiro fundo",
+        "lei 7347",
+        "fundo difuso",
+        "dinheiro coletivo fundo"
+      ],
+      "prazos": {}
+    },
+    "art100": {
+      "numero": 100,
+      "titulo": "Destinação do Produto da Condenação",
+      "texto": "Decorrido o prazo de um ano sem habilitação de interessados em número compatível com a gravidade do dano, poderão os legitimados do art. 82 promover a liquidação e execução da indenização devida.",
+      "resumo": "Se após 1 ano poucos consumidores se habilitarem, os legitimados (MP, associações) podem executar a condenação pelo valor total.",
+      "palavras_chave": [
+        "prazo habilitacao",
+        "um ano execucao",
+        "poucos habilitados",
+        "execucao total indenizacao",
+        "fundo remanescente"
+      ],
+      "prazos": {
+        "habilitacao_anos": 1
+      }
+    },
+    "art102": {
+      "numero": 102,
+      "titulo": "Prescrição — Ação Coletiva",
+      "texto": "Os legitimados a agir na forma deste código poderão propor ação de caráter coletivo para tutelar interesses individuais homogêneos.",
+      "resumo": "MP e associações podem propor ação coletiva para proteger interesses individuais semelhantes de múltiplos consumidores.",
+      "palavras_chave": [
+        "acao coletiva interesses homogeneos",
+        "tutela coletiva",
+        "grupo mesmos direitos",
+        "interesses homogeneos"
+      ],
+      "prazos": {}
+    },
+    "art103": {
+      "numero": 103,
+      "titulo": "Efeitos da Coisa Julgada nas Ações Coletivas",
+      "texto": "Nas ações coletivas de que trata este código, a sentença fará coisa julgada: I — erga omnes, exceto se o pedido for julgado improcedente por insuficiência de provas, hipótese em que qualquer legitimado poderá intentar outra ação, com idêntico fundamento valendo-se de nova prova (difusos); II — ultra partes (coletivos); III — erga omnes, apenas para beneficiar as vítimas (individuais homogêneos). § 3° Os efeitos da coisa julgada erga omnes não prejudicarão os interesses e direitos individuais dos integrantes da coletividade.",
+      "resumo": "A sentença coletiva beneficia todos mas nunca prejudica o consumidor individualmente — ele ainda pode entrar com ação própria.",
+      "palavras_chave": [
+        "coisa julgada nao prejudica individual",
+        "acao individual apos coletiva",
+        "sentenca coletiva beneficio",
+        "erga omnes beneficio"
+      ],
+      "prazos": {}
+    },
+    "art105": {
+      "numero": 105,
+      "titulo": "Sistema Nacional de Defesa do Consumidor — SNDC",
+      "texto": "Integram o Sistema Nacional de Defesa do Consumidor (SNDC), os órgãos federais, estaduais, do Distrito Federal e municipais e as entidades privadas de defesa do consumidor.",
+      "resumo": "O SNDC é formado por todos os Procons, Senacon, órgãos governamentais e associações privadas de defesa do consumidor.",
+      "palavras_chave": [
+        "sndc",
+        "sistema nacional defesa consumidor",
+        "orgaos defesa",
+        "procon federal",
+        "senacon",
+        "sistema defesa"
+      ],
+      "prazos": {}
+    },
+    "art106": {
+      "numero": 106,
+      "titulo": "Atribuições do DPDC (Senacon)",
+      "texto": "O Departamento Nacional de Defesa do Consumidor, da Secretaria Nacional de Direito Econômico, tem as seguintes atribuições: planejar, elaborar, propor, coordenar e executar a política nacional de proteção ao consumidor; receber, analisar, avaliar e encaminhar consultas, denúncias ou sugestões presentadas por entidades representativas ou pessoas jurídicas de direito público ou privado; prestar aos consumidores orientação permanente sobre seus direitos e garantias; informar, conscientizar e motivar o consumidor.",
+      "resumo": "A Senacon (antiga DPDC) coordena a política nacional do consumidor, recebe denúncias e orienta consumidores.",
+      "palavras_chave": [
+        "senacon",
+        "dpdc",
+        "politica nacional consumidor",
+        "orgao federal consumidor",
+        "secretaria consumidor",
+        "receber denuncia federal"
+      ],
+      "prazos": {}
+    },
+    "art107": {
+      "numero": 107,
+      "titulo": "Convenções Coletivas de Consumo",
+      "texto": "As entidades civis de consumidores e as associações de fornecedores ou sindicatos de categoria econômica podem regular, por convenção escrita, relações de consumo que tenham por objeto estabelecer condições relativas ao preço, à qualidade, à quantidade, à garantia e características de produtos e serviços, bem como à reclamação e composição do conflito de consumo.",
+      "resumo": "Associações de consumidores e de empresas podem firmar convenções coletivas regulando condições de venda, preço e resolução de conflitos.",
+      "palavras_chave": [
+        "convencao coletiva consumo",
+        "acordo consumidores empresas",
+        "regulamento setorial",
+        "norma setor convenio"
+      ],
+      "prazos": {}
+    },
     "art108": {
       "numero": 108,
       "titulo": "Registro de Convenções Coletivas",
@@ -525,6 +2232,10 @@
         "juro cartao",
         "porcentagem juros cartao",
         "150 por cento",
+        "150%",
+        "e 150",
+        "juros 150",
+        "teto 150",
         "100 por cento juros",
         "juros credito rotativo",
         "fatura cartao juros",
@@ -532,6 +2243,12 @@
         "teto juros",
         "limite juros",
         "maximo juros cartao",
+        "qual o teto dos juros",
+        "qual o limite dos juros",
+        "quanto pode cobrar de juros",
+        "juros pode passar de",
+        "ate quanto vai a divida",
+        "divida pode dobrar",
         "banco cobrar juros cartao",
         "lei desenrola",
         "14690",

@@ -1,3 +1,8 @@
+"""
+atualizar_kb.py — Atualiza dados que mudam na knowledge_base.json
+Execute periodicamente: python atualizar_kb.py
+Ou agende com Windows Task Scheduler / cron.
+"""
 import json, re, time, logging, requests
 from pathlib import Path
 
